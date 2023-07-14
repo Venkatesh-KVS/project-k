@@ -25,14 +25,14 @@ const Footer = () => {
               </NavLink>
             </div>
             <div className="fh-content d-flex">
-              <NavLink className="fh-nl d-flex">
+              {/* <NavLink className="fh-nl d-flex">
                 <DynamicImage imageName={"/icons/Email.svg"} />
                 <p className="fh-nl-p">Subscribe to our email newsletter</p>
                 <DynamicImage
                   className="fh-nl-arrow"
                   imageName={"/icons/right-arrow.svg"}
                 />
-              </NavLink>
+              </NavLink> */}
             </div>
           </div>
         </div>

@@ -26,8 +26,7 @@ const PartnerWithUs = () => {
             </div>
             <div className="r_container">
               <p className="r_para">
-                We take immense pride in our commitment to providing exceptional
-                diagnostic services, and we invite you to join us in our mission
+                We invite you to join us in our mission
                 to deliver high-quality healthcare solutions to patients.
               </p>
             </div>
