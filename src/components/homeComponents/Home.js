@@ -5,6 +5,7 @@ import SectionThree from "./SectionThree";
 import SectionFour from "./SectionFour";
 // import SectionFive from "./SectionFive";
 import HealthPackages from "./HealthPackages";
+import PatientExperience from "./PatientExperience";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
         <SectionFour />
         <HealthPackages />
         {/* <SectionFive /> */}
+        <PatientExperience />
       </div>
     </div>
   );

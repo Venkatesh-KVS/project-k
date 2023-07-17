@@ -134,13 +134,9 @@ const Wrapper = styled.section`
   .subMenu {
     width: 250px;
     display: none;
-    /* left: 0;
-    top: 0; */
     background-color: #00aeef;
     position: absolute;
     top: 1.8rem;
-
-    /* z-index: 1; */
   }
   .sub-nav-list {
     padding: 15px;
@@ -157,5 +153,6 @@ const Wrapper = styled.section`
 
   .navbar {
     background-color: #00aeef;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
 `;

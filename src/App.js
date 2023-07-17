@@ -26,6 +26,7 @@ import PartnerWithUs from "./components/PartnerWithUs";
 const theme = {
   colors: {
     primary: "#00aeef",
+    primary90: "#00aeef90",
     secondary: "#005BAB",
     white: "#fff",
     text: "#000F1C",

@@ -1,3 +1,68 @@
+export const patientStoryData = [
+  {
+    id: 1,
+    src: "/project-konnect/images/pwu_s42i1.jpg",
+    name: "NameOne",
+    info: "unde Description unde omnis iste ",
+    description:
+      "One Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+  },
+  {
+    id: 2,
+    src: "/project-konnect/images/pwu_s42i2.jpg",
+    name: "NameOneTwo",
+    info: "The unde Description unde omnis iste ",
+
+    description:
+      "Two Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+  },
+  {
+    id: 3,
+    src: "/project-konnect/images/pwu_s42i3.jpg",
+    name: "NameOneThree",
+    info: "The unde Description unde omnis iste ",
+
+    description:
+      "Two Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+  },
+  {
+    id: 4,
+    src: "/project-konnect/images/pwu_s42i1.jpg",
+    name: "NameOneThree",
+    info: "The unde Description unde omnis iste ",
+
+    description:
+      "Two Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+  },
+  {
+    id: 5,
+    src: "/project-konnect/images/pwu_s42i2.jpg",
+    name: "NameOneThree",
+    info: "The unde Description unde omnis iste ",
+
+    description:
+      "Two Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+  },
+  {
+    id: 4,
+    src: "/project-konnect/images/pwu_s42i1.jpg",
+    name: "NameOneThree",
+    info: "The unde Description unde omnis iste ",
+
+    description:
+      "Two Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+  },
+  {
+    id: 5,
+    src: "/project-konnect/images/pwu_s42i2.jpg",
+    name: "NameOneThree",
+    info: "The unde Description unde omnis iste ",
+
+    description:
+      "Two Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+  },
+];
+
 export const packagesData = [
   {
     id: 1,
