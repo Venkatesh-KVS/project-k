@@ -42,7 +42,8 @@ const HealthPackages = () => {
               />
               <div className="p-2">
                 <h2 className="r_heading_title_secondary">
-                  Konnect Diabetic Package
+                  {" "}
+                  Konnect Diabetic Package{" "}
                 </h2>
                 <span>Code: 002</span>
                 <hr />
@@ -65,7 +66,8 @@ const HealthPackages = () => {
               />
               <div className="p-2">
                 <h2 className="r_heading_title_secondary">
-                  Konnect Master Health Checkup
+                  {" "}
+                  Konnect Master Health Checkup{" "}
                 </h2>
                 <span>Code: 003</span>
                 <hr />
@@ -88,7 +90,8 @@ const HealthPackages = () => {
               />
               <div className="p-2">
                 <h2 className="r_heading_title_secondary">
-                  Konnect Executive Health Checkup
+                  {" "}
+                  Konnect Executive Health Checkup{" "}
                 </h2>
                 <span>Code: 004</span>
                 <hr />
