@@ -67,9 +67,9 @@ export const packagesData = [
   {
     id: 1,
     code: "001",
-    title: "Konnect Health Screen",
-    // imgUrl: "/project-konnect/images/organs/Heart.png",
-    price: "1499",
+    title: "Konnect Master Health Checkup",
+    imgUrl: "/project-konnect/images/health-packages/hp1.jpg",
+    price: "2999",
     desc: "Basic Health Check-up Package can help in diagnosing conditions at an early stage and preventing complications related to them. It includes a unique diagnostic profile of tests for a health evaluation This package is suitable for males and females of all age groups",
     moreInfo: {
       pOne: "Point One",
@@ -80,9 +80,9 @@ export const packagesData = [
   {
     id: 2,
     code: "002",
-    title: "Health Condition Two",
-    // imgUrl: "/project-konnect/images/organs/Heart.png",
-    price: "1499",
+    title: "Konnect Executive Health Checkup",
+    imgUrl: "/project-konnect/images/health-packages/hp2.jpg",
+    price: "5799",
     desc: "Thi ns is a description of the co di a description of the co dia description of the co dition",
     moreInfo: {
       pOne: "Point One",
@@ -93,9 +93,9 @@ export const packagesData = [
   {
     id: 3,
     code: "003",
-    title: "Health Condition Three",
-    // imgUrl: "/project-konnect/images/organs/Heart.png",
-    price: "1499",
+    title: "Konnect Diabetic Package",
+    imgUrl: "/project-konnect/images/health-packages/hp3.jpg",
+    price: "2499",
     desc: "This is a description of the condition",
     moreInfo: {
       pOne: "Point One",

@@ -12,32 +12,22 @@ const HpCard = (props) => {
 
   return (
     <Wrapper>
-      <div className="hpCard-container d-flex p-0 border ">
-        <div className="hpCard rounded ">
-          <div className="hpTitle-box d-flex justify-content-between align-items-center gap-3 rounded-top px-3">
-            <h5 className="hpTitle d-flex gap-2 py-3 m-0 ">
-              <img
-                src="/project-konnect/images/icons/k.svg"
-                alt="k"
-                style={{ width: "32px" }}
-              />
-              {props.title}
-            </h5>
-            <p className="hpCode px-2 rounded m-0 d-flex align-center">
-              Code: {props.code}
-            </p>
+      <section className="d-flex mb-3 ">
+        <div className="hp-card">
+          <div className="hp-img p-2 border rounded  ">
+            <img src={props.image} className=" rounded" alt="k" />
           </div>
-          <div className="hpInfo-box rounded-bottom d-flex  flex-column justify-content-between">
-            <div>
-              <p className="hpDesc">{props.desc}</p>
-              <p className="hpMoreInfo">{props.moreInfo}</p>
-            </div>
-            <div className="d-flex justify-content-between align-items-center">
-              <h6 className="hpPrice m-0">
-                <BsCurrencyRupee /> {props.price}
-              </h6>
+          <div className="p-2">
+            <h2 className=" r_heading_title_secondary">{props.title}</h2>
+            <span>Code: {props.code}</span>
+            <hr />
+            <div className="d-flex align-items-center justify-content-between">
+              <h2 className="hp_price">
+                <BsCurrencyRupee />
+                {props.price}
+              </h2>
               <button
-                className="hpBtn btn"
+                className="btn btn-primary btn-sm"
                 onClick={() => {
                   addItem(props.item);
                   changeText("View Cart");
@@ -48,7 +38,7 @@ const HpCard = (props) => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </Wrapper>
   );
 };
@@ -56,7 +46,26 @@ const HpCard = (props) => {
 export default HpCard;
 
 const Wrapper = styled.section`
-  .hpCard-container {
+  .hp-card {
+    width: 100%;
+    justify-content: space-between;
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    h2.hp_price {
+      margin: 0;
+    }
+
+    img {
+      width: 20rem;
+    }
+
+    &:hover img {
+      /* scale: 1.2; */
+    }
+  }
+  /* .hpCard-container {
     width: 50%;
     .hpTitle-box {
       height: 80px;
@@ -92,5 +101,5 @@ const Wrapper = styled.section`
       background-color: ${({ theme }) => theme.colors.primary};
       color: ${({ theme }) => theme.colors.white};
     }
-  }
+  } */
 `;

@@ -18,19 +18,19 @@ const SectionThree = () => {
               <div className="s3-icons">
                 <DynamicImage imageName={"/icons/Lab.svg"} />
               </div>
-              <h5>Nearest Center</h5>
+              <h5>Booka a test</h5>
             </div>
             <div className="s3-s service3">
               <div className="s3-icons">
                 <DynamicImage imageName={"/icons/Prescription.svg"} />
               </div>
-              <h5>Nearest Center</h5>
+              <h5>Upload Prescription</h5>
             </div>
             <div className="s3-s service4">
               <div className="s3-icons">
                 <DynamicImage imageName={"/icons/download-report.svg"} />
               </div>
-              <h5>Nearest Center</h5>
+              <h5>Download Report</h5>
             </div>
           </div>
         </div>
