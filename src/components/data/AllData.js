@@ -1,65 +1,60 @@
 export const patientStoryData = [
   {
     id: 1,
-    src: "/project-konnect/images/pwu_s42i1.jpg",
+    photo: "/project-konnect/images/patients/patient1.jpg",
     name: "NameOne",
-    info: "unde Description unde omnis iste ",
+    info: "unde Description unde omnis one",
+    bg: "/project-konnect/images/patients/patient1Bg.jpg",
     description:
-      "One Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+      "One Sed ut perspiciande omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
   },
   {
     id: 2,
-    src: "/project-konnect/images/pwu_s42i2.jpg",
+    photo: "/project-konnect/images/patients/patient2.jpg",
     name: "NameOneTwo",
-    info: "The unde Description unde omnis iste ",
+    info: "The unde Description unde omnis two ",
+    bg: "/project-konnect/images/patients/patient2Bg.jpg",
 
     description:
-      "Two Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+      "Two Sed ut perspptatem accusantium doloremque laudantium, toticiatis unde omnis iste natus error sit voluam rem aperiam",
   },
   {
     id: 3,
-    src: "/project-konnect/images/pwu_s42i3.jpg",
+    photo: "/project-konnect/images/patients/patient3.jpg",
     name: "NameOneThree",
-    info: "The unde Description unde omnis iste ",
-
+    info: "The unde Description unde omnis three ",
+    bg: "/project-konnect/images/patients/patient3Bg.jpg",
     description:
-      "Two Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+      "Two Sed ut perspiciatis unde or sit voluptatem accusantium doloremque laudantium, totam rem aperiam omnis iste natus err",
   },
   {
     id: 4,
-    src: "/project-konnect/images/pwu_s42i1.jpg",
+    photo: "/project-konnect/images/patients/patient4.jpg",
     name: "NameOneThree",
-    info: "The unde Description unde omnis iste ",
+    info: "The unde Description unde omnis four ",
+    bg: "/project-konnect/images/patients/patient4Bg.jpg",
 
     description:
       "Two Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
   },
   {
     id: 5,
-    src: "/project-konnect/images/pwu_s42i2.jpg",
+    photo: "/project-konnect/images/patients/patient5.jpg",
     name: "NameOneThree",
-    info: "The unde Description unde omnis iste ",
-
+    info: "The unde Description unde omnis five ",
+    bg: "/project-konnect/images/patients/patient5Bg.jpg",
     description:
-      "Two Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+      "Two Sed ut perspiciatis undum doloremque laudantium, totam rem apee omnis iste natus error sit voluptatem accusantiriam",
   },
-  {
-    id: 4,
-    src: "/project-konnect/images/pwu_s42i1.jpg",
-    name: "NameOneThree",
-    info: "The unde Description unde omnis iste ",
 
-    description:
-      "Two Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
-  },
   {
-    id: 5,
-    src: "/project-konnect/images/pwu_s42i2.jpg",
+    id: 6,
+    photo: "/project-konnect/images/patients/patient6.jpg",
     name: "NameOneThree",
-    info: "The unde Description unde omnis iste ",
-
+    info: "The unde Description unde omnis six ",
+    bg: "/project-konnect/images/patients/patient6Bg.jpg",
     description:
-      "Two Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+      "natus error sit voluptatem accusantium doloremque laTwo Sed ut perspiciatis unde omnis iste udantium, totam rem aperiam",
   },
 ];
 

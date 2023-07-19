@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 // import DynamicImage from "../requiredPages/DynamicImage";
 import { patientStoryData } from "../data/AllData";
 import { BiSolidQuoteRight } from "react-icons/bi";
 
 const PatientExperience = () => {
+  const [activeTab, setActiveTab] = useState(0);
+  const handleTabClick = (index) => {
+    setActiveTab(index);
+  };
+
   return (
     <Wrapper>
       <div className="pe container">
@@ -20,14 +25,18 @@ const PatientExperience = () => {
         <div className="peContent">
           <div className="pe-left">
             {patientStoryData.map((patient, index) => (
-              <div className="patients">
+              <div
+                className={`patients tab-item ${
+                  activeTab === index ? "active" : ""
+                }`}
+                onClick={() => handleTabClick(index)}
+              >
                 <div
                   className="patientImage"
                   style={{
-                    backgroundImage: `url(${patient.src})`,
+                    backgroundImage: `url(${patient.photo})`,
                     backgroundSize: "cover",
-                    width: "80px",
-                    height: "80px",
+                    backgroundRepeat: "no-repeat",
                   }}
                 ></div>
                 <div className="patientInfo">
@@ -37,10 +46,11 @@ const PatientExperience = () => {
               </div>
             ))}
           </div>
+          {/* ------------------------------------------------- */}
           <div
             className="pe-right"
             style={{
-              background: `url("/project-konnect/images/patient1.jpg")`,
+              background: `url(${patientStoryData[activeTab].bg})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
             }}
@@ -48,13 +58,14 @@ const PatientExperience = () => {
             <div className="patientStory-box">
               <div className="patientStory">
                 <h5>Patient Story</h5>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam,
-                </p>
+                <p>{patientStoryData[activeTab].description}</p>
+
                 <span>
                   <BiSolidQuoteRight />
                 </span>
+                <h5 className="patient-name">
+                  {patientStoryData[activeTab].name}
+                </h5>
               </div>
             </div>
           </div>
@@ -109,6 +120,7 @@ const Wrapper = styled.section`
 
       .patients {
         direction: ltr;
+        cursor: pointer;
         /* border: 1px solid ${({ theme }) => theme.colors.primary}; */
         margin: 0 20px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 10px 0px;
@@ -122,8 +134,8 @@ const Wrapper = styled.section`
         }
 
         .patientImage {
-          width: 85px;
-          height: 85px;
+          width: 80px;
+          height: 80px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -131,8 +143,7 @@ const Wrapper = styled.section`
           border: 2px solid ${({ theme }) => theme.colors.primary};
         }
         .patientInfo {
-          /* display: flex;
-          flex-direction: column; */
+          /* width: 70%; */
           h5 {
             font-size: 1.1rem;
             font-weight: 700;
@@ -140,6 +151,7 @@ const Wrapper = styled.section`
           p {
             font-size: 15px;
             font-weight: 400;
+            margin-bottom: 0;
           }
         }
       }
@@ -165,12 +177,20 @@ const Wrapper = styled.section`
           flex-direction: column;
           justify-content: center;
           align-items: center;
-
-          /* text-align: center; */
           gap: 10px;
           h5 {
             color: ${({ theme }) => theme.colors.secondary};
             font-size: 1rem;
+          }
+          .patient-name {
+            border: 2px solid ${({ theme }) => theme.colors.white};
+            color: ${({ theme }) => theme.colors.white};
+            border-radius: 5px;
+            background-color: transparent;
+            &::before,
+            &::after {
+              display: none;
+            }
           }
           h5,
           span {
