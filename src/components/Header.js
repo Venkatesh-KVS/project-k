@@ -20,7 +20,7 @@ const Header = () => {
               </NavLink>
             </div>
 
-            <div className="searchBox d-flex gap-2">
+            {/* <div className="searchBox d-flex gap-2">
               <select className="select-box">
                 <option className="cities" value="meat">
                   Select Your City
@@ -62,7 +62,7 @@ const Header = () => {
                 type="text"
                 placeholder="Search Tests/Package"
               />
-            </div>
+            </div> */}
             <div className="register d-flex">
               <div>
                 <button
@@ -107,7 +107,7 @@ const Wrapper = styled.section`
   }
   .header {
     position: relative;
-    height: 145px;
+    /* height: 100px; */
     .header-fixed {
       position: fixed;
       width: 100%;
