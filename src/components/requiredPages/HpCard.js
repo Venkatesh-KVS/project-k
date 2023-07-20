@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { useCart } from "react-use-cart";
 import { BsCurrencyRupee } from "react-icons/bs";
+// import { packagesData } from "../data/AllData";
 
 const HpCard = (props) => {
   const { addItem } = useCart();
@@ -13,9 +14,9 @@ const HpCard = (props) => {
   return (
     <Wrapper>
       <section className="d-flex mb-3 ">
-        <div className="hp-card">
-          <div className="hp-img p-2 border rounded  ">
-            <img src={props.image} className=" rounded" alt="k" />
+        <div className="hp-card border p-2">
+          <div className="hp-img rounded">
+            <img src={props.image} alt="k" />
           </div>
           <div className="p-2">
             <h2 className=" r_heading_title_secondary">{props.title}</h2>
@@ -27,7 +28,7 @@ const HpCard = (props) => {
                 {props.price}
               </h2>
               <button
-                className="btn btn-primary btn-sm"
+                className="btn atc-btn btn-sm"
                 onClick={() => {
                   addItem(props.item);
                   changeText("View Cart");
@@ -56,50 +57,24 @@ const Wrapper = styled.section`
     h2.hp_price {
       margin: 0;
     }
-
-    img {
-      width: 20rem;
+    .hp-img {
+      overflow: hidden;
+      img {
+        transition: all 0.3s;
+        width: 20rem;
+        &:hover {
+          scale: 1.1;
+        }
+      }
     }
 
-    &:hover img {
-      /* scale: 1.2; */
+    .atc-btn {
+      color: ${({ theme }) => theme.colors.white};
+      width: 8rem;
+      background-color: ${({ theme }) => theme.colors.secondary};
+      &:hover {
+        background-color: ${({ theme }) => theme.colors.primary};
+      }
     }
   }
-  /* .hpCard-container {
-    width: 50%;
-    .hpTitle-box {
-      height: 80px;
-      background-color: ${({ theme }) => theme.colors.secondary};
-      .hpTitle {
-        font-size: 1.125rem;
-        color: ${({ theme }) => theme.colors.white};
-      }
-      .hpCode {
-        background-color: ${({ theme }) => theme.colors.primary};
-        color: ${({ theme }) => theme.colors.white};
-        font-size: 15px;
-        font-weight: 600;
-        align-items: center;
-        text-align: center;
-      }
-    }
-    .hpPrice {
-      color: ${({ theme }) => theme.colors.secondary};
-      font-size: 1.25rem;
-      font-weight: 700;
-    }
-    .hpInfo-box {
-      padding: 20px;
-      height: 180px;
-      border: 2px solid ${({ theme }) => theme.colors.secondary};
-      background-image: url("project-konnect/images/k-10.png");
-      background-repeat: no-repeat;
-      background-size: 150px;
-      background-position: center left;
-    }
-    .hpBtn {
-      background-color: ${({ theme }) => theme.colors.primary};
-      color: ${({ theme }) => theme.colors.white};
-    }
-  } */
 `;

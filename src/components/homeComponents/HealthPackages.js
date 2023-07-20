@@ -47,8 +47,10 @@ const Wrapper = styled.section`
     flex-direction: column;
     overflow: hidden;
   }
-  #hp_sec{
-    padding: 50px 0;
+
+  #hp_sec {
+    /* padding: 50px 0; */
+
     background: ${({ theme }) => theme.colors.bg_light};
   }
 `;
