@@ -1,11 +1,8 @@
 import React from "react";
-// import { useCart } from "react-use-cart";
 import { FaShoppingCart } from "react-icons/fa";
 import styled from "styled-components";
 
 const CartIcon = ({ setShow, size }) => {
-  //   const { totalItemsInCart } = useCart();
-
   return (
     <Wrapper>
       <div className="cart-icon">
