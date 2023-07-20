@@ -107,7 +107,7 @@ const Wrapper = styled.section`
   }
   .header {
     position: relative;
-    /* height: 100px; */
+    height: 145px;
     .header-fixed {
       position: fixed;
       width: 100%;

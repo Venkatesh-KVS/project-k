@@ -56,6 +56,7 @@ const ToggleKT = () => {
                 ? item
                 : item.title.toLowerCase().includes(search);
             })
+            .slice(0, 6)
             .map((item, index) => (
               <TestCard
                 key={index}
