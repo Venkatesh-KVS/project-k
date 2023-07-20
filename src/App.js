@@ -30,6 +30,7 @@ const theme = {
     secondary: "#005BAB",
     white: "#fff",
     text: "#000F1C",
+    bg_light: "#f8f8f9",
   },
 };
 

@@ -174,14 +174,18 @@
 }
 
 /* ----------------------------------------- Partner with us ------------------------------------------ */
-
+.w-33{width: 33%}
 
 .r_section{
   display: flex;
-  max-width: 1140px;
+  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
   position: relative;
+}
+.r_section>div{
+  width: 1140px;
+  margin: 0 auto;
 }
 .r_container{
   width: 100%;

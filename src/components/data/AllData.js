@@ -112,6 +112,45 @@ export const packagesData = [
     price: "2499",
     desc: "This is a description of the condition",
   },
+  {
+    id: 4,
+    code: "004",
+    title: "Konnect Diabetic Package 4",
+    imgUrl: "/project-konnect/images/health-packages/hp3.jpg",
+    price: "2499",
+    desc: "This is a description of the condition",
+    moreInfo: {
+      pOne: "Point One",
+      pTwo: "Point Two",
+      pThree: "Point Three",
+    },
+  },
+  {
+    id: 5,
+    code: "004",
+    title: "Konnect Diabetic Package 4",
+    imgUrl: "/project-konnect/images/health-packages/hp3.jpg",
+    price: "2499",
+    desc: "This is a description of the condition",
+    moreInfo: {
+      pOne: "Point One",
+      pTwo: "Point Two",
+      pThree: "Point Three",
+    },
+  },
+  {
+    id: 6,
+    code: "006",
+    title: "Konnect Diabetic Package 4",
+    imgUrl: "/project-konnect/images/health-packages/hp3.jpg",
+    price: "2499",
+    desc: "This is a description of the condition",
+    moreInfo: {
+      pOne: "Point One",
+      pTwo: "Point Two",
+      pThree: "Point Three",
+    },
+  },
 ];
 
 export const organImages = [
