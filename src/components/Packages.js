@@ -4,7 +4,6 @@ import HpCard from "./requiredPages/HpCard";
 import { packagesData } from "./data/AllData";
 import { styled } from "styled-components";
 
-
 const Packages = () => {
   return (
     <Wrapper>
@@ -14,7 +13,7 @@ const Packages = () => {
             <h2 className="r_heading_title">Health Packages</h2>
             <p>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam.
+              accusantium doloremque laudantium.
             </p>
           </div>
           <div className="hp-box container flex-wrap">
@@ -36,12 +35,8 @@ const Packages = () => {
         </div>
       </section>
     </Wrapper>
-  )
-    
+  );
 };
 
 export default Packages;
-const Wrapper = styled.section`
-
-`
-
+const Wrapper = styled.section``;
