@@ -1,14 +1,9 @@
 import { styled } from "styled-components";
-// import React, { useState } from "react";
-import DynamicImage from "./requiredPages/DynamicImage";
+import DynamicImage from "../requiredPages/DynamicImage";
 import Navbar from "./Navbar";
 import { NavLink } from "react-router-dom";
-// import { testsData } from "./data/AllData";
-// import { TestCard } from "./requiredPages/TestCard";
 
 const Header = () => {
-  // const [search, setSearch] = useState("null");
-
   return (
     <Wrapper>
       <div className="header">

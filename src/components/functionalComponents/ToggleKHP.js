@@ -10,9 +10,9 @@ const ToggleKHP = () => {
 
   return (
     <Wrapper>
-      <div className="s2-kt ">
-        <div className="kt-searchBox mb-4 d-flex">
-          <div className="searchBar d-flex flex-fill" style={{ width: "100%" }}>
+      <div className="s2-khp">
+        <div className="khp-searchBox d-flex mb-4">
+          <div className="searchBar d-flex flex-fill">
             <input
               onChange={(e) => setSearch(e.target.value)}
               type="text"
@@ -53,6 +53,7 @@ const Wrapper = styled.section`
     background-color: ${({ theme }) => theme.colors.primary};
     padding: 2px 10px;
     align-items: center;
+    justify-content: center;
     input {
       color: ${({ theme }) => theme.colors.primary};
       text-decoration: none;
