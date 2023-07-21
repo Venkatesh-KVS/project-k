@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import DynamicImage from "./requiredPages/DynamicImage";
+import DynamicImage from "../requiredPages/DynamicImage";
 import { styled } from "styled-components";
 
 const Footer = () => {

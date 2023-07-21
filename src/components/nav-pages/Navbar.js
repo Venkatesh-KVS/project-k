@@ -1,7 +1,7 @@
 import React from "react";
 import { styled } from "styled-components";
 import { NavLink } from "react-router-dom";
-import CartIcon from "./cart/CartIcon";
+import CartIcon from "../cart/CartIcon";
 
 const Navbar = () => {
   return (
@@ -36,7 +36,10 @@ const Navbar = () => {
                 </NavLink>
                 <ul class="subMenu">
                   <li class="subMenuItem menuItem">
-                    <NavLink to="/services" className="nav-list sub-nav-list ">
+                    <NavLink
+                      to="/health-conditions"
+                      className="nav-list sub-nav-list "
+                    >
                       Health Conditions
                     </NavLink>
                   </li>
