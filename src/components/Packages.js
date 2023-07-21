@@ -13,7 +13,7 @@ const Packages = () => {
             <h2 className="r_heading_title">Health Packages</h2>
             <p>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium pull request.
+              accusantium doloremque laudantium.
             </p>
           </div>
           <div className="hp-box container flex-wrap">
