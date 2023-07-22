@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { packagesData } from "./components/data/AllData";
+// import { packagesData } from "./components/data/AllData";
 import { ThemeProvider } from "styled-components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/homeComponents/Home";
@@ -20,7 +20,7 @@ import { CartProvider } from "react-use-cart";
 import PartnerWithUs from "./components/nav-pages/PartnerWithUs";
 import Footer from "./components/nav-pages/Footer";
 import Details from "./components/services/Details";
-import DynamicHc from "./components/services/DynamicHc";
+// import DynamicHc from "./components/services/DynamicHc";
 
 // const mysql = require("mysql2");
 // const connectSQLdb = require("./server/controller/mysql_controller");
@@ -45,10 +45,6 @@ function App() {
           <Router basename="/project-konnect">
             <Header />
             <Routes>
-              {/* <Route
-                path="/hc-card"
-                element={<DynamicHc packagesData={packagesData} />}
-              /> */}
               <Route path="/" element={<Home />} />
               <Route path="*" element={<ErrorPage />} />
               <Route path="/about" element={<About />} />
@@ -58,7 +54,8 @@ function App() {
               <Route path="/home-collection" element={<HomeCollection />} />
               <Route path="/services" element={<Services />} />
               <Route path="/health-conditions" element={<HealthConditions />} />
-              <Route path="/details" element={<Details />} />
+              {/* <Route exact path="/dynamichc" element={<DynamicHc />} /> */}
+              <Route path="/details/:id" element={<Details />} />
               <Route
                 path="/radiology-services"
                 element={<RadiologyServices />}
