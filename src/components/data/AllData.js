@@ -64,7 +64,7 @@ export const packagesData = [
     code: "002",
     title: "Diabetic Package",
     price: 2499,
-    ftrImg: "/project-konnect/images/healthPackages_FI/diabetes_package.jpg",
+    ftrImg: "/project-konnect/images/health-packages/hp-FeatureImages/diabetes_package.jpg",
     shortDesc: "Diabetes package includes tests used for screening diabetes in a person, monitoring the effectiveness of its treatment process and keep a track of the organs such as kidneys and heart, which are most likely to get affected due to diabetes"
   },
   {
@@ -72,7 +72,7 @@ export const packagesData = [
     code: "003",
     title: "Konnect Master Health Checkup",
     price: 2999,
-    ftrImg: "/project-konnect/images/healthPackages_FI/master_health_checkup.jpg",
+    ftrImg: "/project-konnect/images/health-packages/hp-FeatureImages/master_health_checkup.jpg",
     shortDesc: "A master health check-up includes number of clinical tests utilized to assess the overall health of a person. The master health checkup includes a physical examination ultrasound and laboratory investigations that help evaluate the health of your vital organs and metabolism to identify any early symptoms of diseases to manage individual health better."
   },
   {
@@ -80,7 +80,7 @@ export const packagesData = [
     code: "004",
     title: "Executive Health Checkup",
     price: 5799,
-    ftrImg: "/project-konnect/images/healthPackages_FI/executive_health_checkup.jpg",
+    ftrImg: "/project-konnect/images/health-packages/hp-FeatureImages/executive_health_checkup.jpg",
     shortDesc: "The aim of Executive Health Checkup is to extend the healthy life expectancy of population, to avoid untimely death and to improve the quality of life for people with a disease or disability by periodically checking all symptoms in the body."
   },
   {
@@ -88,7 +88,7 @@ export const packagesData = [
     code: "005",
     title: "Cardiac Profile",
     price: 2999,
-    ftrImg: "/project-konnect/images/healthPackages_FI/cardiac_profile.jpg",
+    ftrImg: "/project-konnect/images/health-packages/hp-FeatureImages/cardiac_profile.jpg",
     shortDesc: "The cardiac profile is a comprehensive panel of tests that is used to check the overall functioning of the heart. By looking at the concentration of fats, certain enzymes, and the composition of urine and blood, it becomes easier for clinicians to evaluate the health of your heart."
   },
   {
@@ -96,7 +96,7 @@ export const packagesData = [
     code: "006",
     title: "Executive Cardiac Profile",
     price: 4999,
-    ftrImg: "/project-konnect/images/healthPackages_FI/executive_cardiac_profile.jpg",
+    ftrImg: "/project-konnect/images/health-packages/hp-FeatureImages/executive_cardiac_profile.jpg",
     shortDesc: "This package includes all important tests along with cardiac markers to give an overall idea of present cardiac health status. "
   },
   {
@@ -104,7 +104,7 @@ export const packagesData = [
     code: "007",
     title: "Well Women Package",
     price: 6999,
-    ftrImg: "/project-konnect/images/healthPackages_FI/well_women_package.jpg",
+    ftrImg: "/project-konnect/images/health-packages/hp-FeatureImages/well_women_package.jpg",
     shortDesc: "This comprehensive package checks the possible causes of major ailments in women including some basic cancer screening tests to give an overall idea about their present health status."
   },
   {
@@ -112,7 +112,7 @@ export const packagesData = [
     code: "008",
     title: "Nutrition package",
     price: 1999,
-    ftrImg: "/project-konnect/images/healthPackages_FI/nutrition_package.jpg",
+    ftrImg: "/project-konnect/images/health-packages/hp-FeatureImages/nutrition_package.jpg",
     shortDesc: "Deficiency of either Vitamins or Micronutrients in our body can result in long term adverse effects on multiple systems which can be prevented by proper nutrition and supplements. Konnect Nutrition Package covers essential tests to check the status of these Vitamins and Micronutrients in your body."
   },
   {
@@ -120,7 +120,7 @@ export const packagesData = [
     code: "009",
     title: "Whole Body Package",
     price: 9999,
-    ftrImg: "/project-konnect/images/healthPackages_FI/whole_body.jpg",
+    ftrImg: "/project-konnect/images/health-packages/hp-FeatureImages/whole_body.jpg",
     shortDesc: "A full body check-up generally includes assessments of a person's blood pressure, heart rate, breathing rate, temperature, weight, and height. It may also include tests to check cholesterol levels, blood sugar levels, and the presence of any infections."
   },
   {
@@ -128,7 +128,7 @@ export const packagesData = [
     code: "010",
     title: "Cancer Screening – Male",
     price: 17999,
-    ftrImg: "/project-konnect/images/healthPackages_FI/cancer_screening_male.jpg",
+    ftrImg: "/project-konnect/images/health-packages/hp-FeatureImages/cancer_screening_male.jpg",
     shortDesc: "All men should be screened for prostate cancer, colon cancer, and testicular cancer periodically, especially if there is a family history of these or any other cancer type. Screening tests look for cancer before a person has any signs or symptoms."
   },
   {
@@ -136,7 +136,7 @@ export const packagesData = [
     code: "011",
     title: "Cancer Screening – Female",
     price: 19999,
-    ftrImg: "/project-konnect/images/healthPackages_FI/cancer_screening_female.jpg",
+    ftrImg: "/project-konnect/images/health-packages/hp-FeatureImages/cancer_screening_female.jpg",
     shortDesc: "Clinical Breast Examination: Ideally done by a gynaecologist, it needs to be repeated every 2-3 years for women who are in their 30s and annually for women 40 & above. Mammogram: This is low dose x-ray test done to detect small and early stage breast cancers."
   }
   // -------------------
