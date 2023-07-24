@@ -22,7 +22,7 @@ const HealthPackages = () => {
               {packagesData.slice(0, 3).map((item, index) => (
                 <HpCard
                   key={index}
-                  image={item.imgUrl}
+                  image={item.ftrImg}
                   title={item.title}
                   price={item.price}
                   code={item.code}
@@ -49,8 +49,7 @@ const Wrapper = styled.section`
   }
 
   #hp_sec {
-    /* padding: 50px 0; */
-
+    padding: 50px 0;
     background: ${({ theme }) => theme.colors.bg_light};
   }
 `;
