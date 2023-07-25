@@ -20,6 +20,8 @@ import { CartProvider } from "react-use-cart";
 import PartnerWithUs from "./components/nav-pages/PartnerWithUs";
 import Footer from "./components/nav-pages/Footer";
 import Details from "./components/services/Details";
+import { Account } from "./login/Account";
+import { Login } from "./login/Login";
 // import DynamicHc from "./components/services/DynamicHc";
 
 // const mysql = require("mysql2");
@@ -47,6 +49,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="*" element={<ErrorPage />} />
+              <Route exact path="/login" element={<Login />} />
+              <Route exact path="/account" element={<Account />} />
               <Route path="/about" element={<About />} />
               <Route path="/tests" element={<Tests />} />
               <Route path="/singleproduct/:id" element={<SingleProduct />} />
@@ -54,7 +58,6 @@ function App() {
               <Route path="/home-collection" element={<HomeCollection />} />
               <Route path="/services" element={<Services />} />
               <Route path="/health-conditions" element={<HealthConditions />} />
-              {/* <Route exact path="/dynamichc" element={<DynamicHc />} /> */}
               <Route path="/details/:id" element={<Details />} />
               <Route
                 path="/radiology-services"

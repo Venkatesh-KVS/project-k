@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 import DynamicImage from "../requiredPages/DynamicImage";
 import Navbar from "./Navbar";
 import { NavLink } from "react-router-dom";
+import { User } from "./User";
 
 const Header = () => {
   return (
@@ -60,13 +61,18 @@ const Header = () => {
             </div> */}
             <div className="register d-flex">
               <div>
-                <button
-                  className="butn signup-button d-flex gap-2"
-                  onClick={"/"}
-                >
-                  Login / SignUp
-                  <DynamicImage imageName={"/icons/signup.svg"} />
-                </button>
+                <NavLink to={"/login"}>
+                  <button
+                    className="butn signup-button d-flex gap-2"
+                    // onClick={"/login"}
+                  >
+                    Login / SignUp
+                    <DynamicImage imageName={"/icons/signup.svg"} />
+                  </button>
+                </NavLink>
+              </div>
+              <div className="user">
+                <User />
               </div>
             </div>
           </div>
@@ -97,6 +103,9 @@ const Header = () => {
 export default Header;
 
 const Wrapper = styled.section`
+  a {
+    text-decoration: none;
+  }
   .syc {
     background-color: ${({ theme }) => theme.colors.primary};
   }
@@ -107,7 +116,7 @@ const Wrapper = styled.section`
       position: fixed;
       width: 100%;
       background-color: ${({ theme }) => theme.colors.white};
-      z-index: 9999;
+      z-index: 99;
     }
   }
 
