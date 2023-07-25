@@ -53,6 +53,7 @@ export const condition = [
     id: 1,
     title: "Allergies",
     category: "Allergies",
+    excerpt: "Allergies can be unde xyz immune system towards",
     cover:
       "https://img.freepik.com/free-photo/young-sick-businesswoman-sneezing-tissue-while-working-office_637285-1991.jpg?w=740&t=st=1690021375~exp=1690021975~hmac=f935fae69a87bafec97362458e25a79f63ecc8c69c99f9be6f87b16b3295b4e4",
     // date: "APRIL 05, 2018",
@@ -80,6 +81,8 @@ export const condition = [
     title: "Arthritis",
     desc: "Vestibulum suscipit nibh sed odio pharetra, condimentum lacinia nisi varius. Ut ac ornare diam. Suspendisse vitae quam risus. Nulla ullamcorper libero justo, vitae dictum est efficitur id. Aenean et lacinia arcu. Sed non dolor id risus dapibus congue. Quisque tincidunt vitae tellus ut malesuada. Nulla eleifend nibh a maximus consectetur. Duis et mi porta, bibendum leo non, fermentum enim. Vivamus sed diam suscipit, ultricies ipsum sed, efficitur dui. Sed pharetra purus at iaculis vehicula. Fusce pellentesque placerat ante, id elementum dolor maximus sed. Aenean viverra at lectus quis vehicula. Aenean at arcu odio. Etiam mauris justo, cursus finibus aliquam eget, fermentum nec nulla. Sed finibus viverra magna non sagittis. Mauris fringilla augue vel quam rhoncus, in tempor enim lacinia. Donec nibh velit, scelerisque id neque sit amet, ornare consectetur sem. Donec convallis nec justo id consequat. Donec sem leo, pulvinar sit amet nisi a, mollis gravida est. Duis porttitor eleifend cursus. Vivamus ac dapibus dolor. Nullam leo tellus, rhoncus sit amet tempor vel, malesuada vel augue. Morbi laoreet sem eget tortor pulvinar mattis. Maecenas commodo ultricies orci, ut blandit urna accumsan sit amet. Ut a porttitor orci, maximus feugiat turpis. In eu sodales orci, et volutpat felis. Quisque orci quam, gravida at nulla tempor, vulputate pretium magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent congue, magna vitae interdum blandit, arcu mauris placerat nulla, sit amet rhoncus justo risus in neque.",
     category: "Nature",
+    excerpt: "Arthritis can be understood as reactions fds",
+
     cover:
       "https://img.freepik.com/free-photo/man-bent-her-head-grabbed-him-her-after-exercise_1150-22887.jpg?w=740&t=st=1690027449~exp=1690028049~hmac=00294e03195e6ada6be9d052d9471ccd48b183ab177994b831b0a993c08408ae",
     questions: [
@@ -104,6 +107,8 @@ export const condition = [
     id: 3,
     title: "Asthma",
     category: "Sports",
+    excerpt: "Arthritis can be understood as reactionstem towards",
+
     cover:
       "https://img.freepik.com/premium-photo/asthmatic-girl-catching-inhaler-having-asthma-attack-young-woman-having-asthma_459244-462.jpg?w=826",
     date: "MARCH 15, 2018",
@@ -129,6 +134,7 @@ export const condition = [
     id: 4,
     title: "Cancer",
     category: "Cancer ",
+    excerpt: "Cancer can be understood reactions from isystem towards",
     cover:
       "https://img.freepik.com/free-photo/doctor-holds-red-ribbon-hiv-awareness-awareness-world-aids-day-world-sexual-health-day_1150-24397.jpg?w=740&t=st=1690029433~exp=1690030033~hmac=1f0a7dc57df540c947d0157b5c018b8a0332209874f5489ef4b44b07283d50d9",
     date: "February 20, 2018",
@@ -154,6 +160,7 @@ export const condition = [
     id: 5,
     title: "COVID",
     category: "COVID",
+    excerpt: "Covid can be understood as  reactions ystem towards",
     cover:
       "https://img.freepik.com/free-photo/closeup-epidemiologist-with-covid19-sample-test-tube_637285-4724.jpg?w=740&t=st=1690030287~exp=1690030887~hmac=93ab3f3766e7e3ce42448c6c3967c30af1d8252a6bf029977d9dc18ada8f0bee",
     date: "February 20, 2018",

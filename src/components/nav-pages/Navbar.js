@@ -85,6 +85,9 @@ const Navbar = () => {
 
 export default Navbar;
 const Wrapper = styled.section`
+  .navbar {
+    z-index: 98;
+  }
   .cart-icon {
     position: relative;
     justify-content: center;

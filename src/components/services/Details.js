@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { AiOutlineTags } from "react-icons/ai";
 import { condition } from "../data/HcData";
 import { useParams } from "react-router-dom";
+// import HcCard from "./HcCard";
 
 const DetailsPages = () => {
   const { id } = useParams();
@@ -40,10 +41,21 @@ const DetailsPages = () => {
                 <p>{conditions.questions[0].question2[0].qDescription}</p>
               </div>
             </div>
-            {/* <div className="right ">
-              <h1>{conditions.title}</h1>
-              <p>Author: Sunil</p>
-            </div> */}
+            <div className="right">
+              {condition.slice(0, 5).map((item) => (
+                <div className="related">
+                  <div className="item d-flex gap-2">
+                    <div className="img">
+                      <img src={item.cover} alt="" />
+                    </div>
+                    <div className="info">
+                      <h3>{item.title}</h3>
+                      <p>{item.excerpt}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
       ) : null}
@@ -57,7 +69,7 @@ const Wrapper = styled.section`
   .singlePage {
     margin: 2rem auto;
     .left {
-      /* width: 65%; */
+      width: 65%;
       img {
         width: 100%;
         height: 400px;
@@ -90,9 +102,46 @@ const Wrapper = styled.section`
     }
     .right {
       width: 35%;
+      .box {
+        /* border: 2px solid red; */
+        /* width: 100%; */
+      }
       img {
         width: 100%;
-        height: 400px;
+        height: 100px;
+      }
+      .related {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 15px;
+        .item {
+          align-items: center;
+          display: flex;
+          margin-bottom: 20px;
+          padding: 10px;
+
+          .img {
+            width: 40%;
+            img {
+              width: 100%;
+              border-radius: 5px;
+            }
+          }
+          .info {
+            /* background: red; */
+            width: 60%;
+
+            h3 {
+              color: ${({ theme }) => theme.colors.primary};
+              font-size: 20px;
+              font-weight: 600;
+            }
+            p {
+              color: ${({ theme }) => theme.colors.text};
+
+              font-size: 0.925rem;
+            }
+          }
+        }
       }
     }
   }
