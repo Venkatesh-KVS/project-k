@@ -3,6 +3,7 @@ import styled from "styled-components";
 // import DynamicImage from "../requiredPages/DynamicImage";
 import { patientStoryData } from "../data/AllData";
 import { BiSolidQuoteRight } from "react-icons/bi";
+// import ReactPlayer from 'react-player'
 
 const PatientExperience = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -55,6 +56,11 @@ const PatientExperience = () => {
               backgroundSize: "cover",
             }}
           >
+
+            <video autoPlay loop controls={false} muted id="pe_bg_vid">
+              <source src="/project-konnect/images/videos/pe_vid1.mp4"/>
+            </video>
+
             <div className="patientStory-box">
               <div className="patientStory">
                 <h5>Patient Story</h5>
@@ -78,6 +84,14 @@ const PatientExperience = () => {
 export default PatientExperience;
 
 const Wrapper = styled.section`
+  #pe_bg_vid{
+    width: 100%;
+    // height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   .peTitle {
     align-items: center;
     text-align: center;
@@ -91,7 +105,7 @@ const Wrapper = styled.section`
     }
   }
   .peContent {
-    height: 400px;
+    height: 470px;
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -159,17 +173,20 @@ const Wrapper = styled.section`
     .pe-right {
       width: 65%;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 10px 0px;
-      padding: 25px;
+      padding: 0px;
       margin-top: 5px;
       border-radius: 10px;
-      /* background-color: aquamarine; */
       position: relative;
+      overflow: hidden;
       .patientStory-box {
+        height: 82%;
+        display: flex;
+        align-items: center;
         position: absolute;
         top: 0;
         right: 50px;
         width: 40%;
-        background-color: ${({ theme }) => theme.colors.primary90};
+        background-color: ${({ theme }) => theme.colors.primary};
         .patientStory {
           overflow: hidden;
           margin: 25px;

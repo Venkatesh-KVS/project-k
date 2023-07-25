@@ -7,10 +7,7 @@ const CartIcon = ({ setShow, size }) => {
     <Wrapper>
       <div className="cart-icon">
         <FaShoppingCart className="cart-icon" />
-
-        {/* {totalItemsInCart > 0 && (
-          <span className="item-count">{totalItemsInCart}</span>
-        )} */}
+        <span className="item-count">10</span>
         <span>{size}</span>
       </div>
     </Wrapper>

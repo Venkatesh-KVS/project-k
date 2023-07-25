@@ -21,7 +21,7 @@ const Packages = () => {
               {packagesData.map((item, index) => (
                 <HpCard
                   key={index}
-                  image={item.imgUrl}
+                  image={item.ftrImg}
                   title={item.title}
                   price={item.price}
                   code={item.code}
