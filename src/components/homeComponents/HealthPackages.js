@@ -1,6 +1,6 @@
 import React from "react";
 import HpCard from "../requiredPages/HpCard";
-import { packagesData } from "../data/AllData";
+import { packagesData } from "../../assets/data/AllData";
 import styled from "styled-components";
 
 const HealthPackages = () => {
@@ -8,13 +8,12 @@ const HealthPackages = () => {
     <Wrapper>
       <section className="r_section mb-5" id="hp_sec">
         <div>
-          <div className="secFour-info w-50 mx-auto d-flex">
-            <h2 className="r_heading_title">Health Packages</h2>
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo.
+          <div className="hp-info d-flex">
+            <h2>Health Packages</h2>
+            <p className="w1000">
+              Konnect Diagnostic Centre: Empowering proactive health management
+              through tailored Diagnostic Health Packages for early detection
+              and prevention, promoting healthier lives.
             </p>
           </div>
           <div className="hp-box container flex-wrap">
@@ -46,10 +45,18 @@ const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    margin-top: 1.5rem;
   }
 
   #hp_sec {
     padding: 50px 0;
     background: ${({ theme }) => theme.colors.bg_light};
+  }
+  .hp-info {
+    flex-direction: column;
+    margin-top: 25px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
 `;

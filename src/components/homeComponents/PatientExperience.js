@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-// import DynamicImage from "../requiredPages/DynamicImage";
-import { patientStoryData } from "../data/AllData";
+import { patientStoryData } from "../../assets/data/AllData";
 import { BiSolidQuoteRight } from "react-icons/bi";
-// import ReactPlayer from 'react-player'
 
 const PatientExperience = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -17,10 +15,9 @@ const PatientExperience = () => {
         <div className="peTitle">
           <h2>The Patient Experience</h2>
           <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo.
+            Hear from our satisfied patients about our exceptional care,
+            accurate results, and compassionate staff.
+            <br /> Experience the difference today.
           </p>
         </div>
         <div className="peContent">
@@ -50,15 +47,14 @@ const PatientExperience = () => {
           {/* ------------------------------------------------- */}
           <div
             className="pe-right"
-            style={{
-              background: `url(${patientStoryData[activeTab].bg})`,
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-            }}
+            // style={{
+            //   background: `url(${patientStoryData[activeTab].bg})`,
+            //   backgroundRepeat: "no-repeat",
+            //   backgroundSize: "cover",
+            // }}
           >
-
-            <video autoPlay loop controls={false} muted id="pe_bg_vid">
-              <source src="/project-konnect/images/videos/pe_vid1.mp4"/>
+            <video autoPlay loop controls={true} id="pe_bg_vid">
+              <source src={patientStoryData[activeTab].video} />
             </video>
 
             <div className="patientStory-box">
@@ -84,7 +80,7 @@ const PatientExperience = () => {
 export default PatientExperience;
 
 const Wrapper = styled.section`
-  #pe_bg_vid{
+  #pe_bg_vid {
     width: 100%;
     // height: 100%;
     position: absolute;
@@ -97,12 +93,6 @@ const Wrapper = styled.section`
     text-align: center;
     justify-content: center;
     margin: 5rem 0 2rem 0;
-    h2 {
-      margin-bottom: 15px;
-    }
-    p {
-      margin-bottom: 0px;
-    }
   }
   .peContent {
     height: 470px;

@@ -34,8 +34,16 @@ const theme = {
     primary90: "#00aeef90",
     secondary: "#005BAB",
     white: "#fff",
-    text: "#000F1C",
+    dark: "#000F1C",
+    text: "#0b141c",
     bg_light: "#f8f8f9",
+  },
+  fonts: {
+    heading1: "2rem",
+    heading2: "1.5rem",
+    heading3: "1.25rem",
+    heading4: "1.125rem",
+    text: "1rem",
   },
 };
 

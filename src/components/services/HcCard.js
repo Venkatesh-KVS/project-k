@@ -1,7 +1,7 @@
 import React from "react";
 import { styled } from "styled-components";
 import { Link } from "react-router-dom";
-import { condition } from "../data/HcData";
+import { condition } from "../../assets/data/HcData";
 import { AiOutlineTags } from "react-icons/ai";
 
 const HcCard = () => {
@@ -18,7 +18,7 @@ const HcCard = () => {
                 <div className="details">
                   <div className="catg">
                     <AiOutlineTags className="icon" />
-                    <a href="/">#{item.category}</a>
+                    <a href="/">{item.category}</a>
                   </div>
                   <h3>{item.title}</h3>
                   <p>Need some description regarding the condition</p>
