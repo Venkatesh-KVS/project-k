@@ -8,6 +8,16 @@
   max-width: 1200px;
   margin: 0 auto !important;
 }
+h2{
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 2rem;
+}
+p{
+  margin: 0;
+}
+.w1000{
+  width: 1000px;
+}
 /* --------------------------------------------Header-------------------------------------------- */
 .top-nav {
   justify-content: center;
@@ -73,7 +83,6 @@
   gap: 15px;
 }
 .secThree-info p {
-  margin: 0;
   font-weight: 500;
   color: #005bab;
 }
@@ -127,20 +136,7 @@
 .cards {
   justify-content: center;
 }
-.secFour {
-  margin: 5rem auto;
-}
-.secFour-info {
-  flex-direction: column;
-  margin-top: 25px;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-.secFour-info p {
-  margin-top: 15px;
-  width: 1000px;
-}
+
 
 /* ----------------------------------------- Section Five ------------------------------------------ */
 
@@ -207,11 +203,7 @@
   line-height: 28px;
   margin-bottom: 0;
 }
-/* p{
-  font-size: 16px;
-  line-height: 26px;
-  color: #6E6E6E;
-} */
+
 .r_para{
   font-size: 18px;
   line-height: 30px;

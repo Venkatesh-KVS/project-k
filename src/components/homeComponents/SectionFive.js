@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 
 const styles = {
   header: {
@@ -34,3 +35,4 @@ const SectionFive = () => {
 };
 
 export default SectionFive;
+const Wrapper = styled.section``;

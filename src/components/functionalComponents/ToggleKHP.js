@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { styled } from "styled-components";
 import { BsSearch } from "react-icons/bs";
 import HpCard from "../requiredPages/HpCard";
-
-import { packagesData } from "../data/AllData";
+import { packagesData } from "../../assets/data/AllData";
 
 const ToggleKHP = () => {
   const [search, setSearch] = useState("");
@@ -32,7 +31,7 @@ const ToggleKHP = () => {
             .map((item, index) => (
               <HpCard
                 key={index}
-                image={item.imgUrl}
+                image={item.ftrImg}
                 title={item.title}
                 price={item.price}
                 code={item.code}

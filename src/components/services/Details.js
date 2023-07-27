@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { AiOutlineTags } from "react-icons/ai";
-import { condition } from "../data/HcData";
+import { condition } from "../../assets/data/HcData";
 import { useParams } from "react-router-dom";
+import HcContent from "./HcContent";
 // import HcCard from "./HcCard";
 
 const DetailsPages = () => {
@@ -31,7 +33,8 @@ const DetailsPages = () => {
               <a href="/details">{conditions.category}</a>
               <h2>{conditions.title}</h2>
               <hr />
-              <div className="content">
+              <HcContent />
+              {/* <div className="content">
                 <h3 className="question">
                   {conditions.questions[0].question1[0].qTitle}
                 </h3>
@@ -39,21 +42,25 @@ const DetailsPages = () => {
                   {conditions.questions[0].question1[0].qDescription}
                 </p>
                 <p>{conditions.questions[0].question2[0].qDescription}</p>
-              </div>
+              </div> */}
             </div>
             <div className="right">
-              {condition.slice(0, 5).map((item) => (
-                <div className="related">
-                  <div className="item d-flex gap-2">
-                    <div className="img">
-                      <img src={item.cover} alt="" />
-                    </div>
-                    <div className="info">
-                      <h3>{item.title}</h3>
-                      <p>{item.excerpt}</p>
+              <h3 className="related-heading">Related</h3>
+
+              {condition.slice(0, 9).map((item) => (
+                <Link to={`/details/${item.id}`}>
+                  <div className="related">
+                    <div className="item d-flex gap-2">
+                      <div className="img">
+                        <img src={item.cover} alt="" />
+                      </div>
+                      <div className="info">
+                        <h3>{item.title}</h3>
+                        <p>{item.excerpt}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
@@ -69,7 +76,7 @@ const Wrapper = styled.section`
   .singlePage {
     margin: 2rem auto;
     .left {
-      width: 65%;
+      width: 70%;
       img {
         width: 100%;
         height: 400px;
@@ -101,26 +108,37 @@ const Wrapper = styled.section`
       }
     }
     .right {
-      width: 35%;
+      width: 30%;
+      .related-heading {
+        font-family: "Montserrat Alternates", sans-serif;
+        font-size: ${({ theme }) => theme.fonts.heading2};
+        color: ${({ theme }) => theme.colors.dark};
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+      a {
+        text-decoration: none;
+      }
       .box {
         /* border: 2px solid red; */
         /* width: 100%; */
       }
       img {
         width: 100%;
-        height: 100px;
+        height: 100%;
       }
       .related {
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         border-radius: 15px;
         .item {
-          align-items: center;
+          /* align-items: center; */
           display: flex;
+
           margin-bottom: 20px;
           padding: 10px;
 
           .img {
-            width: 40%;
+            width: 45%;
             img {
               width: 100%;
               border-radius: 5px;
@@ -128,16 +146,15 @@ const Wrapper = styled.section`
           }
           .info {
             /* background: red; */
-            width: 60%;
-
+            margin: 5px;
+            width: 55%;
             h3 {
-              color: ${({ theme }) => theme.colors.primary};
-              font-size: 20px;
+              color: ${({ theme }) => theme.colors.dark};
+              font-size: ${({ theme }) => theme.fonts.heading4};
               font-weight: 600;
             }
             p {
               color: ${({ theme }) => theme.colors.text};
-
               font-size: 0.925rem;
             }
           }

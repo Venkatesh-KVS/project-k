@@ -20,6 +20,12 @@ const SectionThree = () => {
               </div>
               <h5>Booka a test</h5>
             </div>
+            <div className="s3-s service2">
+              <div className="s3-icons">
+                <DynamicImage imageName={"/icons/house.svg"} />
+              </div>
+              <h5>Home Collections</h5>
+            </div>
             <div className="s3-s service3">
               <div className="s3-icons">
                 <DynamicImage imageName={"/icons/Prescription.svg"} />
@@ -103,7 +109,7 @@ const Wrapper = styled.section`
     }
     h5 {
       color: #fff;
-      font-size: 1rem;
+      font-size: 1.125rem;
     }
     &:hover .s3-icons {
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;

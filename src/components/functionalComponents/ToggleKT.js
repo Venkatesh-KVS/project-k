@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { styled } from "styled-components";
 import { BsFilter, BsSearch } from "react-icons/bs";
-import { organImages } from "../data/AllData";
+import { organImages } from "../../assets/data/AllData";
 import { TestCard } from "../requiredPages/TestCard";
-import { testsData } from "../data/AllData";
+import { testsData } from "../../assets/data/AllData";
 import OrganCarousel from "../requiredPages/OrganCarousel";
 import AtoZ from "../requiredPages/AtoZ";
 
