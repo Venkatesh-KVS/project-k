@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 // import DynamicImage from "../requiredPages/DynamicImage";
-import { patientStoryData } from "../data/AllData";
+import { patientStoryData } from "../../assets/data/AllData";
 import { BiSolidQuoteRight } from "react-icons/bi";
 // import ReactPlayer from 'react-player'
 

@@ -2,7 +2,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { styled } from "styled-components";
 import { TestCard } from "../requiredPages/TestCard";
-import { testsData } from "../data/AllData";
+import { testsData } from "../../assets/data/AllData";
 
 const MyCarousel = () => {
   return (

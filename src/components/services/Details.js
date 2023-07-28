@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { packagesData } from "../data/AllData";
+import { packagesData } from "../../assets/data/AllData";
 
 const Details = () => {
   const { id } = useParams();

@@ -20,7 +20,6 @@ import { CartProvider } from "react-use-cart";
 import PartnerWithUs from "./components/nav-pages/PartnerWithUs";
 import Footer from "./components/nav-pages/Footer";
 import Details from "./components/services/Details";
-// import DynamicHc from "./components/services/DynamicHc";
 
 // const mysql = require("mysql2");
 // const connectSQLdb = require("./server/controller/mysql_controller");

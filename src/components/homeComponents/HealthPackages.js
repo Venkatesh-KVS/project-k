@@ -1,6 +1,6 @@
 import React from "react";
 import HpCard from "../requiredPages/HpCard";
-import { packagesData } from "../data/AllData";
+import { packagesData } from "../../assets/data/AllData";
 import styled from "styled-components";
 
 const HealthPackages = () => {
