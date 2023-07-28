@@ -9,10 +9,9 @@ const SectionFour = () => {
         <div className="secFour-info d-flex">
           <h2>Popular Tests</h2>
           <p className="w1000">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo.
+            Explore Konnect's popular diagnostic tests to gain valuable insights
+            into your health, cognition, and overall well-being. Take charge of
+            your health journey now.
           </p>
         </div>
         <div className="cards d-flex">

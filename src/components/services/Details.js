@@ -4,11 +4,8 @@ import styled from "styled-components";
 import { AiOutlineTags } from "react-icons/ai";
 import { condition } from "../../assets/data/HcData";
 import { useParams } from "react-router-dom";
-
-import { packagesData } from "../../assets/data/AllData";
-
 import HcContent from "./HcContent";
-
+// import HcCard from "./HcCard";
 
 const DetailsPages = () => {
   const { id } = useParams();
@@ -33,19 +30,40 @@ const DetailsPages = () => {
                 <img src={conditions.cover} alt={conditions.title} />
               </div>
               <AiOutlineTags className="icon" />
-              <a href="/details">{conditions.category}</a>
+              <a href="/">{conditions.category}</a>
               <h2>{conditions.title}</h2>
               <hr />
-              <HcContent />
-              {/* <div className="content">
-                <h3 className="question">
-                  {conditions.questions[0].question1[0].qTitle}
-                </h3>
-                <p className="desc">
-                  {conditions.questions[0].question1[0].qDescription}
-                </p>
-                <p>{conditions.questions[0].question2[0].qDescription}</p>
-              </div> */}
+              <h3>{conditions.qMain}</h3>
+              <p>{conditions.mainAnswer}</p>
+              {conditions.questions.map((qstn) => (
+                <div key={qstn.id}>
+                  <h3>{qstn.question}</h3>
+                  <h5>{qstn.include}:</h5>
+
+                  {qstn.lists &&
+                    qstn.lists.map((lists, innerIndex) => (
+                      <div key={innerIndex}>
+                        <ul>
+                          <li>{lists.li1}</li>
+                          <li>{lists.li2}</li>
+                        </ul>
+                      </div>
+                    ))}
+                  {qstn.icons &&
+                    qstn.icons.map((icon) => (
+                      <div className="symptoms-box">
+                        <div className="symptoms" key={id}>
+                          <img
+                            className="symptom-image"
+                            src={icon.icon}
+                            alt=""
+                          />
+                          <h4 className="symptom-name">{icon.name}</h4>
+                        </div>
+                      </div>
+                    ))}
+                </div>
+              ))}
             </div>
             <div className="right">
               <h3 className="related-heading">Related</h3>
@@ -76,6 +94,24 @@ const DetailsPages = () => {
 export default DetailsPages;
 
 const Wrapper = styled.section`
+  .symptoms-box {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    .symptoms {
+      display: flex;
+      border: 2px solid red;
+      width: 100px;
+      .symptom-image {
+        height: auto;
+        padding: 10px;
+
+        /* height: auto; */
+        background-color: yellowgreen;
+      }
+    }
+  }
+
   .singlePage {
     margin: 2rem auto;
     .left {

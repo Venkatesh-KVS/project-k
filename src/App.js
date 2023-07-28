@@ -1,28 +1,26 @@
 import React from "react";
 import "./App.css";
-// import { packagesData } from "./components/data/AllData";
 import { ThemeProvider } from "styled-components";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./components/homeComponents/Home";
-import Header from "./components/nav-pages/Header";
-import About from "./components/nav-pages/About";
-import Cart from "./components/cart/Cart";
-import ErrorPage from "./components/requiredPages/ErrorPage";
-import HomeCollection from "./components/nav-pages/HomeCollection";
-import Services from "./components/nav-pages/Services";
-import SingleProduct from "./SingleProduct";
-import Packages from "./components/nav-pages/Packages";
-import LocateClinic from "./components/nav-pages/LocateClinic";
-import Tests from "./components/nav-pages/Tests";
-import HealthConditions from "./components/services/HealthConditions ";
-import RadiologyServices from "./components/services/RadiologyServices";
+import ErrorPage from "./pages/ErrorPage";
+import Header from "./pages/Header";
+import Home from "./pages/Home";
+import About from "./pages/nav-pages/About";
+import Cart from "./pages/Cart";
+import HomeCollection from "./pages/nav-pages/HomeCollection";
+import Services from "./pages/nav-pages/Services";
+import SingleProduct from "./components/requiredPages/SingleProduct";
+import Packages from "./pages/nav-pages/Packages";
+import LocateClinic from "./pages/nav-pages/LocateClinic";
+import Tests from "./pages/nav-pages/Tests";
+import HealthConditions from "./pages/nav-pages/HealthConditions ";
+import RadiologyServices from "./pages/nav-pages/RadiologyServices";
+import PartnerWithUs from "./pages/nav-pages/PartnerWithUs";
 import { CartProvider } from "react-use-cart";
-import PartnerWithUs from "./components/nav-pages/PartnerWithUs";
-import Footer from "./components/nav-pages/Footer";
+import Footer from "./pages/Footer";
 import Details from "./components/services/Details";
 import { Account } from "./login/Account";
 import { Login } from "./login/Login";
-
 
 // const mysql = require("mysql2");
 // const connectSQLdb = require("./server/controller/mysql_controller");
@@ -30,9 +28,10 @@ import { Login } from "./login/Login";
 
 const theme = {
   colors: {
-    primary: "#00aeef",
+    primary: "#005BAB",
+    pink: "#d12e88",
     primary90: "#00aeef90",
-    secondary: "#005BAB",
+    secondary: "#00aeef",
     white: "#fff",
     dark: "#000F1C",
     text: "#0b141c",
@@ -40,7 +39,7 @@ const theme = {
   },
   fonts: {
     heading1: "2rem",
-    heading2: "1.5rem",
+    heading2: "1.75rem",
     heading3: "1.25rem",
     heading4: "1.125rem",
     text: "1rem",

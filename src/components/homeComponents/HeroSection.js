@@ -1,5 +1,4 @@
 import React from "react";
-// import DynamicImage from "../requiredPages/DynamicImage";
 import { styled } from "styled-components";
 
 const HeroSection = () => {
@@ -13,7 +12,7 @@ const HeroSection = () => {
     //   backgroundRepeat: "no-repeat",
     // }}
     >
-      <div className="hero-sec container d-flex pt-5 justify-content-between">
+      <div className="hero-sec container d-flex p-0 py-5 justify-content-between">
         <div className="hero-content align-self-center ">
           <h1 className="display-4 fw-bold ">
             Your
@@ -50,13 +49,14 @@ export default HeroSection;
 const Wrapper = styled.section`
   .hero-content {
     .span {
-      color: #005bab;
+      color: ${({ theme }) => theme.colors.secondary};
       margin: 0 1rem 0 1rem;
     }
     h1 {
       font-size: 4rem;
+      text-transform: capitalize;
       line-height: 1.3;
-      color: #00aeef;
+      color: ${({ theme }) => theme.colors.primary};
     }
     .hero-packages {
       flex-wrap: wrap;
@@ -68,7 +68,10 @@ const Wrapper = styled.section`
     border-right: 1px solid #005bab;
     overflow: hidden;
     white-space: nowrap;
-    color: #00aeef;
+    /* color: #00aeef; */
+    font-weight: 600;
+    color: ${({ theme }) => theme.colors.secondary};
+
     font-size: 1.3rem;
     line-height: 1.3;
     animation: typing 3s steps(18), blink 0.4s step-end infinite alternate;

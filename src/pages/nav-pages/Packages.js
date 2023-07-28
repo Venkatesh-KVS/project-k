@@ -1,5 +1,5 @@
 import React from "react";
-import HpCard from "../requiredPages/HpCard";
+import HpCard from "../../components/requiredPages/HpCard";
 // import styled from "styled-components";
 import { packagesData } from "../../assets/data/AllData";
 import { styled } from "styled-components";
@@ -7,16 +7,17 @@ import { styled } from "styled-components";
 const Packages = () => {
   return (
     <Wrapper>
-      <section className="r_section mb-5 py-5" id="hp_sec">
+      <section className=" py-5" id="hp_sec">
         <div>
-          <div className="w-50 mx-auto text-center">
-            <h2 className="r_heading_title">Health Packages</h2>
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium.
+          <div className="text-center ">
+            <h2>Health Packages</h2>
+            <p className="w1000 mx-auto">
+              Konnect Diagnostic Centre: Empowering proactive health management
+              through tailored Diagnostic Health Packages for early detection
+              and prevention, promoting healthier lives.
             </p>
           </div>
-          <div className="hp-box container flex-wrap">
+          <div className="hp-box container mt-4 flex-wrap">
             <div className="hpCards d-flex justify-content-between flex-wrap gap-3">
               {packagesData.map((item, index) => (
                 <HpCard

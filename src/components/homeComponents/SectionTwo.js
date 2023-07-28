@@ -15,9 +15,52 @@ const SectionTwo = () => {
   return (
     <Wrapper>
       <div className="s2 ">
-        <div className="s2-top ">
-          <h2>Book a Test</h2>
+        <div className="top-bar container">
+          {/* <div className="boxes d-flex gap-5">
+            <div className="box d-flex">
+              <img
+                src="/project-konnect/images/icons/download-report.svg"
+                alt=""
+              />
+              <div className="box-info">
+                <h5>dfgsdfg</h5>
+                <h6>sdfasdf</h6>
+              </div>
+            </div>
+            <div className="box d-flex">
+              <img
+                src="/project-konnect/images/icons/Prescription.svg"
+                alt=""
+              />
+              <div className="box-info">
+                <h5>dfgsdfg</h5>
+                <h6>sdfasdf</h6>
+              </div>
+            </div>
+            <div className="box d-flex">
+              <img src="/project-konnect/images/icons/Heart.svg" alt="" />
+              <div className="box-info">
+                <h5>dfgsdfg</h5>
+                <h6>sdfasdf</h6>
+              </div>
+            </div>
+            <div className="box d-flex">
+              <img src="/project-konnect/images/icons/Heart.svg" alt="" />
+              <div className="box-info">
+                <h5>dfgsdfg</h5>
+                <h6>sdfasdf</h6>
+              </div>
+            </div>
+            <div className="box d-flex">
+              <img src="/project-konnect/images/icons/Heart.svg" alt="" />
+              <div className="box-info">
+                <h5>dfgsdfg</h5>
+                <h6>sdfasdf</h6>
+              </div>
+            </div>
+          </div> */}
         </div>
+
         <div className="s2-tests-box">
           <div className="s2-container container">
             <div className="d-flex gap-3 justify-content-between">

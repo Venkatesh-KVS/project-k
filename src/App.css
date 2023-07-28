@@ -8,44 +8,55 @@
   max-width: 1200px;
   margin: 0 auto !important;
 }
+h1{
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 h2{
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 2rem;
+  /* font-family: "Montserrat Alternates", sans-serif; */
+  font-size: 1.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h3{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+h4{
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+h5{
+  font-size: 1rem;
+  font-weight: 500;
 }
 p{
+  font-size: 0.9375rem;
+  font-weight:500;
   margin: 0;
 }
 .w1000{
   width: 1000px;
 }
 /* --------------------------------------------Header-------------------------------------------- */
-.top-nav {
-  justify-content: center;
-  align-items: center;
-  margin: 15px auto;
-}
+
 .register {
   gap: 10px;
 }
 
 .navbar-lists {
   gap: 2.5rem;
-  font-size: 1rem;
+  /* font-size: 1rem; */
 }
 .nav-list {
   text-decoration: none;
   color: #fff;
+  font-size: 12px;
   text-transform: capitalize;
 }
-.butn {
-  background-color: #00aeef;
-  padding: 6px 25px 6px 25px;
-  color: #fff;
-  border-radius: 25px;
-  border: none;
-}
 
-/* ------------------------------------------- Hero Section ----------------------------------------- */
+
 
 /* ------------------------------------ Section three ------------------------------------------ */
 .secThree-img img {
@@ -170,53 +181,8 @@ p{
 }
 
 /* ----------------------------------------- Partner with us ------------------------------------------ */
-.w-33{width: 33%}
 
-.r_section{
-  display: flex;
-  max-width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  position: relative;
-}
-.r_section>div{
-  width: 1320px;
-  margin: 0 auto;
-}
-.r_container{
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-}
-.r_container > div{
-  margin: 10px 0;
-}
 
-.r_heading_title{
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 38px;
-  line-height: 45px;
-}
-.r_heading_title_secondary{
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 18px;
-  line-height: 28px;
-  margin-bottom: 0;
-}
-
-.r_para{
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 600;
-  color: #6E6E6E;
-}
-.r_subtitle{
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 30px;
-  color: #00AEEF;
-  position: relative;
-}
 
 /* ------------------------- */
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import DynamicImage from "../requiredPages/DynamicImage";
+import DynamicImage from "../components/requiredPages/DynamicImage";
 import { styled } from "styled-components";
 
 const Footer = () => {
@@ -150,9 +150,13 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom container content-box">
-          <p className="para ">Promotions and ions an</p>
-          <p className="para ">Prions</p>
-          <p className="para ">Promotions and ions an</p>
+          <p className="styled">
+            © 2023 Konnect Diagnostics All rights reserved
+          </p>
+          <p className="styled">|</p>
+          <NavLink to={"/"} className="styled tc">
+            Terms and Conditions
+          </NavLink>
         </div>
       </Wrapper>
     </>
@@ -162,10 +166,10 @@ const Footer = () => {
 export default Footer;
 
 const Wrapper = styled.section`
-  background-color: #00aeef;
+  background-color: ${({ theme }) => theme.colors.primary};
 
   .footer-head {
-    background-color: #005bab;
+    background-color: ${({ theme }) => theme.colors.secondary};
   }
   .fh-content {
     align-items: center;
@@ -174,7 +178,8 @@ const Wrapper = styled.section`
   }
   .fh {
     padding: 0;
-    background-color: #005bab;
+    background-color: ${({ theme }) => theme.colors.secondary};
+
     .fh-nl {
       gap: 15px;
       align-items: center;
@@ -205,15 +210,22 @@ const Wrapper = styled.section`
   }
   .nav-list {
     text-transform: capitalize;
+    font-size: 0.9375rem;
   }
   .footer-bottom {
     padding: 0;
-    p {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    .styled {
+      font-size: 14px;
+      font-weight: 300;
       display: inline-block;
-      margin-right: 0.8rem;
+      margin-bottom: 10px;
       color: #fff;
-      font-size: 1rem;
-      /* padding: 1rem 0 1rem 0; */
+    }
+    .tc {
+      text-decoration: none;
     }
   }
 `;

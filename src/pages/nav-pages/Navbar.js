@@ -1,13 +1,13 @@
 import React from "react";
 import { styled } from "styled-components";
 import { NavLink } from "react-router-dom";
-import CartIcon from "../cart/CartIcon";
+import CartIcon from "../../components/cart/CartIcon";
 
 const Navbar = () => {
   return (
     <Wrapper>
       <nav className="navbar navbar-expand-lg   ">
-        <div className=" container d-flex justify-content-between">
+        <div className=" p-0 container d-flex justify-content-between">
           <ul className="navbar-lists navbar-nav d-flex">
             <li>
               <NavLink to="/" className="nav-list">
@@ -30,24 +30,18 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <li class="menuItem">
-                <NavLink to="/services" className="nav-list ">
+              <li class="services ">
+                <NavLink to="/services" className="nav-list">
                   Services
                 </NavLink>
                 <ul class="subMenu">
-                  <li class="subMenuItem menuItem">
-                    <NavLink
-                      to="/health-conditions"
-                      className="nav-list sub-nav-list "
-                    >
+                  <li class="subMenuItem ">
+                    <NavLink to="/health-conditions" className="sub-nav-list ">
                       Health Conditions
                     </NavLink>
                   </li>
-                  <li class="subMenuItem menuItem">
-                    <NavLink
-                      to="/radiology-services"
-                      className="nav-list sub-nav-list"
-                    >
+                  <li class="subMenuItem ">
+                    <NavLink to="/radiology-services" className="sub-nav-list">
                       Radiology Services
                     </NavLink>
                   </li>
@@ -73,8 +67,6 @@ const Navbar = () => {
           <div className="cart-icon">
             <NavLink to="/cart" className="cart-icon-box">
               <CartIcon />
-              {/* <FaShoppingCart className="cart-icon" /> */}
-              {/* <span>0</span> */}
             </NavLink>
           </div>
         </div>
@@ -115,50 +107,52 @@ const Wrapper = styled.section`
     }
   }
   .nav-list {
-    font-size: 18px;
-    font-weight: 500;
-    border-bottom: 2px solid transparent;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    border-bottom: 1.5px solid transparent;
     line-height: 1.8;
     transition: 0.3s;
+
     &:hover {
-      border-bottom: 2px solid #fff;
+      border-bottom: 1.5px solid #fff;
     }
   }
-  .menuItem {
+  .services {
     list-style: none;
     position: relative;
-    /* z-index: 2; */
+    .subMenu {
+      /* border: 2px solid red; */
+      position: absolute;
+      list-style: none;
+      width: 225px;
+      display: none;
+      background-color: ${({ theme }) => theme.colors.primary};
+      top: 1.8rem;
+      left: -1rem;
+      transition: 0.3s;
+      border-radius: 0 0 5px 5px;
+      padding: 10px 15px;
+      .subMenuItem {
+        margin-bottom: 5px;
+      }
+      .sub-nav-list {
+        color: #fff;
+        &:hover {
+          transition: 0.3s;
+          padding-bottom: 0;
+          border-bottom: 1px solid ${({ theme }) => theme.colors.white};
+          overflow: hidden;
+        }
+      }
+    }
 
     &:hover .subMenu {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      padding: 10px;
-    }
-  }
-
-  .subMenu {
-    width: 250px;
-    display: none;
-    background-color: #00aeef;
-    position: absolute;
-    top: 1.8rem;
-  }
-  .sub-nav-list {
-    padding: 15px;
-    font-size: 16px;
-
-    /* margin-bottom: 2px solid red; */
-    &:hover {
-      padding-bottom: 0;
-      transition: 0.3s;
-      border-bottom: 1px solid #fff;
-      overflow: hidden;
+      display: block;
     }
   }
 
   .navbar {
-    background-color: #00aeef;
+    background-color: ${({ theme }) => theme.colors.primary};
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
 `;

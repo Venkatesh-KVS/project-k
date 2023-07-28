@@ -1,10 +1,11 @@
 import React from "react";
 import { styled } from "styled-components";
+// import AssetImage from "../../imageImporter";
 
 const PartnerWithUs = () => {
   return (
     <Wrapper className="partnerwithus">
-      <section className="r_section" id="pwu_s1">
+      <section className="container" id="pwu_s1">
         <img
           src="/project-konnect/images/dotGrids1.png"
           alt=""
@@ -19,28 +20,27 @@ const PartnerWithUs = () => {
               <span className="r_subtitle">We take immense pride in</span>
             </div>
             <div>
-              <h2 className="r_heading_title">
+              <h1 className="r_heading_title">
                 Our Commitment to Exceptional Diagnostic Services
-              </h2>
+              </h1>
               {/* <img src="/project-konnect/images/reaction_svg.svg" alt="" /> */}
             </div>
             <div className="r_container">
               <p className="r_para">
-                We invite you to join us in our mission
-                to deliver high-quality healthcare solutions to patients.
+                We invite you to join us in our mission to deliver high-quality
+                healthcare solutions to patients.
               </p>
             </div>
           </div>
 
           <div className="col-6 d-flex align-items-stretch" id="pwu_s12">
-            <div className="w-50" id="pwu_s121">
-              {/* <img src="/project-konnect/images/scientist-analyzing-blood-sample-vacutainer-with-researching-team-looking-through-microscope.jpg" alt=""/> */}
-            </div>
+            <div className="w-50" id="pwu_s121"></div>
             <div className="w-50 ">
               <div className="w-100 ">
+                {/* <AssetImage imageName={"/partner-with-us/pwu_s42i1.jpg"} /> */}
                 <img
                   src="/project-konnect/images/scientist-working-laboratory-with-test-tubes-laboratory-equipment.jpg"
-                  alt=""
+                  alt="Img"
                 />
               </div>
               <div className="w-100 ">
@@ -55,17 +55,16 @@ const PartnerWithUs = () => {
       </section>
 
       <section className="r_section d-flex flex-column" id="pwu_s2">
-        <div className="r_container flex-column w-50" id="pwu_s21">
+        <div className="container flex-column w-50" id="pwu_s21">
+          <div>
+            <h2 className=" text-center">Why Konnect Diagnostics?</h2>
+          </div>
           <div className="d-flex justify-content-center">
             <span className="r_subtitle text-center">
               Bridging the Gap between Accuracy and Accessibility
             </span>
           </div>
-          <div>
-            <h2 className="r_heading_title text-center">
-              Why Konnect Diagnostics?
-            </h2>
-          </div>
+
           <div className="r_container text-center">
             <p className="r_para">
               We bridge the gap between accuracy and accessibility. With
@@ -75,7 +74,7 @@ const PartnerWithUs = () => {
           </div>
         </div>
 
-        <div className="r_container row mx-auto" id="pwu_s22">
+        <div className="container row mx-auto mt-3" id="pwu_s22">
           <div className="row d-flex align-items-stretch">
             <div className="col-4 px-4">
               <div className="text-center">
@@ -161,14 +160,15 @@ const PartnerWithUs = () => {
 
       <section className="r_section d-flex flex-column" id="pwu_s3">
         <div className="r_container flex-column w-50" id="pwu_s31">
+          <div>
+            <h2 className=" text-center">Partner Benefits:</h2>
+          </div>
           <div className="d-flex justify-content-center">
             <span className="r_subtitle text-center">
               At Konnect mutual success takes center stage
             </span>
           </div>
-          <div>
-            <h2 className="r_heading_title text-center">Partner Benefits:</h2>
-          </div>
+
           <div className="r_container text-center">
             <p className="r_para">
               We're dedicated to unlocking partnerships and elevating
@@ -227,9 +227,9 @@ const PartnerWithUs = () => {
               />
             </div>
             <div className="w-50 ps-5 d-flex flex-column justify-content-center content_wrapper">
-              <h2 className="r_heading_title_secondary">
+              <h3 className="r_heading_title_secondary">
                 Collaborative Approach
-              </h2>
+              </h3>
               <p>
                 We believe in fostering strong partnerships based on
                 collaboration and mutual growth. We work closely with our
@@ -260,13 +260,13 @@ const PartnerWithUs = () => {
         </div>
       </section>
 
-      <section className="r_section" id="pwu_s4">
+      <section className="r_section container" id="pwu_s4">
         <img
           src="/project-konnect/images/dotGrids1.png"
           alt=""
           className="dots"
         />
-        <div className="r_container row d-flex align-items-stretch">
+        <div className="container row d-flex align-items-stretch">
           <div
             className="col-6 pe-5 d-flex flex-column justify-content-center"
             id="pwu_s41"
@@ -297,10 +297,16 @@ const PartnerWithUs = () => {
             </div>
             <div className="w-50 ">
               <div className="w-100 ">
-                <img src="/project-konnect/images/pwu_s42i2.jpg" alt="" />
+                <img
+                  src="/project-konnect/images/partner-with-us/pwu_s42i2.jpg"
+                  alt=""
+                />
               </div>
               <div className="w-100 ">
-                <img src="/project-konnect/images/pwu_s42i3.jpg" alt="" />
+                <img
+                  src="/project-konnect/images/partner-with-us/pwu_s42i3.jpg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -313,6 +319,54 @@ const PartnerWithUs = () => {
 export default PartnerWithUs;
 
 const Wrapper = styled.section`
+  .r_heading_title {
+    text-transform: capitalize;
+    font-size: 38px;
+    position: relative;
+    margin: 20px 0;
+  }
+
+  .r_heading_title_secondary {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+  .r_para {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #6e6e6e;
+  }
+  .r_subtitle {
+    /* font-size: 18px; */
+    font-weight: 700;
+    line-height: 30px;
+    color: #00aeef;
+    position: relative;
+  }
+  .w-33 {
+    width: 33%;
+  }
+
+  .r_section {
+    display: flex;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+  }
+  .r_section > div {
+    width: 1320px;
+    margin: 0 auto;
+  }
+  .r_container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .r_container > div {
+    margin: 10px 0;
+  }
   #pwu_s1 {
     background: url("/project-konnect/images/bannerBG.png");
     background-position: right top;
@@ -332,15 +386,12 @@ const Wrapper = styled.section`
         left: 110%;
         top: 15px;
         width: 150px;
-        height: 5px;
+        height: 3px;
         border-radius: 8px;
         background: ${({ theme }) => theme.colors.primary};
       }
-      h2.r_heading_title {
-        position: relative;
-        margin: 20px 0;
-      }
-      h2.r_heading_title:after {
+
+      h1.r_heading_title:after {
         content: url("/project-konnect/images/reaction_svg.svg");
         z-index: -1;
         margin-left: 30px;
@@ -392,20 +443,20 @@ const Wrapper = styled.section`
     .r_subtitle:after {
       content: "";
       position: absolute;
-      right: 105%;
+      right: 102%;
       top: 10px;
       width: 150px;
-      height: 5px;
+      height: 3px;
       border-radius: 8px;
       background: ${({ theme }) => theme.colors.primary};
     }
     .r_subtitle:before {
       content: "";
       position: absolute;
-      left: 105%;
+      left: 102%;
       top: 10px;
       width: 150px;
-      height: 5px;
+      height: 3px;
       border-radius: 8px;
       background: ${({ theme }) => theme.colors.primary};
     }
@@ -447,7 +498,7 @@ const Wrapper = styled.section`
       right: 105%;
       top: 10px;
       width: 150px;
-      height: 5px;
+      height: 3px;
       border-radius: 8px;
       background: ${({ theme }) => theme.colors.primary};
     }
@@ -457,7 +508,7 @@ const Wrapper = styled.section`
       left: 105%;
       top: 10px;
       width: 150px;
-      height: 5px;
+      height: 3px;
       border-radius: 8px;
       background: ${({ theme }) => theme.colors.primary};
     }
@@ -514,7 +565,7 @@ const Wrapper = styled.section`
       position: relative;
       z-index: 0;
       #pwu_s421 {
-        background: url("/project-konnect/images/pwu_s42i1.jpg");
+        background: url("/project-konnect/images/partner-with-us/pwu_s42i1.jpg");
         background-position: right top;
         background-size: cover;
         background-repeat: no-repeat;

@@ -15,11 +15,11 @@ const PatientExperience = () => {
       <div className="pe container">
         <div className="peTitle">
           <h2>The Patient Experience</h2>
-          <p>
+          <h5>
             Hear from our satisfied patients about our exceptional care,
-            accurate results, and compassionate staff.
-            <br /> Experience the difference today.
-          </p>
+            accurate results, and compassionate staff. Experience the difference
+            today.
+          </h5>
         </div>
         <div className="peContent">
           <div className="pe-left">
