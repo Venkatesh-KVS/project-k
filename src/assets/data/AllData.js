@@ -2,6 +2,7 @@ export const patientStoryData = [
   {
     id: 1,
     photo: "/project-konnect/images/patients/patient1.jpg",
+    video: "/project-konnect/images/videos/pe_vid1.mp4",
     name: "NameOne",
     info: "unde Description unde omnis one",
     bg: "/project-konnect/images/patients/patient1Bg.jpg",
@@ -11,10 +12,10 @@ export const patientStoryData = [
   {
     id: 2,
     photo: "/project-konnect/images/patients/patient2.jpg",
+    video: "https://www.youtube.com/watch?v=ZSM3w1v-A_Y",
     name: "NameOneTwo",
     info: "The unde Description unde omnis two ",
     bg: "/project-konnect/images/patients/patient2Bg.jpg",
-
     description:
       "Two Sed ut perspptatem accusantium doloremque laudantium, toticiatis unde omnis iste natus error sit voluam rem aperiam",
   },
@@ -53,8 +54,7 @@ export const patientStoryData = [
     name: "NameOneThree",
     info: "The unde Description unde omnis six ",
     bg: "/project-konnect/images/patients/patient6Bg.jpg",
-    description:
-      "natus error sit voluptatem accusantium doloremque laTwo Sed ut perspiciatis unde omnis iste udantium, totam rem aperiam",
+    description: "natus error sit voluptatem accusantium doloremque laTwo Sed ut perspiciatis unde omnis iste udantium, totam rem aperiam",
   },
 ];
 
@@ -261,3 +261,5 @@ export const ytPatExpVids = [
 
 
 
+=======
+>>>>>>> main

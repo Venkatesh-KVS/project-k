@@ -20,6 +20,9 @@ import { CartProvider } from "react-use-cart";
 import PartnerWithUs from "./components/nav-pages/PartnerWithUs";
 import Footer from "./components/nav-pages/Footer";
 import Details from "./components/services/Details";
+import { Account } from "./login/Account";
+import { Login } from "./login/Login";
+
 
 // const mysql = require("mysql2");
 // const connectSQLdb = require("./server/controller/mysql_controller");
@@ -31,8 +34,16 @@ const theme = {
     primary90: "#00aeef90",
     secondary: "#005BAB",
     white: "#fff",
-    text: "#000F1C",
+    dark: "#000F1C",
+    text: "#0b141c",
     bg_light: "#f8f8f9",
+  },
+  fonts: {
+    heading1: "2rem",
+    heading2: "1.5rem",
+    heading3: "1.25rem",
+    heading4: "1.125rem",
+    text: "1rem",
   },
 };
 
@@ -44,12 +55,10 @@ function App() {
           <Router basename="/project-konnect">
             <Header />
             <Routes>
-              {/* <Route
-                path="/hc-card"
-                element={<DynamicHc packagesData={packagesData} />}
-              /> */}
               <Route path="/" element={<Home />} />
               <Route path="*" element={<ErrorPage />} />
+              <Route exact path="/login" element={<Login />} />
+              <Route exact path="/account" element={<Account />} />
               <Route path="/about" element={<About />} />
               <Route path="/tests" element={<Tests />} />
               <Route path="/singleproduct/:id" element={<SingleProduct />} />
@@ -57,7 +66,7 @@ function App() {
               <Route path="/home-collection" element={<HomeCollection />} />
               <Route path="/services" element={<Services />} />
               <Route path="/health-conditions" element={<HealthConditions />} />
-              <Route path="/details" element={<Details />} />
+              <Route path="/details/:id" element={<Details />} />
               <Route
                 path="/radiology-services"
                 element={<RadiologyServices />}
