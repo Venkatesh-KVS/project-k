@@ -22,7 +22,6 @@ import Details from "./components/services/Details";
 import { Account } from "./login/Account";
 import { Login } from "./login/Login";
 
-
 // const mysql = require("mysql2");
 // const connectSQLdb = require("./server/controller/mysql_controller");
 // const sqldb_funcs = require("./server/database/mysql_connection");
