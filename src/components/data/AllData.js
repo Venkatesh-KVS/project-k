@@ -139,100 +139,6 @@ export const packagesData = [
     ftrImg: "/project-konnect/images/health-packages/hp-FeatureImages/cancer_screening_female.jpg",
     shortDesc: "Clinical Breast Examination: Ideally done by a gynaecologist, it needs to be repeated every 2-3 years for women who are in their 30s and annually for women 40 & above. Mammogram: This is low dose x-ray test done to detect small and early stage breast cancers."
   }
-  // -------------------
-
-  // {
-  //   id: 1,
-  //   code: "001",
-  //   title: "Konnect Master Health Checkup",
-  //   imgUrl: "/project-konnect/images/health-packages/hp1.jpg",
-  //   price: "2999",
-  //   desc: "Basic Health Check-up Package can help in diagnosing conditions at an early stage and preventing complications related to them. It includes a unique diagnostic profile of tests for a health evaluation This package is suitable for males and females of all age groups",
-  //   // moreInfo: {
-  //   //   pOne: "Point One",
-  //   //   pTwo: "Point Two",
-  //   //   pThree: "Point Three",
-  //   // },
-  // },
-  // {
-  //   id: 2,
-  //   code: "002",
-  //   title: "Konnect Executive Health Checkup",
-  //   imgUrl: "/project-konnect/images/health-packages/hp2.jpg",
-  //   price: "5799",
-  //   desc: "Thi ns is a description of the co di a description of the co dia description of the co dition",
-  // },
-  // {
-  //   id: 3,
-  //   code: "003",
-  //   title: "Konnect Diabetic Package",
-  //   imgUrl: "/project-konnect/images/health-packages/hp3.jpg",
-  //   price: "2499",
-  //   desc: "This is a description of the condition",
-  // },
-  // {
-  //   id: 4,
-  //   code: "004",
-  //   title: "Konnect Diabetic Package 4",
-  //   imgUrl: "/project-konnect/images/health-packages/hp3.jpg",
-  //   price: "2499",
-  //   desc: "This is a description of the condition",
-  // },
-  // {
-  //   id: 5,
-  //   code: "004",
-  //   title: "Konnect Diabetic Package 4",
-  //   imgUrl: "/project-konnect/images/health-packages/hp3.jpg",
-  //   price: "2499",
-  //   desc: "This is a description of the condition",
-  // },
-  // {
-  //   id: 6,
-  //   code: "006",
-  //   title: "Konnect Diabetic Package 4",
-  //   imgUrl: "/project-konnect/images/health-packages/hp3.jpg",
-  //   price: "2499",
-  //   desc: "This is a description of the condition",
-  // },
-  // {
-  //   id: 4,
-  //   code: "004",
-  //   title: "Konnect Diabetic Package 4",
-  //   imgUrl: "/project-konnect/images/health-packages/hp3.jpg",
-  //   price: "2499",
-  //   desc: "This is a description of the condition",
-  //   moreInfo: {
-  //     pOne: "Point One",
-  //     pTwo: "Point Two",
-  //     pThree: "Point Three",
-  //   },
-  // },
-  // {
-  //   id: 5,
-  //   code: "004",
-  //   title: "Konnect Diabetic Package 4",
-  //   imgUrl: "/project-konnect/images/health-packages/hp3.jpg",
-  //   price: "2499",
-  //   desc: "This is a description of the condition",
-  //   moreInfo: {
-  //     pOne: "Point One",
-  //     pTwo: "Point Two",
-  //     pThree: "Point Three",
-  //   },
-  // },
-  // {
-  //   id: 6,
-  //   code: "006",
-  //   title: "Konnect Diabetic Package 4",
-  //   imgUrl: "/project-konnect/images/health-packages/hp3.jpg",
-  //   price: "2499",
-  //   desc: "This is a description of the condition",
-  //   moreInfo: {
-  //     pOne: "Point One",
-  //     pTwo: "Point Two",
-  //     pThree: "Point Three",
-  //   },
-  // },
 ];
 
 export const organImages = [
@@ -326,6 +232,30 @@ export const testsData = [
   },
   // {
 ];
+
+export const ytPatExpVids = [
+  {
+    id: 1,
+    vidCode: "O5OmR3qcXVI",
+  },
+  {
+    id: 2,
+    vidCode: "hBE14y9zUKI",
+  },
+  {
+    id: 3,
+    vidCode: "NdGRpPOwPZk",
+  },
+  {
+    id: 4,
+    vidCode: "6Hk_FrWZa9E",
+  },
+  {
+    id: 5,
+    vidCode: "UaLYILf7Hs8",
+  },
+];
+
 
 
 

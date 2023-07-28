@@ -6,6 +6,7 @@ import SectionFour from "./SectionFour";
 // import SectionFive from "./SectionFive";
 import HealthPackages from "./HealthPackages";
 import PatientExperience from "./PatientExperience";
+import PatExpCarousel from "./PatExpCarousel";
 
 const Home = () => {
   return (
@@ -17,7 +18,8 @@ const Home = () => {
         <SectionFour />
         <HealthPackages />
         {/* <SectionFive /> */}
-        <PatientExperience />
+        {/* <PatientExperience /> */}
+        <PatExpCarousel />
       </div>
     </div>
   );
