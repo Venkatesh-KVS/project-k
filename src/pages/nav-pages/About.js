@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import DynamicImage from "../requiredPages/DynamicImage";
+import DynamicImage from "../../components/requiredPages/DynamicImage";
 import { BiChevronsRight } from "react-icons/bi";
 import { CiHospital1 } from "react-icons/ci";
 

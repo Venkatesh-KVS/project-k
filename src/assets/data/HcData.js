@@ -57,19 +57,40 @@ export const condition = [
     cover:
       "https://img.freepik.com/free-photo/young-sick-businesswoman-sneezing-tissue-while-working-office_637285-1991.jpg?w=740&t=st=1690021375~exp=1690021975~hmac=f935fae69a87bafec97362458e25a79f63ecc8c69c99f9be6f87b16b3295b4e4",
     // date: "APRIL 05, 2018",
+    qMain: "What are Allergies?",
+    mainAnswer:
+      "Allergies can be understood as reactions from the body’s immune system towards typically harmless substances. The body treats these harmless substances as toxic foreign entities and starts producing antibodies (IgE) against them. Immune cells called mast cells release histamine in response to an allergic reaction in the body.",
     questions: [
       {
-        question1: [
+        question: "What are the types of Allergies?",
+        include: "Different types of allergies include",
+        lists: [
           {
-            qTitle: "What are Allergies?",
-            qDescription:
-              "Allergies can be understood as reactions from the body’s immune system towards typically harmless substances. The body treats these harmless substances as toxic foreign entities and starts producing antibodies (IgE) against them. Immune cells called mast cells release histamine in response to an allergic reaction in the body.",
+            li1: "Food allergy",
+            li2: "Drug allergy",
           },
         ],
-        question2: [
+      },
+      {
+        question: "What are the symptoms?",
+        include: "Different types of allergies include",
+
+        icons: [
           {
-            qTitle: "What are the types of Allergies?",
-            qDescription: "Different types of allergies include:",
+            name: "one",
+            icon: "/project-konnect/images/icons/house.svg",
+          },
+          {
+            name: "two",
+            icon: "/project-konnect/images/icons/house.svg",
+          },
+          {
+            name: "three",
+            icon: "/project-konnect/images/icons/house.svg",
+          },
+          {
+            name: "four",
+            icon: "/project-konnect/images/icons/house.svg",
           },
         ],
       },
@@ -85,19 +106,35 @@ export const condition = [
 
     cover:
       "https://img.freepik.com/free-photo/man-bent-her-head-grabbed-him-her-after-exercise_1150-22887.jpg?w=740&t=st=1690027449~exp=1690028049~hmac=00294e03195e6ada6be9d052d9471ccd48b183ab177994b831b0a993c08408ae",
+
     questions: [
       {
-        question1: [
+        question: "What is Arthritis?---",
+        answer: "answer1",
+        lists: [
           {
-            qTitle: "What is Arthritis?",
-            qDescription:
-              "Arthritis is defined as a bone disorder that causes pain and inflammation of joints. A joint is a place where two bones connect to each other such as an elbow or knee joint in our body. It restricts bone movement in affected individuals, lowering their quality of life. It is more common in older individuals. However, it can also develop in men, women, and children of any age. A few more common arthritis-affected areas of the body s include:",
+            li11: "sf544sd",
+            li12: "Camaro",
+          },
+          {
+            li1: "sf544sd",
+            li2: "Camaro",
           },
         ],
-        question2: [
+        icons: [
           {
-            qTitle: "What are the types of Allergies?",
-            qDescription: "Different types of allergies include:",
+            one: "sfsd",
+            two: "Camaro",
+          },
+        ],
+      },
+      {
+        question: "q2",
+        answer: "answer2",
+        lists: [
+          {
+            li1: "fs",
+            li2: "Camsdfasaro",
           },
         ],
       },
@@ -114,17 +151,32 @@ export const condition = [
     date: "MARCH 15, 2018",
     questions: [
       {
-        question1: [
+        question: "What are Allergies?---",
+        answer: "answer1",
+        lists: [
           {
-            qTitle: "What are Allergies?",
-            qDescription:
-              "Allergies can be understood as reactions from the body’s immune system towards typically harmless substances. The body treats these harmless substances as toxic foreign entities and starts producing antibodies (IgE) against them. Immune cells called mast cells release histamine in response to an allergic reaction in the body.",
+            li11: "sf544sd",
+            li12: "Camaro",
+          },
+          {
+            li1: "sf544sd",
+            li2: "Camaro",
           },
         ],
-        question2: [
+        icons: [
           {
-            qTitle: "What are the types of Allergies?",
-            qDescription: "Different types of allergies include:",
+            one: "sfsd",
+            two: "Camaro",
+          },
+        ],
+      },
+      {
+        question: "q2",
+        answer: "answer2",
+        lists: [
+          {
+            li1: "fs",
+            li2: "Camsdfasaro",
           },
         ],
       },
@@ -140,17 +192,32 @@ export const condition = [
     date: "February 20, 2018",
     questions: [
       {
-        question1: [
+        question: "What are Allergies?---",
+        answer: "answer1",
+        lists: [
           {
-            qTitle: "What are Allergies?",
-            qDescription:
-              "Allergies can be understood as reactions from the body’s immune system towards typically harmless substances. The body treats these harmless substances as toxic foreign entities and starts producing antibodies (IgE) against them. Immune cells called mast cells release histamine in response to an allergic reaction in the body.",
+            li11: "sf544sd",
+            li12: "Camaro",
+          },
+          {
+            li1: "sf544sd",
+            li2: "Camaro",
           },
         ],
-        question2: [
+        icons: [
           {
-            qTitle: "What are the types of Allergies?",
-            qDescription: "Different types of allergies include:",
+            one: "sfsd",
+            two: "Camaro",
+          },
+        ],
+      },
+      {
+        question: "q2",
+        answer: "answer2",
+        lists: [
+          {
+            li1: "fs",
+            li2: "Camsdfasaro",
           },
         ],
       },
@@ -166,17 +233,32 @@ export const condition = [
     date: "February 20, 2018",
     questions: [
       {
-        question1: [
+        question: "What are Allergies?---",
+        answer: "answer1",
+        lists: [
           {
-            qTitle: "What are Allergies?",
-            qDescription:
-              "Allergies can be understood as reactions from the body’s immune system towards typically harmless substances. The body treats these harmless substances as toxic foreign entities and starts producing antibodies (IgE) against them. Immune cells called mast cells release histamine in response to an allergic reaction in the body.",
+            li11: "sf544sd",
+            li12: "Camaro",
+          },
+          {
+            li1: "sf544sd",
+            li2: "Camaro",
           },
         ],
-        question2: [
+        icons: [
           {
-            qTitle: "What are the types of Allergies?",
-            qDescription: "Different types of allergies include:",
+            one: "sfsd",
+            two: "Camaro",
+          },
+        ],
+      },
+      {
+        question: "q2",
+        answer: "answer2",
+        lists: [
+          {
+            li1: "fs",
+            li2: "Camsdfasaro",
           },
         ],
       },

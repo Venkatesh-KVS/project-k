@@ -71,9 +71,9 @@ const Wrapper = styled.section`
     .atc-btn {
       color: ${({ theme }) => theme.colors.white};
       width: 8rem;
-      background-color: ${({ theme }) => theme.colors.secondary};
+      background-color: ${({ theme }) => theme.colors.primary};
       &:hover {
-        background-color: ${({ theme }) => theme.colors.primary};
+        background-color: ${({ theme }) => theme.colors.secondary};
       }
     }
   }

@@ -95,13 +95,13 @@ const Wrapper = styled.section`
       }
     }
     button {
-      font-size: 17px;
+      font-size: 1rem;
+      padding: 0;
       border: none;
       background: none;
       font-weight: 500;
     }
   }
-
   .profile img {
     width: 40px;
     height: 40px;
@@ -112,12 +112,13 @@ const Wrapper = styled.section`
     }
   }
   .openProfile {
-    color: #000;
+    color: ${({ theme }) => theme.colors.white};
+    align-items: center;
     box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
     position: absolute;
     padding: 20px;
     border-radius: 5px;
-    top: 80px;
+    top: 65px;
     right: 10px;
     width: 250px;
     background: #fff;
@@ -141,6 +142,6 @@ const Wrapper = styled.section`
     font-weight: 500;
   }
   .openProfile button:hover {
-    background: rgba(147, 75, 255, 0.075);
+    background: rgba(0, 91, 171, 0.075);
   }
 `;

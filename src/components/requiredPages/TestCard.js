@@ -49,7 +49,7 @@ const Wrapper = styled.section`
     flex-wrap: wrap;
     text-align: left;
     background-color: #fff;
-    border: 2px solid #00aeef;
+    border: 2px solid ${({ theme }) => theme.colors.primary};
     color: #fff;
     border-radius: 4px;
     padding: 2rem;
@@ -69,7 +69,7 @@ const Wrapper = styled.section`
     overflow: hidden;
     top: 0;
     right: 0;
-    background-color: #00aeef;
+    background-color: ${({ theme }) => theme.colors.primary};
     border-radius: 0 4px 0 32px;
   }
   .go-arrow {
@@ -84,7 +84,7 @@ const Wrapper = styled.section`
     z-index: -1;
     top: -26px;
     right: -26px;
-    background: #00aeef;
+    background: ${({ theme }) => theme.colors.primary};
     height: 52px;
     width: 52px;
     border-radius: 32px;
@@ -124,7 +124,7 @@ const Wrapper = styled.section`
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: $color;
+        /* background-color: $color; */
         border-radius: 10rem;
         /* z-index: 2; */
       }
