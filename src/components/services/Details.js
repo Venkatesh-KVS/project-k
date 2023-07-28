@@ -4,9 +4,8 @@ import styled from "styled-components";
 import { AiOutlineTags } from "react-icons/ai";
 import { condition } from "../../assets/data/HcData";
 import { useParams } from "react-router-dom";
-// import HcContent from "./HcContent";
+import HcContent from "./HcContent";
 // import HcCard from "./HcCard";
-// import { hcContentData } from "../../assets/data/HcContentData";
 
 const DetailsPages = () => {
   const { id } = useParams();

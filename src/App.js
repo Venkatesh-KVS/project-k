@@ -21,7 +21,7 @@ import Footer from "./pages/Footer";
 import Details from "./components/services/Details";
 import { Account } from "./login/Account";
 import { Login } from "./login/Login";
-// import DynamicHc from "./components/services/DynamicHc";
+
 
 // const mysql = require("mysql2");
 // const connectSQLdb = require("./server/controller/mysql_controller");

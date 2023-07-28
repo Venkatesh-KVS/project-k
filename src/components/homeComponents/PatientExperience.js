@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+
 import { patientStoryData } from "../../assets/data/AllData";
 import { BiSolidQuoteRight } from "react-icons/bi";
 
