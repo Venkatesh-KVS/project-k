@@ -57,7 +57,7 @@ const PatExpCarousel = () => {
     <Wrapper>
       <div className="container">
         <div className="p-4 mb-5">
-          <h2 className="r_heading_title text-center mb-4"> Patient Experience</h2>
+          <h2 className="r_heading_title text-center mb-4"> - Patient Experience - </h2>
 
           <div style={{margin: "20px 20px 20px 0"}} className="d-flex justify-content-end">
             <button onClick={()=>PE_carousel_slider.current.slickPrev()} className="btn btn-outline-dark btn-sm">PREV</button>
