@@ -19,7 +19,7 @@ const Home = () => {
         <HealthPackages />
         {/* <SectionFive /> */}
         {/* <PatientExperience /> */}
-        <PatExpCarousel />
+        {/* <PatExpCarousel /> */}
       </div>
     </div>
   );

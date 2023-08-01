@@ -45,6 +45,11 @@ const Navbar = () => {
                       Radiology Services
                     </NavLink>
                   </li>
+                  <li class="subMenuItem ">
+                    <NavLink to="/fetal-medicine-unit" className="sub-nav-list">
+                      Fetal Medicine Unit
+                    </NavLink>
+                  </li>
                 </ul>
               </li>
             </li>

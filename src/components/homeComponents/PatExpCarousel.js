@@ -1,14 +1,11 @@
-import "./VideoCarousel.css";
-// import React from "react";
-// import { Carousel } from "react-bootstrap";
-// import ReactPlayer from "react-player";
+import React, { useRef } from "react";
 import styled from "styled-components";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ytPatExpVids } from "../../assets/data/AllData";
-import SinglePEytVideo from "./SinglePEytVideo"; 
-import React, { useRef } from "react";
+import SinglePEytVideo from "./PatExpSingleytVideo"; 
+import "./PatExpVideoCarousel.css";
 
 
 // import "bootstrap/dist/css/bootstrap.css";
