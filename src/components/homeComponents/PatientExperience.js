@@ -46,14 +46,7 @@ const PatientExperience = () => {
             ))}
           </div>
           {/* ------------------------------------------------- */}
-          <div
-            className="pe-right"
-            // style={{
-            //   background: `url(${patientStoryData[activeTab].bg})`,
-            //   backgroundRepeat: "no-repeat",
-            //   backgroundSize: "cover",
-            // }}
-          >
+          <div className="pe-right">
             <video autoPlay loop controls={true} id="pe_bg_vid">
               <source src={patientStoryData[activeTab].video} />
             </video>

@@ -21,6 +21,7 @@ import Footer from "./pages/Footer";
 import Details from "./components/services/Details";
 import { Account } from "./login/Account";
 import { Login } from "./login/Login";
+import FetalMedicineUnit from "./pages/nav-pages/FetalMedicineUnit";
 
 // const mysql = require("mysql2");
 // const connectSQLdb = require("./server/controller/mysql_controller");
@@ -66,13 +67,12 @@ function App() {
               <Route path="/services" element={<Services />} />
               <Route path="/health-conditions" element={<HealthConditions />} />
               <Route path="/details/:id" element={<Details />} />
-              <Route
-                path="/radiology-services"
-                element={<RadiologyServices />}
-              />
+              <Route path="/radiology-services" element={<RadiologyServices />}/>
               <Route path="/packages" element={<Packages />} />
               <Route path="/locate-clinic" element={<LocateClinic />} />
               <Route path="/partner-with-us" element={<PartnerWithUs />} />
+              <Route path="/fetal-medicine-unit" element={<FetalMedicineUnit />} />
+
             </Routes>
             <Footer />
           </Router>
