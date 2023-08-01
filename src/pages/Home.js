@@ -17,7 +17,8 @@ const Home = () => {
         <SectionFour />
         <HealthPackages />
         {/* <SectionFive /> */}
-        <PatientExperience />
+        // <PatientExperience />
+    <PatExpCarousel /> 
       </div>
     </>
   );
