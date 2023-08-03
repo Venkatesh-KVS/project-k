@@ -1,9 +1,12 @@
+import "./VideoCarousel.css";
 import React, { useRef } from "react";
+
 import styled from "styled-components";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ytPatExpVids } from "../../assets/data/AllData";
+
 import SinglePEytVideo from "./PatExpSingleytVideo";
 import "./PatExpVideoCarousel.css";
 
@@ -53,7 +56,9 @@ const PatExpCarousel = () => {
         <div className="p-4 mb-5">
           <h2 className="r_heading_title text-center mb-4">
             {" "}
-            - Patient Experience -{" "}
+
+            Patient Experience
+
           </h2>
 
           <div
