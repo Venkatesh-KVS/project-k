@@ -2,12 +2,12 @@ import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import styled from "styled-components";
 
-const CartIcon = ({ setShow, size }) => {
+const CartIcon = ({ size }) => {
   return (
     <Wrapper>
       <div className="cart-icon">
         <FaShoppingCart className="cart-icon" />
-        <span className="item-count">10</span>
+        <span className="item-count">{size}</span>
         {/* <span>{size}</span> */}
       </div>
     </Wrapper>

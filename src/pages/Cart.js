@@ -4,7 +4,7 @@ import { useCart } from "react-use-cart";
 import { MdDelete, MdCurrencyRupee } from "react-icons/md";
 // import { HiPlusSm, HiMinusSm } from "react-icons/hi";
 
-const Cart = ({ handleChange }) => {
+const Cart = ({handleChange}) => {
   const [showComponent, setShowComponent] = useState(false);
 
   function handleSubmit() {

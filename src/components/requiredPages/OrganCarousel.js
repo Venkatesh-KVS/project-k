@@ -37,8 +37,10 @@ const Wrapper = styled.section`
   .carousel-root {
     /* width: 100%; */
 
+    .carousel {
+      height: auto;
+    }
     .carousel .slider {
-      /* padding: 0 25px 50px 25px; */
       margin: 0 25px;
     }
   }

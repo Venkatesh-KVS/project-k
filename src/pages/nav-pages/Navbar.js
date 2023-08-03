@@ -1,8 +1,9 @@
 import React from "react";
 import { styled } from "styled-components";
 import { NavLink } from "react-router-dom";
+import CartIcon from "../../components/cart/CartIcon";
 
-const Navbar = () => {
+const Navbar = ({ cartSize }) => {
   return (
     <Wrapper>
       <nav className="navbar navbar-expand-lg   ">
@@ -34,6 +35,11 @@ const Navbar = () => {
                       Radiology Services
                     </NavLink>
                   </li>
+                  <li class="subMenuItem ">
+                    <NavLink to="/fetal-medicine-unit" className="sub-nav-list">
+                      Fetal Medicine Unit
+                    </NavLink>
+                  </li>
                 </ul>
               </li>
             </li>
@@ -58,6 +64,12 @@ const Navbar = () => {
               </NavLink>
             </li>
           </ul>
+
+          <div className="cart-icon">
+            <NavLink to="/cart" className="cart-icon-box">
+              <CartIcon size={cartSize} />
+            </NavLink>
+          </div>
         </div>
       </nav>
     </Wrapper>
@@ -120,10 +132,6 @@ const Wrapper = styled.section`
     }
   }
 
-  .navbar {
-    /* background-color: ${({ theme }) => theme.colors.primary90}; */
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-  }
   .navbar-lists {
     gap: 1.8rem;
   }

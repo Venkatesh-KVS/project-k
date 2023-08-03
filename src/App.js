@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import "./App.css";
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from "./styles/global.css";
@@ -22,6 +23,7 @@ import Footer from "./pages/Footer";
 import Details from "./components/services/Details";
 import { Account } from "./login/Account";
 import { Login } from "./login/Login";
+import FetalMedicineUnit from "./pages/nav-pages/FetalMedicineUnit";
 
 // const mysql = require("mysql2");
 // const connectSQLdb = require("./server/controller/mysql_controller");
@@ -48,13 +50,34 @@ const theme = {
 };
 
 function App() {
+  const [cart , setCart] = useState([]);
+	const handleClick = (item)=>{
+    if (cart.indexOf(item) !== -1) return;
+		setCart([...cart, item]);
+    console.log(cart);
+	}
+
+	const handleChange = (item, d) =>{
+		let ind = -1;
+		cart.forEach((data, index)=>{
+			if (data.id === item.id)
+				ind = index;
+		});
+		const tempArr = cart;
+		tempArr[ind].amount += d;
+		
+		if (tempArr[ind].amount === 0)
+			tempArr[ind].amount = 1;
+		setCart([...tempArr])
+	}
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <div className="App ">
         <CartProvider>
           <Router basename="/project-konnect">
-            <Header />
+            <Header cartSize={cart.length} />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="*" element={<ErrorPage />} />
@@ -63,18 +86,17 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/tests" element={<Tests />} />
               <Route path="/singleproduct/:id" element={<SingleProduct />} />
-              <Route path="/cart" element={<Cart />} />
+              <Route path="/cart" element={<Cart handleChange={handleChange} />} />
               <Route path="/home-collection" element={<HomeCollection />} />
               <Route path="/services" element={<Services />} />
               <Route path="/health-conditions" element={<HealthConditions />} />
               <Route path="/details/:id" element={<Details />} />
-              <Route
-                path="/radiology-services"
-                element={<RadiologyServices />}
-              />
-              <Route path="/packages" element={<Packages />} />
+              <Route path="/radiology-services" element={<RadiologyServices />}/>
+              <Route path="/packages" element={<Packages handleClick={handleClick} />} />
               <Route path="/locate-clinic" element={<LocateClinic />} />
               <Route path="/partner-with-us" element={<PartnerWithUs />} />
+              <Route path="/fetal-medicine-unit" element={<FetalMedicineUnit />} />
+
             </Routes>
             <Footer />
           </Router>
