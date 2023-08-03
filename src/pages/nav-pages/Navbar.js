@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 import { NavLink } from "react-router-dom";
 import CartIcon from "../../components/cart/CartIcon";
 
-const Navbar = () => {
+const Navbar = ({cartSize}) => {
   return (
     <Wrapper>
       <nav className="navbar navbar-expand-lg   ">
@@ -71,7 +71,7 @@ const Navbar = () => {
           </ul>
           <div className="cart-icon">
             <NavLink to="/cart" className="cart-icon-box">
-              <CartIcon />
+              <CartIcon size={cartSize} />
             </NavLink>
           </div>
         </div>

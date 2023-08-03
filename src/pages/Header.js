@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { User } from "./nav-pages/User";
 import { BiSolidLogInCircle } from "react-icons/bi";
 
-const Header = () => {
+const Header = ({cartSize}) => {
   return (
     <Wrapper>
       <div className="header">
@@ -38,7 +38,7 @@ const Header = () => {
             </div>
           </div>
 
-          <Navbar />
+          <Navbar cartSize={cartSize} />
         </div>
       </div>
     </Wrapper>
