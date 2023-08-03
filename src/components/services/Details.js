@@ -3,12 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { AiOutlineTags } from "react-icons/ai";
 import { useParams } from "react-router-dom";
-<<<<<<< HEAD
-// import HcContent from "./HcContent";
-// import HcCard from "./HcCard";
-=======
 import { hcContentData } from "../../assets/data/HcContentData";
->>>>>>> branch_v
 
 const DetailsPages = () => {
   const { id } = useParams();

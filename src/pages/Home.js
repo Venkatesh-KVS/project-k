@@ -5,7 +5,7 @@ import SectionThree from "../components/homeComponents/SectionThree";
 import SectionFour from "../components/homeComponents/SectionFour";
 // // import SectionFive from "./SectionFive";
 import HealthPackages from "../components/homeComponents/HealthPackages";
-import PatientExperience from "../components/homeComponents/PatientExperience";
+import PatExpCarousel from "../components/homeComponents/PatExpCarousel";
 
 const Home = () => {
   return (
@@ -17,8 +17,7 @@ const Home = () => {
         <SectionFour />
         <HealthPackages />
         {/* <SectionFive /> */}
-        // <PatientExperience />
-    <PatExpCarousel /> 
+        <PatExpCarousel />
       </div>
     </>
   );
