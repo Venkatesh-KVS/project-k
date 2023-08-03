@@ -17,6 +17,6 @@ export default HealthConditions;
 const Wrapper = styled.section`
   .health-conditions {
     text-align: center;
-    margin: 2rem auto;
+    /* margin: 2rem auto; */
   }
 `;

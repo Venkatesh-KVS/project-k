@@ -2,17 +2,20 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { AiOutlineTags } from "react-icons/ai";
-import { condition } from "../../assets/data/HcData";
 import { useParams } from "react-router-dom";
+<<<<<<< HEAD
 // import HcContent from "./HcContent";
 // import HcCard from "./HcCard";
+=======
+import { hcContentData } from "../../assets/data/HcContentData";
+>>>>>>> branch_v
 
 const DetailsPages = () => {
   const { id } = useParams();
   const [conditions, setconditions] = useState(null);
 
   useEffect(() => {
-    let conditions = condition.find(
+    let conditions = hcContentData.find(
       (conditions) => conditions.id === parseInt(id)
     );
     if (conditions) {
@@ -33,9 +36,9 @@ const DetailsPages = () => {
               <a href="/">{conditions.category}</a>
               <h2>{conditions.title}</h2>
               <hr />
-              <h3>{conditions.qMain}</h3>
-              <p>{conditions.mainAnswer}</p>
-              {conditions.questions.map((qstn) => (
+
+              <div>{conditions.component}</div>
+              {/* {conditions.questions.map((qstn) => (
                 <div key={qstn.id}>
                   <h3>{qstn.question}</h3>
                   <h5>{qstn.include}:</h5>
@@ -46,6 +49,10 @@ const DetailsPages = () => {
                         <ul>
                           <li>{lists.li1}</li>
                           <li>{lists.li2}</li>
+                          <li>{lists.li3}</li>
+                          <li>{lists.li4}</li>
+                          <li>{lists.li5}</li>
+                          <li>{lists.li6}</li>
                         </ul>
                       </div>
                     ))}
@@ -63,12 +70,12 @@ const DetailsPages = () => {
                       </div>
                     ))}
                 </div>
-              ))}
+              ))} */}
             </div>
             <div className="right">
               <h3 className="related-heading">Related</h3>
 
-              {condition.slice(0, 9).map((item) => (
+              {hcContentData.slice(0, 9).map((item) => (
                 <Link to={`/details/${item.id}`}>
                   <div className="related">
                     <div className="item d-flex gap-2">
