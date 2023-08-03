@@ -1,7 +1,7 @@
 import React from "react";
 import { styled } from "styled-components";
 import { Link } from "react-router-dom";
-import { condition } from "../../assets/data/HcData";
+import { hcContentData } from "../../assets/data/HcContentData";
 import { AiOutlineTags } from "react-icons/ai";
 
 const HcCard = () => {
@@ -9,7 +9,7 @@ const HcCard = () => {
     <Wrapper>
       <section className="conditions">
         <div className="hc-card d-flex gap-3 justify-content-between flex-wrap col container">
-          {condition.map((item) => (
+          {hcContentData.map((item) => (
             <div className="box mb-3" key={item.id}>
               <Link to={`/details/${item.id}`}>
                 <div className="img">

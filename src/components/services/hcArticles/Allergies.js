@@ -1,35 +1,10 @@
 import React from "react";
-import { symptoms, riskFactors } from "../../assets/data/HcSymptomsData";
+import { symptoms, riskFactors } from "../../../assets/data/HcSymptomsData";
 import styled from "styled-components";
-// import { hcContentData } from "../../assets/data/HcContentData";
 
-const HcContent = (props) => {
+const Allergies = () => {
   return (
     <Wrapper>
-      {/* <div>
-        <h3 className="question">{props.question1}</h3>
-        {hcContentData.map((item) => (
-          <div key={item.id}>
-            <h2>{item.title}</h2>
-            <p>{item.excerpt}</p>
-
-            {item.questions &&
-              item.questions.map((question, innerIndex) => (
-                <div key={innerIndex}>
-                  <h3>{question.question}</h3>
-                  <p>{question.answer}</p>
-                  {question.lists &&
-                    question.lists.map((listItem, listIndex) => (
-                      <div key={listIndex}>
-                        <p>{listItem.li1}</p>
-                        <p>{listItem.li2}</p>
-                      </div>
-                    ))}
-                </div>
-              ))}
-          </div>
-        ))}
-      </div> */}
       <div className="questions">
         <h3 className="question">What are Allergies?</h3>
         <p className="answer">
@@ -163,9 +138,9 @@ const HcContent = (props) => {
   );
 };
 
-export default HcContent;
+export default Allergies;
 const Wrapper = styled.section`
-  .questions {
+  /* .questions {
     margin-top: 1.5rem;
     .question {
       font-size: ${({ theme }) => theme.fonts.heading2};
@@ -191,7 +166,6 @@ const Wrapper = styled.section`
       .box {
         padding: 5px;
         display: flex;
-        /* gap: 5px; */
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -210,5 +184,5 @@ const Wrapper = styled.section`
         }
       }
     }
-  }
+  } */
 `;

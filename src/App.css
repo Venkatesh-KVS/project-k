@@ -36,25 +36,16 @@ p{
   font-weight:500;
   margin: 0;
 }
+.para{
+  font-size: 1rem;
+}
 .w1000{
   width: 1000px;
 }
 /* --------------------------------------------Header-------------------------------------------- */
 
-.register {
-  gap: 10px;
-}
 
-.navbar-lists {
-  gap: 2.5rem;
-  /* font-size: 1rem; */
-}
-.nav-list {
-  text-decoration: none;
-  color: #fff;
-  font-size: 12px;
-  text-transform: capitalize;
-}
+
 
 
 
@@ -180,9 +171,6 @@ p{
   margin-top: 50px 0 25px 0;
 }
 
-/* ----------------------------------------- Partner with us ------------------------------------------ */
+/* ----------------------------------------- Health Condition Articles ------------------------------------------ */
 
-
-
-/* ------------------------- */
 
