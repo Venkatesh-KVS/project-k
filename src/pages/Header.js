@@ -72,7 +72,7 @@ const Wrapper = styled.section`
 
     height: 65px;
     .header-fixed {
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 25px 0px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 6px 25px 0px;
       width: 100%;
       position: fixed;
       background-color: ${({ theme }) => theme.colors.white};
