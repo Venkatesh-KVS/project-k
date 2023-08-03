@@ -1,10 +1,9 @@
 import React from "react";
 import HpCard from "../../components/requiredPages/HpCard";
-// import styled from "styled-components";
 import { packagesData } from "../../assets/data/AllData";
 import { styled } from "styled-components";
 
-const Packages = () => {
+const Packages = ({handleClick}) => {
   return (
     <Wrapper>
       <section className=" py-5" id="hp_sec">
@@ -18,17 +17,12 @@ const Packages = () => {
             </p>
           </div>
           <div className="hp-box container mt-4 flex-wrap">
-            <div className="hpCards d-flex justify-content-between flex-wrap gap-3">
+            <div className="hpCards d-flex justify-content-center flex-wrap gap-3">
               {packagesData.map((item, index) => (
                 <HpCard
-                  key={index}
-                  image={item.ftrImg}
-                  title={item.title}
-                  price={item.price}
-                  code={item.code}
-                  desc={item.desc}
-                  info={item.temInfo}
+                  key={item.code}
                   item={item}
+                  handleClick={handleClick}
                 />
               ))}
             </div>

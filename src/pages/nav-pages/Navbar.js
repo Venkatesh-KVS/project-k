@@ -2,7 +2,7 @@ import React from "react";
 import { styled } from "styled-components";
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({cartSize}) => {
   return (
     <Wrapper>
       <nav className="navbar navbar-expand-lg   ">
@@ -63,6 +63,13 @@ const Navbar = () => {
               </NavLink>
             </li>
           </ul>
+
+          <div className="cart-icon">
+            <NavLink to="/cart" className="cart-icon-box">
+              <CartIcon size={cartSize} />
+            </NavLink>
+          </div>
+
         </div>
       </nav>
     </Wrapper>
