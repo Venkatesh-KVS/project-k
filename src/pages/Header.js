@@ -23,7 +23,7 @@ const Header = ({cartSize}) => {
               </NavLink>
             </div>
             <div className="menu">
-              <Navbar />
+              <Navbar cartSize={cartSize} />
             </div>
 
             <div className="login d-flex gap-3">
@@ -40,14 +40,11 @@ const Header = ({cartSize}) => {
               </div>
               <div className="cart-icon">
                 <NavLink to="/cart" className="cart-icon-box">
-                  <CartIcon />
+                  <CartIcon size={cartSize}/>
                 </NavLink>
               </div>
             </div>
           </div>
-
-
-          <Navbar cartSize={cartSize} />
 
         </div>
       </div>
