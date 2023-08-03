@@ -1,8 +1,9 @@
 import React from "react";
 import { styled } from "styled-components";
 import { NavLink } from "react-router-dom";
+import CartIcon from "../../components/cart/CartIcon";
 
-const Navbar = ({cartSize}) => {
+const Navbar = ({ cartSize }) => {
   return (
     <Wrapper>
       <nav className="navbar navbar-expand-lg   ">
@@ -69,7 +70,6 @@ const Navbar = ({cartSize}) => {
               <CartIcon size={cartSize} />
             </NavLink>
           </div>
-
         </div>
       </nav>
     </Wrapper>
