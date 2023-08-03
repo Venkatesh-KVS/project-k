@@ -1,41 +1,37 @@
-import React, { useState } from "react";
+import React from "react";
+// import React, { useState } from "react";
 import styled from "styled-components";
 import { useCart } from "react-use-cart";
 import { BsCurrencyRupee } from "react-icons/bs";
 // import { packagesData } from "../data/AllData";
 
-const HpCard = (props) => {
+const HpCard = ({item, handleClick}) => {
   const { addItem } = useCart();
-  const [buttonText, setButtonText] = useState("Add to Cart");
-  const changeText = (text) => {
-    setButtonText(text);
-  };
 
   return (
     <Wrapper>
       <section className="d-flex mb-3 ">
         <div className="hp-card border p-2">
           <div className="hp-img rounded">
-            <img src={props.image} alt="k" />
+            <img src={item.ftrImg} alt="k" />
           </div>
           <div className="p-2">
-            <h2 className=" r_heading_title_secondary">{props.title}</h2>
-            <span>Code: {props.code}</span>
+            <h2 className=" r_heading_title_secondary">{item.title}</h2>
+            <span>Code: {item.code}</span>
             <hr />
             <div className="d-flex align-items-center justify-content-between">
-              <h2 className="hp_price">
-                <BsCurrencyRupee />
-                {props.price}
-              </h2>
               <button
                 className="btn atc-btn btn-sm"
-                onClick={() => {
-                  addItem(props.item);
-                  changeText("View Cart");
-                }}
-              >
-                {buttonText}
+                onClick={ () => { 
+                  addItem(item);
+                  handleClick(item); 
+                }} >
+                Add To Cart
               </button>
+              <h2 className="hp_price">
+                <BsCurrencyRupee />
+                {item.price}
+              </h2>
             </div>
           </div>
         </div>
@@ -70,8 +66,10 @@ const Wrapper = styled.section`
 
     .atc-btn {
       color: ${({ theme }) => theme.colors.white};
-      width: 8rem;
       background-color: ${({ theme }) => theme.colors.primary};
+      padding: 6px 15px;
+      border-radius: 25px;
+      box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
       &:hover {
         background-color: ${({ theme }) => theme.colors.secondary};
       }

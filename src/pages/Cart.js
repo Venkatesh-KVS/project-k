@@ -4,7 +4,7 @@ import { useCart } from "react-use-cart";
 import { MdDelete, MdCurrencyRupee } from "react-icons/md";
 import { HiPlusSm, HiMinusSm } from "react-icons/hi";
 
-const Cart = () => {
+const Cart = ({handleChange}) => {
   const [showComponent, setShowComponent] = useState(false);
 
   function handleSubmit() {
@@ -17,7 +17,7 @@ const Cart = () => {
     items,
     // totalItems,
     cartTotal,
-    updateItemQuantity,
+    // updateItemQuantity,
     removeItem,
     emptyCart,
   } = useCart();
@@ -71,18 +71,16 @@ const Cart = () => {
                     </h3>
                   </div>
                   <div className="quantity d-flex  gap-2">
-                    <HiPlusSm
-                      onClick={() =>
-                        updateItemQuantity(item.id, item.quantity + 1)
-                      }
+                    {/* <HiPlusSm
+                      // onClick={() => updateItemQuantity(item.id, item.quantity + 1) }
+                      onClick={()=>handleChange(item, +1)}
                     />
                     <h5>{item.quantity}</h5>
 
                     <HiMinusSm
-                      onClick={() =>
-                        updateItemQuantity(item.id, item.quantity - 1)
-                      }
-                    />
+                      // onClick={() => updateItemQuantity(item.id, item.quantity - 1) }
+                      onClick={()=>handleChange(item, -1)}
+                    /> */}
                   </div>
 
                   <MdDelete
@@ -125,60 +123,6 @@ const Cart = () => {
           </div>
         </div>
       </div>
-
-      {/* <div className="cart row justify-content-center">
-        <div className="col-12">
-          <h5>
-            Cart ({totalUniqueItems}) totalItems:({totalItems})
-          </h5>
-          <table className="table tbl table-light table-hover container ">
-            <tbody className="tbody">
-              {items.map((item, index) => {
-                return (
-                  <tr key={index}>
-                    <td className="tdTitle">{item.title} </td>
-                    <td className="tdPrice">{item.price}</td>
-                    <td className="tdQuantity">Quantity {item.quantity}</td>
-                    <td className="tdButtons d-flex">
-                      <button
-                        className="btn btn-minus ms-2"
-                        onClick={() =>
-                          updateItemQuantity(item.id, item.quantity - 1)
-                        }
-                      >
-                        -
-                      </button>
-                      <button
-                        className="btn btn-plus ms-2"
-                        onClick={() =>
-                          updateItemQuantity(item.id, item.quantity + 1)
-                        }
-                      >
-                        +
-                      </button>
-                      <button
-                        className="btn btn-remove  ms-2"
-                        onClick={() => removeItem(item.id)}
-                      >
-                        Remove Item
-                      </button>
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-        <div className="total-price d-flex col-auto ms-auto">
-          <h2>Total Price : ${cartTotal}</h2>
-          <button
-            className="btn btn-clear-cart m-2"
-            onClick={() => emptyCart()}
-          >
-            Clear Cart
-          </button>
-        </div>
-      </div> */}
     </Wrapper>
   );
 };

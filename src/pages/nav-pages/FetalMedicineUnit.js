@@ -26,9 +26,9 @@ const FetalMedicineUnit = () => {
               <span className="spl_text"> Fetal Medicine Unit </span>
             </div>
             <div className="my-2">
-              <h2 className="">
+              <h1 className="">
               Center for Fetal Medicine, that provides mother and fetus care
-              </h2>
+              </h1>
             </div>
             <div className="">
               <p className="">
@@ -393,7 +393,7 @@ const Wrapper = styled.section`
   
   /*def */
   .spl_text{
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     color: #d66ea6;
   }

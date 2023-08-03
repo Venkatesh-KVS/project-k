@@ -6,8 +6,9 @@ import { User } from "./nav-pages/User";
 import { BiSolidLogInCircle } from "react-icons/bi";
 import CartIcon from "../components/cart/CartIcon";
 
-const Header = () => {
-  const [loggedIn, setLoggedIn] = useState(false);
+
+const Header = ({cartSize}) => {
+ const [loggedIn, setLoggedIn] = useState(false);
   return (
     <Wrapper>
       <div className="header">
@@ -44,6 +45,10 @@ const Header = () => {
               </div>
             </div>
           </div>
+
+
+          <Navbar cartSize={cartSize} />
+
         </div>
       </div>
     </Wrapper>
