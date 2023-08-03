@@ -209,6 +209,8 @@ const Wrapper = styled.section`
     gap: 15px;
   }
   .nav-list {
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.white};
     text-transform: capitalize;
     font-size: 0.9375rem;
   }

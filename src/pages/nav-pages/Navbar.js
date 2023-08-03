@@ -1,7 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
 import { NavLink } from "react-router-dom";
-import CartIcon from "../../components/cart/CartIcon";
 
 const Navbar = ({cartSize}) => {
   return (
@@ -9,16 +8,6 @@ const Navbar = ({cartSize}) => {
       <nav className="navbar navbar-expand-lg   ">
         <div className=" p-0 container d-flex justify-content-between">
           <ul className="navbar-lists navbar-nav d-flex">
-            <li>
-              <NavLink to="/" className="nav-list">
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/about" className="nav-list">
-                About
-              </NavLink>
-            </li>
             <li>
               <NavLink to="/tests" className="nav-list">
                 Tests
@@ -64,16 +53,23 @@ const Navbar = ({cartSize}) => {
               </NavLink>
             </li>
             <li>
+              <NavLink to="/about" className="nav-list">
+                About
+              </NavLink>
+            </li>
+            <li>
               <NavLink to="/partner-with-us" className="nav-list">
                 Partner With US
               </NavLink>
             </li>
           </ul>
+
           <div className="cart-icon">
             <NavLink to="/cart" className="cart-icon-box">
               <CartIcon size={cartSize} />
             </NavLink>
           </div>
+
         </div>
       </nav>
     </Wrapper>
@@ -85,41 +81,19 @@ const Wrapper = styled.section`
   .navbar {
     z-index: 98;
   }
-  .cart-icon {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    svg {
-      font-size: 25px;
-      fill: ${({ theme }) => theme.colors.white};
-    }
-    span {
-      position: absolute;
-      color: ${({ theme }) => theme.colors.white};
 
-      top: -15px;
-      height: 15px;
-      width: 15px;
-      /* background-color: red; */
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-      margin: 0;
-      font-size: 15px;
-      font-weight: 600;
-    }
-  }
   .nav-list {
+    text-decoration: none;
+    text-transform: capitalize;
     font-size: 1rem;
-    letter-spacing: 0.5px;
-    border-bottom: 1.5px solid transparent;
-    line-height: 1.8;
+    font-weight: 600;
+    /* letter-spacing: 0.5px; */
+    color: ${({ theme }) => theme.colors.primary};
+    border-bottom: 1.8px solid transparent;
     transition: 0.3s;
 
     &:hover {
-      border-bottom: 1.5px solid #fff;
+      border-bottom: 1.8px solid ${({ theme }) => theme.colors.primary};
     }
   }
   .services {
@@ -131,8 +105,9 @@ const Wrapper = styled.section`
       list-style: none;
       width: 225px;
       display: none;
-      background-color: ${({ theme }) => theme.colors.primary};
-      top: 1.8rem;
+      background-color: ${({ theme }) => theme.colors.white};
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 25px 0px;
+      top: 1.5rem;
       left: -1rem;
       transition: 0.3s;
       border-radius: 0 0 5px 5px;
@@ -141,11 +116,12 @@ const Wrapper = styled.section`
         margin-bottom: 5px;
       }
       .sub-nav-list {
-        color: #fff;
+        color: ${({ theme }) => theme.colors.primary};
+
         &:hover {
           transition: 0.3s;
           padding-bottom: 0;
-          border-bottom: 1px solid ${({ theme }) => theme.colors.white};
+          border-bottom: 1px solid ${({ theme }) => theme.colors.primary};
           overflow: hidden;
         }
       }
@@ -157,7 +133,10 @@ const Wrapper = styled.section`
   }
 
   .navbar {
-    background-color: ${({ theme }) => theme.colors.primary};
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* background-color: ${({ theme }) => theme.colors.primary90}; */
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  }
+  .navbar-lists {
+    gap: 1.8rem;
   }
 `;

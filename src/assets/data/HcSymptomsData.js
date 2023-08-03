@@ -1,4 +1,43 @@
 export const symptoms = [
+  // {
+  //   id: 2,
+  //   allergy: [
+  //     {
+  //       symptoms: [
+  //         {
+  //           symptom: "Runny nose",
+  //           icon: "/project-konnect/images/icons/house.svg",
+  //         },
+  //         {
+  //           symptom: "Sneezing",
+  //           icon: "/project-konnect/images/icons/house.svg",
+  //         },
+  //         {
+  //           symptom: "Coughing",
+  //           icon: "/project-konnect/images/icons/house.svg",
+  //         },
+  //       ],
+  //       riskFactors: [
+  //         {
+  //           symptom: "Certain foods",
+  //           icon: "/project-konnect/images/icons/house.svg",
+  //         },
+  //         {
+  //           symptom: "Pets",
+  //           icon: "/project-konnect/images/icons/house.svg",
+  //         },
+  //         {
+  //           symptom: "Dust mites",
+  //           icon: "/project-konnect/images/icons/house.svg",
+  //         },
+  //         {
+  //           symptom: "Pollen",
+  //           icon: "/project-konnect/images/icons/house.svg",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
   {
     id: 1,
     symptom: "Runny nose",

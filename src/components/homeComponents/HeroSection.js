@@ -4,17 +4,16 @@ import { styled } from "styled-components";
 const HeroSection = () => {
   return (
     <Wrapper
-    // style={{
-    //   backgroundImage: `url("project-konnect/images/sample-img2.jpg")`,
-    //   background:
-    //     "linear-gradient(90deg, rgba(0, 32, 60, 1), rgba(255, 255, 255) )",
-    //   backgroundSize: "cover",
-    //   backgroundRepeat: "no-repeat",
-    // }}
+      style={{
+        backgroundImage: `url("project-konnect/images/bannerImage.jpg")`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
     >
       <div className="hero-sec container d-flex p-0 py-5 justify-content-between">
         <div className="hero-content align-self-center ">
-          <h1 className="display-4 fw-bold ">
+          {/* <h1 className="display-4 fw-bold ">
             Your
             <span className="span">partner</span>
             in <br />
@@ -25,20 +24,14 @@ const HeroSection = () => {
             Get Your
             <strong className="mx-2">Reports</strong>
             in<span className="mx-2">24</span>hours
-          </div>
-          {/* <div className="hero-packages d-flex gap-3">
-          <div className="cohp d-flex mt-2">
-            <DynamicImage imageName={"/icons/box-white.svg"} />
-            <p className="cohp-btn btn px-2 p-2">Book a Test</p>
-          </div>
-        </div> */}
+          </div> */}
         </div>
-        <div className="hero-video d-flex">
+        {/* <div className="hero-video d-flex">
           <video autoPlay loop muted controls={false}>
             <source src="/project-konnect/images/hero24.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-        </div>
+        </div> */}
       </div>
     </Wrapper>
   );
@@ -48,6 +41,7 @@ export default HeroSection;
 
 const Wrapper = styled.section`
   .hero-content {
+    height: 60vh;
     .span {
       color: ${({ theme }) => theme.colors.secondary};
       margin: 0 1rem 0 1rem;
