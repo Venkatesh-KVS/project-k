@@ -6,7 +6,7 @@ import styled from "styled-components";
 const HealthPackages = () => {
   return (
     <Wrapper>
-      <section className="r_section mb-5" id="hp_sec">
+      <section className="mb-5" id="hp_sec">
         <div>
           <div className="hp-info d-flex">
             <h2>Health Packages</h2>
@@ -21,12 +21,12 @@ const HealthPackages = () => {
               {packagesData.slice(0, 3).map((item, index) => (
                 <HpCard
                   key={index}
-                  image={item.ftrImg}
-                  title={item.title}
-                  price={item.price}
-                  code={item.code}
-                  desc={item.desc}
-                  info={item.temInfo}
+                  // image={item.ftrImg}
+                  // title={item.title}
+                  // price={item.price}
+                  // code={item.code}
+                  // desc={item.desc}
+                  // info={item.temInfo}
                   item={item}
                 />
               ))}

@@ -5,7 +5,7 @@ import HcCard from "../../components/services/HcCard";
 const HealthConditions = () => {
   return (
     <Wrapper>
-      <div className="container health-conditions">
+      <div className="container health-conditions mt-5">
         <h1>Health Conditions</h1>
       </div>
       <HcCard />

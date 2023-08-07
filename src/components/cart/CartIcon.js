@@ -22,14 +22,9 @@ const Wrapper = styled.section`
   }
 
   .item-count {
-    /* position: absolute; */
-
-    /* top: -10px; */
-    /* right: -10px; */
-    background-color: red;
-    color: white;
+    background-color: ${({ theme }) => theme.colors.secondary};
+    /* padding: 5px; */
     border-radius: 50%;
-    /* padding: 10px; */
   }
 
   ul {
