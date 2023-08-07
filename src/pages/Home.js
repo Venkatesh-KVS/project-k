@@ -6,12 +6,14 @@ import SectionFour from "../components/homeComponents/SectionFour";
 // // import SectionFive from "./SectionFive";
 import HealthPackages from "../components/homeComponents/HealthPackages";
 import PatExpCarousel from "../components/homeComponents/PatExpCarousel";
+import HeroSlider from "../components/homeComponents/HeroSlider";
 
 const Home = () => {
   return (
     <>
       <div>
-        <HeroSection />
+        {/* <HeroSection /> */}
+        <HeroSlider />
         <SectionTwo />
         <SectionThree />
         <SectionFour />

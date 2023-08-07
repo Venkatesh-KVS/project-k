@@ -6,9 +6,8 @@ import { User } from "./nav-pages/User";
 import { BiSolidLogInCircle } from "react-icons/bi";
 import CartIcon from "../components/cart/CartIcon";
 
-
-const Header = ({cartSize}) => {
- const [loggedIn, setLoggedIn] = useState(false);
+const Header = ({ cartSize }) => {
+  const [loggedIn, setLoggedIn] = useState(false);
   return (
     <Wrapper>
       <div className="header">
@@ -34,18 +33,18 @@ const Header = ({cartSize}) => {
                     className="butn signup-button d-flex gap-2"
                   >
                     {loggedIn ? <User /> : "LogIn"}
+
                     <BiSolidLogInCircle />
                   </button>
                 </NavLink>
               </div>
               <div className="cart-icon">
                 <NavLink to="/cart" className="cart-icon-box">
-                  <CartIcon size={cartSize}/>
+                  <CartIcon size={cartSize} />
                 </NavLink>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </Wrapper>
@@ -69,8 +68,8 @@ const Wrapper = styled.section`
     background-color: ${({ theme }) => theme.colors.white};
   }
   .header {
-    /* border: 2px solid red; */
-    /* margin-bottom: 50px; */
+    /* z-index: 9999; */
+    background-color: ${({ theme }) => theme.colors.white};
 
     height: 65px;
     .header-fixed {
@@ -147,8 +146,8 @@ const Wrapper = styled.section`
     }
     span {
       position: absolute;
-      color: ${({ theme }) => theme.colors.primary};
-      top: -15px;
+      color: ${({ theme }) => theme.colors.white};
+      top: -12px;
       height: 15px;
       width: 15px;
       /* background-color: red; */

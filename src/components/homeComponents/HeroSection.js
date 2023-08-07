@@ -4,16 +4,16 @@ import { styled } from "styled-components";
 const HeroSection = () => {
   return (
     <Wrapper
-      style={{
-        backgroundImage: `url("project-konnect/images/bannerImage.jpg")`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
+    // style={{
+    //   backgroundImage: `url("project-konnect/images/bannerImage.jpg")`,
+    //   backgroundSize: "cover",
+    //   backgroundPosition: "center",
+    //   backgroundRepeat: "no-repeat",
+    // }}
     >
       <div className="hero-sec container d-flex p-0 py-5 justify-content-between">
-        <div className="hero-content align-self-center ">
-          {/* <h1 className="display-4 fw-bold ">
+        <div className="hero-content ">
+          <h1 className="display-4 fw-bold ">
             Your
             <span className="span">partner</span>
             in <br />
@@ -24,14 +24,14 @@ const HeroSection = () => {
             Get Your
             <strong className="mx-2">Reports</strong>
             in<span className="mx-2">24</span>hours
-          </div> */}
+          </div>
         </div>
-        {/* <div className="hero-video d-flex">
+        <div className="hero-video d-flex">
           <video autoPlay loop muted controls={false}>
             <source src="/project-konnect/images/hero24.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-        </div> */}
+        </div>
       </div>
     </Wrapper>
   );
@@ -41,7 +41,9 @@ export default HeroSection;
 
 const Wrapper = styled.section`
   .hero-content {
-    height: 60vh;
+    /* height: 60vh; */
+    align-self: center;
+    /* justify-content: center; */
     .span {
       color: ${({ theme }) => theme.colors.secondary};
       margin: 0 1rem 0 1rem;

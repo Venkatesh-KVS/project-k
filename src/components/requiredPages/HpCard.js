@@ -1,11 +1,8 @@
 import React from "react";
-// import React, { useState } from "react";
 import styled from "styled-components";
 import { useCart } from "react-use-cart";
 import { BsCurrencyRupee } from "react-icons/bs";
-// import { packagesData } from "../data/AllData";
-
-const HpCard = ({item, handleClick}) => {
+const HpCard = ({ item, handleClick }) => {
   const { addItem } = useCart();
 
   return (
@@ -22,10 +19,11 @@ const HpCard = ({item, handleClick}) => {
             <div className="d-flex align-items-center justify-content-between">
               <button
                 className="btn atc-btn btn-sm"
-                onClick={ () => { 
+                onClick={() => {
                   addItem(item);
-                  handleClick(item); 
-                }} >
+                  handleClick(item);
+                }}
+              >
                 Add To Cart
               </button>
               <h2 className="hp_price">
