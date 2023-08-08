@@ -3,6 +3,17 @@ import Arthritis from "../../components/services/hcArticles/Arthritis";
 import Asthma from "../../components/services/hcArticles/Asthma";
 import Cancer from "../../components/services/hcArticles/Cancer";
 import Covid from "../../components/services/hcArticles/Covid";
+import Diabetes from "../../components/services/hcArticles/Diabetes";
+import DiarrhealDiseases from "../../components/services/hcArticles/DiarrhealDiseases";
+import HeartDisease from "../../components/services/hcArticles/HeartDisease";
+import HormonalProblemsInFemales from "../../components/services/hcArticles/HormonalProblemsInFemales";
+import HormonalProblemsInMales from "../../components/services/hcArticles/HormonalProblemsInMales";
+import Hypertension from "../../components/services/hcArticles/Hypertension";
+import InfectiousDiseases from "../../components/services/hcArticles/InfectiousDiseases";
+import InfertilityFemales from "../../components/services/hcArticles/Infertility-Females";
+import InfertilityMales from "../../components/services/hcArticles/Infertility-Males";
+import InflammatoryBowelDisease from "../../components/services/hcArticles/InflammatoryBowelDisease";
+
 export const hcContentData = [
   {
     id: 1,
@@ -51,38 +62,92 @@ export const hcContentData = [
   },
   {
     id: 6,
-    title: "Arthritis",
-    category: "Arthritis",
-    excerpt: "Arthritis can be understood as reactions fds",
+    title: "Diabetes",
+    category: "Diabetes",
+    excerpt: "Diabetes can be understood as reactions fds",
     cover:
       "https://img.freepik.com/free-photo/hand-holding-blood-glucose-meter-measuring-blood-sugar-background-is-stethoscope-chart-file_1387-942.jpg?w=740&t=st=1690030675~exp=1690031275~hmac=99ecfc5e669f67958402bcd6aa41db6360aa913158e02bc732e3ef14dbab17e8",
-    component: <Arthritis />,
+    component: <Diabetes />,
   },
   {
     id: 7,
-    title: "Arthritis",
-    category: "Arthritis",
-    excerpt: "Arthritis can be understood as reactions fds",
+    title: "Diarrheal Diseases",
+    category: "Diarrheal Diseases",
+    excerpt: "DiarrhealDiseases can be understood as reactions fds",
     cover:
       "https://img.freepik.com/premium-photo/man-suffering-from-stomach-ache-with-both-palm-around-waistline-show-pain-injury-belly-area_33807-783.jpg?w=826",
-    component: <Arthritis />,
+    component: <DiarrhealDiseases />,
   },
   {
     id: 8,
-    title: "Arthritis",
-    category: "Arthritis",
+    title: "Heart Disease",
+    category: "Heart Disease",
     excerpt: "Arthritis can be understood as reactions fds",
     cover:
       "https://img.freepik.com/premium-photo/man-have-chest-pain-caused-by-heart-disease_228338-317.jpg?w=740",
-    component: <Arthritis />,
+    component: <HeartDisease />,
   },
   {
     id: 9,
-    title: "Arthritis",
+    title: "Hormonal Problems in Females",
     category: "Arthritis",
-    excerpt: "Arthritis can be understood as reactions fds",
+    excerpt: "Hormonal Problems in Females selector unde as reactions fds",
     cover:
       "https://img.freepik.com/free-photo/aching-young-caucasian-ill-girl-wearing-robe-holding-pack-medical-pills-glass-water-napkin-touching-head-with-closed-eyes-isolated-olive-green-background-with-copy-space_141793-75335.jpg?w=740&t=st=1690030931~exp=1690031531~hmac=4d1be3fa9140cd9a16c3c2d2dc9584c317d69b759d9846d08c871d5f5ff423d5",
-    component: <Arthritis />,
+    component: <HormonalProblemsInFemales />,
+  },
+  {
+    id: 10,
+    title: "Hormonal Problems in Males",
+    category: "Hormonal Problems in Males",
+    excerpt: "Hormonal Problems in Females selector unde as reactions fds",
+    cover:
+      "https://img.freepik.com/free-photo/man-happy-about-pregnancy-test-result_23-2148354805.jpg?w=740&t=st=1691479802~exp=1691480402~hmac=040e421dfb965f08d6efebd32af290d62b3e42d3d33de6cbde9e8636839eca2a",
+    component: <HormonalProblemsInMales />,
+  },
+  {
+    id: 11,
+    title: "Hypertension",
+    category: "Hypertension",
+    excerpt: "Hormonal Problems in Females selector unde as reactions fds",
+    cover:
+      "https://img.freepik.com/premium-photo/doctor-measures-pressure-patient-during-medical-examination-consultation-hospital_122732-1877.jpg?w=740",
+    component: <Hypertension />,
+  },
+  {
+    id: 12,
+    title: "Infectious Diseases",
+    category: "InfectiousDiseases",
+    excerpt: "Hormonal Problems in Females selector unde as reactions fds",
+    cover:
+      "https://img.freepik.com/free-vector/realistic-background-with-microscopic-views-various-colorful-virus-cells-vector-illustration_1284-69391.jpg?w=740&t=st=1691481914~exp=1691482514~hmac=f5698eef341cda149b52d756e053916bebde61206d91ac685ccfff62e109ed72",
+    component: <InfectiousDiseases />,
+  },
+  {
+    id: 13,
+    title: "Infertility (Females)",
+    category: "Infertility-Females",
+    excerpt: "Hormonal Problems in Females selector unde as reactions fds",
+    cover:
+      "https://img.freepik.com/free-photo/young-beautiful-woman-red-pajamas-relaxing-bed_141793-47262.jpg?w=740&t=st=1691489688~exp=1691490288~hmac=a2590f45f8befefab2198f6047b210e5f37d5eff71bf2f56af774f6cc0829e9c",
+    component: <InfertilityFemales />,
+  },
+  {
+    id: 14,
+    title: "Infertility (Males)",
+    category: "Infertility-Males",
+    excerpt: "Hormonal Problems in Males selector unde as reactions fds",
+    cover:
+      "https://img.freepik.com/free-photo/man-with-migraines-holds-her-hand-by-his-nose-bed_1150-26108.jpg?w=740&t=st=1691493184~exp=1691493784~hmac=09d067c8c758ece039f8d97416eac5a540cfca3c1b8cb3dd50eee3dfc75fe927",
+    component: <InfertilityMales />,
+  },
+  {
+    id: 15,
+    title: "Inflammatory Bowel Disease",
+    category: "Infertility-Males",
+    excerpt: "Hormonal Problems in Males selector unde as reactions fds",
+    cover:
+      "https://img.freepik.com/free-photo/man-with-migraines-holds-her-hand-by-his-nose-bed_1150-26108.jpg?w=740&t=st=1691493184~exp=1691493784~hmac=09d067c8c758ece039f8d97416eac5a540cfca3c1b8cb3dd50eee3dfc75fe927",
+    component: <InflammatoryBowelDisease />,
   },
 ];

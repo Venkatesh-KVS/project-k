@@ -1,25 +1,22 @@
 import React from "react";
-import HeroSection from "../components/homeComponents/HeroSection";
 import SectionTwo from "../components/homeComponents/SectionTwo";
 import SectionThree from "../components/homeComponents/SectionThree";
 import SectionFour from "../components/homeComponents/SectionFour";
-// // import SectionFive from "./SectionFive";
 import HealthPackages from "../components/homeComponents/HealthPackages";
-import PatExpCarousel from "../components/homeComponents/PatExpCarousel";
+// import PatExpCarousel from "../components/homeComponents/PatExpCarousel";
 import HeroSlider from "../components/homeComponents/HeroSlider";
+import PatientExperience from "../components/homeComponents/PatientExperience";
 
 const Home = () => {
   return (
     <>
       <div>
-        {/* <HeroSection /> */}
         <HeroSlider />
         <SectionTwo />
         <SectionThree />
         <SectionFour />
         <HealthPackages />
-
-        <PatExpCarousel />
+        <PatientExperience />
       </div>
     </>
   );
