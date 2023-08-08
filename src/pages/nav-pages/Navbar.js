@@ -13,11 +13,11 @@ const Navbar = ({ cartSize }) => {
                 Tests
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to="/home-collection" className="nav-list">
                 Home Collection
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <li class="services ">
                 <NavLink to="/services" className="nav-list">

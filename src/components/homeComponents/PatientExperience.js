@@ -1,28 +1,31 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import styled from "styled-components";
-
-import { patientStoryData } from "../../assets/data/AllData";
-import { BiSolidQuoteRight } from "react-icons/bi";
+// import { patientStoryData } from "../../assets/data/AllData";
+// import { BiSolidQuoteRight } from "react-icons/bi";
+import PatExpCarousel from "./PatExpCarousel";
 
 const PatientExperience = () => {
-  const [activeTab, setActiveTab] = useState(0);
-  const handleTabClick = (index) => {
-    setActiveTab(index);
-  };
+  // const [activeTab, setActiveTab] = useState(0);
+  // const handleTabClick = (index) => {
+  //   setActiveTab(index);
+  // };
 
   return (
     <Wrapper>
       <div className="pe container">
         <div className="peTitle">
           <h2>The Patient Experience</h2>
-          <h5>
+          <p className="w1000 m-auto">
             Hear from our satisfied patients about our exceptional care,
             accurate results, and compassionate staff. Experience the difference
             today.
-          </h5>
+          </p>
         </div>
-        <div className="peContent">
-          <div className="pe-left">
+        <div>
+          <PatExpCarousel />
+        </div>
+        {/* <div className="peContent"> */}
+        {/* <div className="pe-left">
             {patientStoryData.map((patient, index) => (
               <div
                 className={`patients tab-item ${
@@ -44,9 +47,9 @@ const PatientExperience = () => {
                 </div>
               </div>
             ))}
-          </div>
-          {/* ------------------------------------------------- */}
-          <div className="pe-right">
+          </div> */}
+        {/* ------------------------------------------------- */}
+        {/* <div className="pe-right">
             <video autoPlay loop controls={true} id="pe_bg_vid">
               <source src={patientStoryData[activeTab].video} />
             </video>
@@ -64,8 +67,8 @@ const PatientExperience = () => {
                 </h5>
               </div>
             </div>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </div>
     </Wrapper>
   );

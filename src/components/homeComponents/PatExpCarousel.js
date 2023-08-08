@@ -9,7 +9,7 @@ import "./PatExpVideoCarousel.css";
 
 const PatExpCarousel = () => {
   const sliderSettings = {
-    arrows: false,
+    arrows: true,
     dots: true,
     infinite: true,
     speed: 300,
@@ -50,30 +50,7 @@ const PatExpCarousel = () => {
   return (
     <Wrapper>
       <div className="container">
-        <div className="p-4 mb-5">
-          <h2 className="r_heading_title text-center mb-4">
-            Patient Experience
-          </h2>
-
-          <div
-            style={{ margin: "20px 20px 20px 0" }}
-            className="d-flex justify-content-end"
-          >
-            <button
-              onClick={() => PE_carousel_slider.current.slickPrev()}
-              className="btn btn-outline-dark btn-sm"
-            >
-              PREV
-            </button>
-            <button
-              onClick={() => PE_carousel_slider.current.slickNext()}
-              className="btn btn-outline-dark btn-sm"
-              style={{ marginLeft: "10px" }}
-            >
-              NEXT
-            </button>
-          </div>
-
+        <div className=" mb-5">
           <Slider ref={PE_carousel_slider} {...sliderSettings}>
             {ytPatExpVids.map((videoObj) => {
               return <SinglePEytVideo vidCode={videoObj.vidCode} />;
@@ -88,21 +65,16 @@ const PatExpCarousel = () => {
 export default PatExpCarousel;
 
 const Wrapper = styled.section`
-  .slick-arrow {
-    color: black;
-  }
-  .slick-prev {
+  .video-responsive {
+    margin: 0 10px;
   }
   .slick-prev:before,
   .slick-next:before {
-    color: black;
+    color: ${({ theme }) => theme.colors.primary90};
   }
   .slick-dots li button:before {
-    color: Black;
+    color: ${({ theme }) => theme.colors.primary};
     font-size: 10px !important;
     margin-top: 10px;
-  }
-  .slick-dots li.slick-active button:before {
-    color: black !important;
   }
 `;

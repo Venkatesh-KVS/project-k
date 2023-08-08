@@ -32,9 +32,10 @@ const Header = ({ cartSize }) => {
                     onClick={() => setLoggedIn(!loggedIn)}
                     className="butn signup-button d-flex gap-2"
                   >
-                    {loggedIn ? <User /> : "LogIn"}
+                    {loggedIn ? "Login" : "Logout"}
 
                     <BiSolidLogInCircle />
+                    <User />
                   </button>
                 </NavLink>
               </div>
