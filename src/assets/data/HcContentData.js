@@ -13,6 +13,15 @@ import InfectiousDiseases from "../../components/services/hcArticles/InfectiousD
 import InfertilityFemales from "../../components/services/hcArticles/Infertility-Females";
 import InfertilityMales from "../../components/services/hcArticles/Infertility-Males";
 import InflammatoryBowelDisease from "../../components/services/hcArticles/InflammatoryBowelDisease";
+import KidneyDiseases from "../../components/services/hcArticles/KidneyDiseases";
+import LiverDiseases from "../../components/services/hcArticles/LiverDiseases";
+import NutritionalDeficiencies from "../../components/services/hcArticles/NutritionalDeficiencies";
+import Obesity from "../../components/services/hcArticles/Obesity";
+import Pregnancy from "../../components/services/hcArticles/Pregnancy";
+import RespiratoryDiseases from "../../components/services/hcArticles/RespiratoryDiseases";
+import SkinProblems from "../../components/services/hcArticles/SkinProblems";
+import SleepProblems from "../../components/services/hcArticles/SleepProblems";
+import Tuberculosis from "../../components/services/hcArticles/Tuberculosis";
 
 export const hcContentData = [
   {
@@ -147,7 +156,88 @@ export const hcContentData = [
     category: "Infertility-Males",
     excerpt: "Hormonal Problems in Males selector unde as reactions fds",
     cover:
-      "https://img.freepik.com/free-photo/man-with-migraines-holds-her-hand-by-his-nose-bed_1150-26108.jpg?w=740&t=st=1691493184~exp=1691493784~hmac=09d067c8c758ece039f8d97416eac5a540cfca3c1b8cb3dd50eee3dfc75fe927",
+      "https://img.freepik.com/premium-photo/man-white-t-shirt-with-stomachache-gray-room_189498-61.jpg?w=740",
     component: <InflammatoryBowelDisease />,
+  },
+  {
+    id: 16,
+    title: "Kidney Diseases",
+    category: "Infertility-Males",
+    excerpt: "Hormonal Problems in Males selector unde as reactions fds",
+    cover:
+      "https://img.freepik.com/premium-vector/realistic-red-healthy-whole-half-human-kidneys-front-view_212889-5044.jpg?w=740",
+    component: <KidneyDiseases />,
+  },
+  {
+    id: 17,
+    title: "Liver Diseases",
+    category: "Infertility-Males",
+    excerpt: "Hormonal Problems in Males selector unde as reactions fds",
+    cover:
+      "https://img.freepik.com/premium-photo/3d-illustration-sick-human-liver-with-cancer-isolated_196911-12.jpg?w=740",
+    component: <LiverDiseases />,
+  },
+  {
+    id: 18,
+    title: "Nutritional Deficiencies",
+    category: "Infertility-Males",
+    excerpt: "Hormonal Problems in Males selector unde as reactions fds",
+    cover:
+      "https://img.freepik.com/premium-photo/portrait-young-beautiful-woman-with-tomato-measuring-tape-plate_118454-8700.jpg?w=740",
+    component: <NutritionalDeficiencies />,
+  },
+  {
+    id: 19,
+    title: "Obesity",
+    category: "Obesity",
+    excerpt: "Hormonal Problems in Males selector unde as reactions fds",
+    cover:
+      "https://img.freepik.com/premium-photo/overweight-man-tight-jeans-with-measuring-tape_53476-4227.jpg?w=740",
+    component: <Obesity />,
+  },
+  {
+    id: 20,
+    title: "Diagnostic Tests During Pregnancy",
+    category: "Pregnancy",
+    excerpt: "Hormonal Problems in Males selector unde as reactions fds",
+    cover:
+      "https://img.freepik.com/premium-photo/preparation-blood-test-by-female-doctor-medical-uniform-table-white-bright-room-nurse-pierces-patient-s-arm-vein-with-needle-blank-tube_1212-10492.jpg?w=740",
+    component: <Pregnancy />,
+  },
+  {
+    id: 21,
+    title: "Respiratory Diseases",
+    category: "Pregnancy",
+    excerpt: "Hormonal Problems in Males selector unde as reactions fds",
+    cover:
+      "https://img.freepik.com/premium-photo/handsome-man-coughing-into-his-fist-isolated-white-background-man-about-forty-years-old-had-strong-cough_43780-7129.jpg?w=740",
+    component: <RespiratoryDiseases />,
+  },
+  {
+    id: 22,
+    title: "Skin Problems",
+    category: "Pregnancy",
+    excerpt: "Hormonal Problems in Males selector unde as reactions fds",
+    cover:
+      "https://img.freepik.com/premium-photo/cropped-shot-young-womans-face-with-acne-skin-zoom-circle-pimples-red-scars-rash-cheeks_407348-864.jpg?w=740",
+    component: <SkinProblems />,
+  },
+  {
+    id: 23,
+    title: "Sleep Problems",
+    category: "Pregnancy",
+    excerpt: "Hormonal Problems in Males selector unde as reactions fds",
+    cover:
+      "https://img.freepik.com/premium-photo/depressed-young-asian-man-sitting-bed-cannot-sleep-from-insomnia_126277-1326.jpg?w=740",
+    component: <SleepProblems />,
+  },
+  {
+    id: 24,
+    title: "Tuberculosis",
+    category: "Pregnancy",
+    excerpt: "Hormonal Problems in Males selector unde as reactions fds",
+    cover:
+      "https://img.freepik.com/free-photo/young-man-suffering-from-cough-shirt-looking-ill_176474-20423.jpg?w=740&t=st=1691565746~exp=1691566346~hmac=93ac240c74aaed1aafbfee1cf94025993a69e26e856fb529f0cf7f9267dc55e0",
+    component: <Tuberculosis />,
   },
 ];
