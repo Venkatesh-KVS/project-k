@@ -15,10 +15,7 @@ const Header = ({ cartSize }) => {
           <div className="top-nav container d-flex justify-content-between">
             <div className="logo">
               <NavLink to={"/"}>
-                <img
-                  src="/project-konnect/images/konnect-logo.png"
-                  alt="Konect-Logo"
-                />
+                <img src="/konnect/images/konnect-logo.png" alt="Konect-Logo" />
               </NavLink>
             </div>
             <div className="menu">

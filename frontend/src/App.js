@@ -50,33 +50,31 @@ const theme = {
 };
 
 function App() {
-  const [cart , setCart] = useState([]);
-	const handleClick = (item)=>{
+  const [cart, setCart] = useState([]);
+  const handleClick = (item) => {
     if (cart.indexOf(item) !== -1) return;
-		setCart([...cart, item]);
+    setCart([...cart, item]);
     console.log(cart);
-	}
+  };
 
-	const handleChange = (item, d) =>{
-		let ind = -1;
-		cart.forEach((data, index)=>{
-			if (data.id === item.id)
-				ind = index;
-		});
-		const tempArr = cart;
-		tempArr[ind].amount += d;
-		
-		if (tempArr[ind].amount === 0)
-			tempArr[ind].amount = 1;
-		setCart([...tempArr])
-	}
+  const handleChange = (item, d) => {
+    let ind = -1;
+    cart.forEach((data, index) => {
+      if (data.id === item.id) ind = index;
+    });
+    const tempArr = cart;
+    tempArr[ind].amount += d;
+
+    if (tempArr[ind].amount === 0) tempArr[ind].amount = 1;
+    setCart([...tempArr]);
+  };
 
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <div className="App ">
         <CartProvider>
-          <Router basename="/project-konnect">
+          <Router basename="/konnect">
             <Header cartSize={cart.length} />
             <Routes>
               <Route path="/" element={<Home />} />
@@ -86,17 +84,28 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/tests" element={<Tests />} />
               <Route path="/singleproduct/:id" element={<SingleProduct />} />
-              <Route path="/cart" element={<Cart handleChange={handleChange} />} />
+              <Route
+                path="/cart"
+                element={<Cart handleChange={handleChange} />}
+              />
               <Route path="/home-collection" element={<HomeCollection />} />
               <Route path="/services" element={<Services />} />
               <Route path="/health-conditions" element={<HealthConditions />} />
               <Route path="/details/:id" element={<Details />} />
-              <Route path="/radiology-services" element={<RadiologyServices />}/>
-              <Route path="/packages" element={<Packages handleClick={handleClick} />} />
+              <Route
+                path="/radiology-services"
+                element={<RadiologyServices />}
+              />
+              <Route
+                path="/packages"
+                element={<Packages handleClick={handleClick} />}
+              />
               <Route path="/locate-clinic" element={<LocateClinic />} />
               <Route path="/partner-with-us" element={<PartnerWithUs />} />
-              <Route path="/fetal-medicine-unit" element={<FetalMedicineUnit />} />
-
+              <Route
+                path="/fetal-medicine-unit"
+                element={<FetalMedicineUnit />}
+              />
             </Routes>
             <Footer />
           </Router>

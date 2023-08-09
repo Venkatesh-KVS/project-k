@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <Wrapper
     // style={{
-    //   backgroundImage: `url("project-konnect/images/bannerImage.jpg")`,
+    //   backgroundImage: `url("konnect/images/bannerImage.jpg")`,
     //   backgroundSize: "cover",
     //   backgroundPosition: "center",
     //   backgroundRepeat: "no-repeat",
@@ -28,7 +28,7 @@ const HeroSection = () => {
         </div>
         <div className="hero-video d-flex">
           <video autoPlay loop muted controls={false}>
-            <source src="/project-konnect/images/hero24.mp4" type="video/mp4" />
+            <source src="/konnect/images/hero24.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>

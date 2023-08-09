@@ -6,11 +6,7 @@ const PartnerWithUs = () => {
   return (
     <Wrapper className="partnerwithus">
       <section className="container" id="pwu_s1">
-        <img
-          src="/project-konnect/images/dotGrids1.png"
-          alt=""
-          className="dots"
-        />
+        <img src="/konnect/images/dotGrids1.png" alt="" className="dots" />
         <div className="r_container row d-flex align-items-stretch">
           <div
             className="col-6 d-flex flex-column justify-content-center"
@@ -23,7 +19,7 @@ const PartnerWithUs = () => {
               <h1 className="r_heading_title">
                 Our Commitment to Exceptional Diagnostic Services
               </h1>
-              {/* <img src="/project-konnect/images/reaction_svg.svg" alt="" /> */}
+              {/* <img src="/konnect/images/reaction_svg.svg" alt="" /> */}
             </div>
             <div className="r_container">
               <p className="r_para">
@@ -39,13 +35,13 @@ const PartnerWithUs = () => {
               <div className="w-100 ">
                 {/* <AssetImage imageName={"/partner-with-us/pwu_s42i1.jpg"} /> */}
                 <img
-                  src="/project-konnect/images/scientist-working-laboratory-with-test-tubes-laboratory-equipment.jpg"
+                  src="/konnect/images/scientist-working-laboratory-with-test-tubes-laboratory-equipment.jpg"
                   alt="Img"
                 />
               </div>
               <div className="w-100 ">
                 <img
-                  src="/project-konnect/images/female-medical-scientific-researcher-looking-test-tube-laboratory.jpg"
+                  src="/konnect/images/female-medical-scientific-researcher-looking-test-tube-laboratory.jpg"
                   alt=""
                 />
               </div>
@@ -80,12 +76,12 @@ const PartnerWithUs = () => {
               <div className="text-center">
                 <div className="card_img_container">
                   <img
-                    src="/project-konnect/images/stethescope.svg"
+                    src="/konnect/images/stethescope.svg"
                     alt=""
                     className="img_steth"
                   />
                   <img
-                    src="/project-konnect/images/doctor.svg"
+                    src="/konnect/images/doctor.svg"
                     alt=""
                     className="w_icon w_icon1"
                   />
@@ -105,12 +101,12 @@ const PartnerWithUs = () => {
               <div className="text-center">
                 <div className="card_img_container liner_bg">
                   <img
-                    src="/project-konnect/images/stethescope.svg"
+                    src="/konnect/images/stethescope.svg"
                     alt=""
                     className="img_steth"
                   />
                   <img
-                    src="/project-konnect/images/microscope.svg"
+                    src="/konnect/images/microscope.svg"
                     alt=""
                     className="w_icon w_icon2"
                   />
@@ -132,12 +128,12 @@ const PartnerWithUs = () => {
               <div className="text-center">
                 <div className="card_img_container">
                   <img
-                    src="/project-konnect/images/stethescope.svg"
+                    src="/konnect/images/stethescope.svg"
                     alt=""
                     className="img_steth"
                   />
                   <img
-                    src="/project-konnect/images/high-quality.svg"
+                    src="/konnect/images/high-quality.svg"
                     alt=""
                     className="w_icon w_icon3"
                   />
@@ -181,11 +177,7 @@ const PartnerWithUs = () => {
         <div className="r_container w-75" id="pwu_s32">
           <div className="d-flex">
             <div className="w-50 img_wrapper">
-              <img
-                src="/project-konnect/images/benf1.jpg"
-                alt=""
-                className="w-100"
-              />
+              <img src="/konnect/images/benf1.jpg" alt="" className="w-100" />
             </div>
             <div className="w-50 ps-5 d-flex flex-column justify-content-center content_wrapper">
               <h2 className="r_heading_title_secondary">Enhanced Reputation</h2>
@@ -211,20 +203,12 @@ const PartnerWithUs = () => {
               </p>
             </div>
             <div className="w-50 img_wrapper">
-              <img
-                src="/project-konnect/images/benf2.jpg"
-                alt=""
-                className="w-100"
-              />
+              <img src="/konnect/images/benf2.jpg" alt="" className="w-100" />
             </div>
           </div>
           <div className="d-flex">
             <div className="w-50 img_wrapper">
-              <img
-                src="/project-konnect/images/benf3.jpg"
-                alt=""
-                className="w-100"
-              />
+              <img src="/konnect/images/benf3.jpg" alt="" className="w-100" />
             </div>
             <div className="w-50 ps-5 d-flex flex-column justify-content-center content_wrapper">
               <h3 className="r_heading_title_secondary">
@@ -250,22 +234,14 @@ const PartnerWithUs = () => {
               </p>
             </div>
             <div className="w-50 img_wrapper">
-              <img
-                src="/project-konnect/images/benf4.jpg"
-                alt=""
-                className="w-100"
-              />
+              <img src="/konnect/images/benf4.jpg" alt="" className="w-100" />
             </div>
           </div>
         </div>
       </section>
 
       <section className="r_section container" id="pwu_s4">
-        <img
-          src="/project-konnect/images/dotGrids1.png"
-          alt=""
-          className="dots"
-        />
+        <img src="/konnect/images/dotGrids1.png" alt="" className="dots" />
         <div className="container row d-flex align-items-stretch">
           <div
             className="col-6 pe-5 d-flex flex-column justify-content-center"
@@ -293,18 +269,18 @@ const PartnerWithUs = () => {
 
           <div className="col-6 d-flex align-items-stretch" id="pwu_s42">
             <div className="w-50" id="pwu_s421">
-              {/* <img src="/project-konnect/images/scientist-analyzing-blood-sample-vacutainer-with-researching-team-looking-through-microscope.jpg" alt=""/> */}
+              {/* <img src="/konnect/images/scientist-analyzing-blood-sample-vacutainer-with-researching-team-looking-through-microscope.jpg" alt=""/> */}
             </div>
             <div className="w-50 ">
               <div className="w-100 ">
                 <img
-                  src="/project-konnect/images/partner-with-us/pwu_s42i2.jpg"
+                  src="/konnect/images/partner-with-us/pwu_s42i2.jpg"
                   alt=""
                 />
               </div>
               <div className="w-100 ">
                 <img
-                  src="/project-konnect/images/partner-with-us/pwu_s42i3.jpg"
+                  src="/konnect/images/partner-with-us/pwu_s42i3.jpg"
                   alt=""
                 />
               </div>
@@ -368,7 +344,7 @@ const Wrapper = styled.section`
     margin: 10px 0;
   }
   #pwu_s1 {
-    background: url("/project-konnect/images/bannerBG.png");
+    background: url("/konnect/images/bannerBG.png");
     background-position: right top;
     background-size: contain;
     background-repeat: no-repeat;
@@ -392,7 +368,7 @@ const Wrapper = styled.section`
       }
 
       h1.r_heading_title:after {
-        content: url("/project-konnect/images/reaction_svg.svg");
+        content: url("/konnect/images/reaction_svg.svg");
         z-index: -1;
         margin-left: 30px;
       }
@@ -401,7 +377,7 @@ const Wrapper = styled.section`
       position: relative;
       z-index: 0;
       #pwu_s121 {
-        background: url("/project-konnect/images/scientist-analyzing-blood-sample-vacutainer-with-researching-team-looking-through-microscope.jpg");
+        background: url("/konnect/images/scientist-analyzing-blood-sample-vacutainer-with-researching-team-looking-through-microscope.jpg");
         background-position: right top;
         background-size: cover;
         background-repeat: no-repeat;
@@ -432,7 +408,7 @@ const Wrapper = styled.section`
       left: -30px;
       width: 150px;
       height: 150px;
-      background: url("/project-konnect/images/dotGrids1.png");
+      background: url("/konnect/images/dotGrids1.png");
       z-index: -1;
     }
   }
@@ -486,7 +462,7 @@ const Wrapper = styled.section`
     }
   }
   #pwu_s3 {
-    background: url("/project-konnect/images/bannerBG.png");
+    background: url("/konnect/images/bannerBG.png");
     background-position: right top;
     background-size: contain;
     background-repeat: no-repeat;
@@ -529,7 +505,7 @@ const Wrapper = styled.section`
           left: -30px;
           width: 100px;
           height: 100px;
-          background: url("/project-konnect/images/dotGrids1.png");
+          background: url("/konnect/images/dotGrids1.png");
           z-index: -1;
         }
       }
@@ -565,7 +541,7 @@ const Wrapper = styled.section`
       position: relative;
       z-index: 0;
       #pwu_s421 {
-        background: url("/project-konnect/images/partner-with-us/pwu_s42i1.jpg");
+        background: url("/konnect/images/partner-with-us/pwu_s42i1.jpg");
         background-position: right top;
         background-size: cover;
         background-repeat: no-repeat;
@@ -596,7 +572,7 @@ const Wrapper = styled.section`
       left: -30px;
       width: 150px;
       height: 150px;
-      background: url("/project-konnect/images/dotGrids1.png");
+      background: url("/konnect/images/dotGrids1.png");
       z-index: -1;
     }
   }
