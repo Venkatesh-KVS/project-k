@@ -21,7 +21,7 @@ const HcCard = () => {
                     <a href="/">{item.category}</a>
                   </div>
                   <h3>{item.title}</h3>
-                  <p>Need some description regarding the condition</p>
+                  <p>Description for Radiology service</p>
                 </div>
               </Link>
             </div>
