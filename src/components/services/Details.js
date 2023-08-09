@@ -33,39 +33,6 @@ const DetailsPages = () => {
               <hr />
 
               <div>{conditions.component}</div>
-              {/* {conditions.questions.map((qstn) => (
-                <div key={qstn.id}>
-                  <h3>{qstn.question}</h3>
-                  <h5>{qstn.include}:</h5>
-
-                  {qstn.lists &&
-                    qstn.lists.map((lists, innerIndex) => (
-                      <div key={innerIndex}>
-                        <ul>
-                          <li>{lists.li1}</li>
-                          <li>{lists.li2}</li>
-                          <li>{lists.li3}</li>
-                          <li>{lists.li4}</li>
-                          <li>{lists.li5}</li>
-                          <li>{lists.li6}</li>
-                        </ul>
-                      </div>
-                    ))}
-                  {qstn.icons &&
-                    qstn.icons.map((icon) => (
-                      <div className="symptoms-box">
-                        <div className="symptoms" key={id}>
-                          <img
-                            className="symptom-image"
-                            src={icon.icon}
-                            alt=""
-                          />
-                          <h4 className="symptom-name">{icon.name}</h4>
-                        </div>
-                      </div>
-                    ))}
-                </div>
-              ))} */}
             </div>
             <div className="right">
               <h3 className="related-heading">Related</h3>
