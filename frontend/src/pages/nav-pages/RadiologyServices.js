@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import { Link } from "react-router-dom";
+import RsCard from "../../components/services/RsCard";
 
 const rediologyServicesData = {
   twoD_echo: {
@@ -119,6 +120,7 @@ const RadiologySrvcCard = (props) => {
           backgroundPosition: "center center",
         }}
       ></div>
+      <RsCard />
       <div className="r_imgbox_content p-3">
         <h2 className="r_heading_title_secondary r_imgbox_title mb-2">
           {props.servInfo.name}
@@ -146,6 +148,7 @@ const RadiologyServices = () => {
             /Radiology Services
           </h6>
           <h2>Radiology Services</h2>
+
           <p className="para">
             Konnect Diagnostics offers top-tier radiology services with
             cutting-edge technology, expert radiologists, and swift turnaround

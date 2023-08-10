@@ -1,19 +1,19 @@
 import React from "react";
 import { styled } from "styled-components";
 import { Link } from "react-router-dom";
-import { hcContentData } from "../../assets/data/HcContentData";
+import { RsContentData } from "../../assets/data/RsContentData";
 import { AiOutlineTags } from "react-icons/ai";
 
-const HcCard = () => {
+const RsCard = () => {
   return (
     <Wrapper>
       <section className="conditions">
         <div className="hc-card d-flex gap-3 justify-content-between flex-wrap col container">
-          {hcContentData.map((item) => (
+          {RsContentData.map((item) => (
             <div className="box mb-3" key={item.id}>
               <Link to={`/details/${item.id}`}>
                 <div className="img">
-                  <img src={item.cover} alt="" />
+                  <img src={item.productImage} alt={item.slug} />
                 </div>
                 <div className="details">
                   <div className="catg">
@@ -32,7 +32,7 @@ const HcCard = () => {
   );
 };
 
-export default HcCard;
+export default RsCard;
 
 const Wrapper = styled.section`
   .hc-card {
