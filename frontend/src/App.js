@@ -92,12 +92,12 @@ function App() {
               <Route path="/home-collection" element={<HomeCollection />} />
               <Route path="/services" element={<Services />} />
               <Route path="/health-conditions" element={<HealthConditions />} />
-              <Route path="/details/:id" element={<Details />} />
+              <Route path="/health-conditions/:slug" element={<Details />} />
               <Route
                 path="/radiology-services"
                 element={<RadiologyServices />}
               />
-              <Route path="/radiology-services/:id" element={<RsDetails />} />
+              <Route path="/radiology-services/:slug" element={<RsDetails />} />
               <Route
                 path="/packages"
                 element={<Packages handleClick={handleClick} />}

@@ -3,6 +3,14 @@ import CBCT from "../../components/services/rsArticles/CBCT";
 import CT from "../../components/services/rsArticles/CT";
 import ECG from "../../components/services/rsArticles/ECG";
 import EEG from "../../components/services/rsArticles/EEG";
+import MRI from "../../components/services/rsArticles/MRI";
+import Mammography from "../../components/services/rsArticles/Mammography";
+import NCS from "../../components/services/rsArticles/NCS";
+import OPG from "../../components/services/rsArticles/OPG";
+import PFT from "../../components/services/rsArticles/PFT";
+import TMT from "../../components/services/rsArticles/TMT";
+import Ultrasound from "../../components/services/rsArticles/Ultrasound";
+import Xray from "../../components/services/rsArticles/Xray";
 
 export const RsContentData = [
   {
@@ -56,47 +64,77 @@ export const RsContentData = [
   },
   {
     id: 6,
-    slug: "cone-beamed-computed-tomography",
-    title: "CBCT (Cone-Beamed Computed Tomography)",
+    slug: "mammography",
+    title: "Mammography",
     excerpt:
       "Cone-beamed computed tomography or CBCT is a form of medical imaging technology",
     productImage:
       "/konnect/images/srvcs/radiology/raiology_machines/Mammography.jpg",
+    component: <Mammography />,
   },
   {
     id: 7,
-    slug: "cone-beamed-computed-tomography",
-    title: "CBCT (Cone-Beamed Computed Tomography)",
+    slug: "magnetic-resonance-imaging",
+    title: "MRI (Magnetic Resonance Imaging)",
     category: "CBCT",
     excerpt:
       "Cone-beamed computed tomography or CBCT is a form of medical imaging technology",
     productImage: "/konnect/images/srvcs/radiology/raiology_machines/MRI.jpg",
+    component: <MRI />,
   },
   {
     id: 8,
-    slug: "cone-beamed-computed-tomography",
-    title: "CBCT (Cone-Beamed Computed Tomography)",
-    category: "CBCT",
+    slug: "nerve-conduction-studies",
+    title: "NCS (Nerve Conduction Studies)",
     excerpt:
       "Cone-beamed computed tomography or CBCT is a form of medical imaging technology",
     productImage: "/konnect/images/srvcs/radiology/raiology_machines/NCS.jpg",
+    component: <NCS />,
   },
   {
     id: 9,
-    slug: "cone-beamed-computed-tomography",
-    title: "CBCT (Cone-Beamed Computed Tomography)",
-    category: "CBCT",
+    slug: "orthopantomagram",
+    title: "OPG (Orthopantomagram)",
     excerpt:
       "Cone-beamed computed tomography or CBCT is a form of medical imaging technology",
     productImage: "/konnect/images/srvcs/radiology/raiology_machines/OPG.jpg",
+    component: <OPG />,
   },
   {
     id: 10,
-    slug: "cone-beamed-computed-tomography",
-    title: "CBCT (Cone-Beamed Computed Tomography)",
-    category: "CBCT",
+    slug: "pulmonary-function-test",
+    title: "PFT (Pulmonary Function Test)",
     excerpt:
       "Cone-beamed computed tomography or CBCT is a form of medical imaging technology",
     productImage: "/konnect/images/srvcs/radiology/raiology_machines/PFT.jpg",
+    component: <PFT />,
+  },
+  {
+    id: 11,
+    slug: "treadmill-test",
+    title: "TMT (Treadmill test)",
+    excerpt:
+      "Cone-beamed computed tomography or CBCT is a form of medical imaging technology",
+    productImage: "/konnect/images/srvcs/radiology/raiology_machines/TMT.jpg",
+    component: <TMT />,
+  },
+  {
+    id: 12,
+    slug: "ultrasound",
+    title: "Ultrasound",
+    excerpt:
+      "Cone-beamed computed tomography or CBCT is a form of medical imaging technology",
+    productImage:
+      "/konnect/images/srvcs/radiology/raiology_machines/Ultrasound.jpg",
+    component: <Ultrasound />,
+  },
+  {
+    id: 13,
+    slug: "x-ray",
+    title: "X-ray",
+    excerpt:
+      "Cone-beamed computed tomography or CBCT is a form of medical imaging technology",
+    productImage: "/konnect/images/srvcs/radiology/raiology_machines/xray.jpg",
+    component: <Xray />,
   },
 ];

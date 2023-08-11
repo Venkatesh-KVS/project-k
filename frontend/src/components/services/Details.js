@@ -6,17 +6,17 @@ import { useParams } from "react-router-dom";
 import { hcContentData } from "../../assets/data/HcContentData";
 
 const DetailsPages = () => {
-  const { id } = useParams();
+  const { slug } = useParams();
   const [conditions, setconditions] = useState(null);
 
   useEffect(() => {
     let conditions = hcContentData.find(
-      (conditions) => conditions.id === parseInt(id)
+      (conditions) => conditions.slug === slug
     );
     if (conditions) {
       setconditions(conditions);
     }
-  }, [id]);
+  }, [slug]);
 
   return (
     <Wrapper>
@@ -28,7 +28,7 @@ const DetailsPages = () => {
                 <img src={conditions.cover} alt={conditions.title} />
               </div>
               <AiOutlineTags className="icon" />
-              <a href="/">{conditions.category}</a>
+              {/* <a href="/">{conditions.category}</a> */}
               <h2>{conditions.title}</h2>
               <hr />
 
@@ -36,22 +36,23 @@ const DetailsPages = () => {
             </div>
             <div className="right">
               <h3 className="related-heading">Related</h3>
-
-              {hcContentData.slice(0, 9).map((item) => (
-                <Link to={`/details/${item.id}`}>
-                  <div className="related">
-                    <div className="item d-flex gap-2">
-                      <div className="img">
-                        <img src={item.cover} alt="" />
-                      </div>
-                      <div className="info">
-                        <h3>{item.title}</h3>
-                        <p>{item.excerpt}</p>
+              <div className="scroll-box-right">
+                {hcContentData.map((item) => (
+                  <Link to={`/health-conditions/${item.slug}`}>
+                    <div className="related">
+                      <div className="item d-flex gap-2">
+                        <div className="img">
+                          <img src={item.cover} alt="" />
+                        </div>
+                        <div className="info">
+                          <h3>{item.title}</h3>
+                          <p>{item.excerpt}</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Link>
-              ))}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -82,7 +83,6 @@ const Wrapper = styled.section`
   }
 
   .singlePage {
-    margin: 2rem auto;
     .left {
       width: 70%;
       img {

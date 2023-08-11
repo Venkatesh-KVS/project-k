@@ -11,7 +11,7 @@ const HcCard = () => {
         <div className="hc-card d-flex gap-3 justify-content-between flex-wrap col container">
           {hcContentData.map((item) => (
             <div className="box mb-3" key={item.id}>
-              <Link to={`/details/${item.id}`}>
+              <Link to={`/health-conditions/${item.slug}`}>
                 <div className="img">
                   <img src={item.cover} alt="" />
                 </div>

@@ -6,15 +6,15 @@ import { useParams } from "react-router-dom";
 import { RsContentData } from "../../assets/data/RsContentData";
 
 const RsDetails = () => {
-  const { id } = useParams();
+  const { slug } = useParams();
   const [rs, setRs] = useState(null);
 
   useEffect(() => {
-    let rs = RsContentData.find((rs) => rs.id === parseInt(id));
+    let rs = RsContentData.find((rs) => rs.slug === slug);
     if (rs) {
       setRs(rs);
     }
-  }, [id]);
+  }, [slug]);
 
   return (
     <Wrapper>
@@ -37,17 +37,16 @@ const RsDetails = () => {
             </div>
             <div className="right">
               <h3 className="related-heading">Related</h3>
-              <div className="items">
-                {RsContentData.slice(0, 9).map((item) => (
-                  <Link to={`/radiology-services/${item.id}`}>
+              <div className="scroll-box-right">
+                {RsContentData.map((item) => (
+                  <Link to={`/radiology-services/${item.slug}`}>
                     <div className="related">
                       <div className="item d-flex gap-2">
                         <div className="img">
                           <img src={item.productImage} alt="" />
                         </div>
-                        <div className="info ">
+                        <div className="info d-flex">
                           <h3>{item.title}</h3>
-                          {/* <p>{item.excerpt}</p> */}
                         </div>
                       </div>
                     </div>
@@ -84,7 +83,6 @@ const Wrapper = styled.section`
   }
 
   .singlePage {
-    margin: 2rem auto;
     .left {
       width: 70%;
       img {
@@ -119,13 +117,12 @@ const Wrapper = styled.section`
     }
     .right {
       width: 30%;
-      .items {
-        height: 150vh;
+      /* .scroll-box-right {
+        height: 100vh;
         position: relative;
         overflow-y: scroll;
-        overflow: auto;
+        overflow-x: hidden;
         &::-webkit-scrollbar {
-          color: red;
           width: 5px;
           box-shadow: inset 0 0 7px #11010125;
           border-radius: 10px;
@@ -133,11 +130,12 @@ const Wrapper = styled.section`
         &::-webkit-scrollbar-thumb {
           background: ${({ theme }) => theme.colors.primary90};
           border-radius: 10px;
+
           &:hover {
             background: ${({ theme }) => theme.colors.primary};
           }
         }
-      }
+      } */
 
       .related-heading {
         font-family: "Montserrat Alternates", sans-serif;
@@ -168,7 +166,7 @@ const Wrapper = styled.section`
           padding: 10px;
 
           .img {
-            width: 40%;
+            width: 35%;
             img {
               width: 100%;
               height: auto;
@@ -176,12 +174,12 @@ const Wrapper = styled.section`
             }
           }
           .info {
-            /* background: red; */
+            /* border: 1px solid red; */
             margin: 5px;
-            width: 60%;
+            width: 65%;
             h3 {
               color: ${({ theme }) => theme.colors.dark};
-              font-size: ${({ theme }) => theme.fonts.heading4};
+              font-size: 17px;
               font-weight: 600;
             }
             p {

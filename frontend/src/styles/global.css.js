@@ -1,6 +1,28 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+.singlePage{
+  margin: 4rem auto;
+}
+.scroll-box-right {
+        height: 150vh;
+        position: relative;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        &::-webkit-scrollbar {
+          width: 5px;
+          box-shadow: inset 0 0 7px #11010125;
+          border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: ${({ theme }) => theme.colors.primary90};
+          border-radius: 10px;
+
+          &:hover {
+            background: ${({ theme }) => theme.colors.primary};
+          }
+        }
+      }
 
 .singlePage{
   h2{

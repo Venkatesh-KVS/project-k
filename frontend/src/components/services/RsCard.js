@@ -11,7 +11,7 @@ const RsCard = () => {
         <div className="hc-card d-flex gap-3 justify-content-between flex-wrap col container">
           {RsContentData.map((item) => (
             <div className="box mb-3" key={item.id}>
-              <Link to={`/radiology-services/${item.id}`}>
+              <Link to={`/radiology-services/${item.slug}`}>
                 <div className="img">
                   <img src={item.productImage} alt={item.slug} />
                 </div>

@@ -41,52 +41,52 @@ export const symptoms = [
   {
     id: 1,
     symptom: "Runny nose",
-    icon: "/konnect/images/icons/house.svg",
+    icon: "/konnect/images/icons/Asthma.svg",
   },
   {
     id: 2,
     symptom: "Sneezing",
-    icon: "/konnect/images/icons/house.svg",
+    icon: "/konnect/images/icons/Asthma.svg",
   },
   {
     id: 3,
     symptom: "Coughing",
-    icon: "/konnect/images/icons/house.svg",
+    icon: "/konnect/images/icons/Asthma.svg",
   },
   {
     id: 4,
     symptom: "Wheezing",
-    icon: "/konnect/images/icons/house.svg",
+    icon: "/konnect/images/icons/Asthma.svg",
   },
   {
     id: 5,
     symptom: "Breathlessness",
-    icon: "/konnect/images/icons/house.svg",
+    icon: "/konnect/images/icons/Asthma.svg",
   },
   {
     id: 6,
     symptom: "Itchy skin/rash",
-    icon: "/konnect/images/icons/house.svg",
+    icon: "/konnect/images/icons/Asthma.svg",
   },
   {
     id: 6,
     symptom: "Diarrhoea",
-    icon: "/konnect/images/icons/house.svg",
+    icon: "/konnect/images/icons/Asthma.svg",
   },
   {
     id: 6,
     symptom: "Feeling sick",
-    icon: "/konnect/images/icons/house.svg",
+    icon: "/konnect/images/icons/Asthma.svg",
   },
   {
     id: 6,
     symptom: "Swollen eyes, lips, mouth, and throat",
-    icon: "/konnect/images/icons/house.svg",
+    icon: "/konnect/images/icons/Asthma.svg",
   },
   {
     id: 6,
     symptom: "Swollen eyes, lips, mouth, and throat",
-    icon: "/konnect/images/icons/house.svg",
+    icon: "/konnect/images/icons/Asthma.svg",
   },
 ];
 export const riskFactors = [
