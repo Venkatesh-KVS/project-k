@@ -87,7 +87,7 @@ const Wrapper = styled.section`
     }
     .butn {
       background-color: ${({ theme }) => theme.colors.white};
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
       padding: 6px 20px 6px 20px;
       color: ${({ theme }) => theme.colors.primary};
       border: none;

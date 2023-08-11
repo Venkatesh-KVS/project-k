@@ -24,6 +24,7 @@ import Details from "./components/services/Details";
 import { Account } from "./login/Account";
 import { Login } from "./login/Login";
 import FetalMedicineUnit from "./pages/nav-pages/FetalMedicineUnit";
+import RsDetails from "./components/services/RsDetails";
 
 // const mysql = require("mysql2");
 // const connectSQLdb = require("./server/controller/mysql_controller");
@@ -96,6 +97,7 @@ function App() {
                 path="/radiology-services"
                 element={<RadiologyServices />}
               />
+              <Route path="/radiology-services/:id" element={<RsDetails />} />
               <Route
                 path="/packages"
                 element={<Packages handleClick={handleClick} />}

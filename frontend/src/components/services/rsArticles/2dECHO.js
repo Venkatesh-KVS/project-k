@@ -1,142 +1,101 @@
 import React from "react";
-import { symptoms, riskFactors } from "../../../assets/data/HcSymptomsData";
 import styled from "styled-components";
 
-const Allergies = () => {
+const ECHO = () => {
   return (
     <Wrapper>
       <div className="questions">
-        <h3 className="question">What are Allergies?</h3>
+        <h3 className="question">What is 2-Dimentional Echocardiography?</h3>
         <p className="answer">
-          Allergies can be understood as reactions from the body’s immune system
-          towards typically harmless substances. The body treats these harmless
-          substances as toxic foreign entities and starts producing antibodies
-          (IgE) against them. Immune cells called mast cells release histamine
-          in response to an allergic reaction in the body.
+          2-Dimentional Echocardiography or ECHO is used to visualize the actual
+          motion of the heart. On the monitor, a cone-shaped 2D ECHO view shows
+          the real-time motion of the heart's structures. This enables the
+          healthcare provider to observe and assess the various structures of
+          the heart in action when an individual experiences chest pain or
+          shortness of breath.
+        </p>
+        <p>
+          Thus, it helps in the diagnosis of various heart ailments such as
+          atherosclerosis, arrhythmia, cardiomyopathy, etc
         </p>
       </div>
       <div className="questions">
-        <h3 className="question">What are the types of Allergies?</h3>
-        <h5 className="include">Different types of allergies include:</h5>
+        <h3 className="question">
+          How does 2-Dimentional Echocardiography work?
+        </h3>
+        <p>
+          During the 2D ECHO procedure, a transducer (similar to a microphone)
+          emits sound waves at a very high frequency. Depending on where and how
+          the transducer is placed on the chest, the sound waves pass through
+          the skin and other body tissues to reach the heart, where they bounce
+          or "echo" off of the heart's structures. Finally, these sound waves
+          are transmitted to a computer to produce moving pictures of the heart
+          walls and valves
+        </p>
+      </div>
+      <div className="questions">
+        <h3 className="question">When is 2D ECHO recommended?</h3>
+        <p>
+          2D ECHO is commonly used to check for heart-related complications.
+          This procedure demonstrates how blood flows through the heart's
+          chambers and valves and helps to diagnose conditions such as
+          atherosclerosis (clogged arteries), arrhythmia (irregular heartbeats),
+          heart valve diseases, etc.
+        </p>
+        <p>
+          Doctors recommend this test if any individual experiences symptoms
+          such as:
+        </p>
         <ul>
-          <li>Food allergy</li>
-          <li>Drug allergy</li>
-          <li>Insect allergy</li>
-          <li>Latex allergy</li>
-          <li>Mold allergy</li>
-          <li>Pet allergy</li>
+          <li>Chest pain</li>
+          <li>Shortness of breath </li>
         </ul>
       </div>
+
       <div className="questions">
-        <h3 className="question">What are the symptoms?</h3>
-        <h5 className="include">
-          A few most common symptoms of allergies include:
-        </h5>
-        <div className="icon-box d-flex flex-wrap gap-3">
-          {symptoms.map((item) => (
-            <div className="box">
-              <img src={item.icon} alt="" />
-              <h5>{item.symptom}</h5>
-            </div>
-          ))}
-        </div>
+        <h3 className="question">What preparation is needed for 2D ECHO?</h3>
+        <p>
+          Ensure your healthcare provider is aware of what prescription drugs,
+          over-the-counter medicines, or dietary supplements you are taking. Ask
+          your doctor for details about pre-test preparations, and make sure to
+          follow instructions closely
+        </p>
+        <p>
+          It is necessary to take off the upper body clothing and change into a
+          hospital gown at the testing facility for a 2D ECHO test, and it is
+          recommended to remove any jewelry and other metallic objects that
+          might interfere with the testing procedure
+        </p>
       </div>
       <div className="questions">
-        <h3 className="question">What are the risk factors?</h3>
-        <h5 className="include">
-          Risk factors for most common allergies include:
-        </h5>
-        <div className="icon-box d-flex flex-wrap gap-3">
-          {riskFactors.map((item) => (
-            <div className="box">
-              <img src={item.icon} alt="" />
-              <h5>{item.symptom}</h5>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="questions">
-        <h3 className="question">How to diagnose?</h3>
-        <h5 className="include">
-          Allergies are usually diagnosed by examining the symptoms of an
-          individual. However, to confirm the diagnosis, the following tests are
-          recommended for individuals:
-        </h5>
+        <h3 className="question">What are the advantages of 2D ECHO?</h3>
+
         <ul>
           <li>
-            <strong>Skin prick test:</strong> The healthcare provider will place
-            small drops of a specific allergen on the skin. Thereafter, a light
-            prick or scratch is made on the skin through the drop.
+            It is typically painless and doesn’t require needles, injections, or
+            incisions.
           </li>
           <li>
-            <strong> Intradermal skin test:</strong>Intradermal means under the
-            skin. The healthcare provider will inject a small amount of a
-            specific allergen into the outer layer(epidermis) of the skin.
+            It is safer compared to diagnostic methods such as X-rays and CT
+            scans because patients aren't exposed to ionizing radiation.
           </li>
           <li>
-            <strong> Physician-supervised challenge test:</strong> Under a
-            physician’s supervision, an individual is provided with a specific
-            allergen that should either be inhaled or ingested. It is usually
-            done to check allergies to medicines and certain foods.
-          </li>
-          <li>
-            <strong> Patch test:</strong>
-            The healthcare provider will place a small amount of a specific
-            allergen on the skin of an individual, and cover it with the help of
-            a bandage. After 48 to 96 hours, the bandage is removed to check for
-            reactions, if any.
-          </li>
-          <li>
-            <strong>Blood tests:</strong>
-            The blood of an individual is taken and is tested for
-            allergen-specific IgE antibodies.
+            It produces clearer and more detailed images than traditional
+            X-rays.
           </li>
         </ul>
       </div>
       <div className="questions">
-        <h3 className="question">What is the treatment?</h3>
-        <h5 className="include">
-          The very first step in treating allergies is to avoid the allergens.
-          Furthermore, to stop the allergic reactions, the individuals are given
-          over-the-counter drugs. They are as follows:
-        </h5>
-        <ul>
-          <li>
-            <strong>Antihistamines:</strong> These drugs act by blocking the
-            body’s responses to release histamines that cause symptoms of
-            allergy.
-          </li>
-          <li>
-            <strong> Nasal sprays:</strong>These are safe and effective to use
-            but may take from a few days to a week to show action.
-          </li>
-          <li>
-            <strong> Decongestants:</strong> These should be used cautiously
-            because of the side effects related to long-term usage.
-          </li>
-          <li>
-            <strong> Asthma medications:</strong>
-            These medications help deal with symptoms of asthma such as itchy
-            skin, runny nose, etc.
-          </li>
-          <li>
-            <strong>Immunotherapy:</strong>
-            It aims to develop tolerance towards allergens in an individual by
-            exposing them to small amounts of that specific allergen for several
-            months.
-          </li>
-          <li>
-            <strong>Nasal saline irrigation:</strong>
-            In this, a saline solution is passed through the nasal passages.
-            E.g., Neti pot, an over-the-counter device that helps push trapped
-            allergens and mucus out of the nasal passage with the help of a
-            saline solution.
-          </li>
-        </ul>
+        <h3 className="question">How long does 2D ECHO take?</h3>
+        <p>The duration of a 2D ECHO can range from 30 to 60 minutes</p>
+      </div>
+      <div className="questions">
+        <h3 className="question">What are the risks of 2D ECHO?</h3>
+        <p>2D ECHO is safe with no known risks.</p>
       </div>
     </Wrapper>
   );
 };
 
-export default Allergies;
+export default ECHO;
 const Wrapper = styled.section``;
