@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { styled } from "styled-components";
-import { BsFilter, BsSearch } from "react-icons/bs";
+import { BsSearch } from "react-icons/bs";
 import { organImages } from "../../assets/data/AllData";
 import { TestCard } from "../requiredPages/TestCard";
 import { testsData } from "../../assets/data/AllData";
@@ -19,7 +19,7 @@ const ToggleKT = () => {
     <Wrapper>
       <div className="s2-kt ">
         <div className="kt-searchBox mb-4 d-flex">
-          <div className="filterBy d-flex gap-3" style={{ width: "25%" }}>
+          {/* <div className="filterBy d-flex gap-3" style={{ width: "25%" }}>
             <BsFilter />
             <select className="filter">
               <option>Filter by Category</option>
@@ -27,7 +27,7 @@ const ToggleKT = () => {
               <option>Test Category one</option>
               <option>Test Category one</option>
             </select>
-          </div>
+          </div> */}
           <div className="searchBar d-flex flex-fill" style={{ width: "100%" }}>
             <input
               onChange={(e) => setSearch(e.target.value)}

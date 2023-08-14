@@ -76,6 +76,22 @@ const GlobalStyle = createGlobalStyle`
       }
     }
   }
+  /* --------------- Packages content -------------  */
+
+  .points {
+    margin-top: 5px;
+    li::marker {
+      color: ${({ theme }) => theme.colors.primary};
+    }
+    li {
+      font-weight: 500;
+      font-size: 15px;
+    }
+    &::marker {
+      font-weight: 600;
+    }
+  }
+  /* ---------------End Packages content -------------  */
  
 `;
 export default GlobalStyle;
