@@ -1,5 +1,5 @@
 import React from "react";
-import { symptoms, riskFactors } from "../../../assets/data/HcSymptomsData";
+import { hcIcons } from "../../../assets/data/HcSymptomsData";
 // import { symptomsData } from "../../../assets/data/HcSymptomsData";
 import styled from "styled-components";
 
@@ -76,18 +76,7 @@ const Arthritis = () => {
         </p>
         <h5 className="include">A few common symptoms may include:</h5>
         <div className="icon-box d-flex flex-wrap gap-3">
-          {/* {symptoms.map((item) => (
-            <div className="box">
-              {item.symptoms &&
-                item.symptoms.map((symptom, innerIndex) => (
-                  <div className="box" key={innerIndex}>
-                    <img src={symptom.icon} alt="" />
-                    <h5>{symptom.symptom}</h5>
-                  </div>
-                ))}
-            </div>
-          ))} */}
-          {symptoms.map((item) => (
+          {hcIcons[0].arthritis[0].symptoms.map((item) => (
             <div className="box">
               <img src={item.icon} alt="" />
               <h5>{item.symptom}</h5>
@@ -102,20 +91,7 @@ const Arthritis = () => {
           in an individual include:
         </h5>
         <div className="icon-box d-flex flex-wrap gap-3">
-          {/* {riskFactors.map((item) => (
-            <div className="box">
-              {item.riskFactors &&
-                item.riskFactors.map((riskFactor, innerIndex) => (
-                  <div className="box" key={innerIndex}>
-                    <img src={riskFactor.icon} alt="" />
-                    <h5>{riskFactor.symptom}</h5>
-                  </div>
-                ))}
-              <img src={item.icon} alt="" />
-              <h5>{item.symptom}</h5>
-            </div>
-          ))} */}
-          {riskFactors.map((item) => (
+          {hcIcons[0].arthritis[0].riskFactors.map((item) => (
             <div className="box">
               <img src={item.icon} alt="" />
               <h5>{item.symptom}</h5>

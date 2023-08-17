@@ -1,4 +1,4 @@
-import { symptoms, riskFactors } from "../../../assets/data/HcSymptomsData";
+import { hcIcons } from "../../../assets/data/HcSymptomsData";
 import styled from "styled-components";
 
 const Asthma = () => {
@@ -63,7 +63,7 @@ const Asthma = () => {
           </ul>
           <h5 className="include">Signs that indicate worsening of asthma:</h5>
           <div className="icon-box d-flex flex-wrap gap-3">
-            {symptoms.map((item) => (
+            {hcIcons[0].asthma[0].symptoms.map((item) => (
               <div className="box">
                 <img src={item.icon} alt="" />
                 <h5>{item.symptom}</h5>
@@ -80,7 +80,7 @@ const Asthma = () => {
           </p>
           <h5 className="include">The common asthma triggers include:</h5>
           <div className="icon-box d-flex flex-wrap gap-3">
-            {riskFactors.map((item) => (
+            {hcIcons[0].asthma[0].riskFactors.map((item) => (
               <div className="box">
                 <img src={item.icon} alt="" />
                 <h5>{item.symptom}</h5>

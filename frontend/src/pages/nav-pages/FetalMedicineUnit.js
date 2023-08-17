@@ -1,6 +1,5 @@
 import React from "react";
 import { styled } from "styled-components";
-// import imageee from "../../assets/images/fetal-medicine-care/halloween-background.jpg";
 import FacilitiesCarousel from "../../components/requiredPages/FacilitiesCarousel";
 
 const Li = ({ prop }) => {
@@ -37,9 +36,9 @@ const FetalMedicineUnit = () => {
     <Wrapper className="partnerwithus">
       <section className="section" id="fmu_s1">
         <img src="/konnect/images/dotGrids1.png" alt="" className="dots" />
-        <div className="container mx-auto row d-flex align-items-stretch">
+        <div className="container p-0 d-flex py-4">
           <div
-            className="col-6 p-5 d-flex flex-column justify-content-center"
+            className="col-6 d-flex flex-column justify-content-center"
             id="fmu_s11"
           >
             <div>
@@ -59,7 +58,7 @@ const FetalMedicineUnit = () => {
             </div>
           </div>
 
-          <div className="col-6 d-flex align-items-stretch" id="fmu_s12">
+          <div className="col-6 d-flex " id="fmu_s12">
             <div className="w-50" id="fmu_s121"></div>
             <div className="w-50 ">
               <div className="w-100 ">
@@ -81,8 +80,8 @@ const FetalMedicineUnit = () => {
 
       <section className="section" id="fmu_s2">
         <div className="w-100">
-          <div className="container mx-auto d-flex">
-            <div className="d-flex justify-content-center w-50 p-4 flex-column">
+          <div className="container p-0 mx-auto d-flex">
+            <div className="about d-flex justify-content-center w-50 flex-column">
               <div className="">
                 <h2 className="mb-3">About Us</h2>
                 <p className="">
@@ -141,28 +140,32 @@ const FetalMedicineUnit = () => {
                 </div>
               </div>
             </div>
-            <div className="d-flex justify-content-center align-items-center">
+            <div className="about-img d-flex w-50">
               <img
-                style={{ width: "75%" }}
+                style={{ width: "100%" }}
                 src="/konnect/images/fetal-medicine-care/fmu_s2_sideImg.png"
                 alt=""
               />
             </div>
           </div>
 
-          <div className="container d-flex">
-            <div className="w-50 d-flex justify-content-end align-items-center">
+          <div className="container mt-4 about-botm d-flex">
+            <div className=" d-flex align-items-center">
               <img
-                style={{ width: "500px", height: "auto", borderRadius: "10px" }}
+                style={{
+                  width: "500px",
+                  height: "auto",
+                  borderRadius: "10px",
+                }}
                 src="https://img.freepik.com/free-photo/doctor-getting-patient-ready-ct-scan_23-2149367401.jpg?w=996&t=st=1690875027~exp=1690875627~hmac=1aa5118d64968b377330e40d707d0439093f3c5c17306731000934b7bb1629b6"
                 alt=""
               />
             </div>
-            <div>
+            <div className="abt-img-rignt">
               <img
                 src="/konnect/images/fetal-medicine-care/konnect_whyUs_ill.png"
                 alt=""
-                style={{ width: "450px", marginLeft: "-85px" }}
+                style={{ width: "450px" }}
               />
             </div>
           </div>
@@ -184,18 +187,13 @@ const FetalMedicineUnit = () => {
         <div className="w-75 mx-auto" id="fmu_s42">
           <div className="d-flex">
             <div
-              className="w-50 img_wrapper"
+              className="w-50 img_wrapper_left"
               style={{
                 minHeight: "200px",
                 background:
                   "url('/konnect/images/fetal-medicine-care/fetalImaging.jpg')",
-                borderTopLeftRadius: "20px",
-                borderBottomLeftRadius: "20px",
-                borderRight: "5px solid #d66ea6",
               }}
-            >
-              {" "}
-            </div>
+            ></div>
             <div className="w-50 p-4 ps-5 d-flex flex-column justify-content-center content_wrapper">
               <h4 className=""> FETAL IMAGING </h4>
               <ul>
@@ -229,14 +227,10 @@ const FetalMedicineUnit = () => {
               </ul>
             </div>
             <div
-              className="w-50 img_wrapper"
+              className="w-50 img_wrapper_right"
               style={{
-                minHeight: "200px",
                 background:
                   "url('/konnect/images/fetal-medicine-care/imagingInFertility.jpg')",
-                borderTopRightRadius: "20px",
-                borderBottomRightRadius: "20px",
-                borderLeft: "5px solid #d66ea6",
               }}
             >
               {" "}
@@ -245,21 +239,17 @@ const FetalMedicineUnit = () => {
 
           <div className="d-flex">
             <div
-              className="w-50 img_wrapper"
+              className="w-50 img_wrapper_left"
               style={{
-                minHeight: "300px",
                 background:
                   "url('/konnect/images/fetal-medicine-care/maternal.jpg')",
-                borderTopLeftRadius: "20px",
-                borderBottomLeftRadius: "20px",
-                borderRight: "5px solid #d66ea6",
               }}
             >
               {" "}
             </div>
             <div className="w-50 p-4 d-flex flex-column justify-content-center content_wrapper">
               <h4 className=""> FETAL & MATERNAL </h4>
-              <ul>
+              <ul style={{ display: "block" }}>
                 <Li prop={"INTERVENTIONS"} />
                 <Li prop={"CVS"} />
                 <Li prop={"Amniocentesis"} />
@@ -279,18 +269,12 @@ const FetalMedicineUnit = () => {
               </ul>
             </div>
             <div
-              className="w-50 img_wrapper"
+              className="w-50 img_wrapper_right"
               style={{
-                minHeight: "350px",
                 background:
                   "url('/konnect/images/fetal-medicine-care/genetics.jpg')",
-                borderTopRightRadius: "20px",
-                borderBottomRightRadius: "20px",
-                borderLeft: "5px solid #d66ea6",
               }}
-            >
-              {" "}
-            </div>
+            ></div>
           </div>
         </div>
       </section>
@@ -311,14 +295,17 @@ export default FetalMedicineUnit;
 
 const Wrapper = styled.section`
   #fmu_s1 {
+    display: flex;
     background: url("/konnect/images/bannerBG.png");
     background-position: right top;
     background-size: contain;
     background-repeat: no-repeat;
-    position: relative;
+    /* position: relative; */
     padding: 50px 0;
     #fmu_s11 {
-      h2.r_heading_title:after {
+      width: 50%;
+      padding-right: 4rem;
+      h1:after {
         content: url("/konnect/images/reaction_svg.svg");
         z-index: -1;
         margin-left: 30px;
@@ -366,7 +353,12 @@ const Wrapper = styled.section`
 
   #fmu_s2 {
     background: #f8f8f9;
-    padding: 50px 0 50px 0;
+    padding: 50px 0;
+
+    justify-content: center;
+    .about-img {
+      margin-left: 50px;
+    }
     #pwu_s22 .row {
       .card_img_container {
         width: 80px;
@@ -406,7 +398,13 @@ const Wrapper = styled.section`
       }
     }
   }
-
+  .about-botm {
+    justify-content: center;
+    gap: 0;
+    .abt-img-rignt {
+      margin-left: -87px;
+    }
+  }
   #fmu_s3 {
     background: ${({ theme }) => theme.colors.primary};
     .sec_heading {
@@ -435,6 +433,18 @@ const Wrapper = styled.section`
       font-size: 18px;
       font-weight: 700;
     }
+    .img_wrapper_left {
+      min-height: 350px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      border-right: 5px solid #d66ea6;
+    }
+    .img_wrapper_right {
+      min-height: 350px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border-left: 5px solid #d66ea6;
+    }
     img {
       border-radius: 10px;
     }
@@ -443,12 +453,12 @@ const Wrapper = styled.section`
       padding: 0;
       li {
         display: inline-block;
-        padding: 5px 15px;
+        padding: 10px 15px;
         box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 6px;
         background: white;
         margin: 2px;
         border-radius: 3px;
-        border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+        /* border-bottom: 3px solid rgba(0, 0, 0, 0.1); */
         font-size: 14px;
         font-weight: 600;
       }
