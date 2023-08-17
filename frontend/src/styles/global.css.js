@@ -25,6 +25,9 @@ const GlobalStyle = createGlobalStyle`
       }
 
 .singlePage{
+  .left img{
+    height: 55px;
+  }
   h2{
       color: ${({ theme }) => theme.colors.primary};
     }
@@ -39,7 +42,7 @@ const GlobalStyle = createGlobalStyle`
         align-items: center;
         text-align: center;
         width: 150px;
-        height: 150px;
+        height: auto;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 15px 0px;
         border-radius: 10px;
         img {
