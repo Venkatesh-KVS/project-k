@@ -30,7 +30,8 @@ const GlobalStyle = createGlobalStyle`
     }
     .icon-box {
       margin: 25px 0 50px;
-      .box {
+      
+      .box {        
         padding: 5px;
         display: flex;
         flex-direction: column;
@@ -38,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
         align-items: center;
         text-align: center;
         width: 150px;
-        height: auto;
+        height: 150px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 15px 0px;
         border-radius: 10px;
         img {
