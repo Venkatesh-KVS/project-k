@@ -1,14 +1,14 @@
-// import React, { useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
-// import { patientStoryData } from "../../assets/data/AllData";
-// import { BiSolidQuoteRight } from "react-icons/bi";
+import { patientStoryData } from "../../assets/data/AllData";
+import { BiSolidQuoteRight } from "react-icons/bi";
 import PatExpCarousel from "./PatExpCarousel";
 
 const PatientExperience = () => {
-  // const [activeTab, setActiveTab] = useState(0);
-  // const handleTabClick = (index) => {
-  //   setActiveTab(index);
-  // };
+  const [activeTab, setActiveTab] = useState(0);
+  const handleTabClick = (index) => {
+    setActiveTab(index);
+  };
 
   return (
     <Wrapper>
@@ -21,11 +21,9 @@ const PatientExperience = () => {
             today.
           </p>
         </div>
-        <div>
-          <PatExpCarousel />
-        </div>
-        {/* <div className="peContent"> */}
-        {/* <div className="pe-left">
+
+        <div className="peContent">
+          <div className="pe-left">
             {patientStoryData.map((patient, index) => (
               <div
                 className={`patients tab-item ${
@@ -43,16 +41,24 @@ const PatientExperience = () => {
                 ></div>
                 <div className="patientInfo">
                   <h5>{patient.name}</h5>
-                  <p>{patient.info}</p>
+                  {/* <p>{patient.info}</p> */}
                 </div>
               </div>
             ))}
-          </div> */}
-        {/* ------------------------------------------------- */}
-        {/* <div className="pe-right">
-            <video autoPlay loop controls={true} id="pe_bg_vid">
+          </div>
+          {/* ------------------------------------------------- */}
+          <div
+            className="pe-right"
+            style={{
+              backgroundImage: `url(/konnect/images/scientist-analyzing-blood-sample-vacutainer-with-researching-team-looking-through-microscope.jpg)`,
+              backgroundSize: "cover",
+
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            {/* <video autoPlay loop controls={true} id="pe_bg_vid">
               <source src={patientStoryData[activeTab].video} />
-            </video>
+            </video> */}
 
             <div className="patientStory-box">
               <div className="patientStory">
@@ -67,8 +73,11 @@ const PatientExperience = () => {
                 </h5>
               </div>
             </div>
-          </div> */}
-        {/* </div> */}
+          </div>
+        </div>
+        <div>
+          <PatExpCarousel />
+        </div>
       </div>
     </Wrapper>
   );
@@ -92,13 +101,13 @@ const Wrapper = styled.section`
     margin: 5rem 0 2rem 0;
   }
   .peContent {
-    height: 470px;
+    height: 400px;
     display: flex;
     justify-content: space-between;
     gap: 10px;
     margin-bottom: 3rem;
     .pe-left {
-      width: 35%;
+      width: 30%;
       display: flex;
       flex-direction: column;
       gap: 5px;
@@ -121,8 +130,14 @@ const Wrapper = styled.section`
 
       .patients {
         direction: ltr;
+        display: flex;
+        align-items: center;
         cursor: pointer;
-        /* border: 1px solid ${({ theme }) => theme.colors.primary}; */
+        background-image: url(/konnect/images/k-10.png),
+          linear-gradient(220deg, #005bab, #00ffbb90);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #005bab90;
         margin: 0 20px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 10px 0px;
         padding: 15px;
@@ -135,16 +150,18 @@ const Wrapper = styled.section`
         }
 
         .patientImage {
-          width: 80px;
-          height: 80px;
+          width: 50px;
+          height: 50px;
           display: flex;
           align-items: center;
           justify-content: center;
           border-radius: 100%;
-          border: 2px solid ${({ theme }) => theme.colors.primary};
+          border: 2px solid ${({ theme }) => theme.colors.white};
         }
         .patientInfo {
           /* width: 70%; */
+          color: ${({ theme }) => theme.colors.white};
+
           h5 {
             font-size: 1.1rem;
             font-weight: 700;
@@ -158,7 +175,7 @@ const Wrapper = styled.section`
       }
     }
     .pe-right {
-      width: 65%;
+      width: 70%;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 10px 0px;
       padding: 0px;
       margin-top: 5px;
@@ -173,7 +190,8 @@ const Wrapper = styled.section`
         top: 0;
         right: 50px;
         width: 40%;
-        background-color: ${({ theme }) => theme.colors.primary};
+        background-image: url(/konnect/images/k-10.png),
+          linear-gradient(220deg, #005bab, #00ffbb90);
         .patientStory {
           overflow: hidden;
           margin: 25px;

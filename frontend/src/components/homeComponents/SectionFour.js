@@ -1,6 +1,7 @@
 import React from "react";
-import MyCarousel from "../requiredPages/Carousel";
+// import MyCarousel from "../requiredPages/Carousel";
 import styled from "styled-components";
+import { PopularTests } from "../requiredPages/PopularTests";
 
 const SectionFour = () => {
   return (
@@ -14,8 +15,9 @@ const SectionFour = () => {
             your health journey now.
           </p>
         </div>
-        <div className="cards d-flex">
-          <MyCarousel />
+        <div className="cards">
+          {/* <MyCarousel /> */}
+          <PopularTests />
         </div>
       </div>
     </Wrapper>

@@ -6,6 +6,7 @@ import HealthPackages from "../components/homeComponents/HealthPackages";
 // import PatExpCarousel from "../components/homeComponents/PatExpCarousel";
 import HeroSlider from "../components/homeComponents/HeroSlider";
 import PatientExperience from "../components/homeComponents/PatientExperience";
+import OurHistory from "../components/homeComponents/OurHistory";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <SectionFour />
         <HealthPackages />
         <PatientExperience />
+        <OurHistory />
       </div>
     </>
   );

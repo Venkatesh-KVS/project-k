@@ -4,6 +4,7 @@ import { GiHamburgerMenu, GiHeartOrgan } from "react-icons/gi";
 import { BiChevronsRight } from "react-icons/bi";
 import { HiOutlineFilter } from "react-icons/hi";
 import { CiMenuKebab } from "react-icons/ci";
+import { testsData } from "../../assets/data/AllData";
 // import { TestCard, cardData } from "./requiredPages/TestCard";
 
 const Tests = () => {
@@ -66,79 +67,47 @@ const Tests = () => {
           </div>
           <div className="Packages box-mb">
             <h4 className="h4-style">Packages</h4>
-            <Link to="/">Bone </Link>
-            <Link to="/">Cancer </Link>
-            <Link to="/">Diabetes </Link>
-            <Link to="/">Fever </Link>
+            {testsData.map((item) => (
+              <div className="test-info">
+                <p className="test-category">{item.category}</p>
+              </div>
+            ))}
           </div>
         </div>
         <div className="box-right ">
           <div className="box-right-top">
             <div className="categories  d-flex justify-content-between align-items-center">
-              <div className="">
+              <div className="icons">
                 <HiOutlineFilter />
                 <GiHamburgerMenu />
               </div>
 
-              <h6>225 Total Tests</h6>
+              <h6>Total tests {testsData.length}</h6>
 
-              <Link to="/">
+              <Link to="/" className="menu-item icons">
                 {"Menu Item"}
                 <CiMenuKebab />
               </Link>
             </div>
           </div>
           <div className="box-right-bottom ">
-            <div className="box-mb ">
-              <h6>All</h6>
-              <div className="tst-group d-flex gap-3">
-                {/* {cardData.map((card, index) => (
-                  <TestCard
-                    key={index}
-                    title={card.title}
-                    price={card.price}
-                    inv={card.inv}
-                    description={card.description}
-                  />
-                ))} */}
-
-                <div className="tsts tst-1">
-                  <h6>AMMONIA</h6>
-                  <h3>Rs 450/-</h3>
-                  <hr />
-                  <p className="para">INVCODE : INV1663</p>
-
-                  <hr />
-                  <button className="btn">Book Now</button>
+            <div className="mt-2 ptCards d-flex flex-wrap gap-2">
+              {testsData.slice(0, 6).map((item) => (
+                <div className="ptCard">
+                  <div className="ptBg d-flex flex-column justify-content-between">
+                    <div className="pt-info">
+                      <h3 className="pt-title">{item.title}</h3>
+                      <h5 className="pt-inv">
+                        INVCODE:<b> {item.inv} </b>
+                      </h5>
+                      <p>{item.description}</p>
+                    </div>
+                    <div className="ptBtn">
+                      <button>Book Now</button>
+                    </div>
+                  </div>
                 </div>
-                <div className="tsts tst-2">
-                  <h6>IHC ER/PR/HER2nu(BREAST PANEL) </h6>
-                  <h3>Rs 4000/-</h3>
-                  <hr />
-                  <p className="para">INVCODE : INV1441</p>
-
-                  <hr />
-                  <button className="btn">Book Now</button>
-                </div>
-                <div className="tsts tst-2">
-                  <h6>IHC ER/PR/HER2nu(Breast panel) + Ki-67</h6>
-                  <h3>Rs 5000/-</h3>
-                  <hr />
-                  <p className="para">INVCODE : INV2408</p>
-
-                  <hr />
-                  <button className="btn">Book Now</button>
-                </div>
-                <div className="tsts tst-2">
-                  <h6>10X300 SWAB C/S</h6>
-                  <h3>Rs 3000/-</h3>
-                  <hr />
-                  <p className="para">INVCODE : INV2</p>
-
-                  <hr />
-                  <button className="btn ">Book Now</button>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
@@ -179,6 +148,54 @@ const Wrapper = styled.section`
   }
 
   /* ---------------test cards */
+  .ptCards {
+    justify-content: space-between;
+    .ptCard {
+      background-color: #00ffbb;
+      position: relative;
+      border-radius: 15px;
+      width: 32%;
+      /* padding: 25px; */
+      z-index: 1;
+      .ptBg {
+        background-image: url(/konnect/images/k-10.png),
+          linear-gradient(360deg, transparent, #005bab);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #005bab90;
+        padding: 25px;
+        border-radius: 15px 15px 100px 15px;
+        height: 100%;
+      }
+      .pt-info {
+        color: ${({ theme }) => theme.colors.white};
+        h3 {
+          font-size: 1.25rem;
+          margin-bottom: 1rem;
+        }
+        h5 {
+          font-size: 0.875rem;
+          margin-bottom: 1rem;
+        }
+        p {
+          color: ${({ theme }) => theme.colors.white};
+        }
+      }
+      .ptBtn {
+        margin-top: 2rem;
+        text-align: start;
+        button {
+          background-color: #fff;
+          font-size: 0.875rem;
+          font-weight: 600;
+          text-decoration: none;
+          border: none;
+          padding: 5px 15px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
   .tsts {
     /* background-color: #00203c; */
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -274,17 +291,14 @@ const Wrapper = styled.section`
   }
 
   .box-left {
-    width: 45%;
+    width: 30%;
     height: 100%;
     background-color: #00aeef05;
     border-radius: 15px;
     padding: 2rem;
     /* border: 1px solid #005bab; */
-    background: linear-gradient(
-      180deg,
-      rgba(0, 174, 239, 0.2),
-      rgba(0, 91, 171, 0)
-    );
+    background-image: linear-gradient(360deg, #005bab80, #00aeef90);
+    background-color: #00ffbb80;
   }
 
   .box-right {
@@ -295,11 +309,30 @@ const Wrapper = styled.section`
 
   .box-right-top {
     padding: 1.5rem;
-    background: linear-gradient(
-      0deg,
-      rgba(0, 91, 171, 0),
-      rgba(0, 174, 239, 0.2)
-    );
+    background-image: linear-gradient(180deg, #005bab, #00aeef90);
+    background-color: #00ffbb50;
+    margin-bottom: 2rem;
     border-radius: 15px;
+    .categories {
+      display: flex;
+      align-items: center;
+      vertical-align: center;
+      justify-content: space-between;
+    }
+    a,
+    h6 {
+      margin: 0;
+    }
+    h6 {
+      color: white;
+    }
+    .menu-item {
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+    .icons svg path {
+      color: white;
+    }
   }
 `;

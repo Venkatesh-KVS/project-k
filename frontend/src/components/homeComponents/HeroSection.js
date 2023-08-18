@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <Wrapper
     // style={{
-    //   backgroundImage: `url("konnect/images/bannerImage.jpg")`,
+    //   backgroundImage: `url("/konnect/images/bannerImage.jpg")`,
     //   backgroundSize: "cover",
     //   backgroundPosition: "center",
     //   backgroundRepeat: "no-repeat",
@@ -23,7 +23,7 @@ const HeroSection = () => {
           <div className="gyr my-4">
             Get Your
             <strong className="mx-2">Reports</strong>
-            in<span className="mx-2">24</span>hours
+            in<span className="mx-2">12</span>hours
           </div>
         </div>
         <div className="hero-video d-flex">

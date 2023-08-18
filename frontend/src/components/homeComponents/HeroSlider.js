@@ -7,7 +7,7 @@ import HeroSection from "./HeroSection";
 const HeroSlider = () => {
   const sliderSettings = {
     arrows: true,
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
@@ -24,9 +24,19 @@ const HeroSlider = () => {
         {...sliderSettings}
         className="s-slider"
       >
-        <div className="hero-bg-img">
+        <div className="hero-bg-img bg-1">
           <DynamicImage imageName={"bannerImage.jpg"} />
+          <div className="bg-1-content">
+            <h1 className="display-4 fw-bold ">
+              Navigating
+              <span className="span"> Health Solutions </span>
+              with
+              <br />
+              Konnect
+            </h1>
+          </div>
         </div>
+
         <div className="hero-bg-img d-flex bg-2">
           <HeroSection />
         </div>
@@ -38,28 +48,50 @@ const HeroSlider = () => {
 export default HeroSlider;
 
 const Wrapper = styled.section`
+  .bg-1 {
+    position: relative;
+    .bg-1-content {
+      position: absolute;
+      top: 30%;
+      left: 10%;
+      /* transform: translate(50px, 50px); */
+      width: 55%;
+    }
+    h1 {
+      font-size: 4rem;
+      text-transform: capitalize;
+      line-height: 1.3;
+      color: ${({ theme }) => theme.colors.primary};
+    }
+    .span {
+      color: ${({ theme }) => theme.colors.secondary};
+      /* font-size: 2.5rem; */
+    }
+  }
   .bg-2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
   }
   .s-slider {
     z-index: 0;
-    /* margin: 50px; */
     position: relative;
-    height: 500px;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    /* margin-bottom: -10%; */
   }
   .slick-arrow {
     &::before {
-      /* font-family: inherit; */
+      font-family: inherit;
       font-size: 32px;
       font-weight: 700;
       color: ${({ theme }) => theme.colors.primary90};
+    }
+    &:hover::before {
+      color: ${({ theme }) => theme.colors.primary};
     }
   }
 

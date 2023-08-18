@@ -33,6 +33,7 @@ import RsDetails from "./components/services/RsDetails";
 const theme = {
   colors: {
     primary: "#005BAB",
+    addon: "00ffbb",
     pink: "#d12e88",
     primary90: "#00aeef90",
     secondary: "#00aeef",

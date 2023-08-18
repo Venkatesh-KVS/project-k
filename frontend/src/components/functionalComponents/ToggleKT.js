@@ -17,7 +17,7 @@ const ToggleKT = () => {
 
   return (
     <Wrapper>
-      <div className="s2-kt ">
+      <div className="s2-kt mt-4">
         <div className="kt-searchBox mb-4 d-flex">
           {/* <div className="filterBy d-flex gap-3" style={{ width: "25%" }}>
             <BsFilter />

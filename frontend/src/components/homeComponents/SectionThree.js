@@ -42,8 +42,31 @@ const SectionThree = () => {
         </div>
       </div>
       <div className="secThree container d-flex">
-        <div className="secThree-img">
-          <DynamicImage className="secThree-imgLeft" imageName={"img1.jpg"} />
+        <div
+          className="why-konnect-img"
+          style={{
+            backgroundImage: `linear-gradient(transparent, #00cca3), url(/konnect/images/lists-img.jpg)`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            width: "60%",
+          }}
+        >
+          <div className="why-konnect-content">
+            <div className="title">
+              <h3>Why Konnect</h3>
+            </div>
+            <div className="info d-flex gap-2">
+              <DynamicImage
+                className="secThree-info-icon"
+                imageName={"/icons/house-white.svg"}
+              />
+              <h3>
+                Empowering <br />
+                Health through Precision
+              </h3>
+            </div>
+          </div>
         </div>
 
         <div className="secThree-info d-flex">
@@ -52,23 +75,27 @@ const SectionThree = () => {
               className="secThree-info-icon"
               imageName={"/icons/box.svg"}
             />
-            <p>Guaranteed time slots</p>
+            <p>
+              Konnect Diagnostics offers precise diagnostics with certified
+              radiologists, pathologists, doctors, and technicians .
+            </p>
           </div>
           <hr />
           <div className="sti secThree-info-two d-flex">
             <DynamicImage imageName={"/icons/Prescription.svg"} />
 
-            <p>Temperature control sample movement and tracking </p>
+            <p>
+              Pioneering tech, skilled team drive us in advanced diagnostics,
+              managing complex cases with expertise.
+            </p>
           </div>
           <hr />
           <div className="sti secThree-info-two d-flex">
             <DynamicImage imageName={"/icons/box.svg"} />
-            <p>Personalised sample Collection </p>
-          </div>
-          <hr />
-          <div className="sti secThree-info-two d-flex">
-            <DynamicImage imageName={"/icons/Prescription.svg"} />
-            <p>Check our health packages </p>
+            <p>
+              Our priority: satisfied patients. Swift, transparent, precise
+              top-quality services for convenience and rapid results.
+            </p>
           </div>
         </div>
       </div>
@@ -79,13 +106,52 @@ const SectionThree = () => {
 export default SectionThree;
 
 const Wrapper = styled.section`
+  .why-konnect-img {
+    position: relative;
+
+    .why-konnect-content {
+      position: absolute;
+      left: 10%;
+      bottom: 5%;
+      /* padding: 15px; */
+      color: white;
+      .title h3 {
+        color: white;
+        font-size: 2rem;
+      }
+      .info {
+        margin-top: 2rem;
+        img {
+          width: 50px;
+          height: 100%;
+        }
+        h3 {
+          color: ${({ theme }) => theme.colors.white};
+          margin: 0;
+          font-size: 1.25rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
   .services {
     background-color: ${({ theme }) => theme.colors.primary};
-
     padding: 4rem 0 15rem 0;
   }
   .secThree {
     margin-top: -12rem;
+  }
+  .secThree-info {
+    .sti {
+      align-items: center;
+      img {
+        width: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+    }
   }
   .s3-s {
     display: flex;
@@ -96,7 +162,6 @@ const Wrapper = styled.section`
     .s3-icons {
       background-color: #fff;
       border-radius: 100px;
-
       padding: 1.5rem;
       height: 100px;
       width: 100px;

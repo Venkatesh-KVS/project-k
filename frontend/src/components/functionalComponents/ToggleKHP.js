@@ -10,7 +10,7 @@ const ToggleKHP = () => {
 
   return (
     <Wrapper>
-      <div className="s2-khp">
+      <div className="s2-khp mt-4">
         <div className="khp-searchBox d-flex mb-4">
           <div className="searchBar d-flex flex-fill">
             <input
