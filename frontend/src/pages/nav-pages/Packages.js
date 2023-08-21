@@ -2,10 +2,16 @@ import React, { useState } from "react";
 // import HpCard from "../../components/requiredPages/HpCard";
 import { BsCurrencyRupee } from "react-icons/bs";
 import { packagesData } from "../../assets/data/AllData";
+import { useCart } from "react-use-cart";
 import { styled } from "styled-components";
 
 const Packages = ({ handleClick }) => {
   const [activeTab, setActiveTab] = useState(packagesData[0].id);
+  const { addItem } = useCart();
+  const [buttonText, setButtonText] = useState("Add to Cart");
+  const changeText = (text) => {
+    setButtonText(text);
+  };
 
   return (
     <Wrapper>
@@ -57,7 +63,14 @@ const Packages = ({ handleClick }) => {
                           <p>{tab.excerpt.slice(0, 120)}...</p>
                         </div>
                         <div>
-                          <button className="atc">Add to Cart</button>
+                          <button 
+                            className="atc" 
+                            onClick={() => {
+                              addItem(tab);
+                              changeText("Added to Cart");
+                              handleClick(tab);
+                            }} 
+                          > {buttonText} </button>
                         </div>
                       </div>
                     </div>

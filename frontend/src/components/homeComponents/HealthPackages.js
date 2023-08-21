@@ -3,7 +3,7 @@ import HpCard from "../requiredPages/HpCard";
 import { packagesData } from "../../assets/data/AllData";
 import styled from "styled-components";
 
-const HealthPackages = () => {
+const HealthPackages = ({handleClick}) => {
   return (
     <Wrapper>
       <section className="mb-5" id="hp_sec">
@@ -21,13 +21,8 @@ const HealthPackages = () => {
               {packagesData.slice(0, 3).map((item, index) => (
                 <HpCard
                   key={index}
-                  // image={item.ftrImg}
-                  // title={item.title}
-                  // price={item.price}
-                  // code={item.code}
-                  // desc={item.desc}
-                  // info={item.temInfo}
                   item={item}
+                  handleClick={handleClick}
                 />
               ))}
             </div>

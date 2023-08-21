@@ -5,7 +5,7 @@ import HpCard from "../requiredPages/HpCard";
 
 import { packagesData } from "../../assets/data/AllData";
 
-const ToggleKHP = () => {
+const ToggleKHP = ({ handleClick }) => {
   const [search, setSearch] = useState("");
 
   return (
@@ -32,13 +32,14 @@ const ToggleKHP = () => {
             .map((item, index) => (
               <HpCard
                 key={index}
-                image={item.ftrImg}
-                title={item.title}
-                price={item.price}
-                code={item.code}
-                desc={item.desc}
-                info={item.temInfo}
+                // image={item.ftrImg}
+                // title={item.title}
+                // price={item.price}
+                // code={item.code}
+                // desc={item.desc}
+                // info={item.temInfo}
                 item={item}
+                handleClick={handleClick}
               />
             ))}
         </div>
