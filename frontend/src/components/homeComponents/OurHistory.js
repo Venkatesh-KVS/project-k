@@ -6,7 +6,7 @@ const OurHistory = () => {
   return (
     <Wrapper>
       <div className="top our-history p-5">
-        <h2>Popular Tests</h2>
+        <h2>Our History and Experience</h2>
         <p>
           For more than 25 years, our mission has been to make life better for
           people

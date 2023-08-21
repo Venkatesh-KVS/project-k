@@ -45,7 +45,7 @@ const SectionThree = () => {
         <div
           className="why-konnect-img"
           style={{
-            backgroundImage: `linear-gradient(transparent, #00cca3), url(/konnect/images/lists-img.jpg)`,
+            backgroundImage: `url(/konnect/images/lists-img.jpg)`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center",
@@ -73,7 +73,7 @@ const SectionThree = () => {
           <div className="sti secThree-info-one d-flex">
             <DynamicImage
               className="secThree-info-icon"
-              imageName={"/icons/box.svg"}
+              imageName={"/icons/home/certified.svg"}
             />
             <p>
               Konnect Diagnostics offers precise diagnostics with certified
@@ -82,7 +82,7 @@ const SectionThree = () => {
           </div>
           <hr />
           <div className="sti secThree-info-two d-flex">
-            <DynamicImage imageName={"/icons/Prescription.svg"} />
+            <DynamicImage imageName={"/icons/home/team.svg"} />
 
             <p>
               Pioneering tech, skilled team drive us in advanced diagnostics,
@@ -91,7 +91,7 @@ const SectionThree = () => {
           </div>
           <hr />
           <div className="sti secThree-info-two d-flex">
-            <DynamicImage imageName={"/icons/box.svg"} />
+            <DynamicImage imageName={"/icons/home/top.svg"} />
             <p>
               Our priority: satisfied patients. Swift, transparent, precise
               top-quality services for convenience and rapid results.
@@ -111,24 +111,29 @@ const Wrapper = styled.section`
 
     .why-konnect-content {
       position: absolute;
-      left: 10%;
+      padding: 25px 45px;
+      border-radius: 15px;
+      background-image: url(/konnect/images/k-10.png),
+        linear-gradient(90deg, #00ffbb90, #005bab90);
+      background-size: contain;
+      background-repeat: no-repeat;
+      left: 5%;
       bottom: 5%;
-      /* padding: 15px; */
       color: white;
       .title h3 {
         color: white;
-        font-size: 2rem;
+        font-size: 1%.5;
       }
       .info {
-        margin-top: 2rem;
+        margin-top: 1rem;
         img {
-          width: 50px;
+          width: 35px;
           height: 100%;
         }
         h3 {
           color: ${({ theme }) => theme.colors.white};
           margin: 0;
-          font-size: 1.25rem;
+          font-size: 1rem;
           font-weight: 500;
         }
       }
