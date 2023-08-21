@@ -45,7 +45,7 @@ const SectionThree = () => {
         <div
           className="why-konnect-img"
           style={{
-            backgroundImage: `url(/konnect/images/lists-img.jpg)`,
+            backgroundImage: `url(/konnect/images/s3-img-left.jpg)`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center",
@@ -57,14 +57,11 @@ const SectionThree = () => {
               <h3>Why Konnect</h3>
             </div>
             <div className="info d-flex gap-2">
-              <DynamicImage
+              {/* <DynamicImage
                 className="secThree-info-icon"
                 imageName={"/icons/house-white.svg"}
-              />
-              <h3>
-                Empowering <br />
-                Health through Precision
-              </h3>
+              /> */}
+              <h3>Empowering Health through Precision</h3>
             </div>
           </div>
         </div>
@@ -111,10 +108,10 @@ const Wrapper = styled.section`
 
     .why-konnect-content {
       position: absolute;
-      padding: 25px 45px;
+      padding: 25px;
       border-radius: 15px;
       background-image: url(/konnect/images/k-10.png),
-        linear-gradient(90deg, #00ffbb90, #005bab90);
+        linear-gradient(90deg, #00ffbb, #005bab95);
       background-size: contain;
       background-repeat: no-repeat;
       left: 5%;

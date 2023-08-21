@@ -51,16 +51,11 @@ const PatientExperience = () => {
             className="pe-right"
             style={{
               backgroundImage: `url(${patientStoryData[activeTab].bg})`,
-              // backgroundImage: `url(https://img.freepik.com/premium-vector/blue-abstract-background-with-mandalas_1159-956.jpg?w=740)`,
               backgroundSize: "cover",
               backgroundPosition: "center top",
               backgroundRepeat: "no-repeat",
             }}
           >
-            {/* <video autoPlay loop controls={true} id="pe_bg_vid">
-              <source src={patientStoryData[activeTab].video} />
-            </video> */}
-
             <div className="patientStory-box">
               <div className="patientStory">
                 <h5>Patient Story</h5>
@@ -184,13 +179,13 @@ const Wrapper = styled.section`
       position: relative;
       overflow: hidden;
       .patientStory-box {
-        height: 82%;
+        height: 85%;
         display: flex;
         align-items: center;
         position: absolute;
         top: 0;
         right: 50px;
-        width: 40%;
+        width: 45%;
         background-image: url(/konnect/images/k-10.png),
           linear-gradient(220deg, #005bab, #00ffbb90);
         .patientStory {

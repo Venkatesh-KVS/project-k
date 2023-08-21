@@ -1,28 +1,17 @@
 import React from "react";
-import { Carousel } from "react-responsive-carousel";
 import { styled } from "styled-components";
 
 const OrganCarousel = ({ images }) => {
   return (
     <Wrapper>
-      <Carousel
-        style={{ width: "100%" }}
-        showStatus={false}
-        showIndicators={false}
-        showThumbs={false}
-        centerMode
-        centerSlidePercentage={1}
-        selectedItem={0}
-      >
-        <div className="organs d-flex gap-3 flex-wrap ">
-          {images.map((image, index) => (
-            <div className="org-item" key={index}>
-              <img src={image.src} alt={image.alt} />
-              <p>{image.alt}</p>
-            </div>
-          ))}
-        </div>
-      </Carousel>
+      <div className="organs d-flex gap-3 flex-wrap ">
+        {images.map((image, index) => (
+          <div className="org-item" key={index}>
+            <img src={image.src} alt={image.alt} />
+            <p>{image.alt}</p>
+          </div>
+        ))}
+      </div>
     </Wrapper>
   );
 };
@@ -30,22 +19,13 @@ const OrganCarousel = ({ images }) => {
 export default OrganCarousel;
 
 const Wrapper = styled.section`
-  .dot.selected {
-    background-color: #005bab;
-    cursor: progress;
-  }
-  .carousel-root {
-    /* width: 100%; */
-
-    .carousel {
-      height: auto;
-    }
-    .carousel .slider {
-      margin: 0 25px;
-    }
-  }
   .organs {
+    display: flex;
     .org-item {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       &:hover {
         background-color: #005bab10;
       }

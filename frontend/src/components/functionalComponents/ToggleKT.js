@@ -44,7 +44,7 @@ const ToggleKT = ({ handleClick }) => {
             </div>
           </div>
           <div className="organsBox">
-            <div className="kt-organs d-flex">
+            <div className="kt-organs ">
               <OrganCarousel images={organImages} />
             </div>
           </div>
@@ -58,11 +58,7 @@ const ToggleKT = ({ handleClick }) => {
             })
             .slice(0, 6)
             .map((item, index) => (
-              <TestCard
-                key={index}
-                item={item}
-                handleClick={handleClick}
-              />
+              <TestCard key={index} item={item} handleClick={handleClick} />
             ))}
         </div>
       </div>
@@ -122,6 +118,7 @@ const Wrapper = styled.section`
 
   .selectionBox {
     .kt-organs {
+      align-items: center;
       &:hover {
         color: ${({ theme }) => theme.colors.primary};
       }
