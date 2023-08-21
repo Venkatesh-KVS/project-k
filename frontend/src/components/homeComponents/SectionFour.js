@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import { PopularTests } from "../requiredPages/PopularTests";
 
-const SectionFour = () => {
+const SectionFour = ({handleClick}) => {
   return (
     <Wrapper>
       <div className="secFour container ">
@@ -17,7 +17,7 @@ const SectionFour = () => {
         </div>
         <div className="cards">
           {/* <MyCarousel /> */}
-          <PopularTests />
+          <PopularTests handleClick={handleClick} />
         </div>
       </div>
     </Wrapper>

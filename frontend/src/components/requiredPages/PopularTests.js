@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useCart } from "react-use-cart";
 import { testsData } from "../../assets/data/AllData";
 
-export const PopularTests = () => {
+export const PopularTests = ({handleClick}) => {
   const { addItem } = useCart();
   const [buttonText, setButtonText] = useState("Book Now");
   const changeText = (text) => {
@@ -27,6 +27,7 @@ export const PopularTests = () => {
                   onClick={() => {
                     addItem(item);
                     changeText("Book Now");
+                    handleClick(item);
                   }}
                 >
                   {buttonText}

@@ -6,7 +6,7 @@ import ToggleKHP from "../functionalComponents/ToggleKHP";
 import ToggleKLT from "../functionalComponents/ToggleKLT";
 import ToggleKL from "../functionalComponents/ToggleKL";
 
-const SectionTwo = () => {
+const SectionTwo = ({handleClick }) => {
   const [activeComponent, setActiveComponent] = useState("");
 
   const handleButtonClick = (componentName) => {
@@ -43,8 +43,8 @@ const SectionTwo = () => {
             </button>
           </div>
           <div className="s2-selection-box d-flex gap-2">
-            {activeComponent === "ToggleKT" && <ToggleKT />}
-            {activeComponent === "ToggleKHP" && <ToggleKHP />}
+            {activeComponent === "ToggleKT" && <ToggleKT handleClick={handleClick} />}
+            {activeComponent === "ToggleKHP" && <ToggleKHP handleClick={handleClick} />}
             {activeComponent === "ToggleKLT" && <ToggleKLT />}
             {activeComponent === "ToggleKL" && <ToggleKL />}
           </div>
