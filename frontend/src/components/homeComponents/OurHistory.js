@@ -6,10 +6,9 @@ const OurHistory = () => {
   return (
     <Wrapper>
       <div className="top our-history p-5">
-        <h2>Our History and Experience</h2>
+        <h2>Chronicle of Our Journey</h2>
         <p>
-          For more than 25 years, our mission has been to make life better for
-          people
+          Our commitment has revolved around enhancing the lives of individuals
         </p>
         <div className="oh-section container p-0 d-flex mt-4">
           <div className="oh-left">

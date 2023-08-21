@@ -50,9 +50,10 @@ const PatientExperience = () => {
           <div
             className="pe-right"
             style={{
-              backgroundImage: `url(/konnect/images/scientist-analyzing-blood-sample-vacutainer-with-researching-team-looking-through-microscope.jpg)`,
+              backgroundImage: `url(${patientStoryData[activeTab].bg})`,
+              // backgroundImage: `url(https://img.freepik.com/premium-vector/blue-abstract-background-with-mandalas_1159-956.jpg?w=740)`,
               backgroundSize: "cover",
-
+              backgroundPosition: "center top",
               backgroundRepeat: "no-repeat",
             }}
           >
@@ -150,8 +151,8 @@ const Wrapper = styled.section`
         }
 
         .patientImage {
-          width: 50px;
-          height: 50px;
+          width: 60px;
+          height: 60px;
           display: flex;
           align-items: center;
           justify-content: center;

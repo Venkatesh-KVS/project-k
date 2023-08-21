@@ -259,58 +259,58 @@ export const patientStoryData = [
     id: 1,
     photo: "/konnect/images/patients/patient1.jpg",
     video: "/konnect/images/videos/pe_vid1.mp4",
-    name: "NameOne",
+    name: "Mounya Dutta",
     info: "unde Description unde omnis one",
     bg: "/konnect/images/patients/patient1Bg.jpg",
     description:
-      "One Sed ut perspiciande omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+      "I've been consistently impressed with the impeccable service and accurate results provided by Konnect Diagnostic Center. Their skilled team and state-of-the-art equipment ensure a seamless experience every time. I trust them with my health without hesitation.",
   },
   {
     id: 2,
     photo: "/konnect/images/patients/patient2.jpg",
     video: "https://www.youtube.com/watch?v=ZSM3w1v-A_Y",
-    name: "NameOneTwo",
+    name: "Arun Banurelli",
     info: "The unde Description unde omnis two ",
     bg: "/konnect/images/patients/patient2Bg.jpg",
     description:
-      "Two Sed ut perspptatem accusantium doloremque laudantium, toticiatis unde omnis iste natus error sit voluam rem aperiam",
+      "Konnect Diagnostic Center has truly redefined healthcare for me. Their commitment to precision and patient care is evident in every interaction. From quick appointments to comprehensive reports, they make the diagnostic process smooth and reliable.",
   },
   {
     id: 3,
     photo: "/konnect/images/patients/patient3.jpg",
-    name: "NameOneThree",
+    name: "Neha",
     info: "The unde Description unde omnis three ",
     bg: "/konnect/images/patients/patient3Bg.jpg",
     description:
-      "Two Sed ut perspiciatis unde or sit voluptatem accusantium doloremque laudantium, totam rem aperiam omnis iste natus err",
+      "As a healthcare professional, I demand accuracy and efficiency in diagnostics. Konnect Diagnostic Center has become my go-to choice. The proficiency of their staff and the range of tests available make them an invaluable asset in ensuring my patients receive the best possible care.",
   },
   {
     id: 4,
     photo: "/konnect/images/patients/patient4.jpg",
-    name: "NameOneThree",
+    name: "Ashwin Nayak",
     info: "The unde Description unde omnis four ",
     bg: "/konnect/images/patients/patient4Bg.jpg",
 
     description:
-      "Two Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+      "I can't thank Konnect Diagnostic Center enough for their prompt and friendly service. Nervous about my tests, their compassionate staff immediately put me at ease. The results were delivered with clarity, and I am grateful for their role in keeping my health in check.",
   },
   {
     id: 5,
     photo: "/konnect/images/patients/patient5.jpg",
-    name: "NameOneThree",
+    name: "Hrithika singh",
     info: "The unde Description unde omnis five ",
     bg: "/konnect/images/patients/patient5Bg.jpg",
     description:
-      "Two Sed ut perspiciatis undum doloremque laudantium, totam rem apee omnis iste natus error sit voluptatem accusantiriam",
+      "Konnect Diagnostic Center stands out in its commitment to quality and reliability. My family and I have been using their services for years, and they continue to impress us with their attention to detail and the personalized care they provide. Truly a center that cares.",
   },
 
   {
     id: 6,
     photo: "/konnect/images/patients/patient6.jpg",
-    name: "NameOneThree",
+    name: "Kalpana Nadumuri",
     info: "The unde Description unde omnis six ",
     bg: "/konnect/images/patients/patient6Bg.jpg",
     description:
-      "natus error sit voluptatem accusantium doloremque laTwo Sed ut perspiciatis unde omnis iste udantium, totam rem aperiam",
+      "Choosing Konnect Diagnostic Center was a game-changer for me. Their cutting-edge technology and skilled professionals ensure that I receive accurate results, allowing me to make informed decisions about my health. Their dedication to excellence is commendable.",
   },
 ];

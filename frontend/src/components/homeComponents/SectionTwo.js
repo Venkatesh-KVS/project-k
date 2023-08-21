@@ -80,7 +80,11 @@ const Wrapper = styled.section`
   }
   .k-btn {
     border: 2px solid ${({ theme }) => theme.colors.primary};
-    background-color: ${({ theme }) => theme.colors.white};
+    /* background-color: ${({ theme }) => theme.colors.white}; */
+    background-image: url(/konnect/images/k-10.png),
+      linear-gradient(90deg, #00ffbb90, #005bab90);
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 300px;
     padding: 10px 32px;
     border-radius: 5px;
