@@ -8,15 +8,15 @@ import HeroSlider from "../components/homeComponents/HeroSlider";
 import PatientExperience from "../components/homeComponents/PatientExperience";
 import OurHistory from "../components/homeComponents/OurHistory";
 
-const Home = () => {
+const Home = ({handleClick}) => {
   return (
     <>
       <div>
         <HeroSlider />
-        <SectionTwo />
+        <SectionTwo handleClick={handleClick} />
         <SectionThree />
-        <SectionFour />
-        <HealthPackages />
+        <SectionFour handleClick={handleClick} />
+        <HealthPackages handleClick={handleClick} />
         <PatientExperience />
         <OurHistory />
       </div>

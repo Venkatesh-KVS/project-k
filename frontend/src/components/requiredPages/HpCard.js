@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { useCart } from "react-use-cart";
 import { BsCurrencyRupee } from "react-icons/bs";
+
 const HpCard = ({ item, handleClick }) => {
   const { addItem } = useCart();
-
   return (
     <Wrapper>
       <section className="d-flex mb-3 ">

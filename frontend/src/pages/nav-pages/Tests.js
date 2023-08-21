@@ -5,9 +5,12 @@ import { BiChevronsRight } from "react-icons/bi";
 import { HiOutlineFilter } from "react-icons/hi";
 import { CiMenuKebab } from "react-icons/ci";
 import { testsData } from "../../assets/data/AllData";
+import { useCart } from "react-use-cart";
 // import { TestCard, cardData } from "./requiredPages/TestCard";
 
-const Tests = () => {
+const Tests = ({ handleClick }) => {
+  const { addItem } = useCart();
+
   return (
     <Wrapper className="tests">
       <div className="banner-bg d-flex">
@@ -103,7 +106,11 @@ const Tests = () => {
                       <p>{item.description}</p>
                     </div>
                     <div className="ptBtn">
-                      <button>Book Now</button>
+                      <button
+                        onClick={() => {
+                          addItem(item);
+                          handleClick(item);
+                        }}>Book Now</button>
                     </div>
                   </div>
                 </div>
