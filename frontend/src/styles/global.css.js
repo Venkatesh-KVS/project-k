@@ -42,13 +42,14 @@ const GlobalStyle = createGlobalStyle`
         align-items: center;
         text-align: center;
         width: 150px;
-        height: auto;
+        /* height: auto; */
+        height: 150px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 15px 0px;
         border-radius: 10px;
         img {
           margin: 1rem;
           width: 100%;
-          height: 55px;
+          height: 50px;
         }
         h5 {
           font-size: 15px;

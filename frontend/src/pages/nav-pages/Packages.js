@@ -15,7 +15,7 @@ const Packages = ({ handleClick }) => {
 
   return (
     <Wrapper>
-      <section className=" container my-5" id="hp_sec">
+      <section className="pkg container my-5" id="hp_sec">
         <div>
           <div className="text-center ">
             <h2>Health Packages</h2>
@@ -43,50 +43,44 @@ const Packages = ({ handleClick }) => {
                   key={tab.id}
                   className={`tab-pane ${tab.id === activeTab ? "active" : ""}`}
                 >
-                  <div className="pkg-tab-active">
+                  <div className="tab-bg">{/* <h2>{tab.title}</h2> */}</div>
+                  <div className="pkg-active-bg-top d-flex">
                     <div className="pkg-top d-flex">
                       <div className="pkg-image">
-                        <img
-                          src={tab.ftrImg}
-                          alt={tab.title}
-                          style={{ width: "450px" }}
-                        />
+                        <img src={tab.ftrImg} alt={tab.title} />
                       </div>
-                      <div className="img-right">
-                        <div className="pkg-title">
+                      <div className="pkg-info-right">
+                        <div className="pkg-code">
                           <h3>{tab.title}</h3>
-                          <p className="code">Code :{tab.code}</p>
+                          <h5 className="code">Code :{tab.code}</h5>
                           <p className="price">
+                            Price :
                             <BsCurrencyRupee />
                             {tab.price}/-
                           </p>
-                          <p>{tab.excerpt.slice(0, 120)}...</p>
                         </div>
                         <div>
-                          <button 
-                            className="atc" 
+                          <button
+                            className="atc"
                             onClick={() => {
                               addItem(tab);
                               changeText("Added to Cart");
                               handleClick(tab);
-                            }} 
-                          > {buttonText} </button>
+                            }}
+                          >
+                            {buttonText}
+                          </button>
                         </div>
                       </div>
                     </div>
+                  </div>
+                  <div className="pkg-tab-active-content">
                     <div className="pkg-content mt-3">{tab.content}</div>
                   </div>
                 </div>
               ))}
             </div>
           </div>
-          {/* <div className="hp-box container mt-4 flex-wrap">
-            <div className="hpCards d-flex justify-content-center flex-wrap gap-3">
-              {packagesData.map((item, index) => (
-                <HpCard key={item.code} item={item} handleClick={handleClick} />
-              ))}
-            </div>
-          </div> */}
         </div>
       </section>
     </Wrapper>
@@ -95,84 +89,104 @@ const Packages = ({ handleClick }) => {
 
 export default Packages;
 const Wrapper = styled.section`
-  .img-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* padding-bottom: 3rem; */
-  }
   .pkg-tabs {
     display: flex;
     gap: 25px;
-
     .tabs {
       display: flex;
       flex-direction: column;
       button {
         background-color: ${({ theme }) => theme.colors.white};
         border: none;
+        /* margin-top: 5px; */
         font-size: 1rem;
         font-weight: 500;
-        border: 1px solid ${({ theme }) => theme.colors.secondary};
-        border-radius: 5px;
-        margin-bottom: 10px;
-        padding: 10px 15px;
+        border-bottom: 1px solid ${({ theme }) => theme.colors.primary90};
+        padding: 10px;
         text-align: start;
         &:hover {
-          background-color: ${({ theme }) => theme.colors.primary90};
+          background-image: url(/konnect/images/k-10.png),
+            linear-gradient(220deg, #005bab, #00ffbb90);
         }
       }
       button.active {
-        background: ${({ theme }) => theme.colors.primary};
+        background-image: url(/konnect/images/k-10.png),
+          linear-gradient(220deg, #005bab, #00ffbb90);
         color: white;
         &:hover {
-          background: ${({ theme }) => theme.colors.primary};
+          background-image: url(/konnect/images/k-10.png),
+            linear-gradient(220deg, #005bab, #00ffbb90);
         }
       }
     }
-
     .tab-content {
-      .pkg-image {
-        margin-right: 2%;
-        img {
-          border-radius: 5px;
-        }
-      }
-      .pkg-title {
-        .code {
-          font-size: 1rem;
-          color: ${({ theme }) => theme.colors.primary90};
-          font-weight: 500;
-        }
-        .price {
-          width: 100px;
-          background-color: ${({ theme }) => theme.colors.primary};
-          /* border: 1px solid ${({ theme }) => theme.colors.primary90}; */
-          border-radius: 5px;
-          margin: 15px 0;
-          /* padding: 10px 15px; */
-          text-align: center;
-          align-items: center;
-          font-size: 1.2rem;
-          color: ${({ theme }) => theme.colors.white};
-          svg {
-            fill: ${({ theme }) => theme.colors.white};
-            margin-right: 5px;
-          }
-        }
-      }
       .atc {
         border: none;
-        background-color: ${({ theme }) => theme.colors.secondary};
+        background-image: url(/konnect/images/k-10.png),
+          linear-gradient(220deg, #005bab, #00ffbb90);
         color: ${({ theme }) => theme.colors.white};
-        /* border: none; */
         font-size: 1rem;
         font-weight: 500;
         border-radius: 5px;
         margin-bottom: 10px;
         padding: 8px 20px;
+        transition: all 0.3s;
         &:hover {
-          background-color: ${({ theme }) => theme.colors.primary};
+          background-image: url(/konnect/images/k-10.png),
+            linear-gradient(90deg, #005bab, #00ffbb90);
+        }
+      }
+    }
+  }
+  .tab-bg {
+    align-items: center;
+    text-align: center;
+    background-image: url(/konnect/images/k-10.png),
+      linear-gradient(220deg, #005bab, #00ffbb90);
+    border-radius: 15px;
+    height: 200px;
+    z-index: 0;
+    margin-bottom: -20%;
+  }
+  .pkg-active-bg-top {
+    justify-content: center;
+    margin-bottom: 25px;
+    .pkg-top {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 10px 0px;
+      background-color: ${({ theme }) => theme.colors.white};
+      border-radius: 15px;
+      width: 88%;
+      .pkg-image {
+        margin-right: 3%;
+        img {
+          width: 350px;
+          height: 100%;
+          border-radius: 15px 0 0 15px;
+        }
+      }
+      .pkg-info-right {
+        width: 100%;
+        background-image: url(/konnect/images/k-10.png);
+        background-size: cover;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .code {
+          font-size: 1rem;
+          color: ${({ theme }) => theme.colors.text};
+          font-weight: 600;
+        }
+        .price {
+          color: ${({ theme }) => theme.colors.primary};
+          border-radius: 5px;
+          margin: 15px 0;
+          font-size: 1.5rem;
+          font-weight: 700;
+          svg {
+            fill: ${({ theme }) => theme.colors.white};
+            margin-right: 5px;
+          }
         }
       }
     }

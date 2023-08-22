@@ -44,7 +44,35 @@ p{
   width: 1000px;
 }
 /* --------------------------------------------hcContent-------------------------------------------- */
-
+/* .icon-box {
+  margin: 25px 0 50px;
+  height: 100%;
+  
+}
+.icon-box .box {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+  height: 200px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 15px 0px;
+  border-radius: 10px;
+  
+}
+.icon-box img {
+  margin: 1rem;
+  width: 100%;
+  height: 50px;
+}
+.gipsCE .singlePage .left img{
+  height: 50px;  
+}
+.icon-box h5 {
+  font-size: 15px;
+} */
 
 
 /* ------------------------------------ Section three ------------------------------------------ */
