@@ -5,40 +5,54 @@ const NutritionPackage = () => {
   return (
     <Wrapper>
       <div className="pkg-cnt">
-        <p>
-          Deficiency of either Vitamins or Micronutrients in our body can result
-          in long term adverse effects on multiple systems which can be
-          prevented by proper nutrition and supplements. Konnect Nutrition
-          Package covers essential tests to check the status of these Vitamins
-          and Micronutrients in your body.
-        </p>
-        <ol>
-          <li className="points">
-            <strong>Complete Blood Picture (CBP) </strong>
-          </li>
+        <h3>Tests included in the package (8)</h3>
 
-          <li className="points">
-            <strong>Vitamin B12 </strong>
-          </li>
-          <li className="points">
-            <strong>Vitamin D </strong>
-          </li>
-          <li className="points">
-            <strong>Serum Iron </strong>
-          </li>
-          <li className="points">
-            <strong>Serum Calcium </strong>
-          </li>
-          <li className="points">
-            <strong>Serum Magnesium </strong>
-          </li>
-          <li className="points">
-            <strong>Serum Phosphorus </strong>
-          </li>
-          <li className="points">
-            <strong>Serum Zinc </strong>
-          </li>
+        <ol>
+          <li>Complete Blood Picture (CBP)</li>
+          <li>Vitamin B12</li>
+          <li>Vitamin D</li>
+          <li>Serum Iron</li>
+          <li>Serum Calcium</li>
+          <li>Serum Magnesium</li>
+          <li>Serum Phosphorus</li>
+          <li>Serum Zinc</li>
         </ol>
+        <h3>What is the package for? </h3>
+        <p>
+          Konnect Nutrition Package helps to monitor, screen, and diagnose
+          various vitamin and bone-related disorders. It includes tests such as
+          vitamin B12, vitamin D, serum Iron, etc., to determine whether you are
+          at risk of essential vitamin and mineral deficiency. It is advised to
+          have a routine nutrition assessment if you are experiencing symptoms
+          such as hair loss, headache, depression, palpitations, diarrhoea, or
+          bone and muscular discomfort. Additionally, it can also aid healthcare
+          providers in making appropriate diagnoses and effective treatment
+          plans for that particular condition.
+        </p>
+        <h3>This package is recommended for:</h3>
+        <p>
+          Konnect Nutrition Package is recommended for all individuals who are:
+        </p>
+        <ul>
+          <li>Having a Body Mass Index (BMI) greater than 25</li>
+          <li>Having a history of blood transfusions, HIV, and cancer</li>
+          <li>Experiencing symptoms of anaemia</li>
+          <li>Taking vitamin supplements daily</li>
+          <li>Falling sick frequently</li>
+          <li>Having a family history of arthritis</li>
+          <li>Leading a sedentary lifestyle</li>
+          <li>Consuming alcohol and smoking </li>
+        </ul>
+        <h3>Patient preparation required </h3>
+        <p>
+          Konnect Nutrition Package requires fasting for 10- 12 hours before
+          undergoing the test. It is advised not to drink any beverages such as
+          tea, coffee, or milk, until the sample collection is done. Also,
+          inform your healthcare provider if you are on any medications
+          currently.
+        </p>
+        <h3>Availability of report </h3>
+        <p>Konnect Nutrition Package test reports are available within 24 hours after the collection of the sample.</p>
       </div>
     </Wrapper>
   );

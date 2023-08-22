@@ -5,33 +5,16 @@ const ExecutiveHealthCheckup = () => {
   return (
     <Wrapper>
       <div className="pkg-cnt">
-        <p>
-          The aim of Executive Health Checkup is to extend the healthy life
-          expectancy of population, to avoid untimely death and to improve the
-          quality of life for people with a disease or disability by
-          periodically checking all symptoms in the body.
-        </p>
+        <h3>Tests included in the package (32)</h3>
         <ol>
-          <li className="points">
-            <strong>Complete Blood Picture (CBP)</strong>
-          </li>
-          <li className="points">
-            <strong>Blood Group & Rh typing </strong>
-          </li>
-          <li className="points">
-            <strong>Complete Urine Examination (CUE) </strong>
-          </li>
-          <li className="points">
-            <strong>Erythrocyte Sedimentation Rate (ESR)</strong>
-          </li>
-          <li className="points">
-            <strong>Fasting Blood Sugar (FBS)</strong>
-          </li>
-          <li className="points">
-            <strong>Glycosylated Hemoglobin (HBA1C) </strong>
-          </li>
-          <li className="points">
-            <strong>Lipid Profile</strong>
+          <li>Complete Blood Picture (CBP)</li>
+          <li>Blood Group & Rh typing</li>
+          <li>Complete Urine Examination (CUE)</li>
+          <li>Erythrocyte Sedimentation Rate (ESR)</li>
+          <li>Fasting Blood Sugar (FBS)</li>
+          <li>Glycosylated Hemoglobin (HBA1C)</li>
+          <li>
+            Lipid Profile (4 tests included)
             <ul className="inner-ul">
               <li>Total Cholesterol</li>
               <li>HDL Cholesterol</li>
@@ -39,8 +22,8 @@ const ExecutiveHealthCheckup = () => {
               <li>Triglycerides</li>
             </ul>
           </li>
-          <li className="points">
-            <strong>Liver Function Test (LFT)</strong>
+          <li>
+            Liver Function Test (LFT) (7 tests included)
             <ul className="inner-ul">
               <li>Total Bilirubin</li>
               <li>Direct Bilirubin </li>
@@ -51,55 +34,79 @@ const ExecutiveHealthCheckup = () => {
               <li>Serum Proteins</li>
             </ul>
           </li>
-          <li className="points">
-            <strong>Kidney Function Test </strong>
+          <li>
+            Kidney Function Test (2 tests included)
             <ul className="inner-ul">
               <li>Serum Creatinine </li>
               <li>Blood Urea </li>
             </ul>
           </li>
-          <li className="points">
-            <strong>Serum Uric Acid </strong>
-          </li>
-          <li className="points">
-            <strong>Thyroid Profile </strong>
+          <li>Serum Uric Acid </li>
+          <li>
+            Thyroid Profile (3 tests included)
             <ul className="inner-ul">
               <li>Serum Triiodothyronine(T3) </li>
               <li>Serum Thyroxine(T4) </li>
               <li>Thyroid Stimulating Hormone (TSH) </li>
             </ul>
           </li>
-          <li className="points">
-            <strong>Serum Calcium </strong>
-          </li>
-          <li className="points">
-            <strong>Vitamin B12 </strong>
-          </li>
-          <li className="points">
-            <strong>Vitamin D </strong>
-          </li>
-          <li className="points">
-            <strong>Prostate Specific Antigen (Male) </strong>
-          </li>
-          <li className="points">
-            <strong>PAP Smear (Female)</strong>
-          </li>
-          <li className="points">
-            <strong>ECG </strong>
-          </li>
-          <li className="points">
-            <strong>2D Echo </strong>
-          </li>
-          <li className="points">
-            <strong>Ultrasound Abdomen </strong>
-          </li>
-          <li className="points">
-            <strong>X-Ray Chest PA View </strong>
-          </li>
-          <li className="points">
-            <strong>Doctor Consultation</strong>
-          </li>
+          <li>Serum Calcium</li>
+          <li>Vitamin B12</li>
+          <li>Vitamin D</li>
+          <li>Prostate Specific Antigen (Male)</li>
+          <li>PAP Smear (Female)</li>
+          <li>ECG</li>
+          <li>2D Echo</li>
+          <li>Ultrasound Abdomen</li>
+          <li>X-Ray Chest PA View</li>
+          <li>Doctor Consultation</li>
         </ol>
+        <h3>What is the Package for? </h3>
+        <p>
+          Konnect Executive Health Checkup package helps to screen and monitor
+          the risk of developing various conditions such as diabetes,
+          hypertension, bone, kidney, and thyroid disorders. In today’s world,
+          stressful lifestyles, erratic work schedules, sporadic mealtimes, and
+          a lack of adequate physical activity, all have a significant negative
+          influence on our health and well-being. Therefore, the concern for
+          being healthy has been increasing dramatically. There is a need to
+          undergo this package once a year, which will educate individuals on
+          their overall well-being. Additionally, it can also help healthcare
+          providers to provide early diagnosis and effective treatment plans for
+          that particular condition.
+        </p>
+        <h3>This package is recommended for:</h3>
+        <p>
+          Konnect Executive Health Checkup package is recommended for people who
+          are:
+        </p>
+        <ul>
+          <li>Aged between 30-40 years and above</li>
+          <li>Having a Body Mass Index (BMI) above 25</li>
+          <li>
+            Having a history of high blood pressure, cholesterol, heart disease,
+            and insulin resistance
+          </li>
+          <li>Having a family history of chronic illnesses</li>
+          <li>Experiencing frequent joint pains</li>
+          <li>Leading a sedentary lifestyle</li>
+          <li>Consuming alcohol </li>
+          <li>Smoking </li>
+        </ul>
+        <h3>Patient Preparation required </h3>
+        <p>
+          Konnect Executive Health Checkup package requires 10-12 hours of
+          fasting before undergoing the test. It is advised to consult your
+          healthcare provider before testing if you are using any medications
+          currently.
+        </p>
+        <h3>Availability of Report </h3>
+        <p>
+          Konnect Executive Health Checkup package test reports are available
+          within 24 hours after the collection of samples.Konnect Executive
+          Health Checkup package test reports are available within 24 hours
+          after the collection of samples.
+        </p>
       </div>
     </Wrapper>
   );

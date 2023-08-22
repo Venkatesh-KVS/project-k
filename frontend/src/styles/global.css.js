@@ -60,10 +60,8 @@ const GlobalStyle = createGlobalStyle`
 
 .questions {
     margin-top: 1.5rem;
-    
-    .question {
+        .question {
       font-size: ${({ theme }) => theme.fonts.heading2};
-
       font-weight: 600;
     }
     .include {
@@ -82,20 +80,21 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   /* --------------- Packages content -------------  */
-
-  .points {
-    margin-top: 5px;
-    li::marker {
-      color: ${({ theme }) => theme.colors.primary};
-    }
-    li {
+.pkg-cnt{
+  padding-bottom:20px; 
+  h3{
+  margin-top: 15px;
+  } 
+  li {
+      margin-top: 5px;       
       font-weight: 500;
-      font-size: 15px;
-    }
     &::marker {
+      color: ${({ theme }) => theme.colors.primary};
       font-weight: 600;
     }
   }
+}
+  
   /* ---------------End Packages content -------------  */
  
 `;

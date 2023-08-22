@@ -43,7 +43,7 @@ const Packages = ({ handleClick }) => {
                   key={tab.id}
                   className={`tab-pane ${tab.id === activeTab ? "active" : ""}`}
                 >
-                  <div className="tab-bg">{/* <h2>{tab.title}</h2> */}</div>
+                  <div className="tab-bg ">{/* <h2>{tab.title}</h2> */}</div>
                   <div className="pkg-active-bg-top d-flex">
                     <div className="pkg-top d-flex">
                       <div className="pkg-image">
@@ -54,7 +54,7 @@ const Packages = ({ handleClick }) => {
                           <h3>{tab.title}</h3>
                           <h5 className="code">Code :{tab.code}</h5>
                           <p className="price">
-                            Price :
+                            <span>Price : </span>
                             <BsCurrencyRupee />
                             {tab.price}/-
                           </p>
@@ -98,7 +98,6 @@ const Wrapper = styled.section`
       button {
         background-color: ${({ theme }) => theme.colors.white};
         border: none;
-        /* margin-top: 5px; */
         font-size: 1rem;
         font-weight: 500;
         border-bottom: 1px solid ${({ theme }) => theme.colors.primary90};
@@ -146,7 +145,7 @@ const Wrapper = styled.section`
     border-radius: 15px;
     height: 200px;
     z-index: 0;
-    margin-bottom: -20%;
+    margin-bottom: -155px;
   }
   .pkg-active-bg-top {
     justify-content: center;
@@ -178,16 +177,41 @@ const Wrapper = styled.section`
           font-weight: 600;
         }
         .price {
-          color: ${({ theme }) => theme.colors.primary};
           border-radius: 5px;
           margin: 15px 0;
           font-size: 1.5rem;
           font-weight: 700;
+          color: ${({ theme }) => theme.colors.primary};
+          span {
+            color: ${({ theme }) => theme.colors.text};
+          }
           svg {
-            fill: ${({ theme }) => theme.colors.white};
+            fill: ${({ theme }) => theme.colors.primary};
             margin-right: 5px;
           }
         }
+      }
+    }
+  }
+  .pkg-tab-active-content {
+    display: flex;
+    overflow-y: scroll;
+    margin: 0px auto;
+    width: 88%;
+    height: 60vh;
+    &::-webkit-scrollbar {
+      width: 5px;
+      box-shadow: inset 0 0 7px #11010125;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: linear-gradient(220deg, #005bab, #00ffbb90);
+      border-radius: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background: linear-gradient(360deg, #005bab80, #00ffbb80);
       }
     }
   }

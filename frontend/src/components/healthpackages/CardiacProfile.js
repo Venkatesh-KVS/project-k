@@ -5,34 +5,17 @@ const CardiacProfile = () => {
   return (
     <Wrapper>
       <div className="pkg-cnt">
-        <p>
-          The cardiac profile is a comprehensive panel of tests that is used to
-          check the overall functioning of the heart. By looking at the
-          concentration of fats, certain enzymes, and the composition of urine
-          and blood, it becomes easier for clinicians to evaluate the health of
-          your heart.
-        </p>
+        <h3>Tests included in the package (23)</h3>
+
         <ol>
-          <li className="points">
-            <strong>Complete Blood Picture (CBP)</strong>
-          </li>
-          <li className="points">
-            <strong>Blood Group & Rh typing </strong>
-          </li>
-          <li className="points">
-            <strong>Complete Urine Examination (CUE) </strong>
-          </li>
-          <li className="points">
-            <strong>Erythrocyte Sedimentation Rate (ESR)</strong>
-          </li>
-          <li className="points">
-            <strong>Fasting Blood Sugar (FBS)</strong>
-          </li>
-          <li className="points">
-            <strong>Glycosylated Hemoglobin (HBA1C) </strong>
-          </li>
-          <li className="points">
-            <strong>Lipid Profile</strong>
+          <li>Complete Blood Picture (CBP)</li>
+          <li>Blood Group & Rh typing</li>
+          <li>Complete Urine Examination (CUE)</li>
+          <li>Erythrocyte Sedimentation Rate (ESR)</li>
+          <li>Fasting Blood Sugar (FBS)</li>
+          <li>Glycosylated Hemoglobin (HBA1C)</li>
+          <li>
+            Lipid Profile
             <ul className="inner-ul">
               <li>Total Cholesterol</li>
               <li>HDL Cholesterol</li>
@@ -40,7 +23,7 @@ const CardiacProfile = () => {
               <li>Triglycerides</li>
             </ul>
           </li>
-          <li className="points">
+          <li>
             <strong>Liver Function Test (LFT)</strong>
             <ul className="inner-ul">
               <li>Total Bilirubin</li>
@@ -52,7 +35,7 @@ const CardiacProfile = () => {
               <li>Serum Proteins</li>
             </ul>
           </li>
-          <li className="points">
+          <li>
             <strong>Kidney Function Test </strong>
             <ul className="inner-ul">
               <li>Serum Creatinine </li>
@@ -60,20 +43,67 @@ const CardiacProfile = () => {
             </ul>
           </li>
 
-          <li className="points">
+          <li>
             <strong>ECG </strong>
           </li>
-          <li className="points">
+          <li>
             <strong>2D Echo </strong>
           </li>
 
-          <li className="points">
+          <li>
             <strong>X-Ray Chest PA View </strong>
           </li>
-          <li className="points">
+          <li>
             <strong>Doctor Consultation</strong>
           </li>
         </ol>
+        <div className="questions">
+          <h3>What is the package for?</h3>
+          <p>
+            Konnect Cardiac Profile package helps to screen, monitor, and
+            diagnose cardiac diseases. This package includes tests such as CBC,
+            LFT, kidney function, and lipid profile to screen the risk of
+            cardiac diseases. Cardiac diseases are conditions affecting the
+            function of the heart and damage the arteries. These ailments can
+            include heart attack, heart failure, and arrhythmias. Healthcare
+            providers use this package for early diagnosis and to monitor
+            effective treatment plans for cardiac diseases. Thus, getting this
+            package annually will prevent you from various cardiac diseases such
+            as coronary heart disease, heart stroke, and heart attack.
+          </p>
+
+          <h3>This package is recommended for:</h3>
+          <p>
+            The Konnect Cardiac Profile package is recommended for those who are
+            having:
+          </p>
+          <ul>
+            <li>Heart diseases</li>
+            <li>Diabetes Mellitus</li>
+            <li>Atherosclerosis</li>
+            <li>Cardiomyopathy </li>
+            <li>Hypertension </li>
+            <li>High blood cholesterol </li>
+            <li>Being overweight and obese </li>
+            <li>Age group of 35 years & above </li>
+            <li>Stress </li>
+            <li>Alcohol consumption </li>
+            <li>Family history of heart diseases </li>
+          </ul>
+          <h3>Patient Preparation required </h3>
+          <p>
+            Konnect Cardiac Profile package includes blood sugar level tests,
+            your healthcare provider may recommend that you fast for 10-12
+            hours, without consuming any food or liquids other than water.
+            Consult your healthcare provider before testing if you are currently
+            on any medications.
+          </p>
+          <h3>Availability of report </h3>
+          <p>
+            Konnect Cardiac Profile package test reports are available within 24
+            hours after the collection of samples.
+          </p>
+        </div>
       </div>
     </Wrapper>
   );

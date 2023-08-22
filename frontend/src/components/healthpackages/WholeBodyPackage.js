@@ -5,37 +5,18 @@ const WholeBodyPackage = () => {
   return (
     <Wrapper>
       <div className="pkg-cnt">
-        <p>
-          A full body check-up generally includes assessments of a person's
-          blood pressure, heart rate, breathing rate, temperature, weight, and
-          height. It may also include tests to check cholesterol levels, blood
-          sugar levels, and the presence of any infections.
-        </p>
-        <ol>
-          <li className="points">
-            <strong>Complete Blood Picture (CBP) </strong>
-          </li>
+        <h3>Tests included in the package (35)</h3>
 
-          <li className="points">
-            <strong>Blood Group & Rh typing </strong>
-          </li>
-          <li className="points">
-            <strong>
-              Complete Urine Examination (CUE) Erythrocyte Sedimentation Rate
-              (ESR){" "}
-            </strong>
-          </li>
-          <li className="points">
-            <strong>Fasting Blood Sugar (FBS) Post Lunch Blood Sugar </strong>
-          </li>
-          <li className="points">
-            <strong>Glycosylated Hemoglobin (HBA1C) </strong>
-          </li>
-          <li className="points">
-            <strong>HbsAg </strong>
-          </li>
-          <li className="points">
-            <strong>Lipid Profile </strong>
+        <ol>
+          <li>Complete Blood Picture (CBP)</li>
+          <li>Blood Group & Rh typing</li>
+          <li>Complete Urine Examination (CUE)</li>
+          <li>Erythrocyte Sedimentation Rate (ESR)</li>
+          <li>Fasting Blood Sugar (FBS) Post Lunch Blood Sugar</li>
+          <li>Glycosylated Hemoglobin (HBA1C)</li>
+          <li>HbsAg</li>
+          <li>
+            Lipid Profile (4 tests included)
             <ul>
               <li>Total Cholesterol </li>
               <li>HDL Cholesterol </li>
@@ -43,70 +24,90 @@ const WholeBodyPackage = () => {
               <li>Triglycerides </li>
             </ul>
           </li>
-          <li className="points">
-            <strong>Kidney Function Test </strong>
+          <li>
+            Kidney Function Test (2 tests included)
             <ul>
               <li>Serum Creatinine </li>
               <li>Blood Urea </li>
             </ul>
           </li>
-          <li className="points">
-            <strong>Liver Function Test (LFT) </strong>
+          <li>
+            Liver Function Test (LFT) (7 tests included)
             <ul>
               <li>Total Bilirubin </li>
-              <li>Direct Bilirubin SGPT </li>
+              <li>Direct Bilirubin </li>
+              <li>SGPT </li>
               <li>SGOT </li>
               <li>Alkaline Phosphatases </li>
               <li>Serum Albumin </li>
               <li>Serum Proteins </li>
-              <li>Serum Uric Acid </li>
             </ul>
           </li>
-          <li className="points">
-            <strong>Thyroid Profile </strong>
+          <li>Serum Uric Acid </li>
+          <li>
+            Thyroid Profile (3 tests included)
             <ul>
               <li>Serum Triiodothyronine(T3) </li>
               <li>Serum Thyroxine (T4) </li>
               <li>Thyroid Stimulating Hormone (TSH) </li>
             </ul>
           </li>
-          <li className="points">
-            <strong>Prostate Specific Antigen (Male) </strong>
-          </li>
-          <li className="points">
-            <strong>PAP Smear (Female) </strong>
-          </li>
-          <li className="points">
-            <strong>ECG </strong>
-          </li>
-          <li className="points">
-            <strong>2D Echo </strong>
-          </li>
-          <li className="points">
-            <strong>TMT </strong>
-          </li>
-          <li className="points">
-            <strong>Ultrasound Abdomen </strong>
-          </li>
-          <li className="points">
-            <strong>Apolipoprotein A1 </strong>
-          </li>
-          <li className="points">
-            <strong>X-Ray </strong>
-          </li>
-          <li className="points">
-            <strong>Chest PA View </strong>
-          </li>
-          <li className="points">
-            <strong>Iron Profile </strong>
-          </li>
-          <li className="points">
-            <strong>HS-CRP </strong>
-          </li>
-          <li className="points">
-            <strong>Doctor Consultation </strong>
-          </li>
+          <li>Prostate Specific Antigen (Male)</li>
+          <li>PAP Smear (Female)</li>
+          <li>ECG</li>
+          <li>2D Echo</li>
+          <li>TMT</li>
+          <li>Ultrasound Abdomen</li>
+          <li>Apolipoprotein A1</li>
+          <li>X-Ray</li>
+          <li>Chest PA View</li>
+          <li>Iron Profile</li>
+          <li>HS-CRP</li>
+          <li>Doctor Consultation</li>
         </ol>
+        <h3>What is the Package for?</h3>
+        <p>
+          Konnect Whole Body Package is useful for screening vital organs and
+          their functions in the body, such as the heart, kidney, liver, etc. It
+          is helpful in assessing one’s current health status and screening for
+          any obvious warning signs or health-related abnormalities within the
+          body. If any indications of fatal or chronic diseases, such as
+          cardiovascular diseases, respiratory diseases, diabetes, high blood
+          pressure, cancer, etc., are noticed, it can help give early alarming
+          signs.
+        </p>
+        <p>
+          The Konnect Whole Body Package is recommended at least once a year and
+          consists of a comprehensive list of tests. The package is helpful in
+          educating individuals on their overall health status and associated
+          disease risks. Additionally, it can help healthcare professionals in
+          making an early diagnosis of illnesses and developing effective
+          treatment plans for a specific condition.
+        </p>
+        <h3>This package is recommended for?</h3>
+        <p>Konnect Whole Body Package is recommended for individuals with:</p>
+        <ul>
+          <li>
+            Family history of chronic illnesses such as diabetes, heart disease,
+            obesity, and cancer
+          </li>
+          <li>Unhealthy and hectic lifestyle</li>
+          <li>Medical history of frequent infections</li>
+          <li>High-stress levels and sedentary jobs</li>
+          <li>Smoking and drinking addiction </li>
+        </ul>
+        <h3>Patient preparation required</h3>
+        <p>
+          Prior to taking a Konnect Whole Body Package, it is recommended to
+          fast for about 10 -12 hours. The patient is advised to not consume any
+          beverages, such as tea, coffee, milk, juice, etc., before taking the
+          test. However, water can be consumed, if needed.
+        </p>
+        <h3>Availability of report</h3>
+        <p>
+          Konnect Whole Body Package test reports are available within 24 hours
+          after the collection of samples.
+        </p>
       </div>
     </Wrapper>
   );
