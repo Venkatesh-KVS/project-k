@@ -20,8 +20,7 @@ export const RsContentData = [
     category: "ECHO",
     excerpt:
       "2-Dimentional Echocardiography or ECHO is used to visualize the actual motion of the heart",
-    productImage:
-      "/images/srvcs/radiology/raiology_machines/2D_ECHO.jpg",
+    productImage: "/images/srvcs/radiology/raiology_machines/2D_ECHO.jpg",
     component: <ECHO />,
   },
   {
@@ -68,8 +67,7 @@ export const RsContentData = [
     title: "Mammography",
     excerpt:
       "Cone-beamed computed tomography or CBCT is a form of medical imaging technology",
-    productImage:
-      "/images/srvcs/radiology/raiology_machines/Mammography.jpg",
+    productImage: "/images/srvcs/radiology/raiology_machines/Mammography.jpg",
     component: <Mammography />,
   },
   {
@@ -124,8 +122,7 @@ export const RsContentData = [
     title: "Ultrasound",
     excerpt:
       "Cone-beamed computed tomography or CBCT is a form of medical imaging technology",
-    productImage:
-      "/images/srvcs/radiology/raiology_machines/Ultrasound.jpg",
+    productImage: "/images/srvcs/radiology/raiology_machines/Ultrasound.jpg",
     component: <Ultrasound />,
   },
   {

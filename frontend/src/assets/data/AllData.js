@@ -16,8 +16,7 @@ export const packagesData = [
     code: "001",
     title: "Health Screen",
     price: 1499,
-    ftrImg:
-      "/images/health-packages/hp-FeatureImages/healthScreening.jpg",
+    ftrImg: "/images/health-packages/hp-FeatureImages/diabetes_package.jpg",
     excerpt:
       "Basic Health Check-up Package can help in diagnosing conditions at an early stage and preventing",
     content: <HealthScreen />,
@@ -27,8 +26,7 @@ export const packagesData = [
     code: "002",
     title: "Diabetic Package",
     price: 2499,
-    ftrImg:
-      "/images/health-packages/hp-FeatureImages/diabetes_package.jpg",
+    ftrImg: "/images/health-packages/hp-FeatureImages/diabetes_package.jpg",
     excerpt:
       "Basic Health Check-up Package can help in diagnosing conditions at an early stage and preventing",
     content: <DiabeticPackage />,
@@ -60,8 +58,7 @@ export const packagesData = [
     code: "005",
     title: "Cardiac Profile",
     price: 2999,
-    ftrImg:
-      "/images/health-packages/hp-FeatureImages/cardiac_profile.jpg",
+    ftrImg: "/images/health-packages/hp-FeatureImages/cardiac_profile.jpg",
     excerpt:
       "The cardiac profile is a comprehensive panel of tests that is used to check the overall functioning of the heart. By looking at the concentration of fats, certain enzymes, and the composition of urine and blood, it becomes easier for clinicians to evaluate the health of your heart.",
     content: <CardiacProfile />,
@@ -82,8 +79,7 @@ export const packagesData = [
     code: "007",
     title: "Well Women Package",
     price: 6999,
-    ftrImg:
-      "/images/health-packages/hp-FeatureImages/well_women_package.jpg",
+    ftrImg: "/images/health-packages/hp-FeatureImages/well_women_package.jpg",
     excerpt:
       "This comprehensive package checks the possible causes of major ailments in women including some basic cancer screening tests to give an overall idea about their present health status.",
     content: <WellWomenPackage />,
@@ -93,8 +89,7 @@ export const packagesData = [
     code: "008",
     title: "Nutrition package",
     price: 1999,
-    ftrImg:
-      "/images/health-packages/hp-FeatureImages/nutrition_package.jpg",
+    ftrImg: "/images/health-packages/hp-FeatureImages/nutrition_package.jpg",
     excerpt:
       "Deficiency of either Vitamins or Micronutrients in our body can result in long term adverse effects on multiple systems which can be prevented by proper nutrition and supplements. Konnect Nutrition Package covers essential tests to check the status of these Vitamins and Micronutrients in your body.",
     content: <NutritionPackage />,

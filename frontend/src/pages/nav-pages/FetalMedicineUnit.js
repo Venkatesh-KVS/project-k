@@ -241,8 +241,7 @@ const FetalMedicineUnit = () => {
             <div
               className="w-50 img_wrapper_left"
               style={{
-                background:
-                  "url('/images/fetal-medicine-care/maternal.jpg')",
+                background: "url('/images/fetal-medicine-care/maternal.jpg')",
               }}
             >
               {" "}
@@ -271,8 +270,7 @@ const FetalMedicineUnit = () => {
             <div
               className="w-50 img_wrapper_right"
               style={{
-                background:
-                  "url('/images/fetal-medicine-care/genetics.jpg')",
+                background: "url('/images/fetal-medicine-care/genetics.jpg')",
               }}
             ></div>
           </div>

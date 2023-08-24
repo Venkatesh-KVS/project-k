@@ -110,7 +110,10 @@ const Tests = ({ handleClick }) => {
                         onClick={() => {
                           addItem(item);
                           handleClick(item);
-                        }}>Book Now</button>
+                        }}
+                      >
+                        Book Now
+                      </button>
                     </div>
                   </div>
                 </div>

@@ -273,16 +273,10 @@ const PartnerWithUs = () => {
             </div>
             <div className="w-50 ">
               <div className="w-100 ">
-                <img
-                  src="/images/partner-with-us/pwu_s42i2.jpg"
-                  alt=""
-                />
+                <img src="/images/partner-with-us/pwu_s42i2.jpg" alt="" />
               </div>
               <div className="w-100 ">
-                <img
-                  src="/images/partner-with-us/pwu_s42i3.jpg"
-                  alt=""
-                />
+                <img src="/images/partner-with-us/pwu_s42i3.jpg" alt="" />
               </div>
             </div>
           </div>
