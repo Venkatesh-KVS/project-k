@@ -7,10 +7,7 @@ import { testsData } from "../../assets/data/AllData";
 import OrganCarousel from "../requiredPages/OrganCarousel";
 import AtoZ from "../requiredPages/AtoZ";
 
-const blogs = [
-  { id: 1, title: "" },
-  // Add more blog objects as needed
-];
+const blogs = [{ id: 1, title: "" }];
 
 const ToggleKT = ({ handleClick }) => {
   const [search, setSearch] = useState("");
@@ -19,15 +16,6 @@ const ToggleKT = ({ handleClick }) => {
     <Wrapper>
       <div className="s2-kt mt-4">
         <div className="kt-searchBox mb-4 d-flex">
-          {/* <div className="filterBy d-flex gap-3" style={{ width: "25%" }}>
-            <BsFilter />
-            <select className="filter">
-              <option>Filter by Category</option>
-              <option>Test Category one</option>
-              <option>Test Category one</option>
-              <option>Test Category one</option>
-            </select>
-          </div> */}
           <div className="searchBar d-flex flex-fill" style={{ width: "100%" }}>
             <input
               onChange={(e) => setSearch(e.target.value)}
@@ -71,12 +59,9 @@ const Wrapper = styled.section`
   .s2-kt {
     /* background-color: grey; */
     .kt-searchBox {
-      /* background-color: rebeccapurple; */
       gap: 25px;
-
       .filterBy {
         align-items: center;
-
         select {
           color: ${({ theme }) => theme.colors.primary};
           border: none;
@@ -105,7 +90,6 @@ const Wrapper = styled.section`
             outline-style: none;
           }
         }
-
         svg {
           width: 10%;
           fill: ${({ theme }) => theme.colors.white};

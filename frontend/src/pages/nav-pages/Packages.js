@@ -104,16 +104,16 @@ const Wrapper = styled.section`
         padding: 10px;
         text-align: start;
         &:hover {
-          background-image: url(/konnect/images/k-10.png),
+          background-image: url(/images/k-10.png),
             linear-gradient(220deg, #005bab, #00ffbb90);
         }
       }
       button.active {
-        background-image: url(/konnect/images/k-10.png),
+        background-image: url(/images/k-10.png),
           linear-gradient(220deg, #005bab, #00ffbb90);
         color: white;
         &:hover {
-          background-image: url(/konnect/images/k-10.png),
+          background-image: url(/images/k-10.png),
             linear-gradient(220deg, #005bab, #00ffbb90);
         }
       }
@@ -121,7 +121,7 @@ const Wrapper = styled.section`
     .tab-content {
       .atc {
         border: none;
-        background-image: url(/konnect/images/k-10.png),
+        background-image: url(/images/k-10.png),
           linear-gradient(220deg, #005bab, #00ffbb90);
         color: ${({ theme }) => theme.colors.white};
         font-size: 1rem;
@@ -131,7 +131,7 @@ const Wrapper = styled.section`
         padding: 8px 20px;
         transition: all 0.3s;
         &:hover {
-          background-image: url(/konnect/images/k-10.png),
+          background-image: url(/images/k-10.png),
             linear-gradient(90deg, #005bab, #00ffbb90);
         }
       }
@@ -140,7 +140,7 @@ const Wrapper = styled.section`
   .tab-bg {
     align-items: center;
     text-align: center;
-    background-image: url(/konnect/images/k-10.png),
+    background-image: url(/images/k-10.png),
       linear-gradient(220deg, #005bab, #00ffbb90);
     border-radius: 15px;
     height: 200px;
@@ -165,7 +165,7 @@ const Wrapper = styled.section`
       }
       .pkg-info-right {
         width: 100%;
-        background-image: url(/konnect/images/k-10.png);
+        background-image: url(/images/k-10.png);
         background-size: cover;
         padding: 25px;
         display: flex;

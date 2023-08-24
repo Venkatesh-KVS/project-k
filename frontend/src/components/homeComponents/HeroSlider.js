@@ -12,7 +12,7 @@ const HeroSlider = () => {
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
   };
   const Fac_carousel_slider = useRef(null);

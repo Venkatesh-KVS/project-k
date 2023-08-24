@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useCart } from "react-use-cart";
 import { testsData } from "../../assets/data/AllData";
 
-export const PopularTests = ({handleClick}) => {
+export const PopularTests = ({ handleClick }) => {
   const { addItem } = useCart();
   const [buttonText, setButtonText] = useState("Book Now");
   const changeText = (text) => {
@@ -52,7 +52,7 @@ const Wrapper = styled.section`
       /* padding: 25px; */
       z-index: 1;
       .ptBg {
-        background-image: url(/konnect/images/k-10.png),
+        background-image: url(/images/k-10.png),
           linear-gradient(360deg, transparent, #005bab);
         background-size: cover;
         background-repeat: no-repeat;

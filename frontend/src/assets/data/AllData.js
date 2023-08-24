@@ -16,8 +16,7 @@ export const packagesData = [
     code: "001",
     title: "Health Screen",
     price: 1499,
-    ftrImg:
-      "/konnect/images/health-packages/hp-FeatureImages/diabetes_package.jpg",
+    ftrImg: "/images/health-packages/hp-FeatureImages/diabetes_package.jpg",
     excerpt:
       "Basic Health Check-up Package can help in diagnosing conditions at an early stage and preventing",
     content: <HealthScreen />,
@@ -27,8 +26,7 @@ export const packagesData = [
     code: "002",
     title: "Diabetic Package",
     price: 2499,
-    ftrImg:
-      "/konnect/images/health-packages/hp-FeatureImages/diabetes_package.jpg",
+    ftrImg: "/images/health-packages/hp-FeatureImages/diabetes_package.jpg",
     excerpt:
       "Basic Health Check-up Package can help in diagnosing conditions at an early stage and preventing",
     content: <DiabeticPackage />,
@@ -39,7 +37,7 @@ export const packagesData = [
     title: "Konnect Master Health Checkup",
     price: 2999,
     ftrImg:
-      "/konnect/images/health-packages/hp-FeatureImages/master_health_checkup.jpg",
+      "/images/health-packages/hp-FeatureImages/master_health_checkup.jpg",
     excerpt:
       "A master health check-up includes number of clinical tests utilized to assess the overall health of a person. The master health checkup includes a physical examination ultrasound and laboratory investigations that help evaluate the health of your vital organs and metabolism to identify any early symptoms of diseases to manage individual health better.",
     content: <MasterHealthCheckup />,
@@ -50,7 +48,7 @@ export const packagesData = [
     title: "Executive Health Checkup",
     price: 5799,
     ftrImg:
-      "/konnect/images/health-packages/hp-FeatureImages/executive_health_checkup.jpg",
+      "/images/health-packages/hp-FeatureImages/executive_health_checkup.jpg",
     excerpt:
       "The aim of Executive Health Checkup is to extend the healthy life expectancy of population, to avoid untimely death and to improve the quality of life for people with a disease or disability by periodically checking all symptoms in the body.",
     content: <ExecutiveHealthCheckup />,
@@ -60,8 +58,7 @@ export const packagesData = [
     code: "005",
     title: "Cardiac Profile",
     price: 2999,
-    ftrImg:
-      "/konnect/images/health-packages/hp-FeatureImages/cardiac_profile.jpg",
+    ftrImg: "/images/health-packages/hp-FeatureImages/cardiac_profile.jpg",
     excerpt:
       "The cardiac profile is a comprehensive panel of tests that is used to check the overall functioning of the heart. By looking at the concentration of fats, certain enzymes, and the composition of urine and blood, it becomes easier for clinicians to evaluate the health of your heart.",
     content: <CardiacProfile />,
@@ -72,7 +69,7 @@ export const packagesData = [
     title: "Executive Cardiac Profile",
     price: 4999,
     ftrImg:
-      "/konnect/images/health-packages/hp-FeatureImages/executive_cardiac_profile.jpg",
+      "/images/health-packages/hp-FeatureImages/executive_cardiac_profile.jpg",
     excerpt:
       "This package includes all important tests along with cardiac markers to give an overall idea of present cardiac health status. ",
     content: <ExecutiveCardiacProfile />,
@@ -82,8 +79,7 @@ export const packagesData = [
     code: "007",
     title: "Well Women Package",
     price: 6999,
-    ftrImg:
-      "/konnect/images/health-packages/hp-FeatureImages/well_women_package.jpg",
+    ftrImg: "/images/health-packages/hp-FeatureImages/well_women_package.jpg",
     excerpt:
       "This comprehensive package checks the possible causes of major ailments in women including some basic cancer screening tests to give an overall idea about their present health status.",
     content: <WellWomenPackage />,
@@ -93,8 +89,7 @@ export const packagesData = [
     code: "008",
     title: "Nutrition package",
     price: 1999,
-    ftrImg:
-      "/konnect/images/health-packages/hp-FeatureImages/nutrition_package.jpg",
+    ftrImg: "/images/health-packages/hp-FeatureImages/nutrition_package.jpg",
     excerpt:
       "Deficiency of either Vitamins or Micronutrients in our body can result in long term adverse effects on multiple systems which can be prevented by proper nutrition and supplements. Konnect Nutrition Package covers essential tests to check the status of these Vitamins and Micronutrients in your body.",
     content: <NutritionPackage />,
@@ -104,7 +99,7 @@ export const packagesData = [
     code: "009",
     title: "Whole Body Package",
     price: 9999,
-    ftrImg: "/konnect/images/health-packages/hp-FeatureImages/whole_body.jpg",
+    ftrImg: "/images/health-packages/hp-FeatureImages/whole_body.jpg",
     excerpt:
       "A full body check-up generally includes assessments of a person's blood pressure, heart rate, breathing rate, temperature, weight, and height. It may also include tests to check cholesterol levels, blood sugar levels, and the presence of any infections.",
     content: <WholeBodyPackage />,
@@ -115,7 +110,7 @@ export const packagesData = [
     title: "Cancer Screening – Male",
     price: 17999,
     ftrImg:
-      "/konnect/images/health-packages/hp-FeatureImages/cancer_screening_male.jpg",
+      "/images/health-packages/hp-FeatureImages/cancer_screening_male.jpg",
     excerpt:
       "All men should be screened for prostate cancer, colon cancer, and testicular cancer periodically, especially if there is a family history of these or any other cancer type. Screening tests look for cancer before a person has any signs or symptoms.",
     content: <CancerScreeningMale />,
@@ -126,7 +121,7 @@ export const packagesData = [
     title: "Cancer Screening – Female",
     price: 19999,
     ftrImg:
-      "/konnect/images/health-packages/hp-FeatureImages/cancer_screening_female.jpg",
+      "/images/health-packages/hp-FeatureImages/cancer_screening_female.jpg",
     excerpt:
       "Clinical Breast Examination: Ideally done by a gynaecologist, it needs to be repeated every 2-3 years for women who are in their 30s and annually for women 40 & above. Mammogram: This is low dose x-ray test done to detect small and early stage breast cancers.",
     content: <CancerScreeningFemale />,
@@ -135,40 +130,40 @@ export const packagesData = [
 
 export const organImages = [
   {
-    src: "/konnect/images/organs/Heart.png",
+    src: "/images/organs/Heart.png",
     organ: "/",
     alt: "Heart",
   },
   {
-    src: "/konnect/images/organs/Diabetes.png",
+    src: "/images/organs/Diabetes.png",
     alt: "Diabetes",
   },
   {
-    src: "/konnect/images/organs/Allergy.png",
+    src: "/images/organs/Allergy.png",
     alt: "Allergy",
   },
   {
-    src: "/konnect/images/organs/Kidneys.png",
+    src: "/images/organs/Kidneys.png",
     alt: "Kidneys",
   },
   {
-    src: "/konnect/images/organs/Pregnancy.png",
+    src: "/images/organs/Pregnancy.png",
     alt: "Pregnancy",
   },
   {
-    src: "/konnect/images/organs/Lungs.png",
+    src: "/images/organs/Lungs.png",
     alt: "Lungs",
   },
   {
-    src: "/konnect/images/organs/Fever.png",
+    src: "/images/organs/Fever.png",
     alt: "Fever",
   },
   {
-    src: "/konnect/images/organs/Prostate.png",
+    src: "/images/organs/Prostate.png",
     alt: "Prostate",
   },
   {
-    src: "/konnect/images/organs/Thyroid.png",
+    src: "/images/organs/Thyroid.png",
     alt: "Thyroid",
   },
 ];
@@ -257,59 +252,59 @@ export const ytPatExpVids = [
 export const patientStoryData = [
   {
     id: 1,
-    photo: "/konnect/images/patients/patient1.jpg",
-    video: "/konnect/images/videos/pe_vid1.mp4",
+    photo: "/images/patients/patient1.jpg",
+    video: "/images/videos/pe_vid1.mp4",
     name: "Mounya Dutta",
     info: "unde Description unde omnis one",
-    bg: "/konnect/images/patients/patient1Bg.jpg",
+    bg: "/images/patients/patient1Bg.jpg",
     description:
       "I've been consistently impressed with the impeccable service and accurate results provided by Konnect Diagnostic Center. Their skilled team and state-of-the-art equipment ensure a seamless experience every time. I trust them with my health without hesitation.",
   },
   {
     id: 2,
-    photo: "/konnect/images/patients/patient2.jpg",
+    photo: "/images/patients/patient2.jpg",
     video: "https://www.youtube.com/watch?v=ZSM3w1v-A_Y",
     name: "Arun Banurelli",
     info: "The unde Description unde omnis two ",
-    bg: "/konnect/images/patients/patient2Bg.jpg",
+    bg: "/images/patients/patient2Bg.jpg",
     description:
       "Konnect Diagnostic Center has truly redefined healthcare for me. Their commitment to precision and patient care is evident in every interaction. From quick appointments to comprehensive reports, they make the diagnostic process smooth and reliable.",
   },
   {
     id: 3,
-    photo: "/konnect/images/patients/patient3.jpg",
+    photo: "/images/patients/patient3.jpg",
     name: "Neha",
     info: "The unde Description unde omnis three ",
-    bg: "/konnect/images/patients/patient3Bg.jpg",
+    bg: "/images/patients/patient3Bg.jpg",
     description:
       "As a healthcare professional, I demand accuracy and efficiency in diagnostics. Konnect Diagnostic Center has become my go-to choice. The proficiency of their staff and the range of tests available make them an invaluable asset in ensuring my patients receive the best possible care.",
   },
   {
     id: 4,
-    photo: "/konnect/images/patients/patient4.jpg",
+    photo: "/images/patients/patient4.jpg",
     name: "Ashwin Nayak",
     info: "The unde Description unde omnis four ",
-    bg: "/konnect/images/patients/patient4Bg.jpg",
+    bg: "/images/patients/patient4Bg.jpg",
 
     description:
       "I can't thank Konnect Diagnostic Center enough for their prompt and friendly service. Nervous about my tests, their compassionate staff immediately put me at ease. The results were delivered with clarity, and I am grateful for their role in keeping my health in check.",
   },
   {
     id: 5,
-    photo: "/konnect/images/patients/patient5.jpg",
+    photo: "/images/patients/patient5.jpg",
     name: "Hrithika singh",
     info: "The unde Description unde omnis five ",
-    bg: "/konnect/images/patients/patient5Bg.jpg",
+    bg: "/images/patients/patient5Bg.jpg",
     description:
       "Konnect Diagnostic Center stands out in its commitment to quality and reliability. My family and I have been using their services for years, and they continue to impress us with their attention to detail and the personalized care they provide. Truly a center that cares.",
   },
 
   {
     id: 6,
-    photo: "/konnect/images/patients/patient6.jpg",
+    photo: "/images/patients/patient6.jpg",
     name: "Kalpana Nadumuri",
     info: "The unde Description unde omnis six ",
-    bg: "/konnect/images/patients/patient6Bg.jpg",
+    bg: "/images/patients/patient6Bg.jpg",
     description:
       "Choosing Konnect Diagnostic Center was a game-changer for me. Their cutting-edge technology and skilled professionals ensure that I receive accurate results, allowing me to make informed decisions about my health. Their dedication to excellence is commendable.",
   },

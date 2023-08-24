@@ -45,7 +45,7 @@ const SectionThree = () => {
         <div
           className="why-konnect-img"
           style={{
-            backgroundImage: `url(/konnect/images/s3-img-left.jpg)`,
+            backgroundImage: `url(/images/s3-img-left.jpg)`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center",
@@ -110,7 +110,7 @@ const Wrapper = styled.section`
       position: absolute;
       padding: 25px;
       border-radius: 15px;
-      background-image: url(/konnect/images/k-10.png),
+      background-image: url(/images/k-10.png),
         linear-gradient(90deg, #00ffbb, #005bab95);
       background-size: contain;
       background-repeat: no-repeat;

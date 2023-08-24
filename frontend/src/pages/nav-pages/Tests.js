@@ -110,7 +110,10 @@ const Tests = ({ handleClick }) => {
                         onClick={() => {
                           addItem(item);
                           handleClick(item);
-                        }}>Book Now</button>
+                        }}
+                      >
+                        Book Now
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -165,7 +168,7 @@ const Wrapper = styled.section`
       /* padding: 25px; */
       z-index: 1;
       .ptBg {
-        background-image: url(/konnect/images/k-10.png),
+        background-image: url(/images/k-10.png),
           linear-gradient(360deg, transparent, #005bab);
         background-size: cover;
         background-repeat: no-repeat;

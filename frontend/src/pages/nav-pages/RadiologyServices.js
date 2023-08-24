@@ -225,7 +225,7 @@ const Wrapper = styled.section`
     align-items: center;
     /* text-align: center; */
     height: 20em;
-    background: url("/konnect/images/radiology-services-banner.jpg");
+    background: url("/images/radiology-services-banner.jpg");
     background-size: cover;
     .banner {
       /* width: 50%; */

@@ -129,7 +129,7 @@ const Wrapper = styled.section`
         display: flex;
         align-items: center;
         cursor: pointer;
-        background-image: url(/konnect/images/k-10.png),
+        background-image: url(/images/k-10.png),
           linear-gradient(220deg, #005bab, #00ffbb90);
         background-size: cover;
         background-repeat: no-repeat;
@@ -186,7 +186,7 @@ const Wrapper = styled.section`
         top: 0;
         right: 50px;
         width: 45%;
-        background-image: url(/konnect/images/k-10.png),
+        background-image: url(/images/k-10.png),
           linear-gradient(220deg, #005bab, #00ffbb90);
         .patientStory {
           overflow: hidden;
