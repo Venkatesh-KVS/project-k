@@ -8,7 +8,7 @@ const HpCard = ({ item, handleClick }) => {
   return (
     <Wrapper>
       <section className="d-flex mb-3 ">
-        <div className="hp-card border p-2">
+        <div className="hp-card bg-white rounded p-2">
           <div className="hp-img rounded">
             <img src={item.ftrImg} alt="k" />
           </div>
@@ -66,7 +66,7 @@ const Wrapper = styled.section`
       color: ${({ theme }) => theme.colors.white};
       background-color: ${({ theme }) => theme.colors.primary};
       padding: 6px 15px;
-      border-radius: 25px;
+      border-radius: 5px;
       box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
       &:hover {
         background-color: ${({ theme }) => theme.colors.secondary};

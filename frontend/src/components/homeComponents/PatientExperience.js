@@ -13,9 +13,9 @@ const PatientExperience = () => {
   return (
     <Wrapper>
       <div className="pe container">
-        <div className="peTitle">
+        <div className="peTitle w-50 mx-auto mb-5">
           <h2>The Patient Experience</h2>
-          <p className="w1000 m-auto">
+          <p>
             Hear from our satisfied patients about our exceptional care,
             accurate results, and compassionate staff. Experience the difference
             today.
