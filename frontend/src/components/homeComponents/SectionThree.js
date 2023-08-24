@@ -57,10 +57,6 @@ const SectionThree = () => {
               <h3>Why Konnect</h3>
             </div>
             <div className="info d-flex gap-2">
-              {/* <DynamicImage
-                className="secThree-info-icon"
-                imageName={"/icons/house-white.svg"}
-              /> */}
               <h3>Empowering Health through Precision</h3>
             </div>
           </div>
@@ -68,10 +64,9 @@ const SectionThree = () => {
 
         <div className="secThree-info d-flex">
           <div className="sti secThree-info-one d-flex">
-            <DynamicImage
-              className="secThree-info-icon"
-              imageName={"/icons/home/certified.svg"}
-            />
+            <div className="image">
+              <DynamicImage imageName={"/icons/home/certified.svg"} />
+            </div>
             <p>
               Konnect Diagnostics offers precise diagnostics with certified
               radiologists, pathologists, doctors, and technicians .
@@ -79,7 +74,9 @@ const SectionThree = () => {
           </div>
           <hr />
           <div className="sti secThree-info-two d-flex">
-            <DynamicImage imageName={"/icons/home/team.svg"} />
+            <div className="image">
+              <DynamicImage imageName={"/icons/home/team.svg"} />
+            </div>
 
             <p>
               Pioneering tech, skilled team drive us in advanced diagnostics,
@@ -88,7 +85,9 @@ const SectionThree = () => {
           </div>
           <hr />
           <div className="sti secThree-info-two d-flex">
-            <DynamicImage imageName={"/icons/home/top.svg"} />
+            <div className="image">
+              <DynamicImage imageName={"/icons/home/top.svg"} />
+            </div>
             <p>
               Our priority: satisfied patients. Swift, transparent, precise
               top-quality services for convenience and rapid results.
@@ -146,8 +145,16 @@ const Wrapper = styled.section`
   .secThree-info {
     .sti {
       align-items: center;
+      .image {
+        border-radius: 50px;
+        width: 7rem;
+        height: auto;
+        padding: 15px;
+        background-color: #fff;
+        box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+      }
       img {
-        width: 2rem;
+        width: 100%;
       }
       p {
         font-size: 1rem;

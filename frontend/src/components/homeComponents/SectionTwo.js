@@ -62,21 +62,19 @@ export default SectionTwo;
 
 const Wrapper = styled.section`
   .s2 {
-    /* margin-top: -5%; */
-    margin: 2rem;
+    margin: 3rem auto;
+    z-index: 10;
   }
 
   .s2-tests-box {
     font-weight: 500;
-    /* background: ${({ theme }) => theme.colors.primary}; */
   }
   .s2-tests-container {
     background-image: url("/images/k-10.png");
-    /* linear-gradient(190deg, #005bab, #00aeef); */
     background-repeat: repeat;
     background-size: auto;
     background-position: center left;
-    padding: 25px;
+    padding: 50px;
     border-radius: 25px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 25px 0px;
     background-color: ${({ theme }) => theme.colors.white};
@@ -90,7 +88,7 @@ const Wrapper = styled.section`
     background-size: contain;
     background-repeat: no-repeat;
     width: 300px;
-    padding: 10px 32px;
+    padding: 10px;
     border-radius: 5px;
     color: ${({ theme }) => theme.colors.primary};
     font-weight: 600;
