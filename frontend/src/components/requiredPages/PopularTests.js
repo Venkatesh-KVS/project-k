@@ -14,7 +14,7 @@ export const PopularTests = ({handleClick}) => {
       <div className="container p-0 ptCards d-flex flex-wrap gap-2">
         {testsData.slice(0, 4).map((item) => (
           <div className="ptCard">
-            <div className="ptBg d-flex flex-column justify-content-between">
+            <div className="ptBg d-flex flex-column justify-content-center">
               <div className="pt-info">
                 <h3 className="pt-title">{item.title}</h3>
                 <h5 className="pt-inv">
@@ -52,7 +52,7 @@ const Wrapper = styled.section`
       /* padding: 25px; */
       z-index: 1;
       .ptBg {
-        background-image: url(/konnect/images/k-10.png),
+        background-image: url(/images/k-10.png),
           linear-gradient(360deg, transparent, #005bab);
         background-size: cover;
         background-repeat: no-repeat;

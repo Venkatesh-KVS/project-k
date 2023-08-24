@@ -67,7 +67,7 @@ const Wrapper = styled.section`
     /* background: ${({ theme }) => theme.colors.primary}; */
   }
   .s2-tests-container {
-    background-image: url("/konnect/images/k-10.png");
+    background-image: url("/images/k-10.png");
     /* linear-gradient(190deg, #005bab, #00aeef); */
     background-repeat: repeat;
     background-size: auto;
@@ -81,7 +81,7 @@ const Wrapper = styled.section`
   .k-btn {
     border: 2px solid ${({ theme }) => theme.colors.primary};
     /* background-color: ${({ theme }) => theme.colors.white}; */
-    background-image: url(/konnect/images/k-10.png),
+    background-image: url(/images/k-10.png),
       linear-gradient(90deg, #00ffbb90, #005bab90);
     background-size: contain;
     background-repeat: no-repeat;

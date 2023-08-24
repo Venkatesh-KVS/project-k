@@ -1,35 +1,3 @@
-// import React from "react";
-
-// export const Regsiter = () => {
-//   return (
-//     <>
-//       <section className="login">
-//         <div className="container">
-//           <div className="backImg">
-//             <img src={back} alt="" />
-//             <div className="text">
-//               <h3>Register</h3>
-//               <h1>My account</h1>
-//             </div>
-//           </div>
-
-//           <form>
-//             <span>Email address *</span>
-//             <input type="text" required />
-//             <span>Username *</span>
-//             <input type="text" required />
-//             <span>Password *</span>
-//             <input type="password" required />
-//             <span>Conform Password *</span>
-//             <input type="password" required />
-//             <button className="button">Register</button>
-//           </form>
-//         </div>
-//       </section>
-//     </>
-//   );
-// };
-// --------------------------------------------------------
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -65,8 +33,6 @@ export const Register = () => {
         .catch(err => {
             console.log(err);
         });
-
-
   }
   
   return (
@@ -80,7 +46,7 @@ export const Register = () => {
                   <div className="row justify-content-center">
                     <div className="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
 
-                      <h1 className="fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</h1>
+                      <h1 className="fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign Up</h1>
 
                       <form onSubmit={handleSubmit} className="mx-md-4">
 

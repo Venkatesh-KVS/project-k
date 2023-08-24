@@ -263,7 +263,7 @@ const Wrapper = styled.section`
         rgba(0, 32, 60, 0),
         rgba(0, 174, 239, 0.3)
       ),
-      url("/konnect/images/about-banner.jpg");
+      url("/images/about-banner.jpg");
     background-size: cover;
   }
   .flex-r {
@@ -276,7 +276,7 @@ const Wrapper = styled.section`
   }
   .img-box {
     padding: 0 50px;
-    background: url("/konnect/images/sec1-bg.png");
+    background: url("/images/sec1-bg.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

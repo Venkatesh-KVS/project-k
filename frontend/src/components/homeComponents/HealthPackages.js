@@ -8,16 +8,16 @@ const HealthPackages = ({handleClick}) => {
     <Wrapper>
       <section className="mb-5" id="hp_sec">
         <div>
-          <div className="hp-info d-flex">
+          <div className="hp-info w-50 mx-auto mb-5">
             <h2>Health Packages</h2>
-            <p className="w1000">
+            <p>
               Konnect Diagnostic Centre: Empowering proactive health management
               through tailored Diagnostic Health Packages for early detection
               and prevention, promoting healthier lives.
             </p>
           </div>
           <div className="hp-box container flex-wrap">
-            <div className="hpCards d-flex justify-content-between flex-wrap gap-3">
+            <div className="hpCards d-flex justify-content-center flex-wrap gap-3">
               {packagesData.slice(0, 3).map((item, index) => (
                 <HpCard
                   key={index}

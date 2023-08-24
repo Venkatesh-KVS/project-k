@@ -35,7 +35,7 @@ const FetalMedicineUnit = () => {
   return (
     <Wrapper className="partnerwithus">
       <section className="section" id="fmu_s1">
-        <img src="/konnect/images/dotGrids1.png" alt="" className="dots" />
+        <img src="/images/dotGrids1.png" alt="" className="dots" />
         <div className="container p-0 d-flex py-4">
           <div
             className="col-6 d-flex flex-column justify-content-center"
@@ -63,13 +63,13 @@ const FetalMedicineUnit = () => {
             <div className="w-50 ">
               <div className="w-100 ">
                 <img
-                  src="/konnect/images/fetal-medicine-care/halloween-background.jpg"
+                  src="/images/fetal-medicine-care/halloween-background.jpg"
                   alt=""
                 />
               </div>
               <div className="w-100 ">
                 <img
-                  src="/konnect/images/fetal-medicine-care/ultrasonography-picture.jpg"
+                  src="/images/fetal-medicine-care/ultrasonography-picture.jpg"
                   alt=""
                 />
               </div>
@@ -103,7 +103,7 @@ const FetalMedicineUnit = () => {
                   <div>
                     <div className="mv_icon_cont">
                       <img
-                        src="/konnect/images/fetal-medicine-care/vision.svg"
+                        src="/images/fetal-medicine-care/vision.svg"
                         alt=""
                         className="mv_icon"
                       />
@@ -122,7 +122,7 @@ const FetalMedicineUnit = () => {
                   <div>
                     <div className="mv_icon_cont">
                       <img
-                        src="/konnect/images/fetal-medicine-care/mission.svg"
+                        src="/images/fetal-medicine-care/mission.svg"
                         alt=""
                         className="mv_icon"
                       />
@@ -143,7 +143,7 @@ const FetalMedicineUnit = () => {
             <div className="about-img d-flex w-50">
               <img
                 style={{ width: "100%" }}
-                src="/konnect/images/fetal-medicine-care/fmu_s2_sideImg.png"
+                src="/images/fetal-medicine-care/fmu_s2_sideImg.png"
                 alt=""
               />
             </div>
@@ -163,7 +163,7 @@ const FetalMedicineUnit = () => {
             </div>
             <div className="abt-img-rignt">
               <img
-                src="/konnect/images/fetal-medicine-care/konnect_whyUs_ill.png"
+                src="/images/fetal-medicine-care/konnect_whyUs_ill.png"
                 alt=""
                 style={{ width: "450px" }}
               />
@@ -191,7 +191,7 @@ const FetalMedicineUnit = () => {
               style={{
                 minHeight: "200px",
                 background:
-                  "url('/konnect/images/fetal-medicine-care/fetalImaging.jpg')",
+                  "url('/images/fetal-medicine-care/fetalImaging.jpg')",
               }}
             ></div>
             <div className="w-50 p-4 ps-5 d-flex flex-column justify-content-center content_wrapper">
@@ -230,7 +230,7 @@ const FetalMedicineUnit = () => {
               className="w-50 img_wrapper_right"
               style={{
                 background:
-                  "url('/konnect/images/fetal-medicine-care/imagingInFertility.jpg')",
+                  "url('/images/fetal-medicine-care/imagingInFertility.jpg')",
               }}
             >
               {" "}
@@ -242,7 +242,7 @@ const FetalMedicineUnit = () => {
               className="w-50 img_wrapper_left"
               style={{
                 background:
-                  "url('/konnect/images/fetal-medicine-care/maternal.jpg')",
+                  "url('/images/fetal-medicine-care/maternal.jpg')",
               }}
             >
               {" "}
@@ -272,7 +272,7 @@ const FetalMedicineUnit = () => {
               className="w-50 img_wrapper_right"
               style={{
                 background:
-                  "url('/konnect/images/fetal-medicine-care/genetics.jpg')",
+                  "url('/images/fetal-medicine-care/genetics.jpg')",
               }}
             ></div>
           </div>
@@ -296,7 +296,7 @@ export default FetalMedicineUnit;
 const Wrapper = styled.section`
   #fmu_s1 {
     display: flex;
-    background: url("/konnect/images/bannerBG.png");
+    background: url("/images/bannerBG.png");
     background-position: right top;
     background-size: contain;
     background-repeat: no-repeat;
@@ -306,7 +306,7 @@ const Wrapper = styled.section`
       width: 50%;
       padding-right: 4rem;
       h1:after {
-        content: url("/konnect/images/reaction_svg.svg");
+        content: url("/images/reaction_svg.svg");
         z-index: -1;
         margin-left: 30px;
       }
@@ -315,7 +315,7 @@ const Wrapper = styled.section`
       position: relative;
       z-index: 0;
       #fmu_s121 {
-        background: url("/konnect/images/fetal-medicine-care/ultrasound-consultation.jpg");
+        background: url("/images/fetal-medicine-care/ultrasound-consultation.jpg");
         background-position: right top;
         background-size: cover;
         background-repeat: no-repeat;
@@ -346,7 +346,7 @@ const Wrapper = styled.section`
       left: -30px;
       width: 150px;
       height: 150px;
-      background: url("/konnect/images/dotGrids1.png");
+      background: url("/images/dotGrids1.png");
       z-index: -1;
     }
   }

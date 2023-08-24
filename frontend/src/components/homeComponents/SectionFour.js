@@ -7,9 +7,9 @@ const SectionFour = ({handleClick}) => {
   return (
     <Wrapper>
       <div className="secFour container ">
-        <div className="secFour-info d-flex">
+        <div className="secFour-info w-50 mx-auto mb-5">
           <h2>Popular Tests</h2>
-          <p className="w1000">
+          <p>
             Explore Konnect's popular diagnostic tests to gain valuable insights
             into your health, cognition, and overall well-being. Take charge of
             your health journey now.
@@ -28,9 +28,6 @@ export default SectionFour;
 const Wrapper = styled.section`
   .secFour-info {
     margin-bottom: 25px;
-    p {
-      width: 1000px;
-    }
   }
   .secFour {
     margin: 5rem auto;

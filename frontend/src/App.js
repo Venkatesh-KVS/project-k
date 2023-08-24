@@ -77,9 +77,9 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <div className="App ">
+      <div className="App">
         <CartProvider>
-          <Router basename="/konnect">
+          <Router>
             <Header cartSize={cart.length} />
             <Routes>
               <Route path="/" element={<Home handleClick={handleClick} />} />

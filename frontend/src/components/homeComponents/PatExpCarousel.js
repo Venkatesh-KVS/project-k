@@ -50,7 +50,7 @@ const PatExpCarousel = () => {
   return (
     <Wrapper>
       <div className="container">
-        <div className=" mb-5">
+        <div className="my-5">
           <Slider ref={PE_carousel_slider} {...sliderSettings}>
             {ytPatExpVids.map((videoObj) => {
               return <SinglePEytVideo vidCode={videoObj.vidCode} />;

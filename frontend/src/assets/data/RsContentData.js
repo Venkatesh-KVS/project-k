@@ -21,7 +21,7 @@ export const RsContentData = [
     excerpt:
       "2-Dimentional Echocardiography or ECHO is used to visualize the actual motion of the heart",
     productImage:
-      "/konnect/images/srvcs/radiology/raiology_machines/2D_ECHO.jpg",
+      "/images/srvcs/radiology/raiology_machines/2D_ECHO.jpg",
     component: <ECHO />,
   },
   {
@@ -31,7 +31,7 @@ export const RsContentData = [
     category: "CBCT",
     excerpt:
       "Cone-beamed computed tomography or CBCT is a form of medical imaging technology",
-    productImage: "/konnect/images/srvcs/radiology/raiology_machines/CBCT.jpg",
+    productImage: "/images/srvcs/radiology/raiology_machines/CBCT.jpg",
     component: <CBCT />,
   },
   {
@@ -41,7 +41,7 @@ export const RsContentData = [
     category: "CT",
     excerpt:
       "Computed Tomography or CT is a medical imaging procedure that produces detailed images ",
-    productImage: "/konnect/images/srvcs/radiology/raiology_machines/CT.jpg",
+    productImage: "/images/srvcs/radiology/raiology_machines/CT.jpg",
     component: <CT />,
   },
   {
@@ -50,7 +50,7 @@ export const RsContentData = [
     title: "ECG (Electrocardiogram)",
     excerpt:
       "Electrocardiogram or ECG (also called EKG) is a simple, non-invasive test that is used",
-    productImage: "/konnect/images/srvcs/radiology/raiology_machines/ECG.jpg",
+    productImage: "/images/srvcs/radiology/raiology_machines/ECG.jpg",
     component: <ECG />,
   },
   {
@@ -59,7 +59,7 @@ export const RsContentData = [
     title: "EEG (Electroencephalogram)",
     excerpt:
       "Cone-beamed computed tomography or CBCT is a form of medical imaging technology",
-    productImage: "/konnect/images/srvcs/radiology/raiology_machines/EEG.jpg",
+    productImage: "/images/srvcs/radiology/raiology_machines/EEG.jpg",
     component: <EEG />,
   },
   {
@@ -69,7 +69,7 @@ export const RsContentData = [
     excerpt:
       "Cone-beamed computed tomography or CBCT is a form of medical imaging technology",
     productImage:
-      "/konnect/images/srvcs/radiology/raiology_machines/Mammography.jpg",
+      "/images/srvcs/radiology/raiology_machines/Mammography.jpg",
     component: <Mammography />,
   },
   {
@@ -79,7 +79,7 @@ export const RsContentData = [
     category: "CBCT",
     excerpt:
       "Cone-beamed computed tomography or CBCT is a form of medical imaging technology",
-    productImage: "/konnect/images/srvcs/radiology/raiology_machines/MRI.jpg",
+    productImage: "/images/srvcs/radiology/raiology_machines/MRI.jpg",
     component: <MRI />,
   },
   {
@@ -88,7 +88,7 @@ export const RsContentData = [
     title: "NCS (Nerve Conduction Studies)",
     excerpt:
       "Cone-beamed computed tomography or CBCT is a form of medical imaging technology",
-    productImage: "/konnect/images/srvcs/radiology/raiology_machines/NCS.jpg",
+    productImage: "/images/srvcs/radiology/raiology_machines/NCS.jpg",
     component: <NCS />,
   },
   {
@@ -97,7 +97,7 @@ export const RsContentData = [
     title: "OPG (Orthopantomagram)",
     excerpt:
       "Cone-beamed computed tomography or CBCT is a form of medical imaging technology",
-    productImage: "/konnect/images/srvcs/radiology/raiology_machines/OPG.jpg",
+    productImage: "/images/srvcs/radiology/raiology_machines/OPG.jpg",
     component: <OPG />,
   },
   {
@@ -106,7 +106,7 @@ export const RsContentData = [
     title: "PFT (Pulmonary Function Test)",
     excerpt:
       "Cone-beamed computed tomography or CBCT is a form of medical imaging technology",
-    productImage: "/konnect/images/srvcs/radiology/raiology_machines/PFT.jpg",
+    productImage: "/images/srvcs/radiology/raiology_machines/PFT.jpg",
     component: <PFT />,
   },
   {
@@ -115,7 +115,7 @@ export const RsContentData = [
     title: "TMT (Treadmill test)",
     excerpt:
       "Cone-beamed computed tomography or CBCT is a form of medical imaging technology",
-    productImage: "/konnect/images/srvcs/radiology/raiology_machines/TMT.jpg",
+    productImage: "/images/srvcs/radiology/raiology_machines/TMT.jpg",
     component: <TMT />,
   },
   {
@@ -125,7 +125,7 @@ export const RsContentData = [
     excerpt:
       "Cone-beamed computed tomography or CBCT is a form of medical imaging technology",
     productImage:
-      "/konnect/images/srvcs/radiology/raiology_machines/Ultrasound.jpg",
+      "/images/srvcs/radiology/raiology_machines/Ultrasound.jpg",
     component: <Ultrasound />,
   },
   {
@@ -134,7 +134,7 @@ export const RsContentData = [
     title: "X-ray",
     excerpt:
       "Cone-beamed computed tomography or CBCT is a form of medical imaging technology",
-    productImage: "/konnect/images/srvcs/radiology/raiology_machines/xray.jpg",
+    productImage: "/images/srvcs/radiology/raiology_machines/xray.jpg",
     component: <Xray />,
   },
 ];
