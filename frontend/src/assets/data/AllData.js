@@ -16,7 +16,7 @@ export const packagesData = [
     code: "001",
     title: "Health Screen",
     price: 1499,
-    ftrImg: "/images/health-packages/hp-FeatureImages/diabetes_package.jpg",
+    ftrImg: "/images/health-packages/hp-FeatureImages/healthScreening.jpg",
     excerpt:
       "Basic Health Check-up Package can help in diagnosing conditions at an early stage and preventing",
     content: <HealthScreen />,

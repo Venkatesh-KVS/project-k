@@ -7,8 +7,9 @@ import HealthPackages from "../components/homeComponents/HealthPackages";
 import HeroSlider from "../components/homeComponents/HeroSlider";
 import PatientExperience from "../components/homeComponents/PatientExperience";
 import OurHistory from "../components/homeComponents/OurHistory";
+import CounterBox from "../components/homeComponents/CounterBox";
 
-const Home = ({handleClick}) => {
+const Home = ({ handleClick }) => {
   return (
     <>
       <div>
@@ -17,6 +18,7 @@ const Home = ({handleClick}) => {
         <SectionThree />
         <SectionFour handleClick={handleClick} />
         <HealthPackages handleClick={handleClick} />
+        <CounterBox />
         <PatientExperience />
         <OurHistory />
       </div>
