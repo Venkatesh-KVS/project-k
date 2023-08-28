@@ -32,12 +32,6 @@ const ToggleKHP = ({ handleClick }) => {
             .map((item, index) => (
               <HpCard
                 key={index}
-                // image={item.ftrImg}
-                // title={item.title}
-                // price={item.price}
-                // code={item.code}
-                // desc={item.desc}
-                // info={item.temInfo}
                 item={item}
                 handleClick={handleClick}
               />

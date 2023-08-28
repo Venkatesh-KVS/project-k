@@ -72,7 +72,6 @@ const Wrapper = styled.section`
   .s2-tests-container {
     background-image: url("/images/k-10.png");
     background-repeat: repeat;
-    background-size: auto;
     background-position: center left;
     padding: 50px;
     border-radius: 25px;
