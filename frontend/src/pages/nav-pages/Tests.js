@@ -346,3 +346,61 @@ const Wrapper = styled.section`
     }
   }
 `;
+// import styled from "styled-components";
+// import PostCategory from "../../components/tests/PostCategory";
+// import { CategoryData } from "../../components/tests/CategoryData";
+
+// const Tests = () => {
+//   return (
+//     <Wrapper className="tests">
+//       <div className="banner-bg d-flex">
+//         <div className="banner-cnt container flex">
+//           <h2>Tests</h2>
+//           <p>
+//             <span>Home</span>
+//             tests
+//           </p>
+//         </div>
+//       </div>
+//       <div className="container tests-container d-flex">
+//         <PostCategory
+//           category={CategoryData}
+//           posts={CategoryData.category}
+//           organ={CategoryData.organ}
+//         />
+//       </div>
+//     </Wrapper>
+//   );
+// };
+
+// export default Tests;
+
+// const Wrapper = styled.section`
+//   .banner-cnt {
+//     h2 {
+//       font-weight: 600;
+//       color: #005bab;
+//       font-size: 2rem;
+//     }
+//     p {
+//       font-size: 15px;
+//       color: #fff;
+//       span {
+//         color: #00203c;
+//         font-family: inherit;
+//       }
+//     }
+//   }
+//   .banner-bg {
+//     height: 15em;
+//     align-items: center;
+//     background: linear-gradient(
+//         0deg,
+//         rgba(0, 32, 60, 0),
+//         rgba(0, 174, 239, 0.3)
+//       ),
+//       url("https://img.freepik.com/free-photo/hand-with-protective-gloves-holding-blood-samples-covid-test_23-2148958363.jpg?w=740&t=st=1687859208~exp=1687859808~hmac=491da7442440e03cf55afa8972abd0012801bee4edec64a85a3e75919e4ba541");
+//     background-size: cover;
+//     background-position: bottom center;
+//   }
+// `;

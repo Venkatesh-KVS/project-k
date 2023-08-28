@@ -172,6 +172,7 @@ export const testsData = [
   {
     id: 1,
     category: "Blood",
+    organ: "/images/organs/Heart.png",
     title: "HbA1c (Glycated Haemoglobin)",
     price: 2000,
     inv: "INV1663",
@@ -181,6 +182,7 @@ export const testsData = [
   {
     id: 2,
     category: "Heart",
+    organ: "/images/organs/Heart.png",
     title: "IHC ER/PR/HER2nu(BREAST PANEL)",
     price: 4000,
     inv: "INV1441",
@@ -190,6 +192,7 @@ export const testsData = [
   {
     id: 3,
     category: "Cells",
+    organ: "/images/organs/Thyroid.png",
     title: "HbA1c (Glycated Haemoglobin)",
     price: 2000,
     inv: "INV1663",
@@ -199,6 +202,7 @@ export const testsData = [
   {
     id: 4,
     category: "Breast",
+    organ: "/images/organs/Heart.png",
     title: "IHC ER/PR/HER2nu(Breast panel) + Ki-67",
     price: 5000,
     inv: "INV2408",
@@ -208,6 +212,7 @@ export const testsData = [
   {
     id: 5,
     category: "Scan",
+    organ: "/images/organs/Heart.png",
     title: "10X300 SWAB C/S",
     price: 3000,
     inv: "INV1441",
@@ -217,7 +222,27 @@ export const testsData = [
   {
     id: 6,
     category: "lung",
-
+    organ: "/images/organs/Heart.png",
+    title: "17-Ketosteroids",
+    price: 1700,
+    inv: "INV3",
+    description:
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
+  },
+  {
+    id: 6,
+    category: "Heart",
+    organ: "/images/organs/Heart.png",
+    title: "17-Ketosteroids",
+    price: 1700,
+    inv: "INV3",
+    description:
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa",
+  },
+  {
+    id: 7,
+    category: "Heart",
+    organ: "/images/organs/Heart.png",
     title: "17-Ketosteroids",
     price: 1700,
     inv: "INV3",
