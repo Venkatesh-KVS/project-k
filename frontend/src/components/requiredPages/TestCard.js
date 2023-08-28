@@ -18,18 +18,21 @@ export const TestCard = ({item, handleClick}) => {
           <div className="go-corner">
             <div className="go-arrow">→</div>
           </div>
-
-          <div className="w-100">
-            <h5 className="tstTitle">{item.title}</h5>
-            <p className="tstInv">
-              INVCODE:<b> {item.inv} </b>
-            </p>
+          <h5 className="tstTitle">{item.test_name}</h5>
+          <p className="tstInv"> INVCODE: <b> {item.test_id} </b> </p>
+          <div className="w-100 mb-4 more-det">
+            {/* <p className="tstInv"> Sample Type: <b> {item.sample_type} </b> </p>
+            <p className="tstInv"> Pre test preparation: <b> {item.pre_test_preparation } </b> </p>
+            <p className="tstInv"> Test Report Delivery: <b> {item.test_report_delivery} </b> </p>
+            <p className="tstInv"> Frequency: <b> {item.frequency} </b> </p>
+            <p className="tstInv"> Home sample collection: <b> {item.home_sample_collection } </b> </p> */}
+            <p className="tstInv"> Speciality: <b> {item.category} </b> </p>
           </div>
 
-          <div className="d-flex w-100 justify-content-between align-items-center border-top pt-3">
+          <div className="d-flex w-100 justify-content-between align-items-center border-top p-2 px-4 tcardfooter">
             <h6 className="mb-0 tstPrice">RS {item.price}</h6>
             <button
-              className="tstCardBtn btn"
+              className="tstCardBtn btn btn-sm"
               onClick={() => {
                 addItem(item);
                 changeText("Added to Cart");
@@ -50,11 +53,12 @@ const Wrapper = styled.section`
     flex-wrap: wrap;
     text-align: left;
     background-color: #fff;
-    border: 2px solid ${({ theme }) => theme.colors.primary};
+    border: 1px solid ${({ theme }) => theme.colors.primary};
     color: #fff;
     border-radius: 4px;
     padding: 2rem;
     width: 22rem;
+    transition: 0.5s;
     overflow: hidden;
     position: relative;
     z-index: 0;
@@ -109,13 +113,23 @@ const Wrapper = styled.section`
 
   .tstsCard {
     /* width: 100; */
-    height: 150px;
+    height: 140px;
     display: flex;
+    ${'' /* position: relative; */}
     flex-direction: column;
-    justify-content: space-between;
+    ${'' /* justify-content: space-between; */}
+    transition: 0.5s;
+    .tcardfooter{
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: rgba(0,0,0,0.05)
+    }
     .tstCardBtn {
       font-weight: 600;
-      font-size: 1rem;
+      font-size: 14px;
+      background: white;
       position: relative;
       display: inline-block;
       &:after {
@@ -174,15 +188,15 @@ const Wrapper = styled.section`
   }
   .txtcartBtn:hover {
     background-color: ${({ theme }) => theme.colors.white};
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.white};
   }
 
   .para {
     color: #fff;
   }
-
   .tstCards:hover .tstTitle,
-  .tstCards:hover .tstInv {
+  .tstCards:hover .tstInv,
+  .tstCards:hover .tstInv b {
     color: white;
   }
 `;

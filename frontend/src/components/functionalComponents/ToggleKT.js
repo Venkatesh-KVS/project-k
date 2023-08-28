@@ -1,53 +1,37 @@
 import React, { useState } from "react";
 import { styled } from "styled-components";
-import { BsSearch } from "react-icons/bs";
 import { organImages } from "../../assets/data/AllData";
 import { TestCard } from "../requiredPages/TestCard";
-import { testsData } from "../../assets/data/AllData";
 import OrganCarousel from "../requiredPages/OrganCarousel";
 import AtoZ from "../requiredPages/AtoZ";
-
-const blogs = [{ id: 1, title: "" }];
+import SearchBar from "../requiredPages/SearchBar";
 
 const ToggleKT = ({ handleClick }) => {
-  const [search, setSearch] = useState("");
-
+  const [searchResults, setSearchResults] = useState([]);
+  // const [searchByOrg, setsearchByOrg] = useState([])
+  
   return (
     <Wrapper>
       <div className="s2-kt mt-4">
-        <div className="kt-searchBox mb-4 d-flex">
-          <div className="searchBar d-flex flex-fill" style={{ width: "100%" }}>
-            <input
-              onChange={(e) => setSearch(e.target.value)}
-              type="text"
-              placeholder="Search A-Z / Search by Organ"
-            />
-            <BsSearch />
-          </div>
-        </div>
-        <div className="selectionBox d-flex gap-2 mb-4">
-          <div className="a-zBox" style={{ width: "40%" }}>
+        <div className="selectionBox mx-auto d-flex gap-2 mb-4">
+          <div className="a-zBox w-50" style={{ width: "40%" }}>
             <div className="kt-a-z d-flex flex-wrap">
-              <AtoZ blogs={blogs} />
+              <SearchBar searchResults={searchResults} setSearchResults={setSearchResults} />
+              <AtoZ setSearchResults={setSearchResults} />
             </div>
           </div>
-          <div className="organsBox">
+          <div className="organsBox w-50">
             <div className="kt-organs ">
-              <OrganCarousel images={organImages} />
+              <OrganCarousel images={organImages} setSearchResults={setSearchResults} />
             </div>
           </div>
         </div>
         <div className="results d-flex flex-wrap gap-3 justify-content-center">
-          {testsData
-            .filter((item) => {
-              return search.toLowerCase() === ""
-                ? item
-                : item.title.toLowerCase().includes(search);
-            })
-            .slice(0, 6)
-            .map((item, index) => (
+          {
+            searchResults.slice(0, 6).map((item, index) => (
               <TestCard key={index} item={item} handleClick={handleClick} />
-            ))}
+            ))
+          }
         </div>
       </div>
     </Wrapper>
@@ -76,7 +60,7 @@ const Wrapper = styled.section`
         }
       }
       .searchBar {
-        background-color: ${({ theme }) => theme.colors.primary};
+        ${'' /* background-color: ${({ theme }) => theme.colors.primary}; */}
         padding: 2px 10px;
         align-items: center;
         input {
@@ -101,6 +85,7 @@ const Wrapper = styled.section`
   /* ---------------------- */
 
   .selectionBox {
+    width: 85%;
     .kt-organs {
       align-items: center;
       &:hover {

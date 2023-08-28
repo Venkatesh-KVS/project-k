@@ -62,19 +62,17 @@ export default SectionTwo;
 
 const Wrapper = styled.section`
   .s2 {
-    /* margin-top: -5%; */
-    margin: 2rem;
+    margin: 0;
   }
 
   .s2-tests-box {
     font-weight: 500;
-    /* background: ${({ theme }) => theme.colors.primary}; */
   }
   .s2-tests-container {
-    background-image: url("/images/k-10.png");
-    /* linear-gradient(190deg, #005bab, #00aeef); */
+    background-image: url("/images/k-10.png"), linear-gradient(190deg, white 50%, transparent 50%);
+    background-size: cover;
+    background-blend-mode: multiply;
     background-repeat: repeat;
-    background-size: auto;
     background-position: center left;
     padding: 25px;
     border-radius: 25px;
