@@ -74,34 +74,19 @@ function App() {
               <Route exact path="/register" element={<Register />} />
               <Route exact path="/account" element={<Account />} />
               <Route path="/about" element={<About />} />
-              <Route
-                path="/tests"
-                element={<Tests handleClick={handleClick} />}
-              />
+              <Route path="/tests" element={<Tests handleClick={handleClick} />} />
               <Route path="/singleproduct/:id" element={<SingleProduct />} />
-              <Route
-                path="/cart"
-                element={<Cart cart={cart} setCart={setCart} />}
-              />
+              <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />} />
               <Route path="/home-collection" element={<HomeCollection />} />
               <Route path="/services" element={<Services />} />
               <Route path="/health-conditions" element={<HealthConditions />} />
               <Route path="/health-conditions/:slug" element={<Details />} />
-              <Route
-                path="/radiology-services"
-                element={<RadiologyServices />}
-              />
+              <Route path="/radiology-services" element={<RadiologyServices />} />
               <Route path="/radiology-services/:slug" element={<RsDetails />} />
-              <Route
-                path="/packages"
-                element={<Packages handleClick={handleClick} />}
-              />
+              <Route path="/packages" element={<Packages handleClick={handleClick} />} />
               <Route path="/locate-clinic" element={<LocateClinic />} />
               <Route path="/partner-with-us" element={<PartnerWithUs />} />
-              <Route
-                path="/fetal-medicine-unit"
-                element={<FetalMedicineUnit />}
-              />
+              <Route path="/fetal-medicine-unit" element={<FetalMedicineUnit />} />
             </Routes>
             <Footer />
           </Router>
