@@ -13,22 +13,11 @@ export const Register = () => {
   });
   // const navigate = useNavigate();
   const handleSubmit = async (event) => {
-    // event.preventDefault();
-    // axios.post("http://localhost:8081/register", values)
-    // // axios.post("https://konnectserver.infocusrx.work/register", values)
-    // .then(res => {
-    //   if (res.data.Status === "Success"){
-    //     navigate("/login");
-    //   } else {
-    //     alert("Error")
-    //   }
-    // })
-    // .then(err => console.log(err));
-
     event.preventDefault();
     axios.post("https://konnectserver.infocusrx.work/register", {values})
         .then(response => {
             console.log(response.data);
+            // navigate("/login");
         })
         .catch(err => {
             console.log(err);

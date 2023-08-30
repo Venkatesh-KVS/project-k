@@ -1,124 +1,79 @@
-import { Link } from "react-router-dom";
-import styled from "styled-components";
-import { GiHamburgerMenu, GiHeartOrgan } from "react-icons/gi";
-import { BiChevronsRight } from "react-icons/bi";
-import { HiOutlineFilter } from "react-icons/hi";
-import { CiMenuKebab } from "react-icons/ci";
-import { testsData } from "../../assets/data/AllData";
-import { useCart } from "react-use-cart";
-// import { TestCard, cardData } from "./requiredPages/TestCard";
+import React, { useState } from "react";
+import { styled } from "styled-components";
+import TestsBanner from "../../components/testsComponents/TestsBanner";
+import TestsFilterBarLeft from "../../components/testsComponents/TestsFilterBarLeft";
+import { TestCard } from "../../components/requiredPages/TestCard";
+
+const cardsPerPage  = 9;
 
 const Tests = ({ handleClick }) => {
-  const { addItem } = useCart();
+  const [searchResults, setSearchResults] = useState([]);
 
+  // pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const totalPages = Math.ceil(searchResults.length / cardsPerPage);
+  const handlePageChange = (newPage) => {
+    setCurrentPage(newPage);
+  };
+  const startIndex = (currentPage - 1) * cardsPerPage;
+  const endIndex = startIndex + cardsPerPage;
+  const visibleCards = searchResults.slice(startIndex, endIndex);
+  const getPageNumbers = () => {
+    const visiblePageNumbers = [];
+    if (currentPage > 3) {
+      visiblePageNumbers.push('...');
+    }
+    for (let i = Math.max(1, currentPage - 1); i <= Math.min(totalPages, currentPage + 1); i++) {
+      visiblePageNumbers.push(i);
+    }
+    if (currentPage < totalPages - 2) {
+      visiblePageNumbers.push('...');
+    }
+    return visiblePageNumbers;
+  };
+  // pagination
+  
   return (
-    <Wrapper className="tests">
-      <div className="banner-bg d-flex">
-        <div className="banner-cnt container flex">
-          <h2>Tests</h2>
-          <p>
-            <span>Home</span>
-            <BiChevronsRight />
-            tests
-          </p>
-        </div>
-      </div>
+    <Wrapper className="testspage">
+      <TestsBanner />
       <div className="container tests-container d-flex">
-        <div className="box-left ">
-          <div className="categories box-mb">
-            <h4 className="h4-style">Categories</h4>
-            <Link className="active" to="/">
-              All
-            </Link>
-            <Link className="d-flex gap-1" to="/">
-              <GiHeartOrgan />
-              {"Anemia"}
-            </Link>
-            <Link className="d-flex gap-1" to="/">
-              <GiHeartOrgan />
-              {"Bone"}
-            </Link>
-            <Link className="d-flex gap-1" to="/">
-              <GiHeartOrgan />
-              {"Cancer "}
-            </Link>
-            <Link className="d-flex gap-1" to="/">
-              <GiHeartOrgan />
-              {" Diabetes"}
-            </Link>
-            <Link className="d-flex gap-1" to="/">
-              <GiHeartOrgan />
-              {"Fever "}
-            </Link>
-
-            <Link className="d-flex gap-1" to="/">
-              <GiHeartOrgan />
-              {"Heart"}
-            </Link>
-            <Link className="d-flex gap-1" to="/">
-              <GiHeartOrgan />
-              {"Kidney "}
-            </Link>
-            <Link className="d-flex gap-1" to="/">
-              <GiHeartOrgan />
-              {" Liver"}
-            </Link>
-            <Link className="d-flex gap-1" to="/">
-              <GiHeartOrgan />
-              {"Pregnancy "}
-            </Link>
-          </div>
-          <div className="Packages box-mb">
-            <h4 className="h4-style">Packages</h4>
-            {testsData.map((item) => (
-              <div className="test-info">
-                <p className="test-category">{item.category}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="box-right ">
+        <TestsFilterBarLeft setSearchResults={setSearchResults} />
+        <div className="box-right">
           <div className="box-right-top">
-            <div className="categories  d-flex justify-content-between align-items-center">
-              <div className="icons">
-                <HiOutlineFilter />
-                <GiHamburgerMenu />
-              </div>
-
-              <h6>Total tests {testsData.length}</h6>
-
-              <Link to="/" className="menu-item icons">
-                {"Menu Item"}
-                <CiMenuKebab />
-              </Link>
+            <div className="categories bg-light d-flex justify-content-between align-items-center border rounded py-2">
+              <h6 className="px-4 py-2 rounded text-dark fw-bold small">Total tests {searchResults.length}</h6>
             </div>
           </div>
-          <div className="box-right-bottom ">
-            <div className="mt-2 ptCards d-flex flex-wrap gap-2">
-              {testsData.slice(0, 6).map((item) => (
-                <div className="ptCard">
-                  <div className="ptBg d-flex flex-column justify-content-between">
-                    <div className="pt-info">
-                      <h3 className="pt-title">{item.title}</h3>
-                      <h5 className="pt-inv">
-                        INVCODE:<b> {item.inv} </b>
-                      </h5>
-                      <p>{item.description}</p>
-                    </div>
-                    <div className="ptBtn">
-                      <button
-                        onClick={() => {
-                          addItem(item);
-                          handleClick(item);
-                        }}
-                      >
-                        Book Now
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              ))}
+          <div className="box-right-bottom mt-3">
+            <div className="d-flex justify-content-start flex-wrap gap-3">
+              {
+                visibleCards.map((item) => (
+                  <TestCard key={item.id} item={item} handleClick={handleClick} />
+                ))
+              }
             </div>
+          </div>
+
+          <div className="pagination">
+            <button onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1}>
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                <path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160zm352-160l-160 160c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L301.3 256 438.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0z"/>
+              </svg>
+            </button>
+            {getPageNumbers().map((pageNumber, index) => (
+              <button 
+                key={index} 
+                onClick={() => {if (pageNumber !== '...') {handlePageChange(pageNumber);}}}
+                className={currentPage === pageNumber ? "active" : ""}
+              >
+                {pageNumber}
+              </button>
+            ))}
+            <button onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages} >
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                <path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -129,33 +84,38 @@ const Tests = ({ handleClick }) => {
 export default Tests;
 
 const Wrapper = styled.section`
-  .banner-cnt {
-    h2 {
-      font-weight: 600;
-      color: #005bab;
-      font-size: 2rem;
-    }
-    p {
-      font-size: 15px;
-      color: #fff;
-      span {
-        color: #00203c;
-        font-family: inherit;
-      }
-    }
+  /* pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
   }
-  .banner-bg {
-    height: 15em;
-    align-items: center;
-    background: linear-gradient(
-        0deg,
-        rgba(0, 32, 60, 0),
-        rgba(0, 174, 239, 0.3)
-      ),
-      url("https://img.freepik.com/free-photo/hand-with-protective-gloves-holding-blood-samples-covid-test_23-2148958363.jpg?w=740&t=st=1687859208~exp=1687859808~hmac=491da7442440e03cf55afa8972abd0012801bee4edec64a85a3e75919e4ba541");
-    background-size: cover;
-    background-position: bottom center;
+
+  .pagination button {
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 5px;
+    outline: none;
+    /* padding: 5px 10px; */
+    transition: color 0.3s;
   }
+
+  .pagination button.active {
+    background: linear-gradient(360deg, #005bab, #00ffbb90);
+    border: none;
+    color: #fff;
+    border-radius: 50%;
+  }
+  .pagination button.active::after{
+    display: none;
+  }
+  /* pagination */
 
   /* ---------------test cards */
   .ptCards {
@@ -164,7 +124,7 @@ const Wrapper = styled.section`
       background-color: #00ffbb;
       position: relative;
       border-radius: 15px;
-      width: 32%;
+      ${'' /* width: 32%; */}
       /* padding: 25px; */
       z-index: 1;
       .ptBg {
@@ -222,12 +182,9 @@ const Wrapper = styled.section`
     h6 {
       font-size: 1rem;
       color: #00203c;
-      /* font-weight: 600; */
     }
     p {
       color: #00203c;
-      /* font-size: 0.9rem;
-      font-weight: 500; */
     }
   }
   .tst-group {
@@ -301,27 +258,49 @@ const Wrapper = styled.section`
   }
 
   .box-left {
-    width: 30%;
+    width: 20%;
     height: 100%;
-    background-color: #00aeef05;
-    border-radius: 15px;
-    padding: 2rem;
-    /* border: 1px solid #005bab; */
-    background-image: linear-gradient(360deg, #005bab80, #00aeef90);
-    background-color: #00ffbb80;
+    padding: 10px;
+    ${'' /* background: rgba(0,0,0,0.05); */}
+    .org-item{
+      background: white;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      border-radius: 4px;
+      width: 100%;
+      padding: 5px 10px;
+      ${'' /* height: 90px; */}
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      cursor: pointer;
+      transition: 0.4s;
+      img {
+        width: 30px;
+        margin: 5px;
+        ${'' /* background: red; */}
+      }
+      &:hover {
+        background-color: ${({ theme }) => theme.colors.primary};
+        color: white;
+      }
+      &:hover p {
+        color: white;
+      }
+    }
   }
 
   .box-right {
+    width: 80%;
     gap: 10;
     border-radius: 15px;
     padding: 0 1.5rem;
   }
 
   .box-right-top {
-    padding: 1.5rem;
-    background-image: linear-gradient(180deg, #005bab, #00aeef90);
-    background-color: #00ffbb50;
-    margin-bottom: 2rem;
+    ${'' /* padding: 1.5rem; */}
+    ${'' /* background-image: linear-gradient(180deg, #005bab, #00aeef90); */}
+    ${'' /* background-color: #00ffbb50; */}
+    ${'' /* margin-bottom: 2rem; */}
     border-radius: 15px;
     .categories {
       display: flex;
