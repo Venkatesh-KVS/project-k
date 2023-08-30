@@ -1,4 +1,4 @@
-import { symptoms, riskFactors } from "../../../assets/data/HcSymptomsData";
+import { hcIcons } from "../../../assets/data/HcSymptomsData";
 import styled from "styled-components";
 
 const Cancer = () => {
@@ -20,7 +20,6 @@ const Cancer = () => {
       </div>
       <div className="questions">
         <h3 className="question">How is cancer classified?</h3>
-
         <h5 className="include">Cancers are classified as:</h5>
         <ul>
           <li>
@@ -37,15 +36,6 @@ const Cancer = () => {
             divide faster than normal cells.
           </li>
         </ul>
-        <h5 className="include">Signs that indicate worsening of asthma:</h5>
-        <div className="icon-box d-flex flex-wrap gap-3">
-          {symptoms.map((item) => (
-            <div className="box">
-              <img src={item.icon} alt="" />
-              <h5>{item.symptom}</h5>
-            </div>
-          ))}
-        </div>
       </div>
       <div className="questions">
         <h3 className="question">What are the Stages of Cancer? </h3>
@@ -90,7 +80,7 @@ const Cancer = () => {
 
         <h6>Early stage :</h6>
         <div className="icon-box d-flex flex-wrap gap-3">
-          {symptoms.map((item) => (
+          {hcIcons[0].cancer[0].earlyStage.map((item) => (
             <div className="box">
               <img src={item.icon} alt="" />
               <h5>{item.symptom}</h5>
@@ -99,7 +89,7 @@ const Cancer = () => {
         </div>
         <h6>Late stage :</h6>
         <div className="icon-box d-flex flex-wrap gap-3">
-          {symptoms.map((item) => (
+          {hcIcons[0].cancer[0].lateStage.map((item) => (
             <div className="box">
               <img src={item.icon} alt="" />
               <h5>{item.symptom}</h5>
@@ -111,7 +101,7 @@ const Cancer = () => {
         <h3 className="question">What are the risk factors?</h3>
         <h5 className="include">The risk factors of cancer include:</h5>
         <div className="icon-box d-flex flex-wrap gap-3">
-          {riskFactors.map((item) => (
+          {hcIcons[0].cancer[0].riskFactors.map((item) => (
             <div className="box">
               <img src={item.icon} alt="" />
               <h5>{item.symptom}</h5>

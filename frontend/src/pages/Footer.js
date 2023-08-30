@@ -11,29 +11,35 @@ const Footer = () => {
           <div className="fh container d-flex justify-content-between">
             <div className="fh-content d-flex ">
               <p className="fh-p">Follow Konnect Diagnostics on Social Media</p>
-              <NavLink>
-                <DynamicImage imageName={"/icons/fb.svg"} />
+              <NavLink
+                to="https://www.facebook.com/konnectdiagnostic/"
+                target="blank"
+              >
+                <DynamicImage imageName={"/icons/social/fb.svg"} />
               </NavLink>
-              <NavLink>
-                <DynamicImage imageName={"/icons/twitter.svg"} />
+              <NavLink to="https://twitter.com/KonnectDiagnos2" target="blank">
+                <DynamicImage imageName={"/icons/social/twitter.svg"} />
               </NavLink>
-              <NavLink>
-                <DynamicImage imageName={"/icons/instagram.svg"} />
+              <NavLink
+                to="https://www.instagram.com/konnectdiagnosticcenters/"
+                target="blank"
+              >
+                <DynamicImage imageName={"/icons/social/instagram.svg"} />
               </NavLink>
-              <NavLink>
-                <DynamicImage imageName={"/icons/linkedin.svg"} />
+              <NavLink
+                to="https://www.linkedin.com/company/konnect-diagnostics/"
+                target="blank"
+              >
+                <DynamicImage imageName={"/icons/social/linkedin.svg"} />
+              </NavLink>
+              <NavLink
+                to="https://www.youtube.com/channel/UC2y2Nq4LXo36lU3kkZvx9xA"
+                target="blank"
+              >
+                <DynamicImage imageName={"/icons/social/youtube.svg"} />
               </NavLink>
             </div>
-            <div className="fh-content d-flex">
-              {/* <NavLink className="fh-nl d-flex">
-                <DynamicImage imageName={"/icons/Email.svg"} />
-                <p className="fh-nl-p">Subscribe to our email newsletter</p>
-                <DynamicImage
-                  className="fh-nl-arrow"
-                  imageName={"/icons/right-arrow.svg"}
-                />
-              </NavLink> */}
-            </div>
+            <div className="fh-content d-flex"></div>
           </div>
         </div>
         <div className="footer-container container d-flex">
@@ -50,18 +56,13 @@ const Footer = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/products" className="nav-list">
-                  Products
+                <NavLink to="/packages" className="nav-list">
+                  Packages
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/cart" className="nav-list">
-                  Cart
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/services" className="nav-list">
-                  Services
+                <NavLink to="/tests" className="nav-list">
+                  Tests
                 </NavLink>
               </li>
             </ul>
@@ -69,28 +70,18 @@ const Footer = () => {
           <div className="footer-box2">
             <ul className="navbar-nav footer-navbar-lists  d-flex">
               <li>
-                <NavLink to="/" className="nav-list">
+                <NavLink to="/tests" className="nav-list">
                   Book a Test
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about" className="nav-list">
+                <NavLink to="/locate-clinic" className="nav-list">
                   Nearest Center
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/products" className="nav-list">
+                <NavLink to="/login" className="nav-list">
                   Download Report
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/cart" className="nav-list">
-                  Promotions and Discounts
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/services" className="nav-list">
-                  Social Programmes
                 </NavLink>
               </li>
             </ul>
@@ -98,23 +89,18 @@ const Footer = () => {
           <div className="footer-box3">
             <ul className="navbar-nav footer-navbar-lists  d-flex">
               <li>
-                <NavLink to="/" className="nav-list">
-                  Nearest Center
+                <NavLink to="/health-conditions" className="nav-list">
+                  Health Conditions
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about" className="nav-list">
-                  Promotions and Discounts
+                <NavLink to="/radiology-services" className="nav-list">
+                  Radiology Services
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/products" className="nav-list">
-                  Download Report
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/services" className="nav-list">
-                  Services
+                <NavLink to="/fetal-medicine-unit" className="nav-list">
+                  Fetal Medicine Unit
                 </NavLink>
               </li>
             </ul>
@@ -122,27 +108,13 @@ const Footer = () => {
           <div className="footer-box4">
             <ul className="navbar-nav footer-navbar-lists  d-flex">
               <li>
-                <NavLink to="/" className="nav-list">
-                  Download Report
+                <NavLink to="/partner-with-us" className="nav-list">
+                  Partner with us
                 </NavLink>
               </li>
+
               <li>
-                <NavLink to="/about" className="nav-list">
-                  Promotions and Discounts
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/products" className="nav-list">
-                  Products
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/cart" className="nav-list">
-                  Promotions and Discounts
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/services" className="nav-list">
+                <NavLink to="/login" className="nav-list">
                   Conatct Form
                 </NavLink>
               </li>
@@ -166,6 +138,13 @@ const Footer = () => {
 export default Footer;
 
 const Wrapper = styled.section`
+  .fh-content img {
+    width: 22px;
+    transition: 0.2s;
+    &:hover {
+      scale: 1.2;
+    }
+  }
   background-color: ${({ theme }) => theme.colors.primary};
 
   .footer-head {

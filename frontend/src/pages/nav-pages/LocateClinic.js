@@ -1,7 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
 import ClinicData from "../../assets/data/ClinicData";
-// import { Link } from "react-router-dom";
 import { IoIosCall, IoIosMail } from "react-icons/io";
 import { GoLocation } from "react-icons/go";
 

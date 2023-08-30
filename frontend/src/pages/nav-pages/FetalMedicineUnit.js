@@ -45,7 +45,7 @@ const FetalMedicineUnit = () => {
               <span className="spl_text"> Fetal Medicine Unit </span>
             </div>
             <div className="my-2">
-              <h1 className="">
+              <h1 className="fm-heading">
                 Center for Fetal Medicine, that provides mother and fetus care
               </h1>
             </div>
@@ -176,7 +176,7 @@ const FetalMedicineUnit = () => {
         <div className="flex-column w-50 mx-auto p-5" id="fmu_s41">
           <div className="text-center">
             <span className="spl_text">Promising best quality Services</span>
-            <h2> OUR SERVICES </h2>
+            <h2 className="s4-h2"> OUR SERVICES </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Praesentium, unde pariatur. Dicta nobis quos laudantium.
@@ -292,6 +292,9 @@ const FetalMedicineUnit = () => {
 export default FetalMedicineUnit;
 
 const Wrapper = styled.section`
+  .fm-heading {
+    color: ${({ theme }) => theme.colors.pink};
+  }
   #fmu_s1 {
     display: flex;
     background: url("/images/bannerBG.png");
@@ -350,7 +353,7 @@ const Wrapper = styled.section`
   }
 
   #fmu_s2 {
-    background: #f8f8f9;
+    background: #d12e8815;
     padding: 50px 0;
 
     justify-content: center;
@@ -406,17 +409,17 @@ const Wrapper = styled.section`
   #fmu_s3 {
     background: ${({ theme }) => theme.colors.primary};
     .sec_heading {
-      color: white;
+      color: ${({ theme }) => theme.colors.white};
     }
     h6 {
-      color: white;
+      color: ${({ theme }) => theme.colors.white};
       margin: 15px;
     }
     .s3_ic {
       width: 80px;
       height: 80px;
       padding: 10px;
-      background: white;
+      background: ${({ theme }) => theme.colors.white};
       border-radius: 40px;
       display: grid;
       place-items: center;
@@ -427,6 +430,9 @@ const Wrapper = styled.section`
   }
 
   #fmu_s4 {
+    .s4-h2 {
+      color: ${({ theme }) => theme.colors.pink};
+    }
     .sub_heading {
       font-size: 18px;
       font-weight: 700;
@@ -471,7 +477,7 @@ const Wrapper = styled.section`
   .spl_text {
     font-size: 18px;
     font-weight: 700;
-    color: #d66ea6;
+    color: ${({ theme }) => theme.colors.text};
   }
   .section {
     display: flex;

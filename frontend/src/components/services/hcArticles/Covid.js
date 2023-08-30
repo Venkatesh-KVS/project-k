@@ -1,4 +1,4 @@
-import { symptoms, riskFactors } from "../../../assets/data/HcSymptomsData";
+import { hcIcons } from "../../../assets/data/HcSymptomsData";
 import styled from "styled-components";
 
 const Covid = () => {
@@ -20,7 +20,7 @@ const Covid = () => {
         <h3 className="question">What are the symptoms of COVID?</h3>
         <h5 className="include">Possible symptoms of COVID may include:</h5>
         <div className="icon-box d-flex flex-wrap gap-3">
-          {symptoms.map((item) => (
+          {hcIcons[0].covid[0].symptoms.map((item) => (
             <div className="box">
               <img src={item.icon} alt="" />
               <h5>{item.symptom}</h5>
@@ -32,7 +32,7 @@ const Covid = () => {
         <h3 className="question">What are the risk factors? </h3>
         <h5 className="include">Risk factors of COVID include:</h5>
         <div className="icon-box d-flex flex-wrap gap-3">
-          {riskFactors.map((item) => (
+          {hcIcons[0].covid[0].riskFactors.map((item) => (
             <div className="box">
               <img src={item.icon} alt="" />
               <h5>{item.symptom}</h5>

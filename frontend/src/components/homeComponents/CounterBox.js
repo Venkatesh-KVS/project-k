@@ -7,7 +7,6 @@ const CounterBox = () => {
   return (
     <Wrapper>
       <section className="counter-section">
-        <h2>Counter Secton</h2>
         <div className="counter-box container">
           <LazyLoadComponent>
             <div className="counter-items">
@@ -15,9 +14,9 @@ const CounterBox = () => {
                 <img src="/images/icons/tests-white.svg" alt="" />
                 <div className="info">
                   <div className="one ">
-                    <Counter endValue={480} />
+                    <Counter endValue={2} />
                   </div>
-                  <h3>Types of tests</h3>
+                  <h3>Tests</h3>
                 </div>
               </div>
               <div className="divider"></div>
@@ -25,9 +24,9 @@ const CounterBox = () => {
                 <img src="/images/icons/test-bottle.svg" alt="" />
                 <div className="info">
                   <div className="two">
-                    <Counter endValue={2} />
+                    <Counter endValue={480} />
                   </div>
-                  <h3>Tests</h3>
+                  <h3>Types of tests</h3>
                 </div>
               </div>
               <div className="divider"></div>
@@ -65,10 +64,10 @@ const Wrapper = styled.section`
   .thousand {
     display: none;
   }
-  .one .cnt {
+  .one .thousand {
     display: block;
   }
-  .two .thousand {
+  .two .cnt {
     display: block;
   }
   .three .cnt {

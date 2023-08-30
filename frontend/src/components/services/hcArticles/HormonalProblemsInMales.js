@@ -1,4 +1,4 @@
-import { symptoms, riskFactors } from "../../../assets/data/HcSymptomsData";
+import { hcIcons } from "../../../assets/data/HcSymptomsData";
 import styled from "styled-components";
 
 const HormonalProblemsInMales = () => {
@@ -46,7 +46,7 @@ const HormonalProblemsInMales = () => {
           Signs and symptoms that you may experience include:
         </h5>
         <div className="icon-box d-flex flex-wrap gap-3">
-          {symptoms.map((item) => (
+          {hcIcons[0].hormonalProblemsInMales[0].symptoms.map((item) => (
             <div className="box">
               <img src={item.icon} alt="" />
               <h5>{item.symptom}</h5>
@@ -60,7 +60,7 @@ const HormonalProblemsInMales = () => {
           People are more susceptible to hormonal problems due to their:
         </h5>
         <div className="icon-box d-flex flex-wrap gap-3">
-          {riskFactors.map((item) => (
+          {hcIcons[0].hormonalProblemsInMales[0].riskFactors.map((item) => (
             <div className="box">
               <img src={item.icon} alt="" />
               <h5>{item.symptom}</h5>

@@ -20,7 +20,7 @@ const Navbar = ({ cartSize }) => {
             </li> */}
             <li>
               <li class="services ">
-                <NavLink to="/services" className="nav-list">
+                <NavLink to="#" className="nav-list">
                   Services
                 </NavLink>
                 <ul class="subMenu">
