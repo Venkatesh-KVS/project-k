@@ -1,4 +1,4 @@
-import { riskFactors } from "../../../assets/data/HcSymptomsData";
+import { hcIcons } from "../../../assets/data/HcSymptomsData";
 import styled from "styled-components";
 
 const InfertilityFemales = () => {
@@ -35,7 +35,7 @@ const InfertilityFemales = () => {
           The female infertility risk factors include:
         </h5>
         <div className="icon-box d-flex flex-wrap gap-3">
-          {riskFactors.map((item) => (
+          {hcIcons[0].infertilityFemales[0].riskFactors.map((item) => (
             <div className="box">
               <img src={item.icon} alt="" />
               <h5>{item.symptom}</h5>

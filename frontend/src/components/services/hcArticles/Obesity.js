@@ -1,4 +1,4 @@
-import { symptoms, riskFactors } from "../../../assets/data/HcSymptomsData";
+import { hcIcons } from "../../../assets/data/HcSymptomsData";
 import styled from "styled-components";
 
 const Obesity = () => {
@@ -16,18 +16,18 @@ const Obesity = () => {
         </p>
       </div>
 
-      <div className="questions">
+      {/* <div className="questions">
         <h3 className="question">How is obesity classified?</h3>
         <h5 className="include">
           Obesity is classified into three classes.They are as follows:
         </h5>
         <img src="" alt="" />
-      </div>
+      </div> */}
       <div className="questions">
         <h3 className="question">What are the symptoms?</h3>
         <h5 className="include">Symptoms of obesity include:</h5>
         <div className="icon-box d-flex flex-wrap gap-3">
-          {symptoms.map((item) => (
+          {hcIcons[0].obesity[0].symptoms.map((item) => (
             <div className="box">
               <img src={item.icon} alt="" />
               <h5>{item.symptom}</h5>
@@ -45,7 +45,7 @@ const Obesity = () => {
         </p>
         <h5 className="include">A few most common risk factors include:</h5>
         <div className="icon-box d-flex flex-wrap gap-3">
-          {riskFactors.map((item) => (
+          {hcIcons[0].obesity[0].riskFactors.map((item) => (
             <div className="box">
               <img src={item.icon} alt="" />
               <h5>{item.symptom}</h5>

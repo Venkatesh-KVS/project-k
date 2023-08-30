@@ -1,4 +1,4 @@
-import { symptoms, riskFactors } from "../../../assets/data/HcSymptomsData";
+import { hcIcons } from "../../../assets/data/HcSymptomsData";
 import styled from "styled-components";
 
 const InflammatoryBowelDisease = () => {
@@ -34,7 +34,7 @@ const InflammatoryBowelDisease = () => {
         </p>
         <h5 className="include">Common signs and symptoms of IBD include:</h5>
         <div className="icon-box d-flex flex-wrap gap-3">
-          {symptoms.map((item) => (
+          {hcIcons[0].inflammatoryBowelDisease[0].symptoms.map((item) => (
             <div className="box">
               <img src={item.icon} alt="" />
               <h5>{item.symptom}</h5>
@@ -49,7 +49,7 @@ const InflammatoryBowelDisease = () => {
           Risk factors for inflammatory bowel disease include:
         </h5>
         <div className="icon-box d-flex flex-wrap gap-3">
-          {riskFactors.map((item) => (
+          {hcIcons[0].inflammatoryBowelDisease[0].riskFactors.map((item) => (
             <div className="box">
               <img src={item.icon} alt="" />
               <h5>{item.symptom}</h5>

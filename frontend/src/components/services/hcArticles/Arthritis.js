@@ -1,4 +1,3 @@
-import React from "react";
 import { hcIcons } from "../../../assets/data/HcSymptomsData";
 // import { symptomsData } from "../../../assets/data/HcSymptomsData";
 import styled from "styled-components";
