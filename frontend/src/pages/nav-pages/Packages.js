@@ -33,7 +33,7 @@ const Packages = ({ handleClick }) => {
                   className={tab.id === activeTab ? "active" : ""}
                   onClick={() => setActiveTab(tab.id)}
                 >
-                  {tab.title}
+                  {tab.name}
                 </button>
               ))}
             </div>

@@ -8,27 +8,26 @@ import SearchBar from "../requiredPages/SearchBar";
 
 const ToggleKT = ({ handleClick }) => {
   const [searchResults, setSearchResults] = useState([]);
-  // const [searchByOrg, setsearchByOrg] = useState([])
   
   return (
     <Wrapper>
       <div className="s2-kt mt-4">
         <div className="selectionBox mx-auto d-flex gap-2 mb-4">
-          <div className="a-zBox w-50" style={{ width: "40%" }}>
+          <div className="a-zBox" style={{ width: "35%" }}>
             <div className="kt-a-z d-flex flex-wrap">
               <SearchBar searchResults={searchResults} setSearchResults={setSearchResults} />
               <AtoZ setSearchResults={setSearchResults} />
             </div>
           </div>
-          <div className="organsBox w-50">
+          <div className="organsBox">
             <div className="kt-organs ">
               <OrganCarousel images={organImages} setSearchResults={setSearchResults} />
             </div>
           </div>
         </div>
-        <div className="results d-flex flex-wrap gap-3 justify-content-center">
+        <div className="results d-flex flex-wrap gap-2 justify-content-center">
           {
-            searchResults.slice(0, 6).map((item, index) => (
+            searchResults.slice(0, 8).map((item, index) => (
               <TestCard key={index} item={item} handleClick={handleClick} />
             ))
           }
@@ -85,7 +84,7 @@ const Wrapper = styled.section`
   /* ---------------------- */
 
   .selectionBox {
-    width: 85%;
+    ${'' /* width: 85%; */}
     .kt-organs {
       align-items: center;
       &:hover {

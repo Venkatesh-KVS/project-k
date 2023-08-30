@@ -13,7 +13,7 @@ const HpCard = ({ item, handleClick }) => {
             <img src={item.ftrImg} alt="k" />
           </div>
           <div className="p-2">
-            <h2 className=" r_heading_title_secondary">{item.title}</h2>
+            <h2 className=" r_heading_title_secondary">{item.name}</h2>
             <span>Code: {item.code}</span>
             <hr />
             <div className="d-flex align-items-center justify-content-between">

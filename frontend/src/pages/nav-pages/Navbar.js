@@ -71,61 +71,64 @@ const Navbar = ({ cartSize }) => {
 
 export default Navbar;
 const Wrapper = styled.section`
-  .navbar {
-    z-index: 98;
-  }
+.navbar {
+  ${'' /* background-color: #fff; */}
+}
+.container {
+  padding: 10px 20px;
+}
+.navbar-lists {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.nav-list {
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
 
-  .nav-list {
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 1rem;
-    font-weight: 600;
-    /* letter-spacing: 0.5px; */
-    color: ${({ theme }) => theme.colors.primary};
-    border-bottom: 1.8px solid transparent;
-    transition: 0.3s;
+/* Hover effect for navigation items */
+.nav-list:hover {
+  color: ${({ theme }) => theme.colors.primary};
+}
 
-    &:hover {
-      border-bottom: 1.8px solid ${({ theme }) => theme.colors.primary};
-    }
-  }
-  .services {
-    list-style: none;
-    position: relative;
-    .subMenu {
-      /* border: 2px solid red; */
-      position: absolute;
-      list-style: none;
-      width: 225px;
-      display: none;
-      background-color: ${({ theme }) => theme.colors.white};
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 25px 0px;
-      top: 1.5rem;
-      left: -1rem;
-      transition: 0.3s;
-      border-radius: 0 0 5px 5px;
-      padding: 10px 15px;
-      .subMenuItem {
-        margin-bottom: 5px;
-      }
-      .sub-nav-list {
-        color: ${({ theme }) => theme.colors.primary};
+/* Style for submenu items */
+.subMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  display: none; /* Hide submenu by default */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-        &:hover {
-          transition: 0.3s;
-          padding-bottom: 0;
-          border-bottom: 1px solid ${({ theme }) => theme.colors.primary};
-          overflow: hidden;
-        }
-      }
-    }
+.subMenuItem {
+  position: relative;
+}
 
-    &:hover .subMenu {
-      display: block;
-    }
-  }
+.sub-nav-list {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
 
-  .navbar-lists {
-    gap: 1.8rem;
-  }
+/* Hover effect for submenu items */
+.sub-nav-list:hover {
+  background-color: #f2f2f2; /* Change background color on hover */
+}
+
+/* Show submenu on parent item hover */
+.services:hover .subMenu {
+  display: block;
+}
+
 `;

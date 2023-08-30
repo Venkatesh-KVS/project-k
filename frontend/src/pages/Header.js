@@ -37,7 +37,7 @@ const Header = ({ cartSize }) => {
                 </NavLink>
               </div>
               <div className="cart-icon">
-                <NavLink to="/cart" className="cart-icon-box">
+                <NavLink to="/cart">
                   <CartIcon size={cartSize} />
                 </NavLink>
               </div>
@@ -130,31 +130,6 @@ const Wrapper = styled.section`
     border-radius: 5px;
     &:focus {
       outline-style: none;
-    }
-  }
-  .cart-icon {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    svg {
-      font-size: 22px;
-      fill: ${({ theme }) => theme.colors.primary};
-    }
-    span {
-      position: absolute;
-      color: ${({ theme }) => theme.colors.white};
-      top: -12px;
-      height: 15px;
-      width: 15px;
-      /* background-color: red; */
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-      margin: 0;
-      font-size: 14px;
-      font-weight: 600;
     }
   }
 `;

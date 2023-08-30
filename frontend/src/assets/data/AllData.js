@@ -12,9 +12,9 @@ import WholeBodyPackage from "../../components/healthpackages/WholeBodyPackage";
 
 export const packagesData = [
   {
-    id: 1,
+    id: "hp001",
     code: "001",
-    title: "Health Screen",
+    name: "Health Screen",
     price: 1499,
     ftrImg: "/images/health-packages/hp-FeatureImages/healthScreening.jpg",
     excerpt:
@@ -22,9 +22,9 @@ export const packagesData = [
     content: <HealthScreen />,
   },
   {
-    id: 2,
+    id: "hp002",
     code: "002",
-    title: "Diabetic Package",
+    name: "Diabetic Package",
     price: 2499,
     ftrImg: "/images/health-packages/hp-FeatureImages/diabetes_package.jpg",
     excerpt:
@@ -32,9 +32,9 @@ export const packagesData = [
     content: <DiabeticPackage />,
   },
   {
-    id: 3,
+    id: "hp003",
     code: "003",
-    title: "Konnect Master Health Checkup",
+    name: "Konnect Master Health Checkup",
     price: 2999,
     ftrImg:
       "/images/health-packages/hp-FeatureImages/master_health_checkup.jpg",
@@ -43,9 +43,9 @@ export const packagesData = [
     content: <MasterHealthCheckup />,
   },
   {
-    id: 4,
+    id: "hp004",
     code: "004",
-    title: "Executive Health Checkup",
+    name: "Executive Health Checkup",
     price: 5799,
     ftrImg:
       "/images/health-packages/hp-FeatureImages/executive_health_checkup.jpg",
@@ -54,9 +54,9 @@ export const packagesData = [
     content: <ExecutiveHealthCheckup />,
   },
   {
-    id: 5,
+    id: "hp005",
     code: "005",
-    title: "Cardiac Profile",
+    name: "Cardiac Profile",
     price: 2999,
     ftrImg: "/images/health-packages/hp-FeatureImages/cardiac_profile.jpg",
     excerpt:
@@ -64,9 +64,9 @@ export const packagesData = [
     content: <CardiacProfile />,
   },
   {
-    id: 6,
+    id: "hp006",
     code: "006",
-    title: "Executive Cardiac Profile",
+    name: "Executive Cardiac Profile",
     price: 4999,
     ftrImg:
       "/images/health-packages/hp-FeatureImages/executive_cardiac_profile.jpg",
@@ -75,9 +75,9 @@ export const packagesData = [
     content: <ExecutiveCardiacProfile />,
   },
   {
-    id: 7,
+    id: "hp007",
     code: "007",
-    title: "Well Women Package",
+    name: "Well Women Package",
     price: 6999,
     ftrImg: "/images/health-packages/hp-FeatureImages/well_women_package.jpg",
     excerpt:
@@ -85,9 +85,9 @@ export const packagesData = [
     content: <WellWomenPackage />,
   },
   {
-    id: 8,
+    id: "hp008",
     code: "008",
-    title: "Nutrition package",
+    name: "Nutrition package",
     price: 1999,
     ftrImg: "/images/health-packages/hp-FeatureImages/nutrition_package.jpg",
     excerpt:
@@ -95,9 +95,9 @@ export const packagesData = [
     content: <NutritionPackage />,
   },
   {
-    id: 9,
+    id: "hp009",
     code: "009",
-    title: "Whole Body Package",
+    name: "Whole Body Package",
     price: 9999,
     ftrImg: "/images/health-packages/hp-FeatureImages/whole_body.jpg",
     excerpt:
@@ -105,9 +105,9 @@ export const packagesData = [
     content: <WholeBodyPackage />,
   },
   {
-    id: 10,
+    id: "hp010",
     code: "010",
-    title: "Cancer Screening – Male",
+    name: "Cancer Screening – Male",
     price: 17999,
     ftrImg:
       "/images/health-packages/hp-FeatureImages/cancer_screening_male.jpg",
@@ -116,9 +116,9 @@ export const packagesData = [
     content: <CancerScreeningMale />,
   },
   {
-    id: 11,
+    id: "hp011",
     code: "011",
-    title: "Cancer Screening – Female",
+    name: "Cancer Screening – Female",
     price: 19999,
     ftrImg:
       "/images/health-packages/hp-FeatureImages/cancer_screening_female.jpg",
