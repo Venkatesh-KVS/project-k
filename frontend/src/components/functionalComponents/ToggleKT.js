@@ -16,7 +16,7 @@ const ToggleKT = ({ handleClick }) => {
         try {
             const response = await axios.get("https://konnectserver.infocusrx.work/search?q=A");
             setSearchResults(response.data);
-            console.log("fetched");
+            // console.log("fetched");
         } catch (error) {
             console.error(error);
         }
