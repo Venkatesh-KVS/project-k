@@ -168,6 +168,75 @@ export const organImages = [
   },
 ];
 
+export const initialTests = [
+  {
+      "id": "INV100",
+      "name": "Allergen Panel-Veg + Inhalant",
+      "price": 4000,
+      "sample_type": "Pleural fluid, csf",
+      "pre_test_preparation": "No special prepration required",
+      "test_report_delivery": "Same day Report",
+      "frequency": "As prescribed by your Doctor",
+      "home_sample_collection": "Location",
+      "category": "Prostate"
+  },
+  {
+      "id": "INV101",
+      "name": "Allergen Panel-Veg + Non-Veg",
+      "price": 8000,
+      "sample_type": "10 mL Peritoneal Fluid",
+      "pre_test_preparation": "No special prepration required",
+      "test_report_delivery": "Same day Report",
+      "frequency": "As prescribed by your Doctor",
+      "home_sample_collection": "Location",
+      "category": "Thyroid"
+  },
+  {
+      "id": "INV102",
+      "name": "Allergen Panel-Veg+Non Veg.+Inhalant",
+      "price": 10000,
+      "sample_type": "Urine",
+      "pre_test_preparation": "No special prepration required",
+      "test_report_delivery": "Same day Report",
+      "frequency": "As prescribed by your Doctor",
+      "home_sample_collection": "Location",
+      "category": "Heart"
+  },
+  {
+      "id": "INV103",
+      "name": "Allergen Panel-Veg+Non Veg.+Inhalant+Drugs",
+      "price": 15000,
+      "sample_type": "Blood",
+      "pre_test_preparation": "No special prepration required",
+      "test_report_delivery": "Same day Report",
+      "frequency": "As prescribed by your Doctor",
+      "home_sample_collection": "Location",
+      "category": "Diabetes"
+  },
+  {
+      "id": "INV104",
+      "name": "Allergen Panel-Vegetarian",
+      "price": 6000,
+      "sample_type": "Pleural fluid, csf",
+      "pre_test_preparation": "No special prepration required",
+      "test_report_delivery": "Same day Report",
+      "frequency": "As prescribed by your Doctor",
+      "home_sample_collection": "Location",
+      "category": "Allergy"
+  },
+  {
+      "id": "INV105",
+      "name": "ALLERGY PANEL (FOOD AND DRUGS)",
+      "price": 12000,
+      "sample_type": "11 mL Peritoneal Fluid",
+      "pre_test_preparation": "No special prepration required",
+      "test_report_delivery": "Same day Report",
+      "frequency": "As prescribed by your Doctor",
+      "home_sample_collection": "Location",
+      "category": "Kidneys"
+  }
+]
+
 export const testsData = [
   {
     id: 1,

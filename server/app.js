@@ -137,6 +137,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const salt = 10;
 const app = express();
+const nodemailer = require('nodemailer');
 
 app.use(express.json());
 app.use(bodyParser.json());
@@ -165,21 +166,18 @@ const db = mysql.createConnection({
     database: 'infocusr_konnect'
 });
 
-db.connect(err => {
-    if (err) {
-        console.error('Database connection error:', err);
-    } else {
-        console.log('Connected to the database');
-    }
-});
+// db.connect(err => {
+//     if (err) {
+//         console.error('Database connection error:', err);
+//     } else {
+//         console.log('Connected to the database');
+//     }
+// });
 
 app.post('/register', (req, res) => {
     const values = req.body.values;
     
     const sql = 'SELECT * FROM tests';
-    // const sql = "INSERT INTO names (`name`) VALUES (?)";
-    
-    // db.query(sql, [values.name], (err, results) => {
     db.query(sql, (err, results) => {
         if (err) {
             console.error('Database query error:', err);
@@ -236,7 +234,7 @@ app.get('/orgsel', (req, res) => {
   });
 
 app.post('/sendemail', async (req, res) => {
-    const { name, email, message } = req.body;
+    const { firstName, lastName, email, mobileNumber, message, selectedTests} = req.body;
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -246,7 +244,7 @@ app.post('/sendemail', async (req, res) => {
     });
     
     const mailOptions = {
-      from: name,
+      from: email,
       to: "shaikmahmoodsameer@gmail.com",
       subject: 'Konnect Booked Tests...',
       text: `Name: ${firstName + " " + lastName}\nEmail: ${email}\n ${mobileNumber}\n Message: ${message}\n Selected Items: ${selectedTests}`
@@ -261,5 +259,7 @@ app.post('/sendemail', async (req, res) => {
     }
   });
 
-app.listen(process.env.PORT || 8081)
+app.listen(process.env.PORT || 8081, () => {
+  console.log("server app running...");
+})
 

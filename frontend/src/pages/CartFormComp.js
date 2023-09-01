@@ -29,8 +29,8 @@ function CartFormComp({cart}) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        await axios.post('http://localhost:8081/sendemail', formData);
-        console.log('Email sent successfully');
+        const response = await axios.post('https://konnectserver.infocusrx.work/sendemail', formData);
+        console.log(response.data);
         setSubmitted(true);
       } catch (error) {
         console.error('Error sending email:', error);

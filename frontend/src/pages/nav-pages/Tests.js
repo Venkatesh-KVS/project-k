@@ -1,14 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { styled } from "styled-components";
 import TestsBanner from "../../components/testsComponents/TestsBanner";
 import TestsFilterBarLeft from "../../components/testsComponents/TestsFilterBarLeft";
 import { TestCard } from "../../components/requiredPages/TestCard";
+// import { initialTests } from "../../assets/data/AllData";
+import axios from "axios";
 
 const cardsPerPage  = 9;
 
 const Tests = ({ handleClick }) => {
   const [searchResults, setSearchResults] = useState([]);
-
+  useEffect(() => {
+    // Fetch initial data and set it into setSearchResults
+    async function fetchInitialData() {
+        try {
+            const response = await axios.get(`https://konnectserver.infocusrx.work/orgsel?selectedorgan=heart`);
+            setSearchResults(response.data);
+            console.log("fetched");
+        } catch (error) {
+            console.error(error);
+        }
+    } 
+    fetchInitialData();
+  }, []);
   // pagination
   const [currentPage, setCurrentPage] = useState(1);
   const totalPages = Math.ceil(searchResults.length / cardsPerPage);
@@ -261,30 +275,30 @@ const Wrapper = styled.section`
     width: 20%;
     height: 100%;
     padding: 10px;
-    ${'' /* background: rgba(0,0,0,0.05); */}
-    .org-item{
-      background: white;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-      border-radius: 4px;
-      width: 100%;
-      padding: 5px 10px;
-      ${'' /* height: 90px; */}
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      cursor: pointer;
-      transition: 0.4s;
-      img {
-        width: 30px;
-        margin: 5px;
-        ${'' /* background: red; */}
+    .organs{
+      .org-item{
+        background: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        border-radius: 4px;
+        width: 100%;
+        padding: 5px 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.4s;
+        img {
+          width: 30px;
+          margin: 5px;
+          ${'' /* background: red; */}
+        }
+        &:hover {
+          background-color: rgba(0,0,0,0.05);
+        }
       }
-      &:hover {
-        background-color: ${({ theme }) => theme.colors.primary};
-        color: white;
-      }
-      &:hover p {
-        color: white;
+      .active::after{
+        height: 3px;
+        width: 100%;
       }
     }
   }
@@ -297,10 +311,6 @@ const Wrapper = styled.section`
   }
 
   .box-right-top {
-    ${'' /* padding: 1.5rem; */}
-    ${'' /* background-image: linear-gradient(180deg, #005bab, #00aeef90); */}
-    ${'' /* background-color: #00ffbb50; */}
-    ${'' /* margin-bottom: 2rem; */}
     border-radius: 15px;
     .categories {
       display: flex;
@@ -325,61 +335,3 @@ const Wrapper = styled.section`
     }
   }
 `;
-// import styled from "styled-components";
-// import PostCategory from "../../components/tests/PostCategory";
-// import { CategoryData } from "../../components/tests/CategoryData";
-
-// const Tests = () => {
-//   return (
-//     <Wrapper className="tests">
-//       <div className="banner-bg d-flex">
-//         <div className="banner-cnt container flex">
-//           <h2>Tests</h2>
-//           <p>
-//             <span>Home</span>
-//             tests
-//           </p>
-//         </div>
-//       </div>
-//       <div className="container tests-container d-flex">
-//         <PostCategory
-//           category={CategoryData}
-//           posts={CategoryData.category}
-//           organ={CategoryData.organ}
-//         />
-//       </div>
-//     </Wrapper>
-//   );
-// };
-
-// export default Tests;
-
-// const Wrapper = styled.section`
-//   .banner-cnt {
-//     h2 {
-//       font-weight: 600;
-//       color: #005bab;
-//       font-size: 2rem;
-//     }
-//     p {
-//       font-size: 15px;
-//       color: #fff;
-//       span {
-//         color: #00203c;
-//         font-family: inherit;
-//       }
-//     }
-//   }
-//   .banner-bg {
-//     height: 15em;
-//     align-items: center;
-//     background: linear-gradient(
-//         0deg,
-//         rgba(0, 32, 60, 0),
-//         rgba(0, 174, 239, 0.3)
-//       ),
-//       url("https://img.freepik.com/free-photo/hand-with-protective-gloves-holding-blood-samples-covid-test_23-2148958363.jpg?w=740&t=st=1687859208~exp=1687859808~hmac=491da7442440e03cf55afa8972abd0012801bee4edec64a85a3e75919e4ba541");
-//     background-size: cover;
-//     background-position: bottom center;
-//   }
-// `;

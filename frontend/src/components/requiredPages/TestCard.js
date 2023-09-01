@@ -14,6 +14,7 @@ export const TestCard = ({item, handleClick}) => {
   return (
     <Wrapper>
       <div className="tstCards d-flex gap-2">
+        <img src="/images/k.png" className="cardcomplogo" alt="" />
         <div className="tstsCard w-100">
           <div className="go-corner">
             {/* <div className="go-arrow">→</div> */}
@@ -23,12 +24,12 @@ export const TestCard = ({item, handleClick}) => {
               <img src={"/images/organs/" + item.category + ".png"} className="testOrgImg" alt="" />
             </div>
             <h5 className="tstTitle">{item.name}</h5>
-            <p className="tstInv"> INVCODE: <b> {item.id} </b> </p>
+            <p className="tstInv"> <b> INVCODE: </b> {item.id} </p>
             <div className="w-100 mb-4 more-det">
-              <p className="tstInv"> Sample Type: <b> {item.sample_type} </b> </p>
+              <p className="tstInv"> <b> Sample Type: </b> {item.sample_type} </p>
               {/* <p className="tstInv"> Pre test preparation: <b> {item.pre_test_preparation} </b> </p> */}
-              <p className="tstInv"> Test Report Delivery: <b> {item.test_report_delivery} </b> </p>
-              <p className="tstInv"> Frequency: <b> {item.frequency} </b> </p>
+              <p className="tstInv"> <b> Test Report Delivery: </b> {item.test_report_delivery} </p>
+              <p className="tstInv"> <b> Frequency: </b> {item.frequency} </p>
               {/* <p className="tstInv"> Home sample collection: <b> {item.home_sample_collection } </b> </p> */}
             </div>
           </div>
@@ -68,34 +69,21 @@ const Wrapper = styled.section`
     .card_org_cont{
       margin-bottom: 15px;
       .testOrgImg{
-        width: 25px;
+        width: 30px;
       }
     }
     &:hover{
-      ${'' /* border: 1px solid ${({ theme }) => theme.colors.primary}; */}
       border: 1px solid rgba(0,0,0,0.2);
       box-shadow: rgba(255, 255, 255, 0.02) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.05) 0px 50px 100px -20px, rgba(0, 0, 0, 0.06) 0px 30px 60px -30px;
     }
-  }
-
-  .go-corner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    overflow: hidden;
-    top: 0;
-    right: 0;
-    background-color: ${({ theme }) => theme.colors.primary};
-    border-radius: 0 4px 0 32px;
-  }
-  .go-arrow {
-    margin-top: -4px;
-    margin-right: -4px;
-    color: white;
-    font-family: courier, sans;
+    .cardcomplogo{
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: 10px;
+      right: 10px;
+      z-index: 20;
+    }
   }
   .tcardbody{
     z-index: 2;
@@ -103,22 +91,23 @@ const Wrapper = styled.section`
     overflow: hidden;
     position: relative;
   }
-  .tcardbody:before {
+  ${'' /* .tcardbody:before {
     content: "";
     position: absolute;
     z-index: -1;
-    top: -26px;
-    right: -26px;
-    background: ${({ theme }) => theme.colors.primary};
+    top: 0;
+    right: 0;
+    background: none;
+    border: 3px
     height: 52px;
     width: 52px;
     border-radius: 32px;
-    ${'' /* transform: scale(21); */}
+    transform: scale(1);
     transform-origin: 50% 50%;
     transition: transform 0.25s ease-out;
   }
-  ${'' /* .tstCards .tcardbody:hover:before {
-    transform: scale(21);
+  .tstCards:hover .tcardbody:before {
+    transform: scale(2.5);
   } */}
   .tcardfooter{
       z-index: 3;
@@ -129,10 +118,7 @@ const Wrapper = styled.section`
       background: rgba(0,0,0,0.05)
   }
   .tstCards:hover {
-    ${'' /* &:hover .tstPrice {
-      color: ${({ theme }) => theme.colors.white};
-    } */}
-
+    cursor: pointer;
     &:hover .tstCardBtn {
       color: ${({ theme }) => theme.colors.txt};
       background-color: ${({ theme }) => theme.colors.white};
@@ -140,11 +126,10 @@ const Wrapper = styled.section`
   }
 
   .tstsCard {
-    height: 320px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     transition: 0.5s;
-    
     .tstCardBtn {
       background-image: linear-gradient(180deg, #005bab, #00aeef90);
       padding: 5px 15px;
@@ -211,13 +196,7 @@ const Wrapper = styled.section`
     background-color: ${({ theme }) => theme.colors.white};
     color: ${({ theme }) => theme.colors.white};
   }
-
   .para {
     color: #fff;
   }
-  ${'' /* .tstCards:hover .tstTitle,
-  .tstCards:hover .tstInv,
-  .tstCards:hover .tstInv b {
-    color: white;
-  } */}
 `;
