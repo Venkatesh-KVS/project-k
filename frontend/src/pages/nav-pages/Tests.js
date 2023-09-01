@@ -1,37 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { styled } from "styled-components";
 import TestsBanner from "../../components/testsComponents/TestsBanner";
 import TestsFilterBarLeft from "../../components/testsComponents/TestsFilterBarLeft";
-import { TestCard } from "../../components/requiredPages/TestCard";
-
-const cardsPerPage  = 9;
+import axios from "axios";
+import TestsGrid from "../../components/testsComponents/TestsGrid";
 
 const Tests = ({ handleClick }) => {
   const [searchResults, setSearchResults] = useState([]);
-
-  // pagination
-  const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = Math.ceil(searchResults.length / cardsPerPage);
-  const handlePageChange = (newPage) => {
-    setCurrentPage(newPage);
-  };
-  const startIndex = (currentPage - 1) * cardsPerPage;
-  const endIndex = startIndex + cardsPerPage;
-  const visibleCards = searchResults.slice(startIndex, endIndex);
-  const getPageNumbers = () => {
-    const visiblePageNumbers = [];
-    if (currentPage > 3) {
-      visiblePageNumbers.push('...');
-    }
-    for (let i = Math.max(1, currentPage - 1); i <= Math.min(totalPages, currentPage + 1); i++) {
-      visiblePageNumbers.push(i);
-    }
-    if (currentPage < totalPages - 2) {
-      visiblePageNumbers.push('...');
-    }
-    return visiblePageNumbers;
-  };
-  // pagination
+  useEffect(() => {
+    async function fetchInitialData() {
+        try {
+            const response = await axios.get(`https://konnectserver.infocusrx.work/orgsel?selectedorgan=heart`);
+            setSearchResults(response.data);
+            // console.log("fetched");
+        } catch (error) {
+            console.error(error);
+        }
+    } 
+    fetchInitialData();
+  }, []);
   
   return (
     <Wrapper className="testspage">
@@ -39,42 +26,7 @@ const Tests = ({ handleClick }) => {
       <div className="container tests-container d-flex">
         <TestsFilterBarLeft setSearchResults={setSearchResults} />
         <div className="box-right">
-          <div className="box-right-top">
-            <div className="categories bg-light d-flex justify-content-between align-items-center border rounded py-2">
-              <h6 className="px-4 py-2 rounded text-dark fw-bold small">Total tests {searchResults.length}</h6>
-            </div>
-          </div>
-          <div className="box-right-bottom mt-3">
-            <div className="d-flex justify-content-start flex-wrap gap-3">
-              {
-                visibleCards.map((item) => (
-                  <TestCard key={item.id} item={item} handleClick={handleClick} />
-                ))
-              }
-            </div>
-          </div>
-
-          <div className="pagination">
-            <button onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1}>
-              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-                <path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160zm352-160l-160 160c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L301.3 256 438.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0z"/>
-              </svg>
-            </button>
-            {getPageNumbers().map((pageNumber, index) => (
-              <button 
-                key={index} 
-                onClick={() => {if (pageNumber !== '...') {handlePageChange(pageNumber);}}}
-                className={currentPage === pageNumber ? "active" : ""}
-              >
-                {pageNumber}
-              </button>
-            ))}
-            <button onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages} >
-              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-                <path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/>
-              </svg>
-            </button>
-          </div>
+          <TestsGrid handleClick={handleClick} searchResults={searchResults} cardsPerPage={9} />
         </div>
       </div>
     </Wrapper>
@@ -90,7 +42,6 @@ const Wrapper = styled.section`
     justify-content: center;
     margin-top: 20px;
   }
-
   .pagination button {
     width: 30px;
     height: 30px;
@@ -102,7 +53,6 @@ const Wrapper = styled.section`
     font-weight: 700;
     margin: 0 5px;
     outline: none;
-    /* padding: 5px 10px; */
     transition: color 0.3s;
   }
 
@@ -261,30 +211,30 @@ const Wrapper = styled.section`
     width: 20%;
     height: 100%;
     padding: 10px;
-    ${'' /* background: rgba(0,0,0,0.05); */}
-    .org-item{
-      background: white;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-      border-radius: 4px;
-      width: 100%;
-      padding: 5px 10px;
-      ${'' /* height: 90px; */}
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      cursor: pointer;
-      transition: 0.4s;
-      img {
-        width: 30px;
-        margin: 5px;
-        ${'' /* background: red; */}
+    .organs{
+      .org-item{
+        background: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        border-radius: 4px;
+        width: 100%;
+        padding: 5px 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.4s;
+        img {
+          width: 30px;
+          margin: 5px;
+          ${'' /* background: red; */}
+        }
+        &:hover {
+          background-color: rgba(0,0,0,0.05);
+        }
       }
-      &:hover {
-        background-color: ${({ theme }) => theme.colors.primary};
-        color: white;
-      }
-      &:hover p {
-        color: white;
+      .active::after{
+        height: 3px;
+        width: 100%;
       }
     }
   }
@@ -297,10 +247,6 @@ const Wrapper = styled.section`
   }
 
   .box-right-top {
-    ${'' /* padding: 1.5rem; */}
-    ${'' /* background-image: linear-gradient(180deg, #005bab, #00aeef90); */}
-    ${'' /* background-color: #00ffbb50; */}
-    ${'' /* margin-bottom: 2rem; */}
     border-radius: 15px;
     .categories {
       display: flex;
@@ -325,61 +271,3 @@ const Wrapper = styled.section`
     }
   }
 `;
-// import styled from "styled-components";
-// import PostCategory from "../../components/tests/PostCategory";
-// import { CategoryData } from "../../components/tests/CategoryData";
-
-// const Tests = () => {
-//   return (
-//     <Wrapper className="tests">
-//       <div className="banner-bg d-flex">
-//         <div className="banner-cnt container flex">
-//           <h2>Tests</h2>
-//           <p>
-//             <span>Home</span>
-//             tests
-//           </p>
-//         </div>
-//       </div>
-//       <div className="container tests-container d-flex">
-//         <PostCategory
-//           category={CategoryData}
-//           posts={CategoryData.category}
-//           organ={CategoryData.organ}
-//         />
-//       </div>
-//     </Wrapper>
-//   );
-// };
-
-// export default Tests;
-
-// const Wrapper = styled.section`
-//   .banner-cnt {
-//     h2 {
-//       font-weight: 600;
-//       color: #005bab;
-//       font-size: 2rem;
-//     }
-//     p {
-//       font-size: 15px;
-//       color: #fff;
-//       span {
-//         color: #00203c;
-//         font-family: inherit;
-//       }
-//     }
-//   }
-//   .banner-bg {
-//     height: 15em;
-//     align-items: center;
-//     background: linear-gradient(
-//         0deg,
-//         rgba(0, 32, 60, 0),
-//         rgba(0, 174, 239, 0.3)
-//       ),
-//       url("https://img.freepik.com/free-photo/hand-with-protective-gloves-holding-blood-samples-covid-test_23-2148958363.jpg?w=740&t=st=1687859208~exp=1687859808~hmac=491da7442440e03cf55afa8972abd0012801bee4edec64a85a3e75919e4ba541");
-//     background-size: cover;
-//     background-position: bottom center;
-//   }
-// `;

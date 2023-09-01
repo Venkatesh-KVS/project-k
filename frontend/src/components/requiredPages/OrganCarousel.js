@@ -6,7 +6,6 @@ const OrganCarousel = ({ images, setSearchResults }) => {
   const handleOrgSel = async (event) => {
     const selectedOrg = event.currentTarget.querySelector('img').alt;
     try {
-      // const response = await axios.get(`http://localhost:8081/orgsel?selectedorgan=${selectedOrg}`);
       const response = await axios.get(`https://konnectserver.infocusrx.work/orgsel?selectedorgan=${selectedOrg}`);
       setSearchResults(response.data);
     } catch (error) {
