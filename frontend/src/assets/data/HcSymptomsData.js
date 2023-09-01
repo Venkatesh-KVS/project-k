@@ -2156,7 +2156,7 @@ export const hcIcons = [
           {
             id: 3,
             symptom: "Fever  ",
-            icon: "/images/icons/HC-icons/Tuberculosis/fever.svg",
+            icon: "/images/icons/HC-icons/similar/fever.svg",
           },
           {
             id: 4,
