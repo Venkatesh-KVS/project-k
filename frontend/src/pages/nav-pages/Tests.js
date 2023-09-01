@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react";
 import { styled } from "styled-components";
 import TestsBanner from "../../components/testsComponents/TestsBanner";
 import TestsFilterBarLeft from "../../components/testsComponents/TestsFilterBarLeft";
-import { TestCard } from "../../components/requiredPages/TestCard";
+// import { TestCard } from "../../components/requiredPages/TestCard";
 // import { initialTests } from "../../assets/data/AllData";
 import axios from "axios";
+import TestsGrid from "../../components/testsComponents/TestsGrid";
 
-const cardsPerPage  = 9;
+// const cardsPerPage  = 9;
 
 const Tests = ({ handleClick }) => {
   const [searchResults, setSearchResults] = useState([]);
@@ -24,27 +25,27 @@ const Tests = ({ handleClick }) => {
     fetchInitialData();
   }, []);
   // pagination
-  const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = Math.ceil(searchResults.length / cardsPerPage);
-  const handlePageChange = (newPage) => {
-    setCurrentPage(newPage);
-  };
-  const startIndex = (currentPage - 1) * cardsPerPage;
-  const endIndex = startIndex + cardsPerPage;
-  const visibleCards = searchResults.slice(startIndex, endIndex);
-  const getPageNumbers = () => {
-    const visiblePageNumbers = [];
-    if (currentPage > 3) {
-      visiblePageNumbers.push('...');
-    }
-    for (let i = Math.max(1, currentPage - 1); i <= Math.min(totalPages, currentPage + 1); i++) {
-      visiblePageNumbers.push(i);
-    }
-    if (currentPage < totalPages - 2) {
-      visiblePageNumbers.push('...');
-    }
-    return visiblePageNumbers;
-  };
+  // const [currentPage, setCurrentPage] = useState(1);
+  // const totalPages = Math.ceil(searchResults.length / cardsPerPage);
+  // const handlePageChange = (newPage) => {
+  //   setCurrentPage(newPage);
+  // };
+  // const startIndex = (currentPage - 1) * cardsPerPage;
+  // const endIndex = startIndex + cardsPerPage;
+  // const visibleCards = searchResults.slice(startIndex, endIndex);
+  // const getPageNumbers = () => {
+  //   const visiblePageNumbers = [];
+  //   if (currentPage > 3) {
+  //     visiblePageNumbers.push('...');
+  //   }
+  //   for (let i = Math.max(1, currentPage - 1); i <= Math.min(totalPages, currentPage + 1); i++) {
+  //     visiblePageNumbers.push(i);
+  //   }
+  //   if (currentPage < totalPages - 2) {
+  //     visiblePageNumbers.push('...');
+  //   }
+  //   return visiblePageNumbers;
+  // };
   // pagination
   
   return (
@@ -53,7 +54,8 @@ const Tests = ({ handleClick }) => {
       <div className="container tests-container d-flex">
         <TestsFilterBarLeft setSearchResults={setSearchResults} />
         <div className="box-right">
-          <div className="box-right-top">
+          <TestsGrid handleClick={handleClick} searchResults={searchResults} cardsPerPage={9} />
+          {/* <div className="box-right-top">
             <div className="categories bg-light d-flex justify-content-between align-items-center border rounded py-2">
               <h6 className="px-4 py-2 rounded text-dark fw-bold small">Total tests {searchResults.length}</h6>
             </div>
@@ -88,7 +90,7 @@ const Tests = ({ handleClick }) => {
                 <path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/>
               </svg>
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </Wrapper>
