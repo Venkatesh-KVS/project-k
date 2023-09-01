@@ -22,7 +22,6 @@ const Cart = ({cart, setCart}) => {
     const handleRemove = (id) =>{
         const arr = cart.filter((item)=>item.id !== id);
         setCart(arr);
-        // handlePrice();
     }
 
     useEffect(()=>{
@@ -70,10 +69,10 @@ export default Cart;
 
 
 const Wrapper = styled.section`
-*{
+${'' /* *{
     margin: 0;
     padding: 0;
-}
+} */}
 article{
     margin: auto;
     background-image: 'url("/project-konnect/images/k-10.png")';

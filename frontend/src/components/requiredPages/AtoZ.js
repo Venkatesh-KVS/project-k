@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 
 const alphbtns = {
@@ -9,11 +9,13 @@ const alphbtns = {
 
 function AtoZ({ setSearchResults }) {
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  const [activeLetter, setActiveLetter] = useState(''); // Default active letter is 'A'
+
   const handleButtonClick = async (letter) => {
     try {
-      // const response = await axios.get(`http://localhost:8081/getbyletter?l=${letter}`);
       const response = await axios.get(`https://konnectserver.infocusrx.work/getbyletter?l=${letter}`);
       setSearchResults(response.data);
+      setActiveLetter(letter); // Set the clicked letter as active
     } catch (error) {
       console.error(error);
     }
@@ -21,9 +23,13 @@ function AtoZ({ setSearchResults }) {
 
   return (
     <div>
-      {/* <AlphabetButtons letters={alphabet} /> */}
       {alphabet.map((letter) => (
-        <button key={letter} className='btn btn-outline-dark' style={alphbtns} onClick={() => handleButtonClick(letter)}>
+        <button
+          key={letter}
+          className={`btn btn-outline-dark ${activeLetter === letter ? 'active' : ''}`}
+          style={alphbtns}
+          onClick={() => handleButtonClick(letter)}
+        >
           {letter}
         </button>
       ))}
@@ -32,3 +38,5 @@ function AtoZ({ setSearchResults }) {
 }
 
 export default AtoZ;
+
+ 
