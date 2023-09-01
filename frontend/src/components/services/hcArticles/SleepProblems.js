@@ -1,4 +1,4 @@
-import { symptoms, riskFactors } from "../../../assets/data/HcSymptomsData";
+import { hcIcons } from "../../../assets/data/HcSymptomsData";
 import styled from "styled-components";
 
 const SleepProblems = () => {
@@ -46,7 +46,7 @@ const SleepProblems = () => {
           disorder. Common signs and symptoms you may experience are:
         </h5>
         <div className="icon-box d-flex flex-wrap gap-3">
-          {symptoms.map((item) => (
+          {hcIcons[0].sleepProblems[0].symptoms.map((item) => (
             <div className="box">
               <img src={item.icon} alt="" />
               <h5>{item.symptom}</h5>
@@ -60,7 +60,7 @@ const SleepProblems = () => {
           People are more susceptible to sleep problems with respect to their:
         </h5>
         <div className="icon-box d-flex flex-wrap gap-3">
-          {riskFactors.map((item) => (
+          {hcIcons[0].sleepProblems[0].riskFactors.map((item) => (
             <div className="box">
               <img src={item.icon} alt="" />
               <h5>{item.symptom}</h5>

@@ -1726,95 +1726,506 @@ export const hcIcons = [
           {
             id: 1,
             symptom: "Breathlessness",
-            icon: "/images/icons/HC-icons/Obesity/fatigue.svg",
+            icon: "/images/icons/HC-icons/Obesity/breathlessness.svg",
           },
           {
             id: 2,
             symptom: "Increased sweating",
-            icon: "/images/icons/HC-icons/similar/loss-of-smell.svg",
+            icon: "/images/icons/HC-icons/Obesity/increased-sweating.svg",
           },
           {
             id: 3,
             symptom: "Snoring",
-            icon: "/images/icons/HC-icons/Nutritional-Deficiencies/severe-hair-loss.svg",
+            icon: "/images/icons/HC-icons/Obesity/snoring.svg",
           },
           {
             id: 4,
             symptom: "Difficulty doing exercise",
-            icon: "/images/icons/HC-icons/similar/sleep-problems.svg",
+            icon: "/images/icons/HC-icons/Obesity/difficulty-doing-exercise.svg",
           },
           {
             id: 5,
             symptom: "Fatigue ",
-            icon: "/images/icons/HC-icons/Nutritional-Deficiencies/weakening-of-night-vision.svg",
+            icon: "/images/icons/HC-icons/similar/fatigue.svg",
           },
           {
             id: 6,
             symptom: "Joint and back pain",
-            icon: "/images/icons/HC-icons/Nutritional-Deficiencies/burning-sensation.svg",
+            icon: "/images/icons/HC-icons/Obesity/joint-and-back-pain.svg",
           },
           {
             id: 7,
             symptom: "Low confidence and self-esteem ",
-            icon: "/images/icons/HC-icons/Nutritional-Deficiencies/slow-healing-of-wounds.svg",
+            icon: "/images/icons/HC-icons/Obesity/low-confidence-and-self-esteem.svg",
           },
           {
             id: 8,
             symptom: "Feelings of loneliness",
-            icon: "/images/icons/HC-icons/Nutritional-Deficiencies/pain-in-bones-and-joints.svg",
+            icon: "/images/icons/HC-icons/Obesity/feelings-of-loneliness.svg",
           },
         ],
         riskFactors: [
           {
             id: 1,
             symptom: "Fast and convenient-to-cook foods",
-            icon: "/images/icons/HC-icons/similar/excessive-alcohol-consumption.svg",
+            icon: "/images/icons/HC-icons/Obesity/fast-and-convenient-to-cook foods.svg",
           },
           {
             id: 2,
             symptom: "Foods containing high amounts of sugars",
-            icon: "/images/icons/HC-icons/similar/obesity.svg",
+            icon: "/images/icons/HC-icons/Obesity/foods-containing-high-amounts-of-sugars.svg",
           },
           {
             id: 3,
             symptom: "Certain hormones ",
-            icon: "/images/icons/HC-icons/Nutritional-Deficiencies/type-2-diabetes.svg",
+            icon: "/images/icons/HC-icons/Obesity/certain-hormones.svg",
           },
           {
             id: 4,
             symptom: "Sedentary lifestyle",
-            icon: "/images/icons/HC-icons/Nutritional-Deficiencies/tattoos.svg",
+            icon: "/images/icons/HC-icons/Obesity/sedentary-lifestyle.svg",
           },
           {
             id: 5,
             symptom: "Difficulty sleeping",
-            icon: "/images/icons/HC-icons/Nutritional-Deficiencies/thinning-of-muscle-mass.svg",
+            icon: "/images/icons/HC-icons/Obesity/difficulty-sleeping.svg",
           },
           {
             id: 6,
             symptom: "Stress",
-            icon: "/images/icons/HC-icons/Nutritional-Deficiencies/persistent-illness.svg",
+            icon: "/images/icons/HC-icons/Obesity/stress.svg",
           },
           {
             id: 7,
             symptom: "Depression",
-            icon: "/images/icons/HC-icons/Nutritional-Deficiencies/persistent-illness.svg",
+            icon: "/images/icons/HC-icons/Obesity/depression.svg",
           },
           {
             id: 8,
             symptom: "Family history of obesity",
-            icon: "/images/icons/HC-icons/Nutritional-Deficiencies/persistent-illness.svg",
+            icon: "/images/icons/HC-icons/Obesity/family-history-of-obesity.svg",
           },
           {
             id: 9,
             symptom: "Certain medications (Example: antidepressants, steroids)",
-            icon: "/images/icons/HC-icons/Nutritional-Deficiencies/persistent-illness.svg",
+            icon: "/images/icons/HC-icons/Obesity/certain-medications.svg",
           },
           {
             id: 10,
             symptom:
               "Certain medical conditions (Example: Diabetes, Thyroid, etc.) ",
-            icon: "/images/icons/HC-icons/Nutritional-Deficiencies/persistent-illness.svg",
+            icon: "/images/icons/HC-icons/Obesity/certain-medical-conditions.svg",
+          },
+        ],
+      },
+    ],
+    pregnancy: [
+      {
+        symptoms: [
+          {
+            id: 1,
+            symptom: "Missed periods",
+            icon: "/images/icons/HC-icons/Pregnancy/missed-periods.svg",
+          },
+          {
+            id: 2,
+            symptom: "Morning sickness (Nausea and Vomiting)",
+            icon: "/images/icons/HC-icons/Pregnancy/morning-sickness.svg",
+          },
+          {
+            id: 3,
+            symptom: "Breast changes",
+            icon: "/images/icons/HC-icons/Pregnancy/breast-changes.svg",
+          },
+          {
+            id: 4,
+            symptom: "Fatigue",
+            icon: "/images/icons/HC-icons/similar/fatigue.svg",
+          },
+          {
+            id: 5,
+            symptom: "Frequent urination at night ",
+            icon: "/images/icons/HC-icons/Pregnancy/frequent-urination-at-night.svg",
+          },
+          {
+            id: 6,
+            symptom: "Food cravings",
+            icon: "/images/icons/HC-icons/Pregnancy/food-cravings.svg",
+          },
+          {
+            id: 7,
+            symptom: "Backache ",
+            icon: "/images/icons/HC-icons/Pregnancy/backache.svg",
+          },
+          {
+            id: 8,
+            symptom: "Breathlessness",
+            icon: "/images/icons/HC-icons/similar/breathlessness.svg",
+          },
+        ],
+      },
+    ],
+    respiratoryDiseases: [
+      {
+        symptoms: [
+          {
+            id: 1,
+            symptom: "Shortness of breath",
+            icon: "/images/icons/HC-icons/Respiratory-Diseases/shortness-of-breath.svg",
+          },
+          {
+            id: 2,
+            symptom: "Tightness in the chest",
+            icon: "/images/icons/HC-icons/Respiratory-Diseases/tightness-in-the-chest.svg",
+          },
+          {
+            id: 3,
+            symptom: "Wheezing",
+            icon: "/images/icons/HC-icons/Respiratory-Diseases/wheezing.svg",
+          },
+          {
+            id: 4,
+            symptom: "Chronic cough",
+            icon: "/images/icons/HC-icons/Respiratory-Diseases/chronic-cough.svg",
+          },
+          {
+            id: 5,
+            symptom: "Blood in sputum ",
+            icon: "/images/icons/HC-icons/Respiratory-Diseases/blood-in-sputum.svg",
+          },
+          {
+            id: 6,
+            symptom: "Frequent respiratory infections",
+            icon: "/images/icons/HC-icons/Respiratory-Diseases/frequent-respiratory-infections.svg",
+          },
+          {
+            id: 7,
+            symptom: "Lack of energy ",
+            icon: "/images/icons/HC-icons/Respiratory-Diseases/lack-of-energy.svg",
+          },
+          {
+            id: 8,
+            symptom: "Unintended weight loss ",
+            icon: "/images/icons/HC-icons/Respiratory-Diseases/unintended-weight-loss.svg",
+          },
+          {
+            id: 9,
+            symptom: "Swelling in legs, feet, or ankles",
+            icon: "/images/icons/HC-icons/Respiratory-Diseases/swelling-in-legs-feet-or-ankles.svg",
+          },
+        ],
+        riskFactors: [
+          {
+            id: 1,
+            symptom: "Age",
+            icon: "/images/icons/HC-icons/Respiratory-Diseases/age.svg",
+          },
+          {
+            id: 2,
+            symptom: "Air pollution",
+            icon: "/images/icons/HC-icons/Respiratory-Diseases/air-pollution.svg",
+          },
+          {
+            id: 3,
+            symptom: "Allergens  ",
+            icon: "/images/icons/HC-icons/Respiratory-Diseases/allergens.svg",
+          },
+          {
+            id: 4,
+            symptom: "Asbestos",
+            icon: "/images/icons/HC-icons/Respiratory-Diseases/asbestos.svg",
+          },
+          {
+            id: 5,
+            symptom: "Artificially produced dyes and paints",
+            icon: "/images/icons/HC-icons/Respiratory-Diseases/artificially-produced-dyes-and-paints.svg",
+          },
+          {
+            id: 6,
+            symptom: "Chemical fumes",
+            icon: "/images/icons/HC-icons/Respiratory-Diseases/chemical-fumes.svg",
+          },
+          {
+            id: 7,
+            symptom: "Cigarette smoke ",
+            icon: "/images/icons/HC-icons/Respiratory-Diseases/cigarette-smoke.svg",
+          },
+          {
+            id: 8,
+            symptom: "Dust",
+            icon: "/images/icons/HC-icons/Respiratory-Diseases/dust.svg",
+          },
+          {
+            id: 9,
+            symptom: "Family history",
+            icon: "/images/icons/HC-icons/Respiratory-Diseases/family-history.svg",
+          },
+          {
+            id: 10,
+            symptom: "Occupational hazards ",
+            icon: "/images/icons/HC-icons/Respiratory-Diseases/occupational-hazards.svg",
+          },
+          {
+            id: 11,
+            symptom: "Secondhand smoke ",
+            icon: "/images/icons/HC-icons/Respiratory-Diseases/secondhand-smoke.svg",
+          },
+        ],
+      },
+    ],
+    skinProblems: [
+      {
+        symptoms: [
+          {
+            id: 1,
+            symptom: "Dry skin",
+            icon: "/images/icons/HC-icons/Skin-Problems/dry-skin.svg",
+          },
+          {
+            id: 2,
+            symptom: "Discoloured skin patches",
+            icon: "/images/icons/HC-icons/Skin-Problems/discoloured-skin-patches.svg",
+          },
+          {
+            id: 3,
+            symptom: "Peeling skin",
+            icon: "/images/icons/HC-icons/Skin-Problems/peeling-skin.svg",
+          },
+          {
+            id: 4,
+            symptom: "Ulcers",
+            icon: "/images/icons/HC-icons/Skin-Problems/ulcers.svg",
+          },
+          {
+            id: 5,
+            symptom: "Rashes ",
+            icon: "/images/icons/HC-icons/Skin-Problems/rashes.svg",
+          },
+          {
+            id: 6,
+            symptom: "Itchiness",
+            icon: "/images/icons/HC-icons/Skin-Problems/itchiness.svg",
+          },
+          {
+            id: 7,
+            symptom: "Pus-filled bumps ",
+            icon: "/images/icons/HC-icons/Skin-Problems/pus-filled-bumps.svg",
+          },
+          {
+            id: 8,
+            symptom: "Scaly or rough skin ",
+            icon: "/images/icons/HC-icons/Skin-Problems/scaly-or-rough-skin.svg",
+          },
+        ],
+        riskFactors: [
+          {
+            id: 1,
+            symptom: "Family history",
+            icon: "/images/icons/HC-icons/Skin-Problems/family-history.svg",
+          },
+          {
+            id: 2,
+            symptom: "Multiple/atypical moles",
+            icon: "/images/icons/HC-icons/Skin-Problems/multiple-atypical-moles.svg",
+          },
+          {
+            id: 3,
+            symptom: "Exposure to UV or X-rays  ",
+            icon: "/images/icons/HC-icons/Skin-Problems/exposure-to-UV-or-X-rays.svg",
+          },
+          {
+            id: 4,
+            symptom: "Scars from diseases or burns",
+            icon: "/images/icons/HC-icons/Skin-Problems/scars-from-diseases-or-burns.svg",
+          },
+          {
+            id: 5,
+            symptom: "Immune suppression medications",
+            icon: "/images/icons/HC-icons/Skin-Problems/immune-suppression-medications.svg",
+          },
+          {
+            id: 6,
+            symptom: "Older age",
+            icon: "/images/icons/HC-icons/Skin-Problems/older-age.svg",
+          },
+          {
+            id: 7,
+            symptom: "History of skin diseases ",
+            icon: "/images/icons/HC-icons/Skin-Problems/history-of-skin-diseases.svg",
+          },
+          {
+            id: 8,
+            symptom: "Smoking ",
+            icon: "/images/icons/HC-icons/Skin-Problems/smoking.svg",
+          },
+          {
+            id: 9,
+            symptom: "Infections",
+            icon: "/images/icons/HC-icons/Skin-Problems/infections.svg",
+          },
+        ],
+      },
+    ],
+    sleepProblems: [
+      {
+        symptoms: [
+          {
+            id: 1,
+            symptom: "Difficulty in falling asleep",
+            icon: "/images/icons/HC-icons/Sleep-Problems/difficulty-in-falling-asleep.svg",
+          },
+          {
+            id: 2,
+            symptom:
+              "Difficulty sleeping again after waking up in the middle of the night ",
+            icon: "/images/icons/HC-icons/Sleep-Problems/difficulty-sleeping-again-after-waking-up.svg",
+          },
+          {
+            id: 3,
+            symptom: "Experiencing unusual breathing patterns ",
+            icon: "/images/icons/HC-icons/Sleep-Problems/peeling-skin.svg",
+          },
+          {
+            id: 4,
+            symptom: "Episodes of sudden muscle weakness ",
+            icon: "/images/icons/HC-icons/Sleep-Problems/episodes-of-sudden-muscle-weakness.svg",
+          },
+          {
+            id: 5,
+            symptom: "Following inappropriate sleep schedule ",
+            icon: "/images/icons/HC-icons/Sleep-Problems/following-inappropriate-sleep-schedule.svg",
+          },
+          {
+            id: 6,
+            symptom: "Lack of concentration",
+            icon: "/images/icons/HC-icons/Sleep-Problems/itchiness.svg",
+          },
+          {
+            id: 7,
+            symptom: "Increased irritability ",
+            icon: "/images/icons/HC-icons/Sleep-Problems/increased-irritability.svg",
+          },
+        ],
+        riskFactors: [
+          {
+            id: 1,
+            symptom: "Age",
+            icon: "/images/icons/HC-icons/Sleep-Problems/family-history.svg",
+          },
+          {
+            id: 2,
+            symptom: "Gender",
+            icon: "/images/icons/HC-icons/Sleep-Problems/gender.svg",
+          },
+          {
+            id: 3,
+            symptom: "Stress  ",
+            icon: "/images/icons/HC-icons/Sleep-Problems/stress.svg",
+          },
+          {
+            id: 4,
+            symptom: "Family history ",
+            icon: "/images/icons/HC-icons/Sleep-Problems/scars-from-diseases-or-burns.svg",
+          },
+          {
+            id: 5,
+            symptom: "Medical conditions",
+            icon: "/images/icons/HC-icons/Sleep-Problems/medical-conditions.svg",
+          },
+          {
+            id: 6,
+            symptom: "Late working hours",
+            icon: "/images/icons/HC-icons/Sleep-Problems/late-working-hours.svg",
+          },
+        ],
+      },
+    ],
+    tuberculosis: [
+      {
+        symptoms: [
+          {
+            id: 1,
+            symptom: "Cough for more than 3 weeks",
+            icon: "/images/icons/HC-icons/Tuberculosis/cough-for-more-than-3 weeks.svg",
+          },
+          {
+            id: 2,
+            symptom: "Coughing of blood or sputum ",
+            icon: "/images/icons/HC-icons/Tuberculosis/coughing-of-blood-or-sputum.svg",
+          },
+          {
+            id: 3,
+            symptom: "Fever  ",
+            icon: "/images/icons/HC-icons/Tuberculosis/fever.svg",
+          },
+          {
+            id: 4,
+            symptom: "Weight loss  ",
+            icon: "/images/icons/HC-icons/Tuberculosis/weight-loss.svg",
+          },
+          {
+            id: 5,
+            symptom: "Fatigue ",
+            icon: "/images/icons/HC-icons/Tuberculosis/fatigue.svg",
+          },
+          {
+            id: 6,
+            symptom: "Night sweats",
+            icon: "/images/icons/HC-icons/Tuberculosis/night-sweats.svg",
+          },
+          {
+            id: 7,
+            symptom: "Headache  ",
+            icon: "/images/icons/HC-icons/Tuberculosis/headache.svg",
+          },
+          {
+            id: 8,
+            symptom: "Joint pains  ",
+            icon: "/images/icons/HC-icons/Tuberculosis/joint-pains.svg",
+          },
+          {
+            id: 9,
+            symptom: "Chills   ",
+            icon: "/images/icons/HC-icons/Tuberculosis/chills.svg",
+          },
+          {
+            id: 10,
+            symptom: "Loss of appetite     ",
+            icon: "/images/icons/HC-icons/Tuberculosis/loss-of-appetite.svg",
+          },
+          {
+            id: 11,
+            symptom: "Difficulty in breathing",
+            icon: "/images/icons/HC-icons/Tuberculosis/difficulty-in-breathing.svg",
+          },
+          {
+            id: 12,
+            symptom: "Chest pain ",
+            icon: "/images/icons/HC-icons/Tuberculosis/chest-pain.svg",
+          },
+        ],
+        riskFactors: [
+          {
+            id: 1,
+            symptom:
+              "Living with an individual who is having an active TB infection",
+            icon: "/images/icons/HC-icons/Tuberculosis/living-with-an-individual-who-is-having -an-active-TB-infection..svg",
+          },
+          {
+            id: 2,
+            symptom: "Travelling ",
+            icon: "/images/icons/HC-icons/Tuberculosis/travelling-or-living-in-a-country.svg",
+          },
+          {
+            id: 3,
+            symptom:
+              "Working or living in certain places such as nursing homes  ",
+            icon: "/images/icons/HC-icons/Tuberculosis/working-or-living-in-certain-places.svg",
+          },
+          {
+            id: 4,
+            symptom: "Having health conditions such as diabetes ",
+            icon: "/images/icons/HC-icons/Tuberculosis/havin-health-conditions.svg",
           },
         ],
       },

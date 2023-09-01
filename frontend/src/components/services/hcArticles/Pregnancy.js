@@ -1,4 +1,4 @@
-import { symptoms } from "../../../assets/data/HcSymptomsData";
+import { hcIcons } from "../../../assets/data/HcSymptomsData";
 import styled from "styled-components";
 
 const Pregnancy = () => {
@@ -18,7 +18,7 @@ const Pregnancy = () => {
         <h3 className="question">How to know if one is pregnant?</h3>
         <h5 className="include">Early signs of pregnancy include:</h5>
         <div className="icon-box d-flex flex-wrap gap-3">
-          {symptoms.map((item) => (
+          {hcIcons[0].pregnancy[0].symptoms.map((item) => (
             <div className="box">
               <img src={item.icon} alt="" />
               <h5>{item.symptom}</h5>
