@@ -25,9 +25,9 @@ const GlobalStyle = createGlobalStyle`
       }
 
 .singlePage{
-  /* .left img{
-    height: 55px;
-  } */
+  .hmUPgY .singlePage .left img{
+    border: 2px solid;;
+  }
   h2{
     color: ${({ theme }) => theme.colors.primary};
   }

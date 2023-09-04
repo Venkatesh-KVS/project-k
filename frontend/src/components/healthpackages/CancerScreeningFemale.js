@@ -5,29 +5,7 @@ const CancerScreeningFemale = () => {
   return (
     <Wrapper>
       <div className="pkg-cnt">
-        <h3>Tests included in the package (17)</h3>
-
-        <ol>
-          <li>Alpha Feto Protein (AFP)</li>
-          <li>Beta HCG</li>
-          <li>Carcino Embryonic Antigen (CEA)</li>
-          <li>CA-125 (Ovarin Cancer Marker)</li>
-          <li>CA-15.3 (Breast Cancer Marker)</li>
-          <li>CA - 19.9 (Pancreatic Cancer Marker)</li>
-          <li>Thyroglobulin levels</li>
-          <li>Occult Blood, stool</li>
-          <li>PAP Smear - LBC</li>
-          <li>General Body Screen</li>
-          <li>Complete Blood Picture</li>
-          <li>Erythrocyte Sedimentation Rate (ESR)</li>
-          <li>Urine Analysis</li>
-          <li>X-Ray Chest PA View</li>
-          <li>Ultrasonogram (USG)- Whole Abdomen</li>
-          <li>Mammogram</li>
-          <li>MRI Diffusion-whole body</li>
-        </ol>
-
-        <h3>What is the Package for?</h3>
+        <h3>What is the package for?</h3>
         <p>
           Konnect Cancer Screening-Female helps in the early detection of
           ovarian, breast, pancreatic cancer, etc. This package also identifies
@@ -66,6 +44,26 @@ const CancerScreeningFemale = () => {
           dietary supplements, and to consult your healthcare provider before
           undergoing the screening.
         </p>
+        <h3>Tests included in the package (17)</h3>
+        <ol>
+          <li>Alpha Feto Protein (AFP)</li>
+          <li>Beta HCG</li>
+          <li>Carcino Embryonic Antigen (CEA)</li>
+          <li>CA-125 (Ovarin Cancer Marker)</li>
+          <li>CA-15.3 (Breast Cancer Marker)</li>
+          <li>CA - 19.9 (Pancreatic Cancer Marker)</li>
+          <li>Thyroglobulin levels</li>
+          <li>Occult Blood, stool</li>
+          <li>PAP Smear - LBC</li>
+          <li>General Body Screen</li>
+          <li>Complete Blood Picture</li>
+          <li>Erythrocyte Sedimentation Rate (ESR)</li>
+          <li>Urine Analysis</li>
+          <li>X-Ray Chest PA View</li>
+          <li>Ultrasonogram (USG)- Whole Abdomen</li>
+          <li>Mammogram</li>
+          <li>MRI Diffusion-whole body</li>
+        </ol>
         <h3>Availability of report </h3>
         <p>
           Konnect Cancer Screening test reports are available within 24 hours

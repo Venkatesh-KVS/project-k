@@ -5,30 +5,6 @@ const HealthScreen = () => {
   return (
     <Wrapper>
       <div className="pkg-cnt">
-        <h3>Tests included in the package (11)</h3>
-        <ol>
-          <li>Complete Blood Picture (CBP)</li>
-          <li>Fasting Blood Sugar (FBS)</li>
-          <li>Glycosylated Hemoglobin (HBA1C)</li>
-          <li>
-            Kidney Function Test (2 tests in included)
-            <ul className="inner-ul">
-              <li>Serum Creatinine</li>
-              <li>Blood urea</li>
-            </ul>
-          </li>
-          <li>
-            Lipid Profile (4 tests in included)
-            <ul className="inner-ul">
-              <li>Total Cholesterol</li>
-              <li>HDL Cholesterol</li>
-              <li>VLDL Cholesterol</li>
-              <li>Triglycerides</li>
-            </ul>
-          </li>
-          <li>TSH</li>
-          <li>CUE</li>
-        </ol>
         <h3>What is the package for?</h3>
         <p>
           A health screen package is a combination of laboratory tests that
@@ -65,6 +41,30 @@ const HealthScreen = () => {
           water. Consult your healthcare provider before testing if you are on
           any medications currently.
         </p>
+        <h3>Tests included in the package (11)</h3>
+        <ol>
+          <li>Complete Blood Picture (CBP)</li>
+          <li>Fasting Blood Sugar (FBS)</li>
+          <li>Glycosylated Hemoglobin (HBA1C)</li>
+          <li>
+            Kidney Function Test (2 tests in included)
+            <ul className="inner-ul">
+              <li>Serum Creatinine</li>
+              <li>Blood urea</li>
+            </ul>
+          </li>
+          <li>
+            Lipid Profile (4 tests in included)
+            <ul className="inner-ul">
+              <li>Total Cholesterol</li>
+              <li>HDL Cholesterol</li>
+              <li>VLDL Cholesterol</li>
+              <li>Triglycerides</li>
+            </ul>
+          </li>
+          <li>TSH</li>
+          <li>CUE</li>
+        </ol>
         <h3>Availability of report </h3>
         <p>
           Konnect Health Screen Package test reports are available within 24
