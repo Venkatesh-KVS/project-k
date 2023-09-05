@@ -42,7 +42,7 @@ const HeroSlider = () => {
                 </h1>
                 <div className="gyr my-4">
                   Get Your <strong className="mx-2">Reports</strong> in
-                  <span className="mx-2">12</span>hours
+                  <span className="mx-2">12</span>hours <span style={{color: "red"}}> * </span>
                 </div>
               </div>
               <div className="slider-2-video d-flex">

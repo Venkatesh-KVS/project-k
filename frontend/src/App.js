@@ -26,6 +26,7 @@ import { Login } from "./login/Login";
 import { Register } from "./login/Register";
 import FetalMedicineUnit from "./pages/nav-pages/FetalMedicineUnit";
 import RsDetails from "./components/services/RsDetails";
+// import Footer2 from "./pages/Footer2";
 
 // const mysql = require("mysql2");
 // const connectSQLdb = require("./server/controller/mysql_controller");
@@ -89,6 +90,7 @@ function App() {
               <Route path="/fetal-medicine-unit" element={<FetalMedicineUnit />} />
             </Routes>
             <Footer />
+            {/* <Footer2 /> */}
           </Router>
         </CartProvider>
       </div>

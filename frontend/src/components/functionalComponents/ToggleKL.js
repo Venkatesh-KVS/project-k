@@ -1,15 +1,8 @@
 import React from "react";
-import LocateClinic from "../../pages/nav-pages/LocateClinic";
-import { styled } from "styled-components";
+import LocateClinicGrid from "../../pages/nav-pages/LocateClinicGrid";
 
-const ToggleKL = ({ handleClick }) => {
-  return (
-    <Wrapper>
-      <div className="clinics my-3">
-        <LocateClinic />
-      </div>
-    </Wrapper>
-  );
+const ToggleKL = () => {
+  return <LocateClinicGrid noclinics={3} />
 };
 
 export default ToggleKL;

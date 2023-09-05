@@ -107,7 +107,7 @@ function CartFormComp({cart}) {
           </div>
         </Form.Group>
 
-        <Form.Group controlId="message">
+        {/* <Form.Group controlId="message">
           <Form.Control
             as="textarea"
             rows={5}
@@ -117,7 +117,7 @@ function CartFormComp({cart}) {
             placeholder="Message"
             className="px-2 py-2 m-2"
           />
-        </Form.Group>
+        </Form.Group> */}
 
         {submitted && <div className="alert alert-success mt-3">Form has been submitted!</div>}
         <Button variant="primary" type="submit" className="px-4 py-1 mx-2">

@@ -14,7 +14,8 @@ export const Register = () => {
   // const navigate = useNavigate();
   const handleSubmit = async (event) => {
     event.preventDefault();
-    axios.post("https://konnectserver.infocusrx.work/register", {values})
+    // axios.post("https://konnectserver.infocusrx.work/register", {values})
+    axios.post("http://localhost:3210/register", {values})
         .then(response => {
             console.log(response.data);
             // navigate("/login");
