@@ -1,143 +1,16 @@
-// const express = require('express');
-// const mysql = require('mysql2');
-// const cors = require('cors');
-// const cookieParser = require('cookie-parser');
-// const jwt = require('jsonwebtoken');
-// const bodyParser = require('body-parser');
-// // const bcrypt = require('bcrypt');
-
-// const app = express();
-// app.use(express.json());
-// app.use(cors());
-// app.use(cookieParser())
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({ extended: true }))
-// const salt = 10;
-
-// app.get("/", (req, res) => {
-//     res.send("<h1>From Backend</h1>");
-// })
-// app.get("/post", (req, res) => {
-//     res.send("<h1>This is post page</h1>");
-// })
-
-// // const db = mysql.createConnection({
-// //     host: 'localhost',
-// //     user: 'infocusr_konnect',
-// //     password: '}%!Bv]J_FoJ5',
-// //     database: 'infocusr_konnect'
-// // });
-// const db = mysql.createConnection({
-//     host: 'localhost',
-//     user: 'root',
-//     password: '',
-//     database: 'konnect_db0',
-// });
-
-// db.connect(err => {
-//     if (err) {
-//         console.error('Database connection error:', err);
-//     } else {
-//         console.log('Connected to the database');
-//     }
-// });
-
-// app.get('/gettests', (req, res) => {
-//     const query = `SELECT * FROM tests`;
-//     db.query(query, (error, results) => {
-//         if (error) {
-//           console.error(error);
-//           res.status(500).json({ error: 'An error occurred' });
-//         } else {
-//           res.status(200).json(results);
-//         }
-//     });
-// })
-
-// app.get('/search', (req, res) => {
-//     const searchTerm = req.query.q;
-//     const query = `SELECT * FROM tests WHERE test_name LIKE '%${searchTerm}%'`;
-    
-//     db.query(query, (error, results) => {
-//       if (error) {
-//         console.error(error);
-//         res.status(500).json({ error: 'An error occurred' });
-//       } else {
-//         res.status(200).json(results);
-//       }
-//     });
-//   });
-
-// app.get('/getbyletter', (req, res) => {
-//     const startingLetter = req.query.l;
-//     const query = `SELECT * FROM tests WHERE test_name LIKE '${startingLetter}%'`;
-//     db.query(query, (error, results) => {
-//       if (error) {
-//         console.error(error);
-//         res.status(500).json({ error: 'An error occurred' });
-//       } else {
-//         res.status(200).json(results);
-//       }
-//     });
-//   });
-
-
-// app.get('/orgsel', (req, res) => {
-//     const selectedOrg = req.query.selectedorgan;
-//     const query = 'SELECT * FROM tests WHERE category = ?';
-  
-//     db.query(query, [selectedOrg], (error, results) => {
-//       if (error) {
-//         console.error(error);
-//         res.status(500).json({ error: 'An error occurred' });
-//       } else {
-//         res.status(200).json(results);
-//       }
-//     });
-//   });
-
-// app.post('/register', (req, res) => {
-//     const values = req.body.gettestsby;
-//     db.query(sql, (err, results) => {
-//         if (err) {
-//             console.error('Database query error:', err);
-//             return res.status(500).json({ error: 'Internal server error' });
-//         }
-//         const dbData = results;
-//         return res.json({
-//             "res": values.email + " emaill",
-//             "db_data": dbData
-//         });
-//     });
-    
-// })
-
-// app.listen(process.env.PORT || 8081, () => {
-//     console.log("server running on port 8081");
-// })
-
-
-
-
-// ========================================================================
-// ========================================================================
-// ========================================================================
-// ========================================================================
-
-
-
-
-
 const express = require('express');
 const mysql = require('mysql');
+require('dotenv').config();
+const port = process.env.PORT;
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
 // const bcrypt = require('bcrypt');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
-const salt = 10;
-const app = express();
 const nodemailer = require('nodemailer');
+
+// const salt = 10;
+const app = express();
 
 app.use(express.json());
 app.use(bodyParser.json());
@@ -154,42 +27,58 @@ app.get("/post", (req, res) => {
 
 // const db = mysql.createConnection({
 //     host: 'localhost',
-//     user: 'infocusr_newtestdb',
-//     password: '6JcWb@$QTwtz',
-//     database: 'infocusr_newtestdb'
+//     user: 'infocusr_konnect',
+//     password: '}%!Bv]J_FoJ5',
+//     database: 'infocusr_konnect'
 // });
 
 const db = mysql.createConnection({
     host: 'localhost',
-    user: 'infocusr_konnect',
-    password: '}%!Bv]J_FoJ5',
-    database: 'infocusr_konnect'
+    user: 'root',
+    password: '',
+    database: 'konnect_db0'
 });
 
-// db.connect(err => {
-//     if (err) {
-//         console.error('Database connection error:', err);
-//     } else {
-//         console.log('Connected to the database');
-//     }
-// });
+
+db.connect(err => {
+    if (err) {
+        console.error('Database connection error:', err);
+    } else {
+        console.log('Connected to the database');
+    }
+});
 
 app.post('/register', (req, res) => {
-    const values = req.body.values;
-    
-    const sql = 'SELECT * FROM tests';
-    db.query(sql, (err, results) => {
-        if (err) {
-            console.error('Database query error:', err);
-            return res.status(500).json({ error: 'Internal server error' });
+  try {
+    const { name, email, password } = req.body.values;
+
+    // Check if the email already exists in the database
+    // const selectQuery = 'SELECT * FROM users WHERE email = ?';
+    // db.query(selectQuery, [email], (selectErr, selectResults) => {
+      // if (selectErr) {
+      //   return res.status(500).json({ error: 'An error occurred while checking the email' });
+      // }
+
+      // if (selectResults.length > 0) {
+      //   return res.status(400).json({ message: 'Email already exists' });
+      // }
+
+      // If the email doesn't exist, insert the user into the database
+      const insQuery = 'INSERT INTO users (name, email, password) VALUES (?, ?, ?)';
+      db.query(insQuery, [name, email, password], (insertErr, insertResult) => {
+        if (insertErr) {
+          return res.status(500).json({ error: 'An error occurred while inserting into the database' });
         }
-        const dbData = results;
-        return res.json({
-            "res": values.email + " emaill",
-            "db_data": dbData
-        });
-    });
+
+        res.status(201).json({ message: 'User registered successfully' });
+      });
+    // });
+  } catch (error) {
+    console.error('Error during registration:', error);
+    res.status(500).json({ message: 'Internal server error' });
+  }
 });
+
 
 app.get('/search', (req, res) => {
     const searchTerm = req.query.q;
@@ -260,6 +149,6 @@ app.post('/sendemail', async (req, res) => {
   });
 
 app.listen(process.env.PORT || 8081, () => {
-  console.log("server app running...");
+  console.log("server app running on port: " + port);
 })
 

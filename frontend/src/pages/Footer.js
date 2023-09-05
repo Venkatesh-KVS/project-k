@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import DynamicImage from "../components/requiredPages/DynamicImage";
+// import DynamicImage from "../components/requiredPages/DynamicImage";
 import { styled } from "styled-components";
 
 const Footer = () => {
@@ -11,39 +11,33 @@ const Footer = () => {
           <div className="fh container d-flex justify-content-between">
             <div className="fh-content d-flex ">
               <p className="fh-p">Follow Konnect Diagnostics on Social Media</p>
-              <NavLink
-                to="https://www.facebook.com/konnectdiagnostic/"
-                target="blank"
-              >
-                <DynamicImage imageName={"/icons/social/fb.svg"} />
+              <NavLink to="https://www.facebook.com/konnectdiagnostic/" target="blank">
+                <i class="fa-brands fa-square-facebook fa-xl" style={{color: "#ffffff"}}></i>
               </NavLink>
               <NavLink to="https://twitter.com/KonnectDiagnos2" target="blank">
-                <DynamicImage imageName={"/icons/social/twitter.svg"} />
+                <i class="fa-brands fa-square-twitter fa-xl" style={{color: "#ffffff"}}></i>
               </NavLink>
-              <NavLink
-                to="https://www.instagram.com/konnectdiagnosticcenters/"
-                target="blank"
-              >
-                <DynamicImage imageName={"/icons/social/instagram.svg"} />
+              <NavLink to="https://www.instagram.com/konnectdiagnosticcenters/" target="blank">
+                <i class="fa-brands fa-square-instagram fa-xl" style={{color: "#ffffff"}}></i>
               </NavLink>
-              <NavLink
-                to="https://www.linkedin.com/company/konnect-diagnostics/"
-                target="blank"
-              >
-                <DynamicImage imageName={"/icons/social/linkedin.svg"} />
+              <NavLink to="https://www.youtube.com/channel/UC2y2Nq4LXo36lU3kkZvx9xA" target="blank">
+                <i class="fa-brands fa-linkedin fa-xl" style={{color: "#ffffff"}}></i>
               </NavLink>
-              <NavLink
-                to="https://www.youtube.com/channel/UC2y2Nq4LXo36lU3kkZvx9xA"
-                target="blank"
-              >
-                <DynamicImage imageName={"/icons/social/youtube.svg"} />
+              <NavLink to="https://www.youtube.com/channel/UC2y2Nq4LXo36lU3kkZvx9xA" target="blank">
+                <i class="fa-brands fa-square-youtube fa-xl" style={{color: "#ffffff"}}></i>
               </NavLink>
             </div>
             <div className="fh-content d-flex"></div>
           </div>
         </div>
         <div className="footer-container container d-flex">
-          <div className="footer-box1">
+          <div className="d-flex border-bottom pb-5">
+            <div className="w-25">
+              <img className="img-fluid" src="/images/konnect-logo.png" alt="logofooter" />
+              <p className=""> <i> Konnect Diagnostics offers precise diagnostics with certified radiologists, pathologists, doctors, and technicians. </i> </p>
+            </div>
+            <div className="d-flex w-75 ms-5 px-5">
+            <div className="footer-box1 w-25">
             <ul className="navbar-nav footer-navbar-lists  d-flex">
               <li>
                 <NavLink to="/" className="nav-list">
@@ -67,7 +61,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="footer-box2">
+          <div className="footer-box2 w-25">
             <ul className="navbar-nav footer-navbar-lists  d-flex">
               <li>
                 <NavLink to="/tests" className="nav-list">
@@ -86,7 +80,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="footer-box3">
+          <div className="footer-box3 w-25">
             <ul className="navbar-nav footer-navbar-lists  d-flex">
               <li>
                 <NavLink to="/health-conditions" className="nav-list">
@@ -105,7 +99,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="footer-box4">
+          <div className="footer-box4 w-25">
             <ul className="navbar-nav footer-navbar-lists  d-flex">
               <li>
                 <NavLink to="/partner-with-us" className="nav-list">
@@ -119,6 +113,9 @@ const Footer = () => {
                 </NavLink>
               </li>
             </ul>
+          </div>
+            </div>
+            
           </div>
         </div>
         <div className="footer-bottom container content-box">
@@ -145,10 +142,10 @@ const Wrapper = styled.section`
       scale: 1.2;
     }
   }
-  background-color: ${({ theme }) => theme.colors.primary};
-
+  ${'' /* background-color: ${({ theme }) => theme.colors.primary}; */}
+  background-color: rgba(0,0,0,0.05);
   .footer-head {
-    background-color: ${({ theme }) => theme.colors.secondary};
+    background-color: ${({ theme }) => theme.colors.primary};
   }
   .fh-content {
     align-items: center;
@@ -157,7 +154,7 @@ const Wrapper = styled.section`
   }
   .fh {
     padding: 0;
-    background-color: ${({ theme }) => theme.colors.secondary};
+    background-color: ${({ theme }) => theme.colors.primary};
 
     .fh-nl {
       gap: 15px;
@@ -170,7 +167,7 @@ const Wrapper = styled.section`
     }
     .fh-content p {
       padding: 15px 0;
-      font-weight: 500;
+      font-weight: 700;
       color: #fff;
       margin: 0;
       .fh-content img {
@@ -180,7 +177,7 @@ const Wrapper = styled.section`
   }
   .footer-container {
     padding: 50px 0 25px 0;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .footer-navbar-lists {
@@ -189,9 +186,10 @@ const Wrapper = styled.section`
   }
   .nav-list {
     text-decoration: none;
-    color: ${({ theme }) => theme.colors.white};
+    color: black;
     text-transform: capitalize;
-    font-size: 0.9375rem;
+    font-size: 15px;
+    font-weight: 600;
   }
   .footer-bottom {
     padding: 0;
@@ -203,7 +201,7 @@ const Wrapper = styled.section`
       font-weight: 300;
       display: inline-block;
       margin-bottom: 10px;
-      color: #fff;
+      ${'' /* color: #fff; */}
     }
     .tc {
       text-decoration: none;
