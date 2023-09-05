@@ -37,7 +37,7 @@ const Allergies = () => {
           {hcIcons[0].allergy[0].symptoms.map((item) => (
             <div className="box">
               <div className="sym-img">
-                <img src={item.icon} alt="" />
+                <img src={item.icon} alt="" style={{width:"55px",height:"55px"}}/>
               </div>
               <h5>{item.symptom}</h5>
             </div>
@@ -53,7 +53,7 @@ const Allergies = () => {
           {hcIcons[0].allergy[0].riskFactors.map((item) => (
             <div className="box">
               <div className="rf-img">
-                <img src={item.icon} alt="" />
+                <img src={item.icon} alt="" style={{width:"55px",height:"55px"}}/>
               </div>
 
               <h5>{item.symptom}</h5>

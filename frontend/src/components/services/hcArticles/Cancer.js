@@ -82,7 +82,7 @@ const Cancer = () => {
         <div className="icon-box d-flex flex-wrap gap-3">
           {hcIcons[0].cancer[0].earlyStage.map((item) => (
             <div className="box">
-              <img src={item.icon} alt="" />
+              <img src={item.icon} alt="" style={{width:"55px",height:"55px"}}/>
               <h5>{item.symptom}</h5>
             </div>
           ))}
@@ -91,7 +91,7 @@ const Cancer = () => {
         <div className="icon-box d-flex flex-wrap gap-3">
           {hcIcons[0].cancer[0].lateStage.map((item) => (
             <div className="box">
-              <img src={item.icon} alt="" />
+              <img src={item.icon} alt="" style={{width:"55px",height:"55px"}}/>
               <h5>{item.symptom}</h5>
             </div>
           ))}
@@ -103,7 +103,7 @@ const Cancer = () => {
         <div className="icon-box d-flex flex-wrap gap-3">
           {hcIcons[0].cancer[0].riskFactors.map((item) => (
             <div className="box">
-              <img src={item.icon} alt="" />
+              <img src={item.icon} alt="" style={{width:"55px",height:"55px"}}/>
               <h5>{item.symptom}</h5>
             </div>
           ))}

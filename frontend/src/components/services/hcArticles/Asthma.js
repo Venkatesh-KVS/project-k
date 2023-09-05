@@ -21,7 +21,7 @@ const Asthma = () => {
           <h3 className="question">What are the signs and symptoms?</h3>
           <p>
             The signs and symptoms of asthma may vary from one person to
-            another.{" "}
+            another.
           </p>
           <h5 className="include">The common signs and symptoms include:</h5>
           <ul>
@@ -65,7 +65,7 @@ const Asthma = () => {
           <div className="icon-box d-flex flex-wrap gap-3">
             {hcIcons[0].asthma[0].symptoms.map((item) => (
               <div className="box">
-                <img src={item.icon} alt="" />
+                <img src={item.icon} alt="" style={{width:"55px",height:"55px"}}/>
                 <h5>{item.symptom}</h5>
               </div>
             ))}
@@ -82,7 +82,7 @@ const Asthma = () => {
           <div className="icon-box d-flex flex-wrap gap-3">
             {hcIcons[0].asthma[0].riskFactors.map((item) => (
               <div className="box">
-                <img src={item.icon} alt="" />
+                <img src={item.icon} alt="" style={{width:"55px",height:"55px"}}/>
                 <h5>{item.symptom}</h5>
               </div>
             ))}

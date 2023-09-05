@@ -42,15 +42,15 @@ const GlobalStyle = createGlobalStyle`
       align-items: center;
       text-align: center;
       width: 150px;
-      height: auto;
+      /* height: 200px; */
       box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 15px 0px;
       border-radius: 10px;
-       img {
+      /* border: 2px solid; */
+       /* img {
           margin: 1rem;
-          /* width: 100%; */
+          width: 55px;
           height: 55px;
-          /* border: 2px solid; */
-        }
+        } */
         h5 {
           font-size: 15px;
         }
