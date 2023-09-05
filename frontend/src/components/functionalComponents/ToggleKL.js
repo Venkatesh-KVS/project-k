@@ -6,3 +6,8 @@ const ToggleKL = () => {
 };
 
 export default ToggleKL;
+const Wrapper = styled.section`
+  .title {
+    display: none;
+  }
+`;

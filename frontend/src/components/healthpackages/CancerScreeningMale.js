@@ -5,24 +5,6 @@ const CancerScreeningMale = () => {
   return (
     <Wrapper>
       <div className="pkg-cnt">
-        <h3>Tests included in the package (14)</h3>
-        <ol>
-          <li>Alpha Fetoprotein (AFP)</li>
-          <li>Beta HCG</li>
-          <li>Carcino Embryonic Antigen (CEA)</li>
-          <li>CA - 19.9 (Pancreatic Cancer Marker)</li>
-          <li>Thyroglobulin levels</li>
-          <li>Prostate Specific Antigen (PSA)</li>
-          <li>Occult Blood, stool</li>
-          <li>General Body Screen</li>
-          <li>Complete Blood Picture</li>
-          <li>Erythrocyte Sedimentation Rate (ESR)</li>
-          <li>Urine Analysis X-Ray Chest PA</li>
-          <li>X-Ray Chest PA View</li>
-          <li>Ultrasonogram (USG)- Abdomen</li>
-          <li>MRI Diffusion - whole body</li>
-        </ol>
-
         <h3>What is the package for?</h3>
         <p>
           Konnect Cancer Screening - Male package is required for the early
@@ -64,6 +46,23 @@ const CancerScreeningMale = () => {
           dietary supplements you are taking. Ask for details about pre-test
           preparations, and make sure to follow instructions closely.
         </p>
+        <h3>Tests included in the package (14)</h3>
+        <ol>
+          <li>Alpha Fetoprotein (AFP)</li>
+          <li>Beta HCG</li>
+          <li>Carcino Embryonic Antigen (CEA)</li>
+          <li>CA - 19.9 (Pancreatic Cancer Marker)</li>
+          <li>Thyroglobulin levels</li>
+          <li>Prostate Specific Antigen (PSA)</li>
+          <li>Occult Blood, stool</li>
+          <li>General Body Screen</li>
+          <li>Complete Blood Picture</li>
+          <li>Erythrocyte Sedimentation Rate (ESR)</li>
+          <li>Urine Analysis X-Ray Chest PA</li>
+          <li>X-Ray Chest PA View</li>
+          <li>Ultrasonogram (USG)- Abdomen</li>
+          <li>MRI Diffusion - whole body</li>
+        </ol>
         <h3>Availability of report</h3>
         <p>
           Konnect Cancer Screening – Male package test reports are available

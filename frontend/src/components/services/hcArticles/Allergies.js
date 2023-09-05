@@ -36,7 +36,9 @@ const Allergies = () => {
         <div className="icon-box d-flex flex-wrap gap-3">
           {hcIcons[0].allergy[0].symptoms.map((item) => (
             <div className="box">
-              <img src={item.icon} alt="" />
+              <div className="sym-img">
+                <img src={item.icon} alt="" />
+              </div>
               <h5>{item.symptom}</h5>
             </div>
           ))}
@@ -50,7 +52,10 @@ const Allergies = () => {
         <div className="icon-box d-flex flex-wrap gap-3">
           {hcIcons[0].allergy[0].riskFactors.map((item) => (
             <div className="box">
-              <img src={item.icon} alt="" />
+              <div className="rf-img">
+                <img src={item.icon} alt="" />
+              </div>
+
               <h5>{item.symptom}</h5>
             </div>
           ))}

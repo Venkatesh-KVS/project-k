@@ -5,18 +5,6 @@ const NutritionPackage = () => {
   return (
     <Wrapper>
       <div className="pkg-cnt">
-        <h3>Tests included in the package (8)</h3>
-
-        <ol>
-          <li>Complete Blood Picture (CBP)</li>
-          <li>Vitamin B12</li>
-          <li>Vitamin D</li>
-          <li>Serum Iron</li>
-          <li>Serum Calcium</li>
-          <li>Serum Magnesium</li>
-          <li>Serum Phosphorus</li>
-          <li>Serum Zinc</li>
-        </ol>
         <h3>What is the package for? </h3>
         <p>
           Konnect Nutrition Package helps to monitor, screen, and diagnose
@@ -51,8 +39,22 @@ const NutritionPackage = () => {
           inform your healthcare provider if you are on any medications
           currently.
         </p>
+        <h3>Tests included in the package (8)</h3>
+        <ol>
+          <li>Complete Blood Picture (CBP)</li>
+          <li>Vitamin B12</li>
+          <li>Vitamin D</li>
+          <li>Serum Iron</li>
+          <li>Serum Calcium</li>
+          <li>Serum Magnesium</li>
+          <li>Serum Phosphorus</li>
+          <li>Serum Zinc</li>
+        </ol>
         <h3>Availability of report </h3>
-        <p>Konnect Nutrition Package test reports are available within 24 hours after the collection of the sample.</p>
+        <p>
+          Konnect Nutrition Package test reports are available within 24 hours
+          after the collection of the sample.
+        </p>
       </div>
     </Wrapper>
   );
