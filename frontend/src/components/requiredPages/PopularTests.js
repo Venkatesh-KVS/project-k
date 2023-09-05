@@ -11,7 +11,7 @@ export const PopularTests = ({ handleClick }) => {
   };
   return (
     <Wrapper>
-      <div className="ptCards container p-0 d-flex flex-wrap gap-2">
+      <div className="ptCards my-3 container p-0 d-flex flex-wrap gap-2">
         {testsData.slice(0, 4).map((item) => (
           <div className="ptCard">
             <div className="ptBg d-flex flex-column justify-content-center">

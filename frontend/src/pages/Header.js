@@ -22,15 +22,11 @@ const Header = ({ cartSize }) => {
               <Navbar cartSize={cartSize} />
             </div>
 
-            <div className="login d-flex gap-3">
+            <div className="login d-flex align-items-center">
               <div>
                 <NavLink to={"/login"}>
-                  <button
-                    onClick={() => setLoggedIn(!loggedIn)}
-                    className="butn signup-button d-flex gap-2"
-                  >
+                  <button onClick={() => setLoggedIn(!loggedIn)} className="butn signup-button d-flex gap-2">
                     {loggedIn ? "Login" : "Logout"}
-
                     <BiSolidLogInCircle />
                     <User />
                   </button>

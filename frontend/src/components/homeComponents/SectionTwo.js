@@ -50,7 +50,7 @@ const SectionTwo = ({ handleClick }) => {
             {activeComponent === "ToggleKHP" && (
               <ToggleKHP handleClick={handleClick} />
             )}
-            {activeComponent === "ToggleKLT" && <ToggleKLT />}
+            {activeComponent === "ToggleKLT" && <ToggleKLT handleClick={handleClick} />}
             {activeComponent === "ToggleKL" && <ToggleKL />}
           </div>
         </div>
