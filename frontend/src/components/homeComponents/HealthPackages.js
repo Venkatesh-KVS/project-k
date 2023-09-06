@@ -68,9 +68,6 @@ const Wrapper = styled.section`
     justify-content: center;
 
     button {
-      /* background-image: url(/images/k-10.png),
-        linear-gradient(220deg, #005bab, #00ffbb90);
-      border-radius: 25px; */
       background-color: white;
       margin-top: 20px;
       border: none;
@@ -79,11 +76,8 @@ const Wrapper = styled.section`
       font-size: 1rem;
       font-weight: 600;
       margin-bottom: 0;
-      mask-clip: red;
-
       &:hover {
         transition: 0.2s;
-        /* padding-right: 15px; */
         scale: 1.1;
       }
     }
