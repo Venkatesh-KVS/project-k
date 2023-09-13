@@ -75,9 +75,8 @@ export default SectionTwo;
 
 const Wrapper = styled.section`
   .s2 {
-    ${"" /* width: 1000px; */}
-    ${"" /* margin: 3rem auto; */}
-    z-index: 10;
+    /* margin-top: -150px; */
+    z-index: 2;
   }
 
   .s2-tests-box {
@@ -87,11 +86,9 @@ const Wrapper = styled.section`
     background-image: url("/images/k-10.png");
     background-repeat: repeat;
     background-position: center left;
-    padding: 50px 0;
-    ${"" /* border-radius: 25px; */}
+    padding: -50px 0;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 25px 0px;
     background-color: ${({ theme }) => theme.colors.white};
-    z-index: 50;
   }
   .k-btn {
     background: white;

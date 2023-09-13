@@ -18,7 +18,7 @@ const HeroSlider = () => {
 
   return (
     <Wrapper>
-      <div className="home-slider">
+      <div className="home-slider z-1">
         <Slider
           ref={Fac_carousel_slider}
           {...sliderSettings}
@@ -27,8 +27,11 @@ const HeroSlider = () => {
           <div className="sliderSec1 d-flex justify-content-center align-items-center">
             <div className="container">
               <h1 className="display-4 fw-bold w-50">
-                Navigating <span className="span"> Health Solutions </span> with{" "}
-                <br /> Konnect
+                <span className="title">
+                  Navigating <span className="span"> Health Solutions </span>{" "}
+                  with
+                  <br /> Konnect
+                </span>
               </h1>
             </div>
           </div>
@@ -42,7 +45,8 @@ const HeroSlider = () => {
                 </h1>
                 <div className="gyr my-4">
                   Get Your <strong className="mx-2">Reports</strong> in
-                  <span className="mx-2">12</span>hours <span style={{color: "red"}}> * </span>
+                  <span className="mx-2">12</span>hours{" "}
+                  <span style={{ color: "red" }}> * </span>
                 </div>
               </div>
               <div className="slider-2-video d-flex">
@@ -68,6 +72,7 @@ const Wrapper = styled.section`
     vertical-align: middle;
     display: flex;
     width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.1) 0px 5px 20px;
   }
   .s-slider {
     position: relative;
@@ -77,10 +82,11 @@ const Wrapper = styled.section`
     overflow: hidden;
     .sliderSec1 {
       width: 100%;
-      height: 80vh;
-      background: #ffffff url("images/bannerImage.jpg") no-repeat right top;
+      height: 65vh;
+      background: ${({ theme }) => theme.colors.white}
+        url("images/bannerImage.jpg") no-repeat right top;
       background-size: cover;
-      h1 {
+      .title {
         font-size: 4rem;
         text-transform: capitalize;
         line-height: 1.3;
@@ -93,7 +99,7 @@ const Wrapper = styled.section`
     }
     .sliderSec2 {
       width: 100%;
-      height: 80vh;
+      height: 65vh;
       background-size: center;
       background-repeat: no-repeat;
       .slider-2 {
@@ -154,11 +160,7 @@ const Wrapper = styled.section`
     justify-content: center;
   }
   .slick-arrow {
-    /* width: 35px;
-    height: 35px;
-    background: white;
-    border-radius: 50px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+    z-index: 50;
     &::before {
       font-family: inherit;
       font-size: 32px;
@@ -173,13 +175,6 @@ const Wrapper = styled.section`
   .slick-prev {
     top: 50%;
     left: 2%;
-    z-index: 10;
-    &:hover {
-      /* background-color: ${({ theme }) => theme.colors.primary90}; */
-      /* &:before {
-        color: white;
-      } */
-    }
   }
   .slick-next {
     top: 50%;
@@ -206,8 +201,19 @@ const Wrapper = styled.section`
       background-color: #cfcfcf;
       border-radius: 50px;
       &::before {
-        /* background-color: red; */
         color: ${({ theme }) => theme.colors.primary};
+      }
+    }
+  }
+  /* Mobile View */
+
+  @media only screen and (max-width: 600px) {
+    .sliderSec1 {
+      background: ${({ theme }) => theme.colors.white}
+        url("images/bannerImage.jpg") no-repeat center center;
+      background-size: cover;
+      .title {
+        font-size: 2rem;
       }
     }
   }

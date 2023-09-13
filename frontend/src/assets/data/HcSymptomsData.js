@@ -519,8 +519,8 @@ export const hcIcons = [
           },
           {
             id: 8,
-            symptom: "Having numb/ tingling hands or feet",
-            icon: "/images/icons/HC-icons/diabetes/having-numb-tingling-hands-or-feet",
+            symptom: "Having numb/tingling hands or feet",
+            icon: "/images/icons/HC-icons/similar/having-numb-tingling-hands-or-feet.svg",
           },
           {
             id: 9,
@@ -1015,12 +1015,12 @@ export const hcIcons = [
           {
             id: 7,
             symptom: "Nosebleeds",
-            icon: "/images/icons/HC-icons/Hypertension/frequent-urination.svg",
+            icon: "/images/icons/HC-icons/Hypertension/nosebleeds.svg",
           },
           {
             id: 8,
             symptom: "Anxiety",
-            icon: "/images/icons/HC-icons/Hypertension/chest-tenderness.svg",
+            icon: "/images/icons/HC-icons/similar/anxiety.svg",
           },
           {
             id: 9,
@@ -1042,12 +1042,12 @@ export const hcIcons = [
           {
             id: 2,
             symptom: "Obesity or being overweight",
-            icon: "/images/icons/HC-icons/Hypertension/stress-condition.svg",
+            icon: "/images/icons/HC-icons/similar/obesity.svg",
           },
           {
             id: 3,
             symptom: "Smoking (tobacco or vaping)",
-            icon: "/images/icons/HC-icons/Hypertension/obesity.svg",
+            icon: "/images/icons/HC-icons/similar/smoking.svg",
           },
           {
             id: 4,
@@ -1067,12 +1067,12 @@ export const hcIcons = [
           {
             id: 7,
             symptom: "Low levels of potassium",
-            icon: "/images/icons/HC-icons/Hypertension/genetics.svg",
+            icon: "/images/icons/HC-icons/Hypertension/low-levels-of-potassium.svg",
           },
           {
             id: 8,
             symptom: "Stress",
-            icon: "/images/icons/HC-icons/Hypertension/genetics.svg",
+            icon: "/images/icons/HC-icons/similar/stress.svg",
           },
           {
             id: 9,
@@ -1087,7 +1087,7 @@ export const hcIcons = [
           {
             id: 11,
             symptom: "Family history of hypertension",
-            icon: "/images/icons/HC-icons/Hypertension/genetics.svg",
+            icon: "/images/icons/HC-icons/similar/family-history.svg",
           },
         ],
       },
@@ -1098,32 +1098,32 @@ export const hcIcons = [
           {
             id: 1,
             symptom: "Fever",
-            icon: "/images/icons/HC-icons/Infectious-Diseases/Fever.svg",
+            icon: "/images/icons/HC-icons/similar/fever.svg",
           },
           {
             id: 2,
             symptom: "Shortness of breath",
-            icon: "/images/icons/HC-icons/Infectious-Diseases/dizziness.svg",
+            icon: "/images/icons/HC-icons/similar/shortness-of-breath.svg",
           },
           {
             id: 3,
             symptom: "Cough",
-            icon: "/images/icons/HC-icons/Infectious-Diseases/chest-pain.svg",
+            icon: "/images/icons/HC-icons/similar/cough.svg",
           },
           {
             id: 4,
             symptom: "Fatigue",
-            icon: "/images/icons/HC-icons/Infectious-Diseases/nausea-and-vomiting.svg",
+            icon: "/images/icons/HC-icons/similar/fatigue.svg",
           },
           {
             id: 5,
             symptom: "Diarrhea",
-            icon: "/images/icons/HC-icons/Infectious-Diseases/difficulty-in-breathing.svg",
+            icon: "/images/icons/HC-icons/similar/diarrhea.svg",
           },
           {
             id: 6,
             symptom: "Vomiting",
-            icon: "/images/icons/HC-icons/Infectious-Diseases/blurred-and-other-vision-changes.svg",
+            icon: "/images/icons/HC-icons/similar/vomiting.svg",
           },
           {
             id: 7,
@@ -1133,7 +1133,7 @@ export const hcIcons = [
           {
             id: 8,
             symptom: "Chills and sweats",
-            icon: "/images/icons/HC-icons/Infectious-Diseases/chest-tenderness.svg",
+            icon: "/images/icons/HC-icons/Infectious-Diseases/chills-and-sweats.svg",
           },
           {
             id: 9,
@@ -1155,7 +1155,7 @@ export const hcIcons = [
           {
             id: 3,
             symptom: "Who are pregnant and young children",
-            icon: "/images/icons/HC-icons/Infectious-Diseases/obesity.svg",
+            icon: "/images/icons/HC-icons/Infectious-Diseases/who-are-pregnant-and-young-children.svg",
           },
           {
             id: 4,
@@ -1191,7 +1191,7 @@ export const hcIcons = [
           {
             id: 4,
             symptom: "Obesity",
-            icon: "/images/icons/HC-icons/Infertility-Females/undergoing-treatment-for-cancer.svg",
+            icon: "/images/icons/HC-icons/similar/obesity.svg",
           },
           {
             id: 5,
@@ -1217,7 +1217,7 @@ export const hcIcons = [
           {
             id: 9,
             symptom: "Autoimmune disorders ",
-            icon: "/images/icons/HC-icons/Infertility-Females/unvaccinated-against-common-infectious-diseases.svg",
+            icon: "/images/icons/HC-icons/Infertility-Females/autoimmune-disorders.svg",
           },
           {
             id: 10,
@@ -1232,12 +1232,12 @@ export const hcIcons = [
           {
             id: 12,
             symptom: "Excessive alcohol consumption",
-            icon: "/images/icons/HC-icons/Infertility-Females/unvaccinated-against-common-infectious-diseases.svg",
+            icon: "/images/icons/HC-icons/similar/alcohol-consumption.svg",
           },
           {
             id: 13,
             symptom: "Smoking",
-            icon: "/images/icons/HC-icons/Infertility-Females/unvaccinated-against-common-infectious-diseases.svg",
+            icon: "/images/icons/HC-icons/similar/smoking.svg",
           },
         ],
       },
@@ -1248,7 +1248,7 @@ export const hcIcons = [
           {
             id: 1,
             symptom: "Erectile dysfunction",
-            icon: "/images/icons/HC-icons/Infertility-Males/Fever.svg",
+            icon: "/images/icons/HC-icons/Infertility-Males/erectile-dysfunction.svg",
           },
           {
             id: 2,
@@ -1285,12 +1285,12 @@ export const hcIcons = [
           {
             id: 1,
             symptom: "Smoking",
-            icon: "/images/icons/HC-icons/Infertility-Males/on-medications-or-steroids.svg",
+            icon: "/images/icons/HC-icons/similar/smoking.svg",
           },
           {
             id: 2,
             symptom: "Alcohol intake",
-            icon: "/images/icons/HC-icons/Infertility-Males/having-HIV-or-AIDS.svg",
+            icon: "/images/icons/HC-icons/similar/alcohol-consumption.svg",
           },
           {
             id: 3,
@@ -1346,17 +1346,17 @@ export const hcIcons = [
           {
             id: 1,
             symptom: "Abdominal pain and cramps",
-            icon: "/images/icons/HC-icons/Inflammatory-Bowel-Disease/Fever.svg",
+            icon: "/images/icons/HC-icons/Inflammatory-Bowel-Disease/abdominal-pain-and-cramps.svg",
           },
           {
             id: 2,
             symptom: "Diarrhoea",
-            icon: "/images/icons/HC-icons/Inflammatory-Bowel-Disease/loss-of-smell.svg",
+            icon: "/images/icons/HC-icons/similar/diarrhoea.svg",
           },
           {
             id: 3,
             symptom: "Fatigue",
-            icon: "/images/icons/HC-icons/Inflammatory-Bowel-Disease/gynecomastia.svg",
+            icon: "/images/icons/HC-icons/similar/fatigue.svg",
           },
           {
             id: 4,
@@ -1366,12 +1366,12 @@ export const hcIcons = [
           {
             id: 5,
             symptom: "Nausea and vomiting ",
-            icon: "/images/icons/HC-icons/similar/reduced-facial-and-body-hair-growth.svg",
+            icon: "/images/icons/HC-icons/similar/vomiting.svg",
           },
           {
             id: 6,
             symptom: "Blood or mucus in your stool ",
-            icon: "/images/icons/HC-icons/Inflammatory-Bowel-Disease/pain-swelling-in-testicles.svg",
+            icon: "/images/icons/HC-icons/Inflammatory-Bowel-Disease/blood-or-mucus-in-your-stool.svg",
           },
           {
             id: 7,
@@ -1381,7 +1381,7 @@ export const hcIcons = [
           {
             id: 8,
             symptom: "Unexplained weight loss ",
-            icon: "/images/icons/HC-icons/Inflammatory-Bowel-Disease/frequent-respiratory-infections.svg",
+            icon: "/images/icons/HC-icons/Inflammatory-Bowel-Disease/unexplained-weight-loss.svg",
           },
           {
             id: 9,
@@ -1411,14 +1411,14 @@ export const hcIcons = [
           {
             id: 14,
             symptom: "Vision problems ",
-            icon: "/images/icons/HC-icons/Inflammatory-Bowel-Disease/frequent-respiratory-infections.svg",
+            icon: "/images/icons/HC-icons/Inflammatory-Bowel-Disease/vision-problems.svg",
           },
         ],
         riskFactors: [
           {
             id: 1,
             symptom: "Age (diagnosed mostly before 30 years)",
-            icon: "/images/icons/HC-icons/Inflammatory-Bowel-Disease/on-medications-or-steroids.svg",
+            icon: "/images/icons/HC-icons/Inflammatory-Bowel-Disease/age.svg",
           },
           {
             id: 2,
@@ -1428,12 +1428,12 @@ export const hcIcons = [
           {
             id: 3,
             symptom: "Using Nonsteroidal anti-inflammatory drugs (NSAIDs)",
-            icon: "/images/icons/HC-icons/Inflammatory-Bowel-Disease/illicit-drug-use.svg",
+            icon: "/images/icons/HC-icons/Inflammatory-Bowel-Disease/nonsteroidal-anti-inflammatory-drugs.svg",
           },
           {
             id: 4,
             symptom: "Family history of IBD",
-            icon: "/images/icons/HC-icons/Inflammatory-Bowel-Disease/overheating-of-testicles.svg",
+            icon: "/images/icons/HC-icons/similar/family-history.svg",
           },
         ],
       },
@@ -1449,12 +1449,12 @@ export const hcIcons = [
           {
             id: 2,
             symptom: "Loss of appetite",
-            icon: "/images/icons/HC-icons/similar/loss-of-smell.svg",
+            icon: "/images/icons/HC-icons/Kidney-Diseases/loss-of-appetite.svg",
           },
           {
             id: 3,
             symptom: "Fatigue",
-            icon: "/images/icons/HC-icons/similar/gynecomastia.svg",
+            icon: "/images/icons/HC-icons/similar/fatigue.svg",
           },
           {
             id: 4,
@@ -1464,7 +1464,7 @@ export const hcIcons = [
           {
             id: 5,
             symptom: "Urinating less or more ",
-            icon: "/images/icons/HC-icons/similar/reduced-facial-and-body-hair-growth.svg",
+            icon: "/images/icons/HC-icons/Kidney-Diseases/urinating-often.svg",
           },
           {
             id: 6,
@@ -1474,12 +1474,12 @@ export const hcIcons = [
           {
             id: 7,
             symptom: "Swelling of ankles and feet ",
-            icon: "/images/icons/HC-icons/Kidney-Diseases/loss-of-appetite.svg",
+            icon: "/images/icons/HC-icons/similar/swelling-of-ankles-and-feet.svg",
           },
           {
             id: 8,
             symptom: "Dry, itchy skin ",
-            icon: "/images/icons/HC-icons/Kidney-Diseases/frequent-respiratory-infections.svg",
+            icon: "/images/icons/HC-icons/Kidney-Diseases/dry-itchy-skin.svg",
           },
           {
             id: 9,
@@ -1489,7 +1489,7 @@ export const hcIcons = [
           {
             id: 10,
             symptom: "Shortness of breath, if fluid accumulates in the lungs  ",
-            icon: "/images/icons/HC-icons/Kidney-Diseases/painful-and-itchy-eyes.svg",
+            icon: "/images/icons/HC-icons/similar/shortness-of-breath.svg",
           },
           {
             id: 11,
@@ -1517,13 +1517,13 @@ export const hcIcons = [
           {
             id: 4,
             symptom: "Advancing age",
-            icon: "/images/icons/HC-icons/Kidney-Diseases/overheating-of-testicles.svg",
+            icon: "/images/icons/HC-icons/Kidney-Diseases/advancing-age.svg",
           },
           {
             id: 5,
             symptom:
               "Belong to an ethnicity with a high prevalence of diabetes",
-            icon: "/images/icons/HC-icons/kidney-Diseases/diabetes.svg",
+            icon: "/images/icons/HC-icons/similar/diabetes.svg",
           },
         ],
       },
@@ -1539,7 +1539,7 @@ export const hcIcons = [
           {
             id: 2,
             symptom: "Stomach pain, especially on the right side",
-            icon: "/images/icons/HC-icons/similar/loss-of-smell.svg",
+            icon: "/images/icons/HC-icons/similar/stomach.svg",
           },
           {
             id: 3,
@@ -1574,19 +1574,19 @@ export const hcIcons = [
           {
             id: 9,
             symptom: "Loss of appetite",
-            icon: "/images/icons/HC-icons/similar/Loss-of-appetite.svg",
+            icon: "/images/icons/HC-icons/similar/loss-of-appetite.svg",
           },
           {
             id: 10,
             symptom: "Swelling in arms or legs",
-            icon: "/images/icons/HC-icons/similar/painful-and-itchy-eyes.svg",
+            icon: "/images/icons/HC-icons/similar/swelling-of-ankles-and-feet.svg",
           },
         ],
         riskFactors: [
           {
             id: 1,
             symptom: "Excessive alcohol consumption",
-            icon: "/images/icons/HC-icons/similar/excessive-alcohol-consumption.svg",
+            icon: "/images/icons/HC-icons/similar/alcohol-consumption.svg",
           },
           {
             id: 2,
@@ -1596,12 +1596,12 @@ export const hcIcons = [
           {
             id: 3,
             symptom: "Type 2 diabetes",
-            icon: "/images/icons/HC-icons/Liver-Diseases/type-2-diabetes.svg",
+            icon: "/images/icons/HC-icons/similar/diabetes.svg",
           },
           {
             id: 4,
             symptom: "Tattoos or body piercings",
-            icon: "/images/icons/HC-icons/Liver-Diseases/tattoos.svg",
+            icon: "/images/icons/HC-icons/similar/tattoos-or-body-piercings.svg",
           },
           {
             id: 5,
@@ -1638,12 +1638,12 @@ export const hcIcons = [
           {
             id: 1,
             symptom: "Fatigue",
-            icon: "/images/icons/HC-icons/Nutritional-Deficiencies/fatigue.svg",
+            icon: "/images/icons/HC-icons/similar/fatigue.svg",
           },
           {
             id: 2,
             symptom: "Constipation",
-            icon: "/images/icons/HC-icons/similar/loss-of-smell.svg",
+            icon: "/images/icons/HC-icons/Nutritional-Deficiencies/constipation.svg",
           },
           {
             id: 3,
@@ -1690,7 +1690,7 @@ export const hcIcons = [
           {
             id: 1,
             symptom: "Fragile skin",
-            icon: "/images/icons/HC-icons/similar/excessive-alcohol-consumption.svg",
+            icon: "/images/icons/HC-icons/Nutritional-Deficiencies/fragile-skin.svg",
           },
           {
             id: 2,
@@ -1700,12 +1700,12 @@ export const hcIcons = [
           {
             id: 3,
             symptom: "Impaired swallowing ",
-            icon: "/images/icons/HC-icons/Nutritional-Deficiencies/type-2-diabetes.svg",
+            icon: "/images/icons/HC-icons/Nutritional-Deficiencies/impaired-swallowing.svg",
           },
           {
             id: 4,
             symptom: "Alterations in bowel habit",
-            icon: "/images/icons/HC-icons/Nutritional-Deficiencies/tattoos.svg",
+            icon: "/images/icons/HC-icons/Nutritional-Deficiencies/alterations-in-bowel-habit.svg",
           },
           {
             id: 5,
@@ -1860,7 +1860,7 @@ export const hcIcons = [
           {
             id: 8,
             symptom: "Breathlessness",
-            icon: "/images/icons/HC-icons/similar/breathlessness.svg",
+            icon: "/images/icons/HC-icons/similar/shortness-of-breath.svg",
           },
         ],
       },
@@ -2072,18 +2072,18 @@ export const hcIcons = [
           {
             id: 1,
             symptom: "Difficulty in falling asleep",
-            icon: "/images/icons/HC-icons/Sleep-Problems/difficulty-in-falling-asleep.svg",
+            icon: "/images/icons/HC-icons/similar/sleep-problems.svg",
           },
           {
             id: 2,
             symptom:
               "Difficulty sleeping again after waking up in the middle of the night ",
-            icon: "/images/icons/HC-icons/Sleep-Problems/difficulty-sleeping-again-after-waking-up.svg",
+            icon: "/images/icons/HC-icons/Sleep-Problems/difficulty-in-falling-asleep.svg",
           },
           {
             id: 3,
             symptom: "Experiencing unusual breathing patterns ",
-            icon: "/images/icons/HC-icons/Sleep-Problems/peeling-skin.svg",
+            icon: "/images/icons/HC-icons/similar/shortness-of-breath.svg",
           },
           {
             id: 4,
@@ -2098,7 +2098,7 @@ export const hcIcons = [
           {
             id: 6,
             symptom: "Lack of concentration",
-            icon: "/images/icons/HC-icons/Sleep-Problems/itchiness.svg",
+            icon: "/images/icons/HC-icons/Sleep-Problems/lack-of-concentration.svg",
           },
           {
             id: 7,
@@ -2110,7 +2110,7 @@ export const hcIcons = [
           {
             id: 1,
             symptom: "Age",
-            icon: "/images/icons/HC-icons/Sleep-Problems/family-history.svg",
+            icon: "/images/icons/HC-icons/similar/age.svg",
           },
           {
             id: 2,
@@ -2125,7 +2125,7 @@ export const hcIcons = [
           {
             id: 4,
             symptom: "Family history ",
-            icon: "/images/icons/HC-icons/Sleep-Problems/scars-from-diseases-or-burns.svg",
+            icon: "/images/icons/HC-icons/similar/family-history.svg",
           },
           {
             id: 5,
@@ -2232,4 +2232,3 @@ export const hcIcons = [
     ],
   },
 ];
-
